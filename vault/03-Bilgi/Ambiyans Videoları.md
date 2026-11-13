@@ -12,6 +12,12 @@ tags: [bilgi, ambiyans, remotion, ses]
 - Ambiyans için hedef ~-18 LUFS, limiter ile.
 - Kodlama: kapalı GOP (`-g 60 -sc_threshold 0 open-gop=0`) → kopyalar sorunsuz birleşir.
 
+## Teslim (dosya boyutu)
+- Sohbete dosya gönderme sınırı **~400 MiB** (500 MiB yazsa da 472 MiB reddedildi). 1 saat 1080p bu sınıra ancak ~0,78 Mbps video + 96k ses ile sığar (376 MiB) — yağmur biraz yumuşar ama kabul edilebilir.
+- Kalite sürümleri (bu ortamda, `video/out/cozy/`): 3,4 GB (crf 21), 1,5 GB (crf 25, 3,2 Mbps), 376 MB (teslim edilen).
+- En iyi kalite için: kullanıcı kendi bilgisayarında `build_loop_video.sh` çalıştırır (döngü + ses dosyaları ile), ya da bulut depolama bağlantısı kullanılır.
+- Döngü geçişi kontrolü sıkıştırılmış dosyada yapılırken **anahtar kare sıçramasıyla karıştırma**: geçişteki fark, döngü ortasındaki bir anahtar karedeki farkla karşılaştırılmalı.
+
 Araçlar: `scripts/ambience/make_rain_ambience.py`, `scripts/ambience/build_loop_video.sh`. Örnek: [[2026-11-13 Cozy Alley Rain 1 Saat]]
 
 Bkz: [[Bilgi MOC]], [[Remotion Notları]]

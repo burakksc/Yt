@@ -14,7 +14,7 @@ TOTAL=$(python3 -c "print(int(float($MIN)*60))")
 N=$(python3 -c "import math; print(math.ceil($TOTAL/float($LOOP_SEC)))")
 
 ffmpeg -v error -y -i "$LOOP" -an \
-  -c:v libx264 -preset slow -crf 21 -maxrate 9M -bufsize 18M \
+  -c:v libx264 -preset slow -crf ${CRF:-21} -maxrate ${MAXRATE:-9M} -bufsize ${BUFSIZE:-18M} \
   -pix_fmt yuv420p -profile:v high -g 60 -keyint_min 60 -sc_threshold 0 \
   -x264-params "open-gop=0" -r 30 "$WORK/loop.mp4"
 

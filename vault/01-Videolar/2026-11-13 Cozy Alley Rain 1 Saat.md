@@ -22,4 +22,9 @@ skills_used: [yt-video]
   - Seviye ayarı ölçümle yapıldı: ilk denemede gök gürültüsü/arabalar yağmurda kayboluyordu (+2 dB) → yağmur bas katmanı kısıldı → gök gürültüsü +11 dB, arabalar +4–7 dB.
 - **Birleştirme:** `scripts/ambience/build_loop_video.sh <loop> <ses> 60 <çıktı>` (döngü bir kez H.264 kodlanır, 60 kez `-c copy` ile eklenir, ses eklenir).
 
+## Teslim
+- Kullanıcıya gönderilen: `cozy_alley_rain_1saat.mp4` — 60:00, 1920×1080, 376 MB (~0,78 Mbps video + 96k AAC). Sohbet sınırı nedeniyle düşük bit hızı.
+- Daha kaliteli sürümler bu oturumun ortamında: 1,5 GB (3,2 Mbps) ve 3,4 GB. Ortam silinince kaybolur; kod + script'ler repoda, yeniden üretilebilir.
+- Döngü geçişi doğrulandı: 1800. saniyedeki geçiş = sıradan anahtar kare farkı (4,27 vs 4,21), atlama yok.
+
 Bkz: [[Videolar MOC]], [[Ambiyans Videoları]]
