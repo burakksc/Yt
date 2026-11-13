@@ -1,2 +1,7 @@
 source: https://github.com/remotion-dev/skills @ 7e541aa (v4.0.543)
 karpathy-guidelines: https://github.com/multica-ai/andrej-karpathy-skills (MIT) — see karpathy-guidelines/SOURCE.txt
+superpowers (15 skills): https://github.com/obra/superpowers @ 22f0b46 (MIT)
+mattpocock (26 skills; skipped: in-progress/*, retro [clashes with our retro], code-review [clashes with built-in], setup-matt-pocock-skills, migrate-to-shoehorn, scaffold-exercises): https://github.com/mattpocock/skills @ 5863806 (MIT)
+ui-ux-pro-max (7 skills from .claude/skills): https://github.com/nextlevelbuilder/ui-ux-pro-max-skill @ 6ae86f6 (MIT)
+ECC / everything-claude-code (6 of 314 skills, YouTube-relevant only: content-engine, video-editing, brand-voice, brand-discovery, market-research, manim-video): https://github.com/affaan-m/ECC @ d2ef268 (MIT)
+Each external skill folder has a SOURCE.txt.

@@ -39,6 +39,11 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 ### Dış (upstream) skill'ler
 - `remotion-*` — Remotion resmi skill'leri.
 - `karpathy-guidelines` — kod yazarken/düzenlerken: önce düşün, en basit çözüm, cerrahi değişiklik, doğrulanabilir hedef. **Video/kod üzerinde her değişiklikte uygula.**
+- `superpowers` (obra) — geliştirme iş akışı: brainstorming, writing-plans, executing-plans, systematic-debugging, test-driven-development, verification-before-completion, subagent-driven-development…
+- Matt Pocock skill'leri — grill-me/grilling (fikri sorgulama), handoff, teach, to-spec, implement, prototype, diagnosing-bugs, tdd, triage…
+- UI-UX Pro Max — `design`, `brand`, `banner-design` (kanal kapağı), `design-system`, `ui-styling`, `slides`, `ui-ux-pro-max`.
+- ECC'den seçme 6 skill — `content-engine`, `video-editing`, `brand-voice`, `brand-discovery`, `market-research`, `manim-video`.
+- **Öncelik:** YouTube işlerinde önce bizim `yt-*` skill'lerimiz; dış skill'ler destekleyici. `retro` her zaman bizimki (Matt Pocock'un retro'su bilerek kurulmadı).
 - Kaynaklar: `.claude/skills/EXTERNAL_SKILLS_SOURCES.txt`
 
 Kurallar:

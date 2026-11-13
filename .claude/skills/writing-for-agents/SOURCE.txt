@@ -1,0 +1,1 @@
+source: https://github.com/mattpocock/skills @ 5863806 (MIT) — path: skills/productivity/writing-for-agents. External skill: do not edit by hand, re-download to update.

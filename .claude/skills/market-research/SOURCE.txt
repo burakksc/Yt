@@ -1,0 +1,1 @@
+source: https://github.com/affaan-m/ECC @ d2ef268 (MIT) — path: skills/market-research. External skill: do not edit by hand, re-download to update.

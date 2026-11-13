@@ -1,0 +1,1 @@
+source: https://github.com/mattpocock/skills @ 5863806 (MIT) — path: skills/engineering/grill-with-docs. External skill: do not edit by hand, re-download to update.

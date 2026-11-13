@@ -1,0 +1,1 @@
+source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill @ 6ae86f6 (MIT) — path: .claude/skills/design-system. External skill: do not edit by hand, re-download to update.

@@ -45,6 +45,9 @@ Güncelleme: `remotion-upgrade` skill'i veya `npx skills add remotion-dev/skills
 ## Dış skill'ler (düzenlenmez)
 - `karpathy-guidelines` — kaynak: github.com/multica-ai/andrej-karpathy-skills (MIT, forrestchang; Karpathy'nin LLM kodlama hataları gözlemlerinden). Kod yazarken 4 ilke: önce düşün / basitlik / cerrahi değişiklik / doğrulanabilir hedef. Eklendi: 2026-11-13.
 
+- 2026-11-13: 54 dış skill eklendi — superpowers (15), mattpocock (26), ui-ux-pro-max (7), ECC'den seçme 6 (314'ten; YouTube ile ilgili olanlar). Atlananlar ve gerekçeler: `.claude/skills/EXTERNAL_SKILLS_SOURCES.txt`. Güvenlik taraması yapıldı: superpowers brainstorming sunucusu uzak logo yüklüyor → `SUPERPOWERS_DISABLE_TELEMETRY=1` (`.claude/settings.json`); ui-ux `design` script'leri sadece verilirse Gemini vb. API anahtarı kullanır.
+- **Çakışma kuralı:** Dış skill bizimkiyle aynı isimdeyse kurulmaz (ör. mattpocock `retro`). YouTube işlerinde `yt-*` önceliklidir.
+
 ## Eğitim günlüğü
 | Tarih | Skill | Versiyon | Ne öğrendi | Eval |
 |---|---|---|---|---|

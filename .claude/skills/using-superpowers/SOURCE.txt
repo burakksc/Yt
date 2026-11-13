@@ -1,0 +1,1 @@
+source: https://github.com/obra/superpowers @ 22f0b46 (MIT) — path: skills/using-superpowers. External skill: do not edit by hand, re-download to update.
