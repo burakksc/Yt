@@ -7,7 +7,7 @@ Her video `01-Videolar/YYYY-MM-DD Başlık.md` olarak, `_Templates/Video.md` şa
 ## Durum panosu
 | Video | Durum | Format | Yayın |
 |---|---|---|---|
-| _henüz yok_ | | | |
+| [[2026-11-13 -100°C'de Neler Olur]] | üretim | short | — |
 
 Durumlar: `fikir → araştırma → senaryo → üretim → thumbnail → seo → yayında → analiz`
 
