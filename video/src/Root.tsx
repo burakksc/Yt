@@ -2,6 +2,7 @@ import { Composition } from "remotion";
 import { TitleCard } from "./components/TitleCard";
 import { Eksi100, EKSI100_DURATION, EKSI100_FPS } from "./videos/eksi-100";
 import { Eksi100Hikaye } from "./videos/eksi-100-hikaye";
+import { CozyAlley, LOOP_FPS, LOOP_FRAMES } from "./videos/cozy-alley";
 import { STORY_FPS, STORY_FRAMES } from "./videos/eksi-100-hikaye/story";
 
 export const RemotionRoot: React.FC = () => {
@@ -94,6 +95,14 @@ export const RemotionRoot: React.FC = () => {
           hookTop: "-100°C",
           hookBottom: "KAÇ SAAT DAYANIRSIN?",
         }}
+      />
+      <Composition
+        id="CozyAlleyLoop"
+        component={CozyAlley}
+        durationInFrames={LOOP_FRAMES}
+        fps={LOOP_FPS}
+        width={1920}
+        height={1080}
       />
     </>
   );
