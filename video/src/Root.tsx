@@ -3,6 +3,8 @@ import { TitleCard } from "./components/TitleCard";
 import { Eksi100, EKSI100_DURATION, EKSI100_FPS } from "./videos/eksi-100";
 import { Eksi100Hikaye } from "./videos/eksi-100-hikaye";
 import { CozyAlley, LOOP_FPS, LOOP_FRAMES } from "./videos/cozy-alley";
+import { SlingVideo } from "./videos/sling";
+import { SLING_FPS, SLING_FRAMES } from "./videos/sling/story";
 import { STORY_FPS, STORY_FRAMES } from "./videos/eksi-100-hikaye/story";
 
 export const RemotionRoot: React.FC = () => {
@@ -103,6 +105,14 @@ export const RemotionRoot: React.FC = () => {
         fps={LOOP_FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="SlingBaglama"
+        component={SlingVideo}
+        durationInFrames={SLING_FRAMES}
+        fps={SLING_FPS}
+        width={1080}
+        height={1920}
       />
     </>
   );

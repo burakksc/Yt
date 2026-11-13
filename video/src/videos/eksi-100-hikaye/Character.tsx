@@ -18,6 +18,8 @@ export const Character: React.FC<{
   mood?: Mood;
   frost?: number; // 0..1
   walkSpeed?: number;
+  /** winter = ushanka + scarf (default); worker = hard hat + hi-vis vest */
+  outfit?: "winter" | "worker";
 }> = ({
   x,
   y,
@@ -27,6 +29,7 @@ export const Character: React.FC<{
   mood = "neutral",
   frost = 0,
   walkSpeed = 1,
+  outfit = "winter",
 }) => {
   const frame = useCurrentFrame();
   const ink = mix(frost, INK, "#5d86a8");
@@ -205,20 +208,35 @@ export const Character: React.FC<{
         strokeLinecap="round"
         transform={`translate(0 ${breathe * 0.3})`}
       />
-      {/* scarf: wrap + two tails blowing back */}
-      <rect x={-34} y={-262} width={68} height={28} rx={10} fill={scarf} />
-      <path
-        d={`M -18 -246 Q ${-40 - Math.sin(frame / 6) * 6} -210 ${-30 - Math.sin(frame / 5) * 10} -168`}
-        stroke={scarf}
-        strokeWidth={20}
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path
-        d="M -20 -176 l -8 14 M -32 -172 l -6 14"
-        stroke={mix(frost, "#b8831f", "#c9c4a0")}
-        strokeWidth={4}
-      />
+      {outfit === "worker" && (
+        <g>
+          {/* hi-vis vest with reflective stripes */}
+          <path
+            d="M -30 -258 L 30 -258 L 36 -150 L -36 -150 Z"
+            fill="#ff7a1a"
+          />
+          <rect x={-35} y={-214} width={70} height={9} fill="#e8eef5" />
+          <rect x={-36} y={-180} width={72} height={9} fill="#e8eef5" />
+        </g>
+      )}
+      {outfit === "winter" && (
+        <>
+          {/* scarf: wrap + two tails blowing back */}
+          <rect x={-34} y={-262} width={68} height={28} rx={10} fill={scarf} />
+          <path
+            d={`M -18 -246 Q ${-40 - Math.sin(frame / 6) * 6} -210 ${-30 - Math.sin(frame / 5) * 10} -168`}
+            stroke={scarf}
+            strokeWidth={20}
+            fill="none"
+            strokeLinecap="round"
+          />
+          <path
+            d="M -20 -176 l -8 14 M -32 -172 l -6 14"
+            stroke={mix(frost, "#b8831f", "#c9c4a0")}
+            strokeWidth={4}
+          />
+        </>
+      )}
       {arm(front, "front", false)}
       {/* head */}
       <circle
@@ -246,14 +264,42 @@ export const Character: React.FC<{
         fill="#f08a8a"
         opacity={0.45 * (1 - frost)}
       />
-      {/* ushanka */}
-      <path d="M -48 -322 Q -50 -378 2 -380 Q 54 -378 52 -322 Z" fill={hat} />
-      <rect x={-54} y={-334} width={112} height={20} rx={10} fill={fur} />
-      <path
-        d="M -50 -326 Q -66 -300 -52 -270 Q -38 -282 -40 -320 Z"
-        fill={fur}
-      />
-      <path d="M 54 -326 Q 70 -300 56 -270 Q 42 -282 44 -320 Z" fill={fur} />
+      {outfit === "worker" && (
+        <g>
+          {/* hard hat */}
+          <path
+            d="M -50 -330 Q -50 -392 2 -394 Q 54 -392 54 -330 Z"
+            fill="#ffc61a"
+          />
+          <rect
+            x={-62}
+            y={-336}
+            width={126}
+            height={14}
+            rx={7}
+            fill="#f0b400"
+          />
+          <rect x={-4} y={-392} width={12} height={58} rx={6} fill="#ffd84d" />
+        </g>
+      )}
+      {outfit === "winter" && (
+        <>
+          {/* ushanka */}
+          <path
+            d="M -48 -322 Q -50 -378 2 -380 Q 54 -378 52 -322 Z"
+            fill={hat}
+          />
+          <rect x={-54} y={-334} width={112} height={20} rx={10} fill={fur} />
+          <path
+            d="M -50 -326 Q -66 -300 -52 -270 Q -38 -282 -40 -320 Z"
+            fill={fur}
+          />
+          <path
+            d="M 54 -326 Q 70 -300 56 -270 Q 42 -282 44 -320 Z"
+            fill={fur}
+          />
+        </>
+      )}
       {/* frost crystals on hat and shoulders */}
       {frost > 0.25 &&
         [
