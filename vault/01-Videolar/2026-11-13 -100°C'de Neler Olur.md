@@ -47,7 +47,16 @@ Kaynak: Kullanıcının Claude chat'te ürettiği 53 sn'lik video (576×1024), R
 ## 6. SEO
 - (yapılacak)
 
+## v2 — Hikâyeli versiyon (kullanıcı v1'i "çok basit" buldu)
+- Kompozisyon: `Eksi100Hikaye` (1080×1920, 52 sn, 8 sahne) → `video/src/videos/eksi-100-hikaye/`
+- Konsept: "-100°C — KAÇ SAAT DAYANIRSIN?" Karakterin bir günü: pencere → kapı (nefes buza dönüşür) → araba (akü/yağ) → elektrik kopar → borular patlar → telefon ölür → soba → gerçek rekor -89,2°C + soru CTA.
+- Senaryo/anlatım metni: `story.ts` (her sahnede `narration`, `clock`, `sec`).
+- Arka planlar: AI görselleri bekleniyor → [[Eksi100 Hikaye - Gorsel Promptlari]]. Gelene kadar zengin SVG çizimler.
+- Seslendirme: Türkçe AI ses seçildi. ElevenLabs anahtarı verilmedi; yerel TTS (Piper) modelleri engelli adreste. **Bekliyor:** `public/eksi-100-hikaye/voice/<sahne>.mp3` gelince otomatik eklenir.
+- Ses efektleri koddan: `sfx/crack.mp3`, `zap.mp3`, `fire.mp3` (ffmpeg).
+- Ortam: bu repo için kişisel "Yt" cloud ortamı oluşturuldu (setup: `video/` npm install).
+
 ## Dersler
-- Bkz. [[2026-11-13-yt-video-referanstan-yeniden-uretim]], [[2026-11-13-yt-video-blur-render-yavas]]
+- Bkz. [[2026-11-13-yt-video-stil-cok-basit]], [[2026-11-13-yt-video-referanstan-yeniden-uretim]], [[2026-11-13-yt-video-blur-render-yavas]]
 
 Bkz: [[Videolar MOC]], [[Remotion Notları]]

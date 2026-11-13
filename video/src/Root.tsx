@@ -1,6 +1,8 @@
 import { Composition } from "remotion";
 import { TitleCard } from "./components/TitleCard";
 import { Eksi100, EKSI100_DURATION, EKSI100_FPS } from "./videos/eksi-100";
+import { Eksi100Hikaye } from "./videos/eksi-100-hikaye";
+import { STORY_FPS, STORY_FRAMES } from "./videos/eksi-100-hikaye/story";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -44,17 +46,53 @@ export const RemotionRoot: React.FC = () => {
           title: "-100°C'DE",
           subtitle: "NELER OLUR?",
           captions: [
-            { badge: "SICAKLIK DÜŞÜYOR", text: "Dünya -100°C olsaydı ne olurdu?" },
-            { badge: "1 · İNSAN", text: "Açıktaki cilt saniyeler içinde donar. Dakikalar içinde hipotermi başlar." },
-            { badge: "2 · SU", text: "Borular patlar, göller ve denizler katılaşır." },
-            { badge: "3 · ELEKTRONİK", text: "Piller çöker, telefonlar ve bilgisayarlar kapanır." },
-            { badge: "4 · ARAÇLAR", text: "Yağ koyulaşır, yakıt jelleşir, lastikler kırılganlaşır." },
-            { badge: "5 · ELEKTRİK", text: "Kablolar kopar, şehir karanlığa gömülür." },
-            { badge: "6 · YAPILAR", text: "Beton ve çelik çatlar, binalar zarar görür." },
+            {
+              badge: "SICAKLIK DÜŞÜYOR",
+              text: "Dünya -100°C olsaydı ne olurdu?",
+            },
+            {
+              badge: "1 · İNSAN",
+              text: "Açıktaki cilt saniyeler içinde donar. Dakikalar içinde hipotermi başlar.",
+            },
+            {
+              badge: "2 · SU",
+              text: "Borular patlar, göller ve denizler katılaşır.",
+            },
+            {
+              badge: "3 · ELEKTRONİK",
+              text: "Piller çöker, telefonlar ve bilgisayarlar kapanır.",
+            },
+            {
+              badge: "4 · ARAÇLAR",
+              text: "Yağ koyulaşır, yakıt jelleşir, lastikler kırılganlaşır.",
+            },
+            {
+              badge: "5 · ELEKTRİK",
+              text: "Kablolar kopar, şehir karanlığa gömülür.",
+            },
+            {
+              badge: "6 · YAPILAR",
+              text: "Beton ve çelik çatlar, binalar zarar görür.",
+            },
             { badge: "7 · DOĞA", text: "Bitkiler ölür, tarım biter." },
-            { badge: "8 · HAVA", text: "Nefesin çıkar çıkmaz buz kristallerine dönüşür." },
-            { badge: "SON", text: "Takip et, bir sonraki \"ne olurdu?\" için." },
+            {
+              badge: "8 · HAVA",
+              text: "Nefesin çıkar çıkmaz buz kristallerine dönüşür.",
+            },
+            { badge: "SON", text: 'Takip et, bir sonraki "ne olurdu?" için.' },
           ],
+        }}
+      />
+      <Composition
+        id="Eksi100Hikaye"
+        component={Eksi100Hikaye}
+        durationInFrames={STORY_FRAMES}
+        fps={STORY_FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          hookTop: "-100°C",
+          hookBottom: "KAÇ SAAT DAYANIRSIN?",
         }}
       />
     </>
