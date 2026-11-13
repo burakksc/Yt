@@ -25,6 +25,7 @@ Remotion kompozisyonları bu değerleri kullanır (`video/src/Root.tsx` → `def
 - Kod: `video/src/videos/eksi-100-hikaye/Character.tsx` (pozlar: stand/walk/hug/phone/shiver/reach; ruh hâli: neutral/worried/shocked/relieved; `frost` 0–1).
 
 Kurallar:
+- **Türkçe büyük harf:** Her yerde (video, thumbnail, başlık) `toLocaleUpperCase("tr-TR")`; CSS `uppercase` kullanma → "ŞEHIR" değil "ŞEHİR".
 - Başlık min 84px (1080 genişlikte), destek metni min 44px — bkz. [[Remotion Notları]]
 - Shorts: önemli içerik üst/alt 250px'e girmesin (UI kaplıyor)
 

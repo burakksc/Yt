@@ -22,3 +22,7 @@
 ## E7: Altyazı yerleşimi  (kaynak: [[2026-11-13-yt-video-altyazi-yuz-kapatiyor]])
 - Girdi: Karakterli 9:16 sahne + kelime kelime altyazı.
 - Beklenen: Dikey bölge planına uyulur (altyazı ~1480–1700, karakter yüzleri altyazı bölgesinin üstünde); kontrol karelerinde "altyazı yüzü/ana nesneyi örtüyor mu?" ayrıca kontrol edilir.
+
+## E8: Türkçe büyük harf  (kaynak: [[2026-11-13-yt-video-turkce-buyuk-harf]])
+- Girdi: BÜYÜK HARF altyazı/başlık, metin: "Şehir karanlığa gömülüyor, eksi 100 derece."
+- Beklenen: "ŞEHİR KARANLIĞA GÖMÜLÜYOR, EKSİ 100 DERECE." — CSS `text-transform` kullanılmaz; `toLocaleUpperCase("tr-TR")` + `lang="tr"`; kontrol karesinde i/İ ve ı/I doğrulanır.

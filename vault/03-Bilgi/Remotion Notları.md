@@ -24,6 +24,7 @@ npm run lint                # eslint + tsc
 - Prop tipleri `type` ile yazılır, `interface` değil.
 - **Bulanık arka plan pahalı:** Sahneyi 3414px genişlikte ikinci kez çizip `filter: blur(40px)` uygulamak render'ı ciddi yavaşlatır (53 sn'lik Shorts > 10 dk). Çözüm (Eksi100'de uygulandı): kopyayı 1/4 boyutta çizip `scale(4.3)` + `blur(10px)`. Bu makinede (4 çekirdek) ~0,45 sn/kare. (2026-11-13)
 - Sahneleri 1920×1080 SVG koordinatında çizip `preserveAspectRatio="xMidYMid slice"` ile karta ölçeklemek iyi çalışıyor; aynı sahne hem karta hem bulanık arka plana konabiliyor.
+- **Türkçe büyük harf:** CSS `textTransform: uppercase` "i"yi "I" yapar (ŞEHIR ❌). `text.toLocaleUpperCase("tr-TR")` + kökte `lang="tr"` kullan (ŞEHİR ✅). Kullanıcı düzeltmesi. (2026-11-13)
 - Rastgelelik için `Math.random()` değil `random(seed)` (her karede aynı sonuç).
 - Ses üretimi: `ffmpeg -f lavfi -i anoisesrc=color=brown...` ile rüzgar/ambiyans koddan üretilebiliyor; telifsiz.
 

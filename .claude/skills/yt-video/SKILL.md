@@ -2,7 +2,7 @@
 name: yt-video
 description: Senaryodan Remotion ile video üretme (long-form 16:9 ve Shorts 9:16) - sahne kompozisyonu, animasyon, ses, altyazı, render. "Videoyu yap", "render al", "sahne ekle", "Remotion'da yap", "intro yap" denildiğinde kullan. Resmi remotion-* skill'lerini proje kurallarıyla birleştirir.
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 # YT Video — Remotion ile Üretim
 
@@ -24,6 +24,7 @@ Proje: `video/`. Bu skill bizim **proje kurallarımızdır**; Remotion API detay
 - Assetler `video/public/<slug>/` altında, `staticFile()` ile.
 - Süreleri saniyeden hesapla: `durationInFrames = sn * fps`. Sihirli kare sayısı yazma.
 - Animasyonlar `useCurrentFrame` + `spring/interpolate`; CSS transition/animation **yasak**.
+- **Türkçe büyük harf:** CSS `text-transform: uppercase` **yasak** ("i"→"I" yapar: ŞEHIR ❌). `text.toLocaleUpperCase("tr-TR")` kullan, kök elemana `lang="tr"` ver (ŞEHİR ✅).
 
 ## Görsel stil (kullanıcı tercihi — varsayılan)
 - **Tam ekran, katmanlı illüstrasyon + hikâye + maskot karakter.** Kart/rozet/ikon infografik stili kullanıcı tarafından "çok basit" diye reddedildi; açıkça istenmedikçe kullanma.
@@ -49,7 +50,7 @@ Proje: `video/`. Bu skill bizim **proje kurallarımızdır**; Remotion API detay
 ## Adımlar
 1. Senaryo tablosundaki her satır → bir sahne (`<Sequence>` / `TransitionSeries`).
 2. Kompozisyonu kaydet, `npm run lint` geçir.
-3. Kontrol kareleri: her sahnenin ortasından `npx remotion still <Id> out/check-<n>.png --frame=<f>` al, **görsel olarak kontrol et** (taşma, okunabilirlik, güvenli alan, **altyazı bir yüzü/ana nesneyi örtüyor mu**).
+3. Kontrol kareleri: her sahnenin ortasından `npx remotion still <Id> out/check-<n>.png --frame=<f>` al, **görsel olarak kontrol et** (taşma, okunabilirlik, güvenli alan, **altyazı bir yüzü/ana nesneyi örtüyor mu**, **Türkçe harfler doğru mu: i/İ, ı/I, ş, ğ**).
 4. Kullanıcıya önizleme: `npm run dev` (Studio) ya da kontrol kareleri.
 5. Süre ölçümü: `npx remotion render <Id> out/speed.mp4 --frames=0-89` → kare başı süreyi ölç, toplam render süresini kullanıcıya söyle. Çok yavaşsa önce optimize et (büyük elemana büyük `blur` yok: bulanık kopyayı küçük çizip `scale` ile büyüt).
 6. Final: `npx remotion render <Id> out/<slug>.mp4` (uzunsa arka planda). `out/` git'e girmez. Bitince MP4'ü kullanıcıya gönder.
@@ -60,6 +61,7 @@ Proje: `video/`. Bu skill bizim **proje kurallarımızdır**; Remotion API detay
 - Toplam süre senaryo süresiyle uyumlu.
 - Marka renk/font'u ve görsel stili (illüstrasyon + maskot) kullanılmış.
 - 9:16'da altyazı hiçbir yüzü/ana nesneyi örtmüyor.
+- Büyük harfli Türkçe metinde İ/I hatası yok.
 
 ## Sonra
 Video notu "4. Üretim" (komp. id, render komutu) + `status: üretim`. Yeni tuzak öğrenildiyse `Remotion Notları > Tuzaklar`. `vault-memory` → `retro`. Sıradaki: `yt-thumbnail`.
@@ -68,5 +70,6 @@ Video notu "4. Üretim" (komp. id, render komutu) + `status: üretim`. Yeni tuza
 - Bulut ortamında render için `remotion.config.ts` `/opt/pw-browsers/chromium`'u kullanır; ayrıca indirme gerekmez. (2026-11-13)
 
 ## Changelog
+- 1.2.0 (2026-11-13): Türkçe büyük harf kuralı (`toLocaleUpperCase("tr-TR")`, CSS uppercase yasak) + kontrol maddesi; eval E8. — kaynak: [[2026-11-13-yt-video-turkce-buyuk-harf]]
 - 1.1.0 (2026-11-13): Görsel stil varsayılanı (illüstrasyon+hikâye+maskot, hibrit AI arka plan, stil testi), 9:16 bölge planı, referans video analizi akışı, render süre ölçümü ve blur optimizasyonu, altyazı-yüz kontrolü. Eval E4–E7 eklendi. — kaynak: [[2026-11-13-yt-video-stil-cok-basit]], [[2026-11-13-yt-video-referanstan-yeniden-uretim]], [[2026-11-13-yt-video-blur-render-yavas]], [[2026-11-13-yt-video-altyazi-yuz-kapatiyor]]
 - 1.0.0 (2026-11-13): ilk sürüm.

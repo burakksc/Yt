@@ -1,7 +1,7 @@
 ---
 tags: [skill]
 skill: yt-video
-version: 1.1.0
+version: 1.2.0
 ---
 # yt-video
 **Dosya:** `.claude/skills/yt-video/SKILL.md` · **Test seti:** `.claude/skills/yt-video/evals.md`
@@ -13,6 +13,7 @@ Senaryodan Remotion ile video üretme (long-form 16:9 ve Shorts 9:16) - sahne ko
 |---|---|---|---|---|
 | 2026-11-13 | 1.0.0 | İlk sürüm | — | — |
 | 2026-11-13 | 1.1.0 | Görsel stil varsayılanı (illüstrasyon+hikâye+maskot, hibrit AI arka plan, stil testi); 9:16 bölge planı; referans video analizi; render süre ölçümü + blur optimizasyonu; altyazı-yüz kontrolü | [[2026-11-13-yt-video-stil-cok-basit]], [[2026-11-13-yt-video-referanstan-yeniden-uretim]], [[2026-11-13-yt-video-blur-render-yavas]], [[2026-11-13-yt-video-altyazi-yuz-kapatiyor]] | eski 3/7 → yeni 7/7 (alt-ajan, E1–E7) |
+| 2026-11-13 | 1.2.0 | Türkçe büyük harf kuralı (CSS uppercase yasak, `toLocaleUpperCase("tr-TR")`) | [[2026-11-13-yt-video-turkce-buyuk-harf]] | E8 eklendi; zihinsel yürütme, gerileme yok |
 
 ## Açık gözlemler (sonraki eğitim adayları)
 Eval sırasında alt-ajanın fark ettiği, henüz feedback'e dayanmayan boşluklar — gerçek bir sorun yaşanırsa feedback'e dönüşür:

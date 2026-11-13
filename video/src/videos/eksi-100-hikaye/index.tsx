@@ -91,7 +91,6 @@ const Captions: React.FC<{ scene: StoryScene }> = ({ scene }) => {
         fontSize: 86,
         fontWeight: 900,
         lineHeight: 1.12,
-        textTransform: "uppercase",
         transform: `scale(${0.85 + 0.15 * pop})`,
       }}
     >
@@ -109,7 +108,7 @@ const Captions: React.FC<{ scene: StoryScene }> = ({ scene }) => {
               textShadow: "0 8px 18px rgba(0,0,0,0.45)",
             }}
           >
-            {w.text}
+            {w.text.toLocaleUpperCase("tr-TR")}
           </span>
         );
       })}
@@ -274,7 +273,7 @@ export const Eksi100Hikaye: React.FC<Eksi100HikayeProps> = ({
 }) => {
   const { fps } = useVideoConfig();
   return (
-    <AbsoluteFill style={{ backgroundColor: "#05080f", fontFamily }}>
+    <AbsoluteFill lang="tr" style={{ backgroundColor: "#05080f", fontFamily }}>
       <Series>
         {STORY.map((scene) => (
           <Series.Sequence

@@ -47,5 +47,6 @@ Güncelleme: `remotion-upgrade` skill'i veya `npx skills add remotion-dev/skills
 |---|---|---|---|---|
 | 2026-11-13 | (tümü) | 1.0.0 | İlk sürüm | — |
 | 2026-11-13 | [[yt-video]] | 1.1.0 | Stil varsayılanı, 9:16 bölge planı, referans video analizi, render hızı, altyazı-yüz kontrolü (4 feedback) | 3/7 → 7/7 |
+| 2026-11-13 | [[yt-video]] | 1.2.0 | Türkçe büyük harf (İ/I) kuralı — kullanıcı düzeltmesi | E8 ✅ |
 
 Bağlantılar: [[Home]]
