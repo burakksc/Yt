@@ -4,7 +4,7 @@ skill: yt-video
 date: 2026-11-13
 type: eksik
 severity: orta
-status: açık
+status: uygulandı
 ---
 # Feedback: yt-video — referans videodan yeniden üretim
 **Görev:** Kullanıcı başka bir araçta (Claude chat) ürettiği bir mp4'ü Remotion'da koddan yeniden yaptırmak istedi.
@@ -21,3 +21,5 @@ status: açık
 **Önerilen değişiklik:** yt-video'ya "Girdi bir referans video ise" bölümü ekle: yukarıdaki 5 adım + "çıkan sahne tablosunu video notuna yaz, sonra normal akış".
 
 **Kanıt:** Video notu [[2026-11-13 -100°C'de Neler Olur]] (sahne tablosu referanstan çıkarıldı), komutlar bu oturumda.
+
+**Uygulandı:** yt-video v1.1.0 (2026-11-13). Eval: eski 3/7 → yeni 7/7.

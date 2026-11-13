@@ -4,7 +4,7 @@ skill: yt-video
 date: 2026-11-13
 type: kullanıcı-düzeltmesi
 severity: yüksek
-status: açık
+status: uygulandı
 ---
 # Feedback: yt-video — "Çok basit görünüyor"
 **Görev:** -100°C Shorts'unun Remotion versiyonu (v1: bulanık arka plan + 16:9 kart + rozet + düz ikon tarzı SVG sahneler).
@@ -19,3 +19,5 @@ status: açık
 3. Arka planlar: hibrit — AI görsel (kullanıcı üretir, prompt'u biz yazarız) + kodla animasyon katmanı. Görsel yoksa zengin SVG yedek.
 
 **Kanıt:** Kullanıcı mesajı: "Cok basit gorunuyor ben su sekilde istiyorum aslinda" + 2 ekran görüntüsü (2026-11-13).
+
+**Uygulandı:** yt-video v1.1.0 (2026-11-13). Eval: eski 3/7 → yeni 7/7.

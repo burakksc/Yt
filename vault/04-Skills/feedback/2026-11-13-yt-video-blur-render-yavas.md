@@ -4,7 +4,7 @@ skill: yt-video
 date: 2026-11-13
 type: hata
 severity: orta
-status: açık
+status: uygulandı
 ---
 # Feedback: yt-video — bulanık arka plan render'ı yavaşlatıyor
 **Görev:** `Eksi100` (53 sn, 1080×1920) tam render.
@@ -18,3 +18,5 @@ status: açık
 **Kanıt:** Bu oturumdaki render süresi (>600 sn zaman aşımı).
 
 **Kodda denenen çözüm:** Arka plan kopyası 1/4 boyutta (854×480) çizilip `scale(4.3)` + `blur(10px)` yapıldı → 4 çekirdekte ~0,45 sn/kare (53 sn video ≈ 12 dk). Görsel fark yok. Skill'e henüz işlenmedi (skill-trainer bekliyor).
+
+**Uygulandı:** yt-video v1.1.0 (2026-11-13). Eval: eski 3/7 → yeni 7/7.
