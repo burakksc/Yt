@@ -3,3 +3,5 @@ vault/.obsidian/workspace*.json
 vault/.obsidian/cache
 vault/.trash/
 .DS_Store
+__pycache__/
+*.pyc
