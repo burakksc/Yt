@@ -72,6 +72,8 @@ export const Person: React.FC<{
   stethoscope?: boolean;
   behind?: React.ReactNode; // drawn behind the body (back carry baby)
   front?: React.ReactNode;
+  /** back = seen from behind: no face, hair covers the head */
+  view?: "front" | "back";
 }> = ({
   x,
   y,
@@ -84,6 +86,7 @@ export const Person: React.FC<{
   stethoscope,
   behind,
   front,
+  view = "front",
 }) => {
   const frame = useCurrentFrame();
   const breathe = Math.sin(frame / 18) * 2;
@@ -126,38 +129,43 @@ export const Person: React.FC<{
           <path d="M 66 -540 Q 64 -500 58 -486 L 46 -536 Z" fill="#5b3a2e" />
         </g>
       )}
-      {/* face */}
-      {blink ? (
-        <g stroke={INK} strokeWidth={4} strokeLinecap="round">
-          <line x1={-30} y1={-530} x2={-16} y2={-530} />
-          <line x1={16} y1={-530} x2={30} y2={-530} />
-        </g>
-      ) : (
-        <g fill={INK}>
-          <circle cx={-23} cy={-530} r={6} />
-          <circle cx={23} cy={-530} r={6} />
-        </g>
+      {view === "back" && <circle cx={0} cy={-534} r={67} fill="#5b3a2e" />}
+      {view === "front" && (
+        <>
+          {/* face */}
+          {blink ? (
+            <g stroke={INK} strokeWidth={4} strokeLinecap="round">
+              <line x1={-30} y1={-530} x2={-16} y2={-530} />
+              <line x1={16} y1={-530} x2={30} y2={-530} />
+            </g>
+          ) : (
+            <g fill={INK}>
+              <circle cx={-23} cy={-530} r={6} />
+              <circle cx={23} cy={-530} r={6} />
+            </g>
+          )}
+          <circle cx={-38} cy={-506} r={10} fill="#f19a8f" opacity={0.5} />
+          <circle cx={38} cy={-506} r={10} fill="#f19a8f" opacity={0.5} />
+          {mood === "calm" ? (
+            <path
+              d="M -12 -500 Q 0 -494 12 -500"
+              stroke={INK}
+              strokeWidth={4}
+              fill="none"
+              strokeLinecap="round"
+            />
+          ) : (
+            <path
+              d={`M -16 -503 Q 0 ${-488 + talk} 16 -503`}
+              stroke={INK}
+              strokeWidth={5}
+              fill={mood === "talk" ? "#8a4b45" : "none"}
+              strokeLinecap="round"
+            />
+          )}
+        </>
       )}
-      <circle cx={-38} cy={-506} r={10} fill="#f19a8f" opacity={0.5} />
-      <circle cx={38} cy={-506} r={10} fill="#f19a8f" opacity={0.5} />
-      {mood === "calm" ? (
-        <path
-          d="M -12 -500 Q 0 -494 12 -500"
-          stroke={INK}
-          strokeWidth={4}
-          fill="none"
-          strokeLinecap="round"
-        />
-      ) : (
-        <path
-          d={`M -16 -503 Q 0 ${-488 + talk} 16 -503`}
-          stroke={INK}
-          strokeWidth={5}
-          fill={mood === "talk" ? "#8a4b45" : "none"}
-          strokeLinecap="round"
-        />
-      )}
-      {stethoscope && (
+      {stethoscope && view === "front" && (
         <path
           d="M -40 -446 Q -50 -360 0 -350 Q 50 -360 40 -446 M 0 -350 L 0 -320"
           stroke="#3d4a5c"

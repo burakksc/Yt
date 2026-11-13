@@ -43,7 +43,7 @@ const useSteps = (scene: BebekScene) => {
 
 /* ---------- background ---------- */
 
-const Nursery: React.FC = () => (
+export const Nursery: React.FC = () => (
   <>
     <Gradient
       stops={[
