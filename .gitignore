@@ -1,0 +1,5 @@
+# Obsidian: kisisel calisma alani durumu git'e girmesin
+vault/.obsidian/workspace*.json
+vault/.obsidian/cache
+vault/.trash/
+.DS_Store

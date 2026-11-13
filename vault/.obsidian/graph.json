@@ -1,0 +1,9 @@
+{
+  "colorGroups": [
+    { "query": "path:01-Videolar", "color": { "a": 1, "rgb": 16726832 } },
+    { "query": "path:04-Skills", "color": { "a": 1, "rgb": 3381759 } },
+    { "query": "path:06-Kararlar", "color": { "a": 1, "rgb": 16763904 } },
+    { "query": "path:03-Bilgi", "color": { "a": 1, "rgb": 5025616 } }
+  ],
+  "showTags": true
+}
