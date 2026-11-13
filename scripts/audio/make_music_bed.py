@@ -47,6 +47,7 @@ def main():
     ap.add_argument("--bpm", type=float, default=100)
     ap.add_argument("--whoosh", default="")
     ap.add_argument("--seed", type=int, default=5)
+    ap.add_argument("--no-drums", action="store_true", help="pads + arpeggio only (lullaby feel)")
     a = ap.parse_args()
     rng = np.random.default_rng(a.seed)
     n = int(a.seconds * SR)
@@ -78,7 +79,7 @@ def main():
             out[0, p0:p0 + L] += pl * (1 - pan)
             out[1, p0:p0 + L] += pl * pan
         # kick on 1 and 3, hat on off-beats
-        for k in range(4):
+        for k in range(0 if a.no_drums else 4):
             p0 = s0 + int(k * beat * SR)
             if k % 2 == 0:
                 L = min(int(0.3 * SR), n - p0)

@@ -4,9 +4,13 @@
 import React from "react";
 import { spring, useCurrentFrame, useVideoConfig } from "remotion";
 
-type Word = { text: string; start: number; end: number };
+export type Word = { text: string; start: number; end: number };
 
-const timeWords = (text: string, frames: number, fps: number): Word[] => {
+export const timeWords = (
+  text: string,
+  frames: number,
+  fps: number,
+): Word[] => {
   const words = text.split(/\s+/).filter(Boolean);
   const startF = 0.3 * fps;
   const endF = frames - 0.4 * fps;
@@ -89,4 +93,19 @@ export const WordCaptions: React.FC<{
       })}
     </div>
   );
+};
+
+/** Frame at which the first word starting with `keyword` appears (for syncing visuals to text). */
+export const wordStartFrame = (
+  text: string,
+  keyword: string,
+  durationInFrames: number,
+  fps: number,
+): number => {
+  const k = keyword.toLocaleLowerCase("tr-TR");
+  const w = timeWords(text, durationInFrames, fps).find((x) =>
+    x.text.toLocaleLowerCase("tr-TR").startsWith(k),
+  );
+  if (!w) throw new Error(`keyword "${keyword}" not found in caption text`);
+  return w.start;
 };

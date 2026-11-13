@@ -1,13 +1,15 @@
 ---
 tags: [video, shorts, egitim, is-guvenligi]
-status: üretim
+status: iptal
 format: short
 publish_date:
 youtube_url:
 remotion_comp: SlingBaglama
 skills_used: [yt-research, yt-script, yt-video, karpathy-guidelines]
 ---
-# Sling Bağlama Yöntemleri (Shorts, ~55 sn)
+# [İPTAL] Sling Bağlama — yük kaldırma (yanlış yorum)
+
+> [!warning] Kullanıcı vinç/rigging sling'i değil **bebek taşıma sling'i** istemişti. Bu video iptal edildi; doğru video: [[2026-11-13 Bebek Slingi Bağlama Yöntemleri]]. Ders: [[2026-11-13-yt-script-belirsiz-konu]]. Kod `video/src/videos/sling/` (`SlingBaglama`) ileride iş güvenliği içeriği için yeniden kullanılabilir.
 
 ## 1. Fikir
 - Kullanıcı isteği: "Sling bağlama yöntemleriyle ilgili ~1 dk video, tüm yöntemleri anlat." Yeni proje / yeni seri (eğitim, iş güvenliği).

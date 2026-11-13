@@ -4,6 +4,8 @@ import { Eksi100, EKSI100_DURATION, EKSI100_FPS } from "./videos/eksi-100";
 import { Eksi100Hikaye } from "./videos/eksi-100-hikaye";
 import { CozyAlley, LOOP_FPS, LOOP_FRAMES } from "./videos/cozy-alley";
 import { SlingVideo } from "./videos/sling";
+import { BebekSling } from "./videos/bebek-sling";
+import { BEBEK_FPS, BEBEK_FRAMES } from "./videos/bebek-sling/story";
 import { SLING_FPS, SLING_FRAMES } from "./videos/sling/story";
 import { STORY_FPS, STORY_FRAMES } from "./videos/eksi-100-hikaye/story";
 
@@ -111,6 +113,14 @@ export const RemotionRoot: React.FC = () => {
         component={SlingVideo}
         durationInFrames={SLING_FRAMES}
         fps={SLING_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BebekSling"
+        component={BebekSling}
+        durationInFrames={BEBEK_FRAMES}
+        fps={BEBEK_FPS}
         width={1080}
         height={1920}
       />
