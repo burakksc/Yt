@@ -36,8 +36,13 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 - `skill-forge` — skill'i olmayan tekrar eden işler için yeni skill üretir.
 - Durum: `node scripts/skills-report.mjs`
 
+### Dış (upstream) skill'ler
+- `remotion-*` — Remotion resmi skill'leri.
+- `karpathy-guidelines` — kod yazarken/düzenlerken: önce düşün, en basit çözüm, cerrahi değişiklik, doğrulanabilir hedef. **Video/kod üzerinde her değişiklikte uygula.**
+- Kaynaklar: `.claude/skills/EXTERNAL_SKILLS_SOURCES.txt`
+
 Kurallar:
-- `remotion-*` skill'leri resmi ve upstream'den gelir; **elle düzenleme**. Remotion dersleri `yt-video`'ya veya `vault/03-Bilgi/Remotion Notları.md`'ye.
+- Dış skill'ler (`remotion-*`, `karpathy-guidelines`) upstream'den gelir; **elle düzenleme**. Remotion dersleri `yt-video`'ya veya `vault/03-Bilgi/Remotion Notları.md`'ye.
 - Skill'i olmayan bir işi ikinci kez yapıyorsan → `skill-forge` öner.
 - Yeni skill eklenince bu tabloyu güncelle.
 

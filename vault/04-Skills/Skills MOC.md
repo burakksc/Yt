@@ -42,6 +42,9 @@ yt-analytics (gerçek metrikler) ──► feedback/*.md
 `remotion-best-practices` (yönlendirici), `remotion-create`, `remotion-markup`, `remotion-captions`, `remotion-render`, `remotion-studio`, `remotion-interactivity`, `remotion-multimedia`, `remotion-maps`, `remotion-docs`, `remotion-upgrade`, `remotion-saas`, `remotion-license` — kaynak: github.com/remotion-dev/skills, v4.0.543.
 Güncelleme: `remotion-upgrade` skill'i veya `npx skills add remotion-dev/skills`.
 
+## Dış skill'ler (düzenlenmez)
+- `karpathy-guidelines` — kaynak: github.com/multica-ai/andrej-karpathy-skills (MIT, forrestchang; Karpathy'nin LLM kodlama hataları gözlemlerinden). Kod yazarken 4 ilke: önce düşün / basitlik / cerrahi değişiklik / doğrulanabilir hedef. Eklendi: 2026-11-13.
+
 ## Eğitim günlüğü
 | Tarih | Skill | Versiyon | Ne öğrendi | Eval |
 |---|---|---|---|---|
