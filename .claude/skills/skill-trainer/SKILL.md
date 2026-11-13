@@ -9,7 +9,7 @@ metadata:
 Eğitim döngüsünün **öğrenme** adımı. Girdi: `vault/04-Skills/feedback/*.md` (`status: açık`). Çıktı: güncellenmiş `.claude/skills/<skill>/SKILL.md` + `evals.md` + eğitim kaydı.
 
 > Kapsam: sadece bizim skill'lerimiz (`yt-*`, `vault-memory`, `retro`, `skill-forge`, `skill-trainer`).
-> Resmi `remotion-*` skill'leri **düzenlenmez** (upstream'den gelir; `remotion-upgrade`/yeniden indirme ile güncellenir). Remotion dersleri `yt-video` skill'ine veya `vault/03-Bilgi/Remotion Notları.md`'ye yazılır.
+> Dış skill'ler **düzenlenmez**: resmi `remotion-*` ve klasöründe `SOURCE.txt` olan her skill (ör. `karpathy-guidelines`). Upstream'den gelirler; yeniden indirme ile güncellenirler. Remotion dersleri `yt-video` skill'ine veya `vault/03-Bilgi/Remotion Notları.md`'ye yazılır.
 
 ## 0. Durum raporu
 ```bash

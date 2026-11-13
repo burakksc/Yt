@@ -29,14 +29,15 @@ for (const name of fs.readdirSync(skillsDir).sort()) {
   if (!fs.existsSync(file)) continue;
   const text = fs.readFileSync(file, "utf8");
   const meta = fm(text);
-  const official = name.startsWith("remotion-");
+  // external (upstream) skills: Remotion official ones, or any skill shipped with a SOURCE.txt
+  const official = name.startsWith("remotion-") || fs.existsSync(path.join(skillsDir, name, "SOURCE.txt"));
   const evalsFile = path.join(skillsDir, name, "evals.md");
   const evals = fs.existsSync(evalsFile) ? (fs.readFileSync(evalsFile, "utf8").match(/^## E\d+/gm) || []).length : 0;
   const mine = feedback.filter((f) => f.skill === name);
   const open = mine.filter((f) => f.status === "açık");
   const high = open.filter((f) => f.severity === "yüksek" || f.type === "kullanıcı-düzeltmesi").length;
   const last = (text.match(/^- \d+\.\d+\.\d+ \((\d{4}-\d{2}-\d{2})\)/gm) || []).map((l) => l.match(/\((.*)\)/)[1]).sort().pop() || "-";
-  rows.push({ skill: name, tür: official ? "resmi" : "bizim", versiyon: meta.version || "?", eval: official ? "-" : evals, açık: open.length, yüksek: high, "son değişim": official ? "-" : last });
+  rows.push({ skill: name, tür: official ? "dış" : "bizim", versiyon: meta.version || "?", eval: official ? "-" : evals, açık: open.length, yüksek: high, "son değişim": official ? "-" : last });
 }
 console.table(rows);
 
