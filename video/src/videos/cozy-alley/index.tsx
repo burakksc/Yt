@@ -241,7 +241,7 @@ export const CozyAlley: React.FC = () => {
       <AbsoluteFill style={{ transform: camera }}>
         <Img
           src={staticFile("cozy-alley/alley.png")}
-          style={{ width: W, height: H }}
+          style={{ width: W, height: H, objectFit: "cover" }}
         />
         <svg
           viewBox={`0 0 ${W} ${H}`}

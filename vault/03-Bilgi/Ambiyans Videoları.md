@@ -18,6 +18,11 @@ tags: [bilgi, ambiyans, remotion, ses]
 - En iyi kalite için: kullanıcı kendi bilgisayarında `build_loop_video.sh` çalıştırır (döngü + ses dosyaları ile), ya da bulut depolama bağlantısı kullanılır.
 - Döngü geçişi kontrolü sıkıştırılmış dosyada yapılırken **anahtar kare sıçramasıyla karıştırma**: geçişteki fark, döngü ortasındaki bir anahtar karedeki farkla karşılaştırılmalı.
 
+## 4K
+- `scripts/ambience/make_cozy_4k.sh [dakika]` — tek komut: döngüyü `--scale=2` ile 3840×2160 render eder, sesi üretir, birleştirir (crf 18, ≤45 Mbps). 1 saat ≈ 10–11 GB. Bu ortamda 2 sn'lik testle doğrulandı (3840×2160 + ses).
+- Vektör katmanlar (yağmur, buhar, ışık) 4K'da keskin; **fotoğrafın netliği kaynak görsele bağlı** → orijinal yüksek çözünürlüklü görsel `video/public/cozy-alley/alley.png` olarak konmalı (`objectFit: cover`, 16:9).
+- 10 GB'lık dosya sohbetten gönderilemez (~400 MB sınır) → 4K kullanıcının kendi bilgisayarında üretilir.
+
 Araçlar: `scripts/ambience/make_rain_ambience.py`, `scripts/ambience/build_loop_video.sh`. Örnek: [[2026-11-13 Cozy Alley Rain 1 Saat]]
 
 Bkz: [[Bilgi MOC]], [[Remotion Notları]]
