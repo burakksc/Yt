@@ -1,0 +1,1 @@
+source: https://github.com/EL4CTEO/blender-skills @ b1b21df (MIT) — path: skills/blender-texturing. External skill: do not edit by hand. Blender 5.2+; here via scripts/3d/blender (bpy 5.3 shim) — source scripts/3d/env.sh

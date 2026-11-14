@@ -33,6 +33,7 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 | Karakterden 1 dk AI film (Story Studio) | `higgsfield-story-studio` |
 | Ses → metin / altyazı (Whisper) | `whisper-transcribe` |
 | Video/altyazı/metadata indirme, araştırma | `yt-dlp` |
+| 3D model/sahne (Blender → GLB → Remotion three.js) | `yt-3d` |
 
 ### Skill'leri eğiten skill'ler
 - `retro` — her işten sonra dersleri `vault/04-Skills/feedback/` altına yazar.
@@ -50,6 +51,7 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 - `voicestudio` (debpalash/VoiceStudio) — yerel, ücretsiz TTS/ses klonlama/dublaj (646 dil, Türkçe dahil). VoiceStudio uygulaması bir bilgisayarda çalışıyor olmalı (`localhost:3900`). Seslendirme: sahne metinleri → `public/<video>/voice/<sahne>.mp3`.
 - `ffmpeg-skill` (kajisho5, MIT) — 42 yerel FFmpeg aracı: kes, birleştir, yeniden çerçevele, sessizlik sil, loudness, platform export, kontrol. `python3 .claude/skills/ffmpeg-skill/scripts/<araç>.py`.
 - HyperFrames (heygen-com/hyperframes, Apache-2.0) — HTML→video, 9 skill: `hyperframes`, `hyperframes-cli`, `hyperframes-registry` (~450 hazır blok), `media-use`, `reverse-any-video`, `remotion-to-hyperframes`, `style-sampling`, `slideshow`, `figma`. **Videolarımızın ana motoru Remotion'dur**; HyperFrames ek kaynak (hazır bloklar, video tersine mühendislik). Telemetri kapalı (`.claude/settings.json`).
+- Blender (EL4CTEO/blender-skills, MIT) — 23 `blender-*` skill (core, sculpting, rigging, materyal, simülasyon, export, asset-qa…). Blender 5.3 burada `bpy` modülü + `scripts/3d/blender` köprüsüyle çalışır: `source scripts/3d/env.sh`. Kurulum: `scripts/3d/setup.sh`.
 - **Öncelik:** YouTube işlerinde önce bizim `yt-*` skill'lerimiz; dış skill'ler destekleyici. `retro` her zaman bizimki (Matt Pocock'un retro'su bilerek kurulmadı).
 - Kaynaklar: `.claude/skills/EXTERNAL_SKILLS_SOURCES.txt`
 

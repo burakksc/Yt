@@ -8,3 +8,5 @@ Each external skill folder has a SOURCE.txt.
 voicestudio (1 skill): https://github.com/debpalash/VoiceStudio @ dd0f6bd (AGPL-3.0) — needs the VoiceStudio app/backend running
 hyperframes (9 skills from skills/): https://github.com/heygen-com/hyperframes (Apache-2.0) — telemetry disabled via HYPERFRAMES_NO_TELEMETRY / DO_NOT_TRACK
 ffmpeg-skill: https://github.com/kajisho5/ffmpeg-skill (MIT) — root SKILL.md + scripts/references/templates
+blender-* (23 of 28 skills; skipped addon-development, game-optimization, video-editing, time-of-day, weather-fx): https://github.com/EL4CTEO/blender-skills (MIT)
+Referenced, not installed: Tripo-Developer/tripo-mcp (needs Tripo key), ahujasid/mcp-for-blender (needs desktop Blender), arjun988/blender-skills (overlaps EL4CTEO)

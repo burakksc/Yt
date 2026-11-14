@@ -1,0 +1,72 @@
+#!/usr/bin/env -S sh -c 'exec "$HOME/.venvs/bpy/bin/python" "$0" "$@"'
+"""Minimal `blender` CLI shim backed by the pip `bpy` module (Blender as a Python module).
+
+Supports the headless subset the blender-* skills use:
+  blender -b [file.blend] [--factory-startup] [--python-exit-code N] (-P script.py | --python-expr EXPR) [-- args...]
+  blender --version
+Set BLENDER_EXE to this file (scripts/3d/env.sh does it).
+On a machine with a real Blender install, use that instead; this shim exists because the
+cloud sandbox cannot reach download.blender.org.
+"""
+import runpy
+import sys
+import traceback
+
+
+def main(argv):
+    if "--version" in argv or "-v" in argv:
+        import bpy
+
+        print(f"Blender {bpy.app.version_string} (bpy module shim)")
+        return 0
+
+    script_args = []
+    if "--" in argv:
+        i = argv.index("--")
+        argv, script_args = argv[:i], argv[i + 1 :]
+
+    blend = None
+    scripts = []
+    exprs = []
+    exit_code_on_error = 0
+    it = iter(range(len(argv)))
+    for i in it:
+        a = argv[i]
+        if a in ("-b", "--background", "--factory-startup", "-noaudio", "--noaudio"):
+            continue
+        if a in ("-P", "--python"):
+            scripts.append(argv[i + 1]); next(it, None)
+        elif a == "--python-expr":
+            exprs.append(argv[i + 1]); next(it, None)
+        elif a == "--python-exit-code":
+            exit_code_on_error = int(argv[i + 1]); next(it, None)
+        elif a.endswith(".blend"):
+            blend = a
+        else:
+            print(f"[blender-shim] ignoring unsupported arg: {a}", file=sys.stderr)
+
+    import bpy
+
+    if blend:
+        bpy.ops.wm.open_mainfile(filepath=blend)
+    else:
+        bpy.ops.wm.read_factory_settings(use_empty=False)
+
+    try:
+        for e in exprs:
+            exec(compile(e, "<python-expr>", "exec"), {"__name__": "__main__"})
+        for s in scripts:
+            sys.argv = [s, "--", *script_args] if script_args else [s]
+            # skills read args after "--" from sys.argv like real Blender
+            sys.argv = ["blender", "--", *script_args]
+            runpy.run_path(s, run_name="__main__")
+    except SystemExit as e:
+        return int(e.code or 0)
+    except Exception:
+        traceback.print_exc()
+        return exit_code_on_error or 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

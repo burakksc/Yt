@@ -31,6 +31,7 @@ yt-analytics (gerçek metrikler) ──► feedback/*.md
 | 8 | [[yt-publish]] | Yayın kontrol listesi |
 | 9 | [[yt-analytics]] | Metrik → ders → feedback |
 | + | [[open-higgsfield]] | OpenHiggsfield ile AI görsel/video (Higgsfield anahtarı, ücretli) |
+| + | [[yt-3d]] | Blender (bpy) → GLB → Remotion three.js, 3D sahne/karakter |
 | + | [[whisper-transcribe]] | Whisper ile TR transkript, SRT/VTT, Remotion caption JSON |
 | + | [[yt-dlp]] | Metadata/altyazı ile araştırma, kendi videolarımızı yedekleme (telif kuralları) |
 | + | [[higgsfield-story-studio]] | Story Studio: karakter → 6 sahne → MP4 (fal/Higgsfield, ücretli) |
@@ -52,6 +53,7 @@ Güncelleme: `remotion-upgrade` skill'i veya `npx skills add remotion-dev/skills
 - 2026-11-13: 54 dış skill eklendi — superpowers (15), mattpocock (26), ui-ux-pro-max (7), ECC'den seçme 6 (314'ten; YouTube ile ilgili olanlar). Atlananlar ve gerekçeler: `.claude/skills/EXTERNAL_SKILLS_SOURCES.txt`. Güvenlik taraması yapıldı: superpowers brainstorming sunucusu uzak logo yüklüyor → `SUPERPOWERS_DISABLE_TELEMETRY=1` (`.claude/settings.json`); ui-ux `design` script'leri sadece verilirse Gemini vb. API anahtarı kullanır.
 - 2026-11-14: `voicestudio` eklendi (debpalash/VoiceStudio, AGPL-3.0, ★110k). Yerel ElevenLabs alternatifi; **seslendirme sorununu anahtarsız çözebilir** ama uygulamanın kullanıcının bilgisayarında (ya da erişilebilir bir sunucuda) çalışması gerekir. Bu bulut ortamında model indirme (huggingface) engelli.
 - 2026-11-14: HyperFrames (9 skill, Apache-2.0, ★84k) + ffmpeg-skill (kajisho5, MIT, 42 araç) eklendi. HyperFrames `media-use` script'lerinde PostHog telemetrisi vardı → kapatıldı. HyperFrames'in kendi repo-geliştirici skill'leri (`.claude/skills/*`) ve 450 registry bloğu skill olarak eklenmedi (registry `hyperframes-registry` ile CLI'dan kurulur).
+- 2026-11-14: 3D araç zinciri — `bpy` 5.3 (pip, `~/.venvs/bpy`) + `scripts/3d/blender` köprüsü; 23 `blender-*` skill (EL4CTEO, MIT); `@remotion/three` + three 0.187 + R3F 9.8. Tripo MCP ve mcp-for-blender referans olarak not edildi (anahtar / masaüstü Blender gerekiyor). Üçüncü taraf blender skill script'lerinin doğrudan çalıştırılması otomatik izin sınıflandırıcısı tarafından reddedildi — kullanıcı onayı gerekir.
 - **Çakışma kuralı:** Dış skill bizimkiyle aynı isimdeyse kurulmaz (ör. mattpocock `retro`). YouTube işlerinde `yt-*` önceliklidir.
 
 ## Eğitim günlüğü
