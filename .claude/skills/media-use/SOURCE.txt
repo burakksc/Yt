@@ -1,0 +1,1 @@
+source: https://github.com/heygen-com/hyperframes @ 50c21c3 (Apache-2.0) — path: skills/media-use. External skill: do not edit by hand, re-download to update. Needs the HyperFrames CLI (npx hyperframes).

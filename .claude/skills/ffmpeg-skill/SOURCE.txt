@@ -1,0 +1,1 @@
+source: https://github.com/kajisho5/ffmpeg-skill @ e805a2e (MIT) — root SKILL.md + scripts/ references/ templates/. External skill: do not edit by hand. Needs FFmpeg 6.1+ and Python 3.10+.

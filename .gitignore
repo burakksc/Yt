@@ -6,3 +6,7 @@ vault/.trash/
 __pycache__/
 *.pyc
 tools/
+research/
+backup/
+audio/
+transcripts/

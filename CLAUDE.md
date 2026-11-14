@@ -31,6 +31,8 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 | Performans analizi | `yt-analytics` |
 | AI görsel/video üretimi (Higgsfield, 38 model) | `open-higgsfield` |
 | Karakterden 1 dk AI film (Story Studio) | `higgsfield-story-studio` |
+| Ses → metin / altyazı (Whisper) | `whisper-transcribe` |
+| Video/altyazı/metadata indirme, araştırma | `yt-dlp` |
 
 ### Skill'leri eğiten skill'ler
 - `retro` — her işten sonra dersleri `vault/04-Skills/feedback/` altına yazar.
@@ -46,6 +48,8 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 - UI-UX Pro Max — `design`, `brand`, `banner-design` (kanal kapağı), `design-system`, `ui-styling`, `slides`, `ui-ux-pro-max`.
 - ECC'den seçme 6 skill — `content-engine`, `video-editing`, `brand-voice`, `brand-discovery`, `market-research`, `manim-video`.
 - `voicestudio` (debpalash/VoiceStudio) — yerel, ücretsiz TTS/ses klonlama/dublaj (646 dil, Türkçe dahil). VoiceStudio uygulaması bir bilgisayarda çalışıyor olmalı (`localhost:3900`). Seslendirme: sahne metinleri → `public/<video>/voice/<sahne>.mp3`.
+- `ffmpeg-skill` (kajisho5, MIT) — 42 yerel FFmpeg aracı: kes, birleştir, yeniden çerçevele, sessizlik sil, loudness, platform export, kontrol. `python3 .claude/skills/ffmpeg-skill/scripts/<araç>.py`.
+- HyperFrames (heygen-com/hyperframes, Apache-2.0) — HTML→video, 9 skill: `hyperframes`, `hyperframes-cli`, `hyperframes-registry` (~450 hazır blok), `media-use`, `reverse-any-video`, `remotion-to-hyperframes`, `style-sampling`, `slideshow`, `figma`. **Videolarımızın ana motoru Remotion'dur**; HyperFrames ek kaynak (hazır bloklar, video tersine mühendislik). Telemetri kapalı (`.claude/settings.json`).
 - **Öncelik:** YouTube işlerinde önce bizim `yt-*` skill'lerimiz; dış skill'ler destekleyici. `retro` her zaman bizimki (Matt Pocock'un retro'su bilerek kurulmadı).
 - Kaynaklar: `.claude/skills/EXTERNAL_SKILLS_SOURCES.txt`
 

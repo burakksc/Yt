@@ -6,3 +6,5 @@ ui-ux-pro-max (7 skills from .claude/skills): https://github.com/nextlevelbuilde
 ECC / everything-claude-code (6 of 314 skills, YouTube-relevant only: content-engine, video-editing, brand-voice, brand-discovery, market-research, manim-video): https://github.com/affaan-m/ECC @ d2ef268 (MIT)
 Each external skill folder has a SOURCE.txt.
 voicestudio (1 skill): https://github.com/debpalash/VoiceStudio @ dd0f6bd (AGPL-3.0) — needs the VoiceStudio app/backend running
+hyperframes (9 skills from skills/): https://github.com/heygen-com/hyperframes (Apache-2.0) — telemetry disabled via HYPERFRAMES_NO_TELEMETRY / DO_NOT_TRACK
+ffmpeg-skill: https://github.com/kajisho5/ffmpeg-skill (MIT) — root SKILL.md + scripts/references/templates
