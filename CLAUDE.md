@@ -29,6 +29,8 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 | Shorts | `yt-shorts` |
 | Yayın kontrolü | `yt-publish` |
 | Performans analizi | `yt-analytics` |
+| AI görsel/video üretimi (Higgsfield, 38 model) | `open-higgsfield` |
+| Karakterden 1 dk AI film (Story Studio) | `higgsfield-story-studio` |
 
 ### Skill'leri eğiten skill'ler
 - `retro` — her işten sonra dersleri `vault/04-Skills/feedback/` altına yazar.

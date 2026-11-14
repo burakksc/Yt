@@ -30,6 +30,8 @@ yt-analytics (gerçek metrikler) ──► feedback/*.md
 | 7 | [[yt-shorts]] | Dikey kısa versiyonlar |
 | 8 | [[yt-publish]] | Yayın kontrol listesi |
 | 9 | [[yt-analytics]] | Metrik → ders → feedback |
+| + | [[open-higgsfield]] | OpenHiggsfield ile AI görsel/video (Higgsfield anahtarı, ücretli) |
+| + | [[higgsfield-story-studio]] | Story Studio: karakter → 6 sahne → MP4 (fal/Higgsfield, ücretli) |
 
 ## Eğitim (meta) skill'leri
 | Skill | Ne yapar |
