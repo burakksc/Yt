@@ -25,6 +25,7 @@ npm run lint                # eslint + tsc
 - **Bulanık arka plan pahalı:** Sahneyi 3414px genişlikte ikinci kez çizip `filter: blur(40px)` uygulamak render'ı ciddi yavaşlatır (53 sn'lik Shorts > 10 dk). Çözüm (Eksi100'de uygulandı): kopyayı 1/4 boyutta çizip `scale(4.3)` + `blur(10px)`. Bu makinede (4 çekirdek) ~0,45 sn/kare. (2026-11-13)
 - Sahneleri 1920×1080 SVG koordinatında çizip `preserveAspectRatio="xMidYMid slice"` ile karta ölçeklemek iyi çalışıyor; aynı sahne hem karta hem bulanık arka plana konabiliyor.
 - **Türkçe büyük harf:** CSS `textTransform: uppercase` "i"yi "I" yapar (ŞEHIR ❌). `text.toLocaleUpperCase("tr-TR")` + kökte `lang="tr"` kullan (ŞEHİR ✅). Kullanıcı düzeltmesi. (2026-11-13)
+- **3D (three.js):** `@remotion/three` + `three` + `@react-three/fiber` kurulu. Bu makinede GPU yok → `remotion.config.ts` içinde `Config.setChromiumOpenGlRenderer("swangle")` (angle/swiftshader/egl/vulkan çalışmadı). ~0,6 sn/kare (1080×1920, gölgeli). `TubeGeometry`'yi `g.scale()` ile yassılaştırma — eğriyi de taşır. Animasyon sadece `useCurrentFrame()` ile, `useFrame()` yasak. Stil testi: `video/src/videos/test-3d/` (2026-11-14)
 - Rastgelelik için `Math.random()` değil `random(seed)` (her karede aynı sonuç).
 - Ses üretimi: `ffmpeg -f lavfi -i anoisesrc=color=brown...` ile rüzgar/ambiyans koddan üretilebiliyor; telifsiz.
 

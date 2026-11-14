@@ -19,3 +19,6 @@ const preinstalledChromium = "/opt/pw-browsers/chromium";
 if (fs.existsSync(preinstalledChromium)) {
   Config.setBrowserExecutable(preinstalledChromium);
 }
+
+// 3D (three.js) needs WebGL; this machine has no GPU → software GL via SwiftShader+ANGLE.
+Config.setChromiumOpenGlRenderer("swangle");

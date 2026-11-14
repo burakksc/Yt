@@ -6,6 +6,7 @@ import { CozyAlley, LOOP_FPS, LOOP_FRAMES } from "./videos/cozy-alley";
 import { SlingVideo } from "./videos/sling";
 import { BebekSling } from "./videos/bebek-sling";
 import { EsnekSargi } from "./videos/esnek-sargi";
+import { Test3D } from "./videos/test-3d";
 import { SARGI_FPS, SARGI_FRAMES } from "./videos/esnek-sargi/story";
 import { BEBEK_FPS, BEBEK_FRAMES } from "./videos/bebek-sling/story";
 import { SLING_FPS, SLING_FRAMES } from "./videos/sling/story";
@@ -131,6 +132,14 @@ export const RemotionRoot: React.FC = () => {
         component={EsnekSargi}
         durationInFrames={SARGI_FRAMES}
         fps={SARGI_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Test3D"
+        component={Test3D}
+        durationInFrames={150}
+        fps={30}
         width={1080}
         height={1920}
       />
