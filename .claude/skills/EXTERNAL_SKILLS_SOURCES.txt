@@ -5,3 +5,4 @@ mattpocock (26 skills; skipped: in-progress/*, retro [clashes with our retro], c
 ui-ux-pro-max (7 skills from .claude/skills): https://github.com/nextlevelbuilder/ui-ux-pro-max-skill @ 6ae86f6 (MIT)
 ECC / everything-claude-code (6 of 314 skills, YouTube-relevant only: content-engine, video-editing, brand-voice, brand-discovery, market-research, manim-video): https://github.com/affaan-m/ECC @ d2ef268 (MIT)
 Each external skill folder has a SOURCE.txt.
+voicestudio (1 skill): https://github.com/debpalash/VoiceStudio @ dd0f6bd (AGPL-3.0) — needs the VoiceStudio app/backend running

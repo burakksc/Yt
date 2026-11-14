@@ -1,0 +1,1 @@
+source: https://github.com/debpalash/VoiceStudio @ dd0f6bd (AGPL-3.0) — path: skills/voicestudio. External skill: do not edit by hand, re-download to update. Requires a running VoiceStudio backend (default http://localhost:3900).

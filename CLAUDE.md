@@ -43,6 +43,7 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 - Matt Pocock skill'leri — grill-me/grilling (fikri sorgulama), handoff, teach, to-spec, implement, prototype, diagnosing-bugs, tdd, triage…
 - UI-UX Pro Max — `design`, `brand`, `banner-design` (kanal kapağı), `design-system`, `ui-styling`, `slides`, `ui-ux-pro-max`.
 - ECC'den seçme 6 skill — `content-engine`, `video-editing`, `brand-voice`, `brand-discovery`, `market-research`, `manim-video`.
+- `voicestudio` (debpalash/VoiceStudio) — yerel, ücretsiz TTS/ses klonlama/dublaj (646 dil, Türkçe dahil). VoiceStudio uygulaması bir bilgisayarda çalışıyor olmalı (`localhost:3900`). Seslendirme: sahne metinleri → `public/<video>/voice/<sahne>.mp3`.
 - **Öncelik:** YouTube işlerinde önce bizim `yt-*` skill'lerimiz; dış skill'ler destekleyici. `retro` her zaman bizimki (Matt Pocock'un retro'su bilerek kurulmadı).
 - Kaynaklar: `.claude/skills/EXTERNAL_SKILLS_SOURCES.txt`
 
