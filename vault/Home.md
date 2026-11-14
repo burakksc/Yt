@@ -37,4 +37,4 @@ Obsidian ile aç: `vault/` klasörünü "Open folder as vault" ile seç.
 
 ## Son durum
 - 2026-11-13: Vault, Remotion projesi (`video/`), resmi Remotion skill'leri ve iş/eğitim skill'leri kuruldu. → [[2026-11-13]]
-- 2026-11-14: Dış skill `voicestudio` eklendi; OpenHiggsfield repoları incelendi. → [[2026-11-14]]
+- 2026-11-14: Skill'ler eklendi (VoiceStudio, OpenHiggsfield, HyperFrames, ffmpeg, whisper, yt-dlp, Blender). 3D araç zinciri kuruldu ve stil testi yapıldı — ileride kullanılacak → [[3D Video Üretimi]] · [[2026-11-14]]
