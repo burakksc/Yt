@@ -3,6 +3,7 @@ import { loadFont } from "@remotion/google-fonts/Inter";
 import { Audio } from "@remotion/media";
 import {
   AbsoluteFill,
+  Img,
   interpolate,
   Series,
   spring,
@@ -10,7 +11,6 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { Avatar } from "../brand/Avatar";
 import { ALTI_SCENES } from "./scenes";
 import { ALTI_STORY, type AltiScene, type Tag } from "./story";
 
@@ -210,42 +210,32 @@ const Depth: React.FC<{ scene: AltiScene; prev: number }> = ({
 const OutroCard: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const s = spring({ frame, fps, config: { damping: 14 } });
+  const s = spring({ frame, fps, config: { damping: 16 } });
+  const zoom = interpolate(frame, [0, 7 * fps], [1, 1.04], clamp);
   return (
     <div
       style={{
         position: "absolute",
         left: 0,
         right: 0,
-        top: 170,
+        top: 90,
         display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
+        justifyContent: "center",
         opacity: s,
       }}
     >
-      <div
+      {/* channel logo (already includes the channel name) */}
+      <Img
+        src={staticFile("brand/logo.jpg")}
         style={{
-          width: 300,
-          height: 300,
-          borderRadius: 150,
-          overflow: "hidden",
-          position: "relative",
-          boxShadow: "0 10px 40px rgba(0,0,0,0.6)",
+          width: 720,
+          height: 720,
+          borderRadius: 360,
+          transform: `scale(${(0.9 + 0.1 * s) * zoom})`,
+          boxShadow:
+            "0 0 80px rgba(255,200,120,0.35), 0 20px 60px rgba(0,0,0,0.7)",
         }}
-      >
-        <Avatar variant="night" />
-      </div>
-      <div
-        style={{
-          marginTop: 36,
-          fontSize: 64,
-          fontWeight: 900,
-          color: "#fff6e6",
-        }}
-      >
-        Interestingly Cozy
-      </div>
+      />
     </div>
   );
 };
