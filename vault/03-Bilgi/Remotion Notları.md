@@ -26,6 +26,7 @@ npm run lint                # eslint + tsc
 - Sahneleri 1920×1080 SVG koordinatında çizip `preserveAspectRatio="xMidYMid slice"` ile karta ölçeklemek iyi çalışıyor; aynı sahne hem karta hem bulanık arka plana konabiliyor.
 - **Türkçe büyük harf:** CSS `textTransform: uppercase` "i"yi "I" yapar (ŞEHIR ❌). `text.toLocaleUpperCase("tr-TR")` + kökte `lang="tr"` kullan (ŞEHİR ✅). Kullanıcı düzeltmesi. (2026-11-13)
 - **3D (three.js):** `@remotion/three` + `three` + `@react-three/fiber` kurulu. Bu makinede GPU yok → `remotion.config.ts` içinde `Config.setChromiumOpenGlRenderer("swangle")` (angle/swiftshader/egl/vulkan çalışmadı). ~0,6 sn/kare (1080×1920, gölgeli). `TubeGeometry`'yi `g.scale()` ile yassılaştırma — eğriyi de taşır. Animasyon sadece `useCurrentFrame()` ile, `useFrame()` yasak. Stil testi: `video/src/videos/test-3d/` (2026-11-14)
+- **Seslendirme (TR) seçenekleri:** Piper `tr_TR-dfki-medium` tek TR sesi, veri lisansı **CC BY-NC-SA 4.0 (ticari yasak)** → monetize kanalda yayında kullanılamaz. Kurulum: `/root/.venvs/piper`, model `~/.cache/piper` (HF host'ları: huggingface.co, us.aws.cdn.hf.co …). (2026-11-17)
 - Rastgelelik için `Math.random()` değil `random(seed)` (her karede aynı sonuç).
 - Ses üretimi: `ffmpeg -f lavfi -i anoisesrc=color=brown...` ile rüzgar/ambiyans koddan üretilebiliyor; telifsiz.
 
