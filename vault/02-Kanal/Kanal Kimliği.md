@@ -15,3 +15,6 @@ updated: 2026-11-17
 - **Görsel kimlik:** [[Marka Rehberi]] — avatar 2026-11-17.
 
 Bkz: [[Hedef Kitle]], [[Marka Rehberi]]
+
+## Çalışma tarzı (kullanıcı, 2026-11-17)
+- Kullanıcı veri vermez (görsel/dosya/anahtar). Claude malzemeyi internetten (lisansı uygun kaynaklardan) bulur, **seçenek sunar, kullanıcı seçer**.

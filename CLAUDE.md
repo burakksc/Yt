@@ -12,6 +12,9 @@ Kalıcı hafızamız `vault/`. Oturumlar arası her şey burada.
 ## Kanal kuralı: para kazanmaya uyum
 Kanal (Interestingly Cozy) **tamamen monetizasyona uyumlu** olmalı: ticari kullanıma izin vermeyen (NC) ses modeli, müzik, görsel, font veya araç **kullanma**. Yeni araç/model seçmeden önce lisansını kontrol et → `vault/02-Kanal/Lisans ve Para Kazanma Kuralları.md`.
 
+## Kullanıcı kuralı: veri istemiyorum (2026-11-17)
+Kullanıcı **hiçbir veri (görsel, dosya, API anahtarı) vermek istemiyor.** Malzemeyi (görsel, video, ses, bilgi) internetten **kendin bul**, lisansını kontrol et (sadece ticari kullanıma uygun: CC0 / kamu malı / CC-BY / CC-BY-SA, atıf açıklamaya), sonra kullanıcıya **seçenekler sun: "bu mu, şu mu?"** Flow/AI aracı gerekiyorsa bile önce internet seçenekleri + prompt seçenekleriyle sor.
+
 ## 2. Video: `video/` (Remotion 4)
 - Önizleme `cd video && npm run dev`, kontrol `npm run lint`, tek kare `npx remotion still <Id> out/x.png --frame=N`, render `npx remotion render <Id> out/x.mp4`.
 - Proje kuralları `yt-video` skill'inde; Remotion API'si için resmi `remotion-*` skill'leri (`remotion-best-practices` yönlendirici).
