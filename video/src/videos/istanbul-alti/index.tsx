@@ -226,7 +226,7 @@ const OutroCard: React.FC = () => {
     >
       {/* channel logo (already includes the channel name) */}
       <Img
-        src={staticFile("brand/logo.jpg")}
+        src={staticFile("brand/logo-round.png")}
         style={{
           width: 720,
           height: 720,
