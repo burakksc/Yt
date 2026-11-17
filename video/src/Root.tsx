@@ -1,4 +1,4 @@
-import { Composition } from "remotion";
+import { Composition, Still } from "remotion";
 import { TitleCard } from "./components/TitleCard";
 import { Eksi100, EKSI100_DURATION, EKSI100_FPS } from "./videos/eksi-100";
 import { Eksi100Hikaye } from "./videos/eksi-100-hikaye";
@@ -7,6 +7,7 @@ import { SlingVideo } from "./videos/sling";
 import { BebekSling } from "./videos/bebek-sling";
 import { EsnekSargi } from "./videos/esnek-sargi";
 import { Test3D } from "./videos/test-3d";
+import { Avatar } from "./videos/brand/Avatar";
 import { SARGI_FPS, SARGI_FRAMES } from "./videos/esnek-sargi/story";
 import { BEBEK_FPS, BEBEK_FRAMES } from "./videos/bebek-sling/story";
 import { SLING_FPS, SLING_FRAMES } from "./videos/sling/story";
@@ -142,6 +143,27 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1080}
         height={1920}
+      />
+      <Still
+        id="AvatarNight"
+        component={Avatar}
+        width={800}
+        height={800}
+        defaultProps={{ variant: "night" as const }}
+      />
+      <Still
+        id="AvatarWarm"
+        component={Avatar}
+        width={800}
+        height={800}
+        defaultProps={{ variant: "warm" as const }}
+      />
+      <Still
+        id="AvatarMonogram"
+        component={Avatar}
+        width={800}
+        height={800}
+        defaultProps={{ variant: "monogram" as const }}
       />
     </>
   );

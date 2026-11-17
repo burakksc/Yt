@@ -3,6 +3,11 @@ tags: [kanal, marka, remotion]
 status: taslak
 ---
 # Marka Rehberi
+## Kanal: Interestingly Cozy — avatar (2026-11-17)
+- Konsept: buharı **soru işaretine** dönüşen fincan (cozy + ilginç bilgi), gece gökyüzü + hilal (uyku videoları).
+- Dosyalar: `brand/avatar/interestingly-cozy-avatar-{night,warm,monogram}.png` (800×800). Kod: `video/src/videos/brand/Avatar.tsx` (Still: AvatarNight/AvatarWarm/AvatarMonogram).
+- Palet (night): gece moru `#2a2350`→`#14112b`, sıcak kehribar `#f4b36b`, krem `#fff3dc`, ay `#ffe7a8`. Font: Nunito 900.
+- Seçilen varyant: **?** (kullanıcı kararı bekleniyor)
 Remotion kompozisyonları bu değerleri kullanır (`video/src/Root.tsx` → `defaultProps`).
 
 | Token | Değer | Not |
