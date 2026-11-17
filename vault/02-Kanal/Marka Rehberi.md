@@ -41,5 +41,5 @@ Bkz: [[Kanal Kimliği]]
 
 ## Anlatıcı sesleri (2026-11-17, kullanıcı seçti)
 - **am_michael** (Amerikan erkek) ve **bm_lewis** (İngiliz erkek) — Kokoro-82M, **Apache-2.0** (ticari kullanım OK).
-- İngilizce ve **Türkçe** için aynı iki ses kullanılacak. Türkçe: espeak-ng fonem → Kokoro (`ɫ→l, ʏ→y, ɯ→ə`); Whisper kontrolünde cümle %100 doğru çözüldü. Lewis'te hafif İngiliz "r"si ("daha"→"dahar") duyulabilir.
+- **Türkçe anlatım (kullanıcı seçti):** Chatterbox Multilingual (**MIT**) + Michael referansı (`assets/voice/michael_ref.wav`), `cfg_weight=0` → `scripts/tts/chatterbox_tr.py`. Kokoro+espeak Türkçesi aksanlı bulundu, **kullanma**.
 - Araç: `scripts/tts/kokoro_say.py` (venv `~/.venvs/tts`, Python 3.12 — 3.13'te kokoro≥0.9 kurulmuyor).
