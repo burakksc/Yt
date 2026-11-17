@@ -23,8 +23,8 @@ const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
 const TAG_COLOR: Record<Exclude<Tag, "">, string> = {
   FACT: "#7be0a6",
-  LEGEND: "#ff7a5c",
-  UNVERIFIED: "#ffcf6a",
+  MYTH: "#ff7a5c",
+  MAYBE: "#ffcf6a",
 };
 
 /** On-screen text: each line gets an equal share of the scene, with soft fades. */

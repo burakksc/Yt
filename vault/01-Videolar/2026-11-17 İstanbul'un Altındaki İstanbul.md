@@ -81,10 +81,11 @@ Kelime sayısı ≈ 460 TR → ~3,4 dk (130 k/dk). v2: Dünya Bizim'den Çemberl
 ## 4. Üretim (v1 — seslendirmesiz)
 - Kullanıcı kararı: TR seslendirme yerine **sadece ortam sesleri** (kapı, uğultu…) — monetizasyon için lisans riski sıfır (Piper NC idi).
 - Kompozisyon `IstanbulAlti` (1920×1080, 30 fps, 137 sn, 11 sahne) → `video/src/videos/istanbul-alti/` (`story.ts` metin+süre+etiket+derinlik, `scenes.tsx` çizimler, `index.tsx` HUD).
-- Ekranda: kapı etiketi, **FACT / LEGEND / UNVERIFIED** damgası, sağda derinlik göstergesi (−0 → −12 m), alt-orta İngilizce kısa yazılar.
+- Ekranda: kapı etiketi, **FACT / MYTH / MAYBE** damgası (kullanıcı seçimi; önce FACT/LEGEND/UNVERIFIED idi), sağda derinlik göstergesi (−0 → −12 m), alt-orta İngilizce kısa yazılar.
 - Ses: `scripts/audio/make_istanbul_sfx.py` (tamamı sentez): yeraltı uğultusu + mağara rüzgârı, kapı gıcırtısı, taş kapı gürültüsü, su damlaları, robot servo, boğuk çarşı uğultusu, zincir, tahta gıcırtısı + su şıpırtısı, yankı. −18,7 LUFS.
 - Kontrol karelerinde düzeltilenler: Binbirdirek sayacı altyazıyı örtüyordu; adalar alt yazıya giriyordu; Yenikapı'da etiketler çakışıyordu; ayak izleri damla gibi görünüyordu → gerçek ayak izi şekli.
 - Render: `video/out/ist/istanbul-beneath-istanbul.mp4` — 2:17, 1080p, 29 MB, −18,7 LUFS; ~30 dk sürdü (4 çekirdek). Kullanıcıya gönderildi (2026-11-17).
+- v2: etiketler FACT / MYTH / MAYBE; sonda kanalın kendi logosu (2026-11-17).
 - Lisans: görüntü + ses + font (Inter, OFL) bize ait/serbest → [[Lisans ve Para Kazanma Kuralları]] ✅
 
 Bkz: [[Videolar MOC]], [[Kanal Kimliği]]

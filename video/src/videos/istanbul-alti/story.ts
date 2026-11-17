@@ -2,7 +2,7 @@
 // Sources and fact/legend decisions: vault/01-Videolar/2026-11-17 İstanbul'un Altındaki İstanbul.md
 // scripts/audio/make_istanbul_sfx.py reads the `sec` values below (keep the `sec: N` format).
 
-export type Tag = "FACT" | "LEGEND" | "UNVERIFIED" | "";
+export type Tag = "FACT" | "MYTH" | "MAYBE" | "";
 
 export type AltiSceneId =
   | "intro"
@@ -75,10 +75,10 @@ export const ALTI_STORY: AltiScene[] = [
     id: "legend",
     sec: 14,
     door: "Where do they lead?",
-    tag: "LEGEND",
+    tag: "MYTH",
     depth: 11,
     lines: [
-      "Legend: to Topkapı Palace… and under the sea to the islands.",
+      "Myth: to Topkapı Palace… and under the sea to the islands.",
       "Most are water and air channels. A 9 km network? Never measured.",
     ],
   },
@@ -86,7 +86,7 @@ export const ALTI_STORY: AltiScene[] = [
     id: "bazaar",
     sec: 14,
     door: "Door 3 · Grand Bazaar",
-    tag: "LEGEND",
+    tag: "MYTH",
     depth: 4,
     lines: [
       "A secret entrance behind a shop. Apprentices sworn to silence.",
@@ -97,7 +97,7 @@ export const ALTI_STORY: AltiScene[] = [
     id: "galata",
     sec: 13,
     door: "Door 4 · Galata Tower",
-    tag: "UNVERIFIED",
+    tag: "MAYBE",
     depth: 6,
     lines: [
       "1960 restoration: tunnels and dungeons reported beneath the tower.",

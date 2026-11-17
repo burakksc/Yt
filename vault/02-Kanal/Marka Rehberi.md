@@ -17,6 +17,9 @@ Remotion kompozisyonları bu değerleri kullanır (`video/src/Root.tsx` → `def
 | Vurgu (Shorts) | `#ffcc00` | sarı |
 | Font | Inter / sans-serif | Türkçe karakter desteği şart |
 
+## Bilgi videolarında doğruluk etiketleri (2026-11-17, kullanıcı seçimi)
+- **FACT** (yeşil `#7be0a6`) · **MYTH** (mercan `#ff7a5c`) · **MAYBE** (sarı `#ffcf6a`) — damga stili, sağ üst.
+
 ## Görsel stil (2026-11-13, kullanıcı tercihi)
 - **Tam ekran, detaylı 2D illüstrasyon + hikâye anlatımı.** Düz infografik / kart+rozet stili **istenmiyor** ("çok basit").
 - Referans hissiyat: soğuk mavi palet + sıcak turuncu pencere ışıkları, atmosferik derinlik, iç ve dış mekân sahneleri, ifadeli karakter. (İlham: @guyheadlamp "Absolute Zero" — stil ilhamı, **kopya değil**.)
