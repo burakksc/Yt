@@ -89,3 +89,9 @@ Kelime sayısı ≈ 460 TR → ~3,4 dk (130 k/dk). v2: Dünya Bizim'den Çemberl
 - Lisans: görüntü + ses + font (Inter, OFL) bize ait/serbest → [[Lisans ve Para Kazanma Kuralları]] ✅
 
 Bkz: [[Videolar MOC]], [[Kanal Kimliği]]
+
+## 2026-11-17 — v3: gerçek damla sesi
+- Kullanıcı internetten 8 damla örneğinden **D**'yi seçti: Suikinkutsu (Enkō-ji, Kyoto), Fg2, **kamu malı** (atıf gerekmez).
+- Dosya: `assets/sfx/drips_suikinkutsu_enkoji.m4a` (+ `assets/sfx/CREDITS.md`).
+- `make_istanbul_sfx.py --drips …` sarnıç/Ayasofya/Galata'daki sentetik damlaların yerine kaydı koyuyor (harita sahnesindeki küçük "ping"ler sentetik kaldı).
+- Çıktı: `video/out/ist/istanbul-beneath-istanbul-v3.mp4` (görüntü aynı, sadece ses remux edildi).
