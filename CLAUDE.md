@@ -9,6 +9,9 @@ Kalıcı hafızamız `vault/`. Oturumlar arası her şey burada.
 - Kullanıcı bir tercih/kural söylerse ("hep böyle yap") → hemen vault'a yaz + `retro` feedback'i.
 - Sağlık kontrolü: `node scripts/vault-check.mjs`
 
+## Kanal kuralı: para kazanmaya uyum
+Kanal (Interestingly Cozy) **tamamen monetizasyona uyumlu** olmalı: ticari kullanıma izin vermeyen (NC) ses modeli, müzik, görsel, font veya araç **kullanma**. Yeni araç/model seçmeden önce lisansını kontrol et → `vault/02-Kanal/Lisans ve Para Kazanma Kuralları.md`.
+
 ## 2. Video: `video/` (Remotion 4)
 - Önizleme `cd video && npm run dev`, kontrol `npm run lint`, tek kare `npx remotion still <Id> out/x.png --frame=N`, render `npx remotion render <Id> out/x.mp4`.
 - Proje kuralları `yt-video` skill'inde; Remotion API'si için resmi `remotion-*` skill'leri (`remotion-best-practices` yönlendirici).
