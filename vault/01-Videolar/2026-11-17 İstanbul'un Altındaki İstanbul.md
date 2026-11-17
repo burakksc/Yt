@@ -95,3 +95,9 @@ Bkz: [[Videolar MOC]], [[Kanal Kimliği]]
 - Dosya: `assets/sfx/drips_suikinkutsu_enkoji.m4a` (+ `assets/sfx/CREDITS.md`).
 - `make_istanbul_sfx.py --drips …` sarnıç/Ayasofya/Galata'daki sentetik damlaların yerine kaydı koyuyor (harita sahnesindeki küçük "ping"ler sentetik kaldı).
 - Çıktı: `video/out/ist/istanbul-beneath-istanbul-v3.mp4` (görüntü aynı, sadece ses remux edildi).
+
+## 2026-11-17 — Türkçe sürüm (IstanbulAltiTR)
+- Michael (Chatterbox, MIT) Türkçe anlatım, 11 sahne `video/public/istanbul-alti/tr/*.wav`; metin `scripts/tts/istanbul_tr_narration.json`. Whisper kontrolü: legend/anemas ilk denemede bozuktu → farklı seed ile yeniden üretildi.
+- Ekran yazıları Türkçe (`story_tr.ts`), etiketler GERÇEK / EFSANE / BELKİ. Sarnıçta damla yok: kendi sentez "sakin su + uğultu" (`--no-drips`).
+- Çıktı: `video/out/ist/istanbul-alti-tr.mp4` (2:23). Render 4 parça halinde (`--frames`) yapıldı — makine yeniden başlayınca tek parça render kayboldu.
+- Kalan İngilizce: üst başlık "ISTANBUL BENEATH ISTANBUL", "? room", "THEODOSIAN HARBOR", "NEOLITHIC · ~8,500 YEARS AGO" (sahne içi küçük yazılar).
