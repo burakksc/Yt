@@ -26,7 +26,7 @@ export const ALTI_STORY_TR: AltiScene[] = [
   },
   {
     id: "map",
-    sec: 12,
+    sec: 14,
     door: "Tarihi yarımadanın altında",
     tag: "FACT",
     tagText: "GERÇEK",
@@ -38,7 +38,7 @@ export const ALTI_STORY_TR: AltiScene[] = [
   },
   {
     id: "hagia",
-    sec: 14,
+    sec: 15,
     door: "Kapı 2 · Ayasofya",
     tag: "FACT",
     tagText: "GERÇEK",
@@ -50,7 +50,7 @@ export const ALTI_STORY_TR: AltiScene[] = [
   },
   {
     id: "legend",
-    sec: 14,
+    sec: 16,
     door: "Nereye çıkıyorlar?",
     tag: "MYTH",
     tagText: "EFSANE",
@@ -110,7 +110,7 @@ export const ALTI_STORY_TR: AltiScene[] = [
   },
   {
     id: "truth",
-    sec: 12,
+    sec: 13,
     door: "",
     tag: "",
     tagText: "",
