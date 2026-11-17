@@ -9,6 +9,7 @@ import { EsnekSargi } from "./videos/esnek-sargi";
 import { Test3D } from "./videos/test-3d";
 import { Avatar } from "./videos/brand/Avatar";
 import { IstanbulAlti } from "./videos/istanbul-alti";
+import { CozyFireplace, FIRE_FPS, FIRE_LOOP } from "./videos/cozy-fireplace";
 import { ALTI_FPS, ALTI_FRAMES } from "./videos/istanbul-alti/story";
 import { SARGI_FPS, SARGI_FRAMES } from "./videos/esnek-sargi/story";
 import { BEBEK_FPS, BEBEK_FRAMES } from "./videos/bebek-sling/story";
@@ -172,6 +173,14 @@ export const RemotionRoot: React.FC = () => {
         component={IstanbulAlti}
         durationInFrames={ALTI_FRAMES}
         fps={ALTI_FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="CozyFireplaceLoop"
+        component={CozyFireplace}
+        durationInFrames={FIRE_LOOP}
+        fps={FIRE_FPS}
         width={1920}
         height={1080}
       />

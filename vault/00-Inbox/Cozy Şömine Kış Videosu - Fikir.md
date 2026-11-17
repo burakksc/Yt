@@ -1,7 +1,7 @@
 ---
 tags: [fikir, cozy, ambiyans, referans]
 date: 2026-11-17
-status: fikir
+status: görsel-bekleniyor
 ---
 # Fikir: Kışlık şömine odası — 3 saat (cozy / uyku)
 
@@ -10,6 +10,10 @@ status: fikir
 - Yapı (yt-dlp önizleme karelerinden): **tek sahne, 3 saat boyunca döngü**. Taş şömine + çıtırdayan ateş, karla kaplı pencereler + cam tavandan kar, peri ışıkları, mumlar, iki kupa sıcak çikolata, kanepede uyuyan kedi, köşede süslü ağaç ve hediyeler. Thumbnail: sahnenin kendisi + üstte "Cozy Christmas / FIREPLACE & SOFT JAZZ · 3 HOURS".
 - Ses: önde yakın ateş çıtırtısı; ilk saat yumuşak caz (piyano, Rhodes, kontrbas, fırçalı davul), sonra piyano + arp; "ani yüksek ses yok".
 - Açıklama iyi bir şablon: sahneyi anlat → "What you'll hear" maddeleri → kullanım (uyku/okuma/çalışma) → AI şeffaflık satırı.
+
+## Deneme sonucu (2026-11-17)
+- Kodla çizilen sahne (`video/src/videos/cozy-fireplace/`, `CozyFireplaceLoop`) kullanıcı tarafından **reddedildi** ("çizim gibi, çok kötü"). Animasyon katmanı (ateş titremesi, kıvılcım, kar, peri ışıkları, buhar, kedi nefesi) gerçekçi görselin üstüne uyarlanabilir.
+- **Süre: 1 saat** yeterli (kullanıcı tercihi).
 
 ## Bizim versiyonumuz (Cozy Alley tekniği → [[Ambiyans Videoları]])
 - **Özgün sahne** (kopya değil): kanal logosundaki **uyuyan turuncu kedi** maskotumuz; kitaplıklı kış kulübesi/okuma köşesi, şömine, pencereden kar, küre + ay lambası (logodaki öğeler) → marka bütünlüğü.
