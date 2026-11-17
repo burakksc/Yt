@@ -23,6 +23,12 @@ tags: [bilgi, ambiyans, remotion, ses]
 - Vektör katmanlar (yağmur, buhar, ışık) 4K'da keskin; **fotoğrafın netliği kaynak görsele bağlı** → orijinal yüksek çözünürlüklü görsel `video/public/cozy-alley/alley.png` olarak konmalı (`objectFit: cover`, 16:9).
 - 10 GB'lık dosya sohbetten gönderilemez (~400 MB sınır) → 4K kullanıcının kendi bilgisayarında üretilir.
 
+## Malzeme bulma (kullanıcı veri vermiyor — 2026-11-17)
+- `scripts/media/find_commons.py --q "<arama>" --n 8 --out <klasör>` → Wikimedia Commons; sadece kamu malı / CC0 / CC BY / CC BY-SA; `candidates.json` (atıf metni hazır) + numaralı `sheet.jpg`.
+- `scripts/media/find_images.py` → Openverse (güvenilmez: 401/424/500 hataları sık).
+- Ağ: commons.wikimedia.org, upload.wikimedia.org, **thumb.wikimedia.org** (önizlemeler), api.openverse.org. Wikimedia önizleme genişliği standart olmalı (500 ✓, 480 ✗ → HTTP 400). Paylaşımlı IP'de 429 → bekle-tekrar dene.
+- Sonuç: tarihî konular için **kamu malı tablolar çok iyi** (Aivazovsky, Ziem, Duchetti 1570 haritası…). Cozy için Commons fotoğrafları **yetersiz** (belgesel/ışıksız şömineler) → serbest stok (Pexels/Pixabay) veya AI gerekir.
+
 Araçlar: `scripts/ambience/make_rain_ambience.py`, `scripts/ambience/build_loop_video.sh`. Örnek: [[2026-11-13 Cozy Alley Rain 1 Saat]]
 
 Bkz: [[Bilgi MOC]], [[Remotion Notları]]
