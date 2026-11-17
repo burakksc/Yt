@@ -84,6 +84,7 @@ Kelime sayısı ≈ 460 TR → ~3,4 dk (130 k/dk). v2: Dünya Bizim'den Çemberl
 - Ekranda: kapı etiketi, **FACT / LEGEND / UNVERIFIED** damgası, sağda derinlik göstergesi (−0 → −12 m), alt-orta İngilizce kısa yazılar.
 - Ses: `scripts/audio/make_istanbul_sfx.py` (tamamı sentez): yeraltı uğultusu + mağara rüzgârı, kapı gıcırtısı, taş kapı gürültüsü, su damlaları, robot servo, boğuk çarşı uğultusu, zincir, tahta gıcırtısı + su şıpırtısı, yankı. −18,7 LUFS.
 - Kontrol karelerinde düzeltilenler: Binbirdirek sayacı altyazıyı örtüyordu; adalar alt yazıya giriyordu; Yenikapı'da etiketler çakışıyordu; ayak izleri damla gibi görünüyordu → gerçek ayak izi şekli.
+- Render: `video/out/ist/istanbul-beneath-istanbul.mp4` — 2:17, 1080p, 29 MB, −18,7 LUFS; ~30 dk sürdü (4 çekirdek). Kullanıcıya gönderildi (2026-11-17).
 - Lisans: görüntü + ses + font (Inter, OFL) bize ait/serbest → [[Lisans ve Para Kazanma Kuralları]] ✅
 
 Bkz: [[Videolar MOC]], [[Kanal Kimliği]]
