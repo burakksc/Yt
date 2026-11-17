@@ -1,6 +1,7 @@
 // Illustrated underground scenes, 1920x1080 SVG. Warm torchlight on dark stone.
 import React, { useId } from "react";
 import { interpolate, random, useCurrentFrame, useVideoConfig } from "remotion";
+import { useAltiLang } from "./lang";
 import type { AltiSceneId } from "./story";
 
 const W = 1920;
@@ -672,6 +673,7 @@ const Hagia: React.FC = () => {
 };
 
 const LegendMap: React.FC = () => {
+  const lang = useAltiLang();
   const t = useSec();
   const line = prog(t, 0.6, 5);
   const truth = prog(t, 6.5, 8);
@@ -753,7 +755,11 @@ const LegendMap: React.FC = () => {
             fontSize={30}
             fontWeight={800}
           >
-            {i === 0 ? "Hagia Sophia" : "Topkapı"}
+            {i === 0
+              ? lang === "tr"
+                ? "Ayasofya"
+                : "Hagia Sophia"
+              : "Topkapı"}
           </text>
         </g>
       ))}
@@ -1200,17 +1206,18 @@ const Yenikapi: React.FC = () => {
 };
 
 const Truth: React.FC = () => {
+  const lang = useAltiLang();
   const t = useSec();
   const up = interpolate(t, [3, 11], [900, 0], {
     ...clamp,
     easing: (x) => x * x * (3 - 2 * x),
   });
   const layers = [
-    ["TODAY", "#3a3f55"],
-    ["OTTOMAN", "#4a3d32"],
-    ["BYZANTINE", "#3e3229"],
-    ["ROMAN", "#33291f"],
-    ["NEOLITHIC", "#221a14"],
+    [lang === "tr" ? "BUGÜN" : "TODAY", "#3a3f55"],
+    [lang === "tr" ? "OSMANLI" : "OTTOMAN", "#4a3d32"],
+    [lang === "tr" ? "BİZANS" : "BYZANTINE", "#3e3229"],
+    [lang === "tr" ? "ROMA" : "ROMAN", "#33291f"],
+    [lang === "tr" ? "NEOLİTİK" : "NEOLITHIC", "#221a14"],
   ];
   return (
     <Svg>

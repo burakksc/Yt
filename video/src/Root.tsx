@@ -8,7 +8,8 @@ import { BebekSling } from "./videos/bebek-sling";
 import { EsnekSargi } from "./videos/esnek-sargi";
 import { Test3D } from "./videos/test-3d";
 import { Avatar } from "./videos/brand/Avatar";
-import { IstanbulAlti } from "./videos/istanbul-alti";
+import { IstanbulAlti, IstanbulAltiTR } from "./videos/istanbul-alti";
+import { ALTI_FRAMES_TR } from "./videos/istanbul-alti/story_tr";
 import { CozyFireplace, FIRE_FPS, FIRE_LOOP } from "./videos/cozy-fireplace";
 import { ALTI_FPS, ALTI_FRAMES } from "./videos/istanbul-alti/story";
 import { SARGI_FPS, SARGI_FRAMES } from "./videos/esnek-sargi/story";
@@ -172,6 +173,14 @@ export const RemotionRoot: React.FC = () => {
         id="IstanbulAlti"
         component={IstanbulAlti}
         durationInFrames={ALTI_FRAMES}
+        fps={ALTI_FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="IstanbulAltiTR"
+        component={IstanbulAltiTR}
+        durationInFrames={ALTI_FRAMES_TR}
         fps={ALTI_FPS}
         width={1920}
         height={1080}

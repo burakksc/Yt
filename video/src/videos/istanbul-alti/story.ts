@@ -22,6 +22,7 @@ export type AltiScene = {
   sec: number;
   door: string; // small label top-left, "" = none
   tag: Tag;
+  tagText?: string; // localized stamp text (defaults to tag)
   depth: number; // metres below street level shown on the depth meter
   lines: string[]; // shown one after another
 };

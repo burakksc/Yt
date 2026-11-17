@@ -5,6 +5,7 @@ import {
   AbsoluteFill,
   Img,
   interpolate,
+  Sequence,
   Series,
   spring,
   staticFile,
@@ -12,7 +13,9 @@ import {
   useVideoConfig,
 } from "remotion";
 import { ALTI_SCENES } from "./scenes";
+import { AltiLang } from "./lang";
 import { ALTI_STORY, type AltiScene, type Tag } from "./story";
+import { ALTI_STORY_TR } from "./story_tr";
 
 const { fontFamily } = loadFont("normal", {
   weights: ["500", "700", "800", "900"],
@@ -107,7 +110,7 @@ const DoorLabel: React.FC<{ scene: AltiScene }> = ({ scene }) => {
   );
 };
 
-const Stamp: React.FC<{ tag: Tag }> = ({ tag }) => {
+const Stamp: React.FC<{ tag: Tag; text?: string }> = ({ tag, text }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   if (!tag) return null;
@@ -135,7 +138,7 @@ const Stamp: React.FC<{ tag: Tag }> = ({ tag }) => {
         background: "rgba(10,8,6,0.35)",
       }}
     >
-      {tag}
+      {text || tag}
     </div>
   );
 };
@@ -274,7 +277,7 @@ const ScenePage: React.FC<{ scene: AltiScene; prev: number }> = ({
       />
       <AbsoluteFill style={{ opacity: fade }}>
         <DoorLabel scene={scene} />
-        <Stamp tag={scene.tag} />
+        <Stamp tag={scene.tag} text={scene.tagText} />
         {scene.id !== "outro" && <Depth scene={scene} prev={prev} />}
         {scene.id === "outro" && <OutroCard />}
         <Lines scene={scene} />
@@ -283,25 +286,62 @@ const ScenePage: React.FC<{ scene: AltiScene; prev: number }> = ({
   );
 };
 
-export const IstanbulAlti: React.FC = () => {
+const AltiVideo: React.FC<{
+  story: AltiScene[];
+  soundtrack: string;
+  narrationDir?: string; // one <id>.wav per scene, starts NARRATION_DELAY s in
+  lang: "en" | "tr";
+}> = ({ story, soundtrack, narrationDir, lang }) => {
   const { fps } = useVideoConfig();
+  let at = 0;
   return (
-    <AbsoluteFill style={{ fontFamily, backgroundColor: "#000" }}>
-      <Series>
-        {ALTI_STORY.map((scene, i) => (
-          <Series.Sequence
-            key={scene.id}
-            durationInFrames={scene.sec * fps}
-            premountFor={fps}
-          >
-            <ScenePage
-              scene={scene}
-              prev={i === 0 ? 0 : ALTI_STORY[i - 1].depth}
-            />
-          </Series.Sequence>
-        ))}
-      </Series>
-      <Audio src={staticFile("istanbul-alti/soundtrack.m4a")} />
-    </AbsoluteFill>
+    <AltiLang.Provider value={lang}>
+      <AbsoluteFill style={{ fontFamily, backgroundColor: "#000" }}>
+        <Series>
+          {story.map((scene, i) => (
+            <Series.Sequence
+              key={scene.id}
+              durationInFrames={scene.sec * fps}
+              premountFor={fps}
+            >
+              <ScenePage
+                scene={scene}
+                prev={i === 0 ? 0 : story[i - 1].depth}
+              />
+            </Series.Sequence>
+          ))}
+        </Series>
+        <Audio src={staticFile(soundtrack)} volume={narrationDir ? 0.55 : 1} />
+        {narrationDir &&
+          story.map((scene) => {
+            const from = Math.round((at + NARRATION_DELAY) * fps);
+            at += scene.sec;
+            return (
+              <Sequence key={scene.id} from={from} premountFor={fps}>
+                <Audio src={staticFile(`${narrationDir}/${scene.id}.wav`)} />
+              </Sequence>
+            );
+          })}
+      </AbsoluteFill>
+    </AltiLang.Provider>
   );
 };
+
+const NARRATION_DELAY = 0.6;
+
+export const IstanbulAlti: React.FC = () => (
+  <AltiVideo
+    story={ALTI_STORY}
+    soundtrack="istanbul-alti/soundtrack.m4a"
+    lang="en"
+  />
+);
+
+export const IstanbulAltiTR: React.FC = () => (
+  <AltiVideo
+    story={ALTI_STORY_TR}
+    soundtrack="istanbul-alti/soundtrack_tr.m4a"
+    narrationDir="istanbul-alti/tr"
+    lang="tr"
+  />
+);

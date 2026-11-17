@@ -139,6 +139,20 @@ def lapping(dur=10.0):
     return norm(s) * np.minimum(1, t / 1.5) * np.minimum(1, (dur - t) / 1.5)
 
 
+def still_water(dur=14.0):
+    """Calm water in a stone basin + faint pump-like hum (no drips): several slowly
+    modulated noise bands so it never sounds like a loop."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    s = np.zeros(n)
+    for lo, hi, rate, ph in ((250, 700, 0.11, 0.0), (600, 1600, 0.17, 1.3), (1400, 3200, 0.23, 2.1)):
+        mod = 0.55 + 0.45 * np.sin(2 * np.pi * rate * t + ph) * np.sin(2 * np.pi * rate * 0.37 * t + ph * 2)
+        s += norm(bp(RNG.standard_normal(n), lo, hi)) * mod * (0.9 if lo < 500 else 0.5)
+    hum = np.sin(2 * np.pi * 50 * t) * 0.6 + np.sin(2 * np.pi * 100 * t) * 0.25 + lp(RNG.standard_normal(n), 120) * 3
+    s = norm(s) + norm(hum) * 0.18
+    return norm(s) * np.minimum(1, t / 1.5) * np.minimum(1, (dur - t) / 1.5)
+
+
 def pulse(dur=2.0):
     n = int(dur * SR)
     out = np.zeros(n)
@@ -186,12 +200,18 @@ def main():
     ap.add_argument("--story", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--drips", help="recorded drip file; replaces synth drips in cistern/hagia/galata")
+    ap.add_argument("--no-drips", action="store_true", help="no drips at all: still water in the cistern instead")
     a = ap.parse_args()
     rec = load_mono(a.drips) if a.drips else None
     rec_pos = [0]
 
     def drips(at, dur, gain, synth):
         """Real recording (consecutive, looping slices) if given, else the synth fallback."""
+        if a.no_drips:
+            if dur > 10:  # the cistern: calm water bed instead of drips
+                put(still_water(dur), at, gain * 0.5, -0.2)
+                put(still_water(dur), at + 0.02, gain * 0.4, 0.3)
+            return
         if rec is None:
             synth()
             return
