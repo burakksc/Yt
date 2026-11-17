@@ -3,6 +3,8 @@ tags: [kanal, lisans, monetizasyon]
 updated: 2026-11-17
 ---
 # Lisans ve para kazanma kuralları (Interestingly Cozy)
+**Kullanıcı kuralı (2026-11-17, tekrar vurgulandı):** "Kesinlikle para kazanmayı engelleyecek bir içerik olmasın, videolarımızın hiçbirinde."
+
 **Kullanıcı kuralı (2026-11-17):** "Kanalın tamamen para kazanmaya uyumlu olması gerekiyor." → Her video, yayından önce bu listeden geçer. Ticari kullanıma izin vermeyen (NC / non-commercial) hiçbir şey kullanılmaz.
 
 ## Bileşen bileşen
@@ -19,6 +21,17 @@ updated: 2026-11-17
 - **Özgün içerik:** Tekrarlayan, seri üretim gibi görünen içerik ("inauthentic / repetitious content") para kazanmadan çıkarılabilir. Ambiyans videolarında her videonun kendi görseli, sesi, başlığı olsun; aynı döngüyü farklı başlıkla tekrar yükleme.
 - **AI açıklaması:** Gerçekçi görünen sentetik/değiştirilmiş içerikte (ör. gerçek yer gibi duran AI görüntü) YouTube Studio'daki "değiştirilmiş veya sentetik içerik" kutusu işaretlenir. Yapay zekâ sesi kullanırsak açıklamada belirtilir.
 - **Doğruluk:** Efsaneler "efsane" diye etiketlenir (yanıltıcı içerik riskine karşı).
+
+## Mevcut videoların denetimi (2026-11-17)
+| Video | Görüntü | Ses | Font | Durum / yapılacak |
+|---|---|---|---|---|
+| Istanbul Beneath Istanbul (`IstanbulAlti`) | koddan | sentez | Inter (OFL) | ✅ Temiz. Kafatası çizgi film tarzı (şiddet/korku içeriği değil). James Bond sadece isim olarak geçiyor, görüntü yok ✅ |
+| -100°C hikâye (`Eksi100Hikaye`) | koddan | sentez (rüzgâr, efekt) | Inter | ✅ Temiz. Seslendirme yok. |
+| -100°C v1 (`Eksi100`) | koddan | sentez | Inter | ⚠️ v2 ile aynı konu → **ikisini birden yükleme** (tekrarlı içerik) |
+| Bebek Slingi / Esnek Sargı | koddan | sentez müzik | Nunito (OFL) | ✅ Sağlık/bebek konusu: kaynaklı genel bilgi + "ebene/doktoruna danış" notu var (YouTube tıbbi yanlış bilgi politikasına uygun). |
+| Cozy Alley Rain 1 saat | **kullanıcının Google Flow (Nano Banana) görseli** + kod efektleri | sentez | — | ⚠️ (1) Görsel AI: Flow/Google üretken AI şartlarında ticari kullanım iznini kullanıcı teyit etmeli. (2) Gerçekçi görünen AI sahne → YouTube Studio'da **"değiştirilmiş veya sentetik içerik"** kutusu işaretlenecek. (3) Uzun döngü videolarını seri üretme; her biri farklı görsel+ses olsun. |
+| Kanal logosu | kullanıcının görseli (AI'a benziyor) | — | — | ⚠️ Hangi araçla yapıldıysa ticari kullanım şartı teyit edilmeli. |
+| Sling (rigging), Test3D | — | — | — | Yayınlanmayacak (iptal / test). |
 
 ## Uygulama
 - Her video notuna "Lisans" satırı: ses / müzik / görsel / font kaynağı + lisansı.
