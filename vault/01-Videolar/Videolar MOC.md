@@ -12,7 +12,7 @@ Her video `01-Videolar/YYYY-MM-DD Başlık.md` olarak, `_Templates/Video.md` şa
 | [[2026-11-13 Sling Bağlama Yöntemleri]] | iptal (yanlış yorum) | short | — |
 | [[2026-11-13 Bebek Slingi Bağlama Yöntemleri]] | üretim | short (ebelik) | — |
 | [[2026-11-13 Esnek Sargı Nasıl Bağlanır]] | üretim | short (ebelik, öğretici) | — |
-| [[2026-11-17 İstanbul'un Altındaki İstanbul]] | senaryo | long 16:9 (~3 dk, ses TR / altyazı EN) | — |
+| [[2026-11-17 İstanbul'un Altındaki İstanbul]] | üretim | long 16:9 (2:17, ortam sesi + EN yazı) | — |
 
 Durumlar: `fikir → araştırma → senaryo → üretim → thumbnail → seo → yayında → analiz`
 

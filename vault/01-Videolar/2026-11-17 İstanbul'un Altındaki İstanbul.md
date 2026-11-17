@@ -1,12 +1,12 @@
 ---
 tags: [video, interesting-facts, istanbul, animasyon]
-status: senaryo
+status: üretim
 format: long  # 16:9, ~3 dk
 publish_date:
 youtube_url:
-remotion_comp:
+remotion_comp: IstanbulAlti
 skills_used: [yt-research, yt-script, karpathy-guidelines]
-dil: ses TR, altyazı EN
+dil: seslendirme yok — ortam sesleri + EN ekran yazısı
 ---
 # İstanbul'un Altındaki İstanbul (söylenti mi, gerçek mi?)
 
@@ -77,5 +77,13 @@ Konsept: Kamera İstanbul siluetinden "aşağı iner"; her sahne bir **kapı** (
 | 10 | 3:12–3:22 | Sence hangi tünelin sonunda bir sır var? Yorumlara yaz. | Which tunnel do you think hides a secret? Tell us in the comments. | Kanal logosu (fincan + soru işareti), abone CTA |
 
 Kelime sayısı ≈ 460 TR → ~3,4 dk (130 k/dk). v2: Dünya Bizim'den Çemberlitaş, Galata Kulesi (1960) ve "İskoçya" efsanesi eklendi.
+
+## 4. Üretim (v1 — seslendirmesiz)
+- Kullanıcı kararı: TR seslendirme yerine **sadece ortam sesleri** (kapı, uğultu…) — monetizasyon için lisans riski sıfır (Piper NC idi).
+- Kompozisyon `IstanbulAlti` (1920×1080, 30 fps, 137 sn, 11 sahne) → `video/src/videos/istanbul-alti/` (`story.ts` metin+süre+etiket+derinlik, `scenes.tsx` çizimler, `index.tsx` HUD).
+- Ekranda: kapı etiketi, **FACT / LEGEND / UNVERIFIED** damgası, sağda derinlik göstergesi (−0 → −12 m), alt-orta İngilizce kısa yazılar.
+- Ses: `scripts/audio/make_istanbul_sfx.py` (tamamı sentez): yeraltı uğultusu + mağara rüzgârı, kapı gıcırtısı, taş kapı gürültüsü, su damlaları, robot servo, boğuk çarşı uğultusu, zincir, tahta gıcırtısı + su şıpırtısı, yankı. −18,7 LUFS.
+- Kontrol karelerinde düzeltilenler: Binbirdirek sayacı altyazıyı örtüyordu; adalar alt yazıya giriyordu; Yenikapı'da etiketler çakışıyordu; ayak izleri damla gibi görünüyordu → gerçek ayak izi şekli.
+- Lisans: görüntü + ses + font (Inter, OFL) bize ait/serbest → [[Lisans ve Para Kazanma Kuralları]] ✅
 
 Bkz: [[Videolar MOC]], [[Kanal Kimliği]]
