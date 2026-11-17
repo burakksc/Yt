@@ -11,6 +11,7 @@ updated: 2026-11-17
   - İlginç bilgi videoları ("-100°C'de ne olur" tarzı, hikâyeli illüstrasyon) ve Shorts
 - **Ton:** Sakin, sıcak, meraklı; gece / mum / yağmur / kitap atmosferi.
 - **Dil:** ? (kanal adı İngilizce — videoların dili netleşecek)
+- **Kanal & video açıklama metinleri (TR+EN):** `brand/kanal-metinleri.md` (2026-11-17)
 - **Görsel kimlik:** [[Marka Rehberi]] — avatar 2026-11-17.
 
 Bkz: [[Hedef Kitle]], [[Marka Rehberi]]
