@@ -10,8 +10,8 @@ updated: 2026-11-17
 ## Bileşen bileşen
 | Bileşen | Uygun ✅ | Kullanma ❌ |
 |---|---|---|
-| **Seslendirme** | Kendi sesimiz; ticari kullanıma izin veren ücretli TTS (Google Cloud TTS, Azure Speech resmi API, ElevenLabs **ücretli** plan, OpenAI TTS) — her birinin güncel şartları kullanımdan önce okunup nota yazılır | Piper `tr_TR-dfki-medium` (CC BY-NC-SA), Meta MMS-TTS (NC), Coqui XTTS (CPML, NC), ElevenLabs ücretsiz plan, `edge-tts` (resmi olmayan uç nokta) |
-| **Müzik / ses efekti** | Kendi koddan ürettiğimiz (`make_music_bed.py`, `make_rain_ambience.py`); YouTube Ses Kitaplığı (atıf istiyorsa açıklamaya yaz); satın alınmış ticari lisans | İnternetten indirilen şarkılar, "royalty free" yazan ama lisansı belirsiz parçalar, başka videolardan kesitler |
+| **Seslendirme** | Kendi sesimiz; **Kokoro-82M yerel TTS (Apache-2.0) — kanal sesleri am_michael, bm_lewis**; ticari kullanıma izin veren ücretli TTS (Google Cloud TTS, Azure Speech resmi API, ElevenLabs **ücretli** plan, OpenAI TTS) — her birinin güncel şartları kullanımdan önce okunup nota yazılır | Piper `tr_TR-dfki-medium` (CC BY-NC-SA), Meta MMS-TTS (NC), Coqui XTTS (CPML, NC), ElevenLabs ücretsiz plan, `edge-tts` (resmi olmayan uç nokta) |
+| **Müzik / ses efekti** | Kendi koddan ürettiğimiz; Wikimedia Commons kamu malı / CC0 / CC BY(-SA) kayıtlar (atıf açıklamaya) (`make_music_bed.py`, `make_rain_ambience.py`); YouTube Ses Kitaplığı (atıf istiyorsa açıklamaya yaz); satın alınmış ticari lisans | İnternetten indirilen şarkılar, "royalty free" yazan ama lisansı belirsiz parçalar, başka videolardan kesitler |
 | **Görsel** | Koddan çizdiğimiz (Remotion/SVG/three.js); kendi ürettiğimiz AI görseller (aracın şartları ticari kullanıma izin veriyorsa: Flow/Nano Banana, Higgsfield ücretli plan — kullanımdan önce kontrol) | Google Görseller'den alınanlar, başka kanalların kareleri, referans ekran görüntüleri (sadece ilham) |
 | **Yazı tipi** | Google Fonts (OFL): Inter, Nunito | Lisansı belirsiz fontlar |
 | **Bilgi / metin** | Bilgiler kaynaktan, **cümleler bizim**; kaynaklar açıklamada | Makaleden paragraf kopyalamak, Wikipedia metnini aynen okumak |
