@@ -17,6 +17,8 @@ import { WordCaptions } from "../../components/WordCaptions";
 import { AltiLang } from "./lang";
 import { ALTI_SCENES } from "./scenes";
 import { ALTI_SHORT } from "./story_short";
+import { ALTI_STORY } from "./story";
+import { ALTI_SHORT_EN } from "./story_short_en";
 import { ALTI_STORY_TR } from "./story_tr";
 
 const { fontFamily } = loadFont("normal", {
@@ -45,10 +47,13 @@ const Page: React.FC<{
   id: (typeof ALTI_SHORT)[number]["id"];
   sec: number;
   vsec: number;
-}> = ({ id, sec, vsec }) => {
+  lang: "tr" | "en";
+}> = ({ id, sec, vsec, lang }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const scene = ALTI_STORY_TR.find((s) => s.id === id)!;
+  const scene = (lang === "tr" ? ALTI_STORY_TR : ALTI_STORY).find(
+    (s) => s.id === id,
+  )!;
   const Scene = ALTI_SCENES[id];
   const frames = sec * fps;
   const fade = interpolate(
@@ -65,8 +70,13 @@ const Page: React.FC<{
   });
   const title =
     id === "intro"
-      ? "İstanbul'un altında ne var?"
-      : scene.door.replace(/^Kapı \d · |^En derin kapı · /, "");
+      ? lang === "tr"
+        ? "İstanbul'un altında ne var?"
+        : "What lies beneath Istanbul?"
+      : scene.door.replace(
+          /^Kapı \d · |^En derin kapı · |^Door \d · |^The deepest door · /,
+          "",
+        );
   return (
     <AbsoluteFill>
       {/* the original 16:9 illustration, scaled and centre-cropped */}
@@ -128,7 +138,9 @@ const Page: React.FC<{
             color: GOLD,
           }}
         >
-          ⌂ İSTANBUL'UN ALTINDAKİ İSTANBUL
+          {lang === "tr"
+            ? "⌂ İSTANBUL'UN ALTINDAKİ İSTANBUL"
+            : "⌂ ISTANBUL BENEATH ISTANBUL"}
         </div>
         <div
           style={{
@@ -140,7 +152,7 @@ const Page: React.FC<{
             textShadow: "0 3px 14px rgba(0,0,0,0.9)",
           }}
         >
-          {title.toLocaleUpperCase("tr-TR")}
+          {title.toLocaleUpperCase(lang === "tr" ? "tr-TR" : "en-US")}
         </div>
         {scene.tag && (
           <div
@@ -164,9 +176,14 @@ const Page: React.FC<{
         )}
       </div>
       <Sequence from={Math.round(0.5 * fps)} layout="none">
-        <Audio src={staticFile(`istanbul-alti/tr/${id}.wav`)} />
+        <Audio
+          src={staticFile(
+            `istanbul-alti/${lang === "tr" ? "tr" : "en_short"}/${id}.wav`,
+          )}
+        />
         <WordCaptions
-          text={narration[id]}
+          text={(lang === "tr" ? narration : narrationEn)[id]}
+          locale={lang === "tr" ? "tr-TR" : "en-US"}
           durationInFrames={Math.round(vsec * fps)}
           top={1500}
           highlight="#ffcf6a"
@@ -174,6 +191,19 @@ const Page: React.FC<{
       </Sequence>
     </AbsoluteFill>
   );
+};
+
+// English narration (scripts/tts/istanbul_short_en.json), used for captions.
+const narrationEn: Record<(typeof ALTI_SHORT)[number]["id"], string> = {
+  intro: "They say there's a second Istanbul, hidden beneath the first.",
+  cistern:
+    "The Basilica Cistern. Built in the sixth century, with 336 columns. A water palace bigger than a football pitch.",
+  hagia:
+    "In 2005, robot cameras lowered under Hagia Sophia found 8 wells and a hidden room. About 700 metres of tunnels have been measured so far.",
+  legend:
+    "Legend says these tunnels run to Topkapi Palace, even under the sea to the islands. In reality, most are water and air channels. A 9 km network? It's never been measured.",
+  yenikapi:
+    "In Yenikapi, a metro dig uncovered a Byzantine harbor with 37 shipwrecks. And below it, footprints 8,500 years old.",
 };
 
 // Narration text (scripts/tts/istanbul_tr_narration.json), used for captions.
@@ -201,12 +231,37 @@ export const IstanbulAltiShortTR: React.FC = () => {
               durationInFrames={Math.round(x.sec * fps)}
               premountFor={fps}
             >
-              <Page id={x.id} sec={x.sec} vsec={x.vsec} />
+              <Page id={x.id} sec={x.sec} vsec={x.vsec} lang="tr" />
             </Series.Sequence>
           ))}
         </Series>
         <Audio
           src={staticFile("istanbul-alti/soundtrack_short_tr.m4a")}
+          volume={0.5}
+        />
+      </AbsoluteFill>
+    </AltiLang.Provider>
+  );
+};
+
+export const IstanbulAltiShortEN: React.FC = () => {
+  const { fps } = useVideoConfig();
+  return (
+    <AltiLang.Provider value="en">
+      <AbsoluteFill style={{ fontFamily, backgroundColor: "#0c0a0e" }}>
+        <Series>
+          {ALTI_SHORT_EN.map((x) => (
+            <Series.Sequence
+              key={x.id}
+              durationInFrames={Math.round(x.sec * fps)}
+              premountFor={fps}
+            >
+              <Page id={x.id} sec={x.sec} vsec={x.vsec} lang="en" />
+            </Series.Sequence>
+          ))}
+        </Series>
+        <Audio
+          src={staticFile("istanbul-alti/soundtrack_short_en.m4a")}
           volume={0.5}
         />
       </AbsoluteFill>
