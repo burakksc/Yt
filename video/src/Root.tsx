@@ -9,6 +9,8 @@ import { EsnekSargi } from "./videos/esnek-sargi";
 import { Test3D } from "./videos/test-3d";
 import { Avatar } from "./videos/brand/Avatar";
 import { IstanbulAlti, IstanbulAltiTR } from "./videos/istanbul-alti";
+import { KarTanesiShort } from "./videos/kar-tanesi";
+import { KAR_FPS, KAR_FRAMES } from "./videos/kar-tanesi/story";
 import { ALTI_FRAMES_TR } from "./videos/istanbul-alti/story_tr";
 import { CozyFireplace, FIRE_FPS, FIRE_LOOP } from "./videos/cozy-fireplace";
 import { ALTI_FPS, ALTI_FRAMES } from "./videos/istanbul-alti/story";
@@ -176,6 +178,14 @@ export const RemotionRoot: React.FC = () => {
         fps={ALTI_FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="KarTanesiShort"
+        component={KarTanesiShort}
+        durationInFrames={KAR_FRAMES}
+        fps={KAR_FPS}
+        width={1080}
+        height={1920}
       />
       <Composition
         id="IstanbulAltiTR"
