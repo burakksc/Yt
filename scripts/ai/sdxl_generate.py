@@ -24,11 +24,15 @@ def main():
     ap.add_argument("--h", type=int, default=768)
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--n", type=int, default=1, help="images with consecutive seeds; out gets _sN suffix")
+    ap.add_argument("--fp32", action="store_true", help="full precision (needs >15 GB RAM); default bfloat16")
     a = ap.parse_args()
     torch.set_num_threads(torch.get_num_threads())
+    dtype = torch.float32 if a.fp32 else torch.bfloat16
     unet = UNet2DConditionModel.from_config(BASE, subfolder="unet")
     unet.load_state_dict(load_file(hf_hub_download("ByteDance/SDXL-Lightning", "sdxl_lightning_4step_unet.safetensors")))
-    pipe = StableDiffusionXLPipeline.from_pretrained(BASE, unet=unet, torch_dtype=torch.float32, variant="fp16")
+    unet.to(dtype)
+    pipe = StableDiffusionXLPipeline.from_pretrained(BASE, unet=unet, torch_dtype=dtype, variant="fp16")
+    pipe.enable_attention_slicing()
     pipe.scheduler = EulerDiscreteScheduler.from_config(pipe.scheduler.config, timestep_spacing="trailing")
     for i in range(a.n):
         t = time.time()
