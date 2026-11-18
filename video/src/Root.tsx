@@ -27,6 +27,8 @@ import { CIK_TR } from "./videos/cikolata/story_tr";
 import { CIK_FPS, cikFrames } from "./videos/cikolata/types";
 import { KAR_FPS, KAR_FRAMES } from "./videos/kar-tanesi/story";
 import { ALTI_FRAMES_TR } from "./videos/istanbul-alti/story_tr";
+import { IstanbulAltiShortTR } from "./videos/istanbul-alti/short";
+import { ALTI_SHORT_FRAMES } from "./videos/istanbul-alti/story_short";
 import { CozyFireplace, FIRE_FPS, FIRE_LOOP } from "./videos/cozy-fireplace";
 import { ALTI_FPS, ALTI_FRAMES } from "./videos/istanbul-alti/story";
 import { SARGI_FPS, SARGI_FRAMES } from "./videos/esnek-sargi/story";
@@ -255,6 +257,14 @@ export const RemotionRoot: React.FC = () => {
         component={KarTanesiShort}
         durationInFrames={KAR_FRAMES}
         fps={KAR_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="IstanbulAltiShortTR"
+        component={IstanbulAltiShortTR}
+        durationInFrames={ALTI_SHORT_FRAMES}
+        fps={30}
         width={1080}
         height={1920}
       />

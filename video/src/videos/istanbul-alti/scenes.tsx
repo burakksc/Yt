@@ -553,6 +553,7 @@ const MapScene: React.FC = () => {
 };
 
 const Hagia: React.FC = () => {
+  const lang = useAltiLang();
   const t = useSec();
   const ground = 470;
   const robot = interpolate(t, [1, 6], [ground - 40, ground + 360], clamp);
@@ -664,7 +665,7 @@ const Hagia: React.FC = () => {
           fill="#c9a46a"
           fontWeight={800}
         >
-          ? room
+          {lang === "tr" ? "? oda" : "? room"}
         </text>
       </g>
       <Dust seed="hag" n={25} />
@@ -714,7 +715,7 @@ const LegendMap: React.FC = () => {
         fontSize={28}
         fontStyle="italic"
       >
-        Princes' Islands
+        {lang === "tr" ? "Adalar" : "Princes' Islands"}
       </text>
       {/* legend path */}
       <path
@@ -1061,6 +1062,7 @@ const Anemas: React.FC = () => {
 };
 
 const Yenikapi: React.FC = () => {
+  const lang = useAltiLang();
   const t = useSec();
   const cam = interpolate(t, [0, 12], [0, 400], {
     ...clamp,
@@ -1160,7 +1162,9 @@ const Yenikapi: React.FC = () => {
           fill="#9fb8b6"
           letterSpacing={4}
         >
-          THEODOSIAN HARBOR · 4th–11th c.
+          {lang === "tr"
+            ? "THEODOSIUS LİMANI · 4.–11. yy"
+            : "THEODOSIAN HARBOR · 4th–11th c."}
         </text>
         {/* neolithic footprints */}
         {new Array(8).fill(0).map((_, i) => {
@@ -1198,7 +1202,9 @@ const Yenikapi: React.FC = () => {
           letterSpacing={4}
           opacity={prog(t, 9, 10)}
         >
-          NEOLITHIC · ~8,500 YEARS AGO
+          {lang === "tr"
+            ? "NEOLİTİK · ~8.500 YIL ÖNCE"
+            : "NEOLITHIC · ~8,500 YEARS AGO"}
         </text>
       </g>
     </Svg>
