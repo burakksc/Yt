@@ -59,3 +59,6 @@ Her video açıklamasının sonuna aynen eklenir (kullanıcı kendisi ekliyor; `
 ```
 - Kanal adresi: `@interestinglycozy`.
 - Hashtag'ler alt bilgide 3 tane var → video özel hashtag'leri en fazla 2–3 tane ekle, toplam ≤ 6–7 tut (YouTube başlığın üstünde ilk 3'ü gösterir).
+
+## Yükleme paketi kuralı (kullanıcı, 2026-11-18 — "hiçbir zaman unutma")
+Her video için **başlık + açıklama + SEO etiketleri (tags)** birlikte verilir. Etiketler: 10–15 adet, genişten dara, toplam ≤ 500 karakter, videonun diliyle (TR/EN) + kanal adı; arama hacmi olan ifadeler önce.
