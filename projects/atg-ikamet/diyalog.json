@@ -1,0 +1,18 @@
+[
+ {"id": "01", "who": "turk", "text": "Hocam, yeni bir karar çıkmış. Yabancılara yatırımla ikamet izni mi veriliyor?"},
+ {"id": "02", "who": "yabanci", "text": "Evet, ben de duydum. Türkiye'de yaşamak istiyorum. Ne yapmam gerekiyor?"},
+ {"id": "03", "who": "musavir", "text": "Doğru duymuşsunuz. On sekiz Kasım iki bin yirmi altı tarihli Resmî Gazete'de yayımlanan, on bir bin dokuz yüz doksan dört sayılı Cumhurbaşkanı Kararı ile bu düzenleme yürürlüğe girdi."},
+ {"id": "04", "who": "yabanci", "text": "Ne kadar yatırım yapmam gerekiyor?"},
+ {"id": "05", "who": "musavir", "text": "En az yüz elli bin ABD Doları ya da karşılığı döviz yatırırsanız üç yıllık, en az iki yüz bin dolar yatırırsanız beş yıllık ikamet izni alabilirsiniz."},
+ {"id": "06", "who": "turk", "text": "Bu parayı nereye yatırmak gerekiyor?"},
+ {"id": "07", "who": "musavir", "text": "Dört seçenek var. Türkiye'deki bankalara mevduat, devlet borçlanma araçları, gayrimenkul ya da girişim sermayesi yatırım fonu katılma payı, veya bireysel emeklilik sistemine katkı payı."},
+ {"id": "08", "who": "yabanci", "text": "Parayı sonra hemen çekebilir miyim?"},
+ {"id": "09", "who": "musavir", "text": "Hayır. Yatırımı, ikamet izni süresinin yarısı boyunca tutmanız gerekiyor. Yani üç yıllık izinde bir buçuk yıl, beş yıllık izinde iki buçuk yıl."},
+ {"id": "10", "who": "musavir", "text": "Bunu mevduatta BDDK, devlet borçlanma araçlarında Hazine ve Maliye Bakanlığı, fonlarda Sermaye Piyasası Kurulu, bireysel emeklilikte ise SEDDK tespit ediyor."},
+ {"id": "11", "who": "yabanci", "text": "Ailem de benimle gelebilir mi?"},
+ {"id": "12", "who": "musavir", "text": "Evet. Yabancı eşiniz ile ergin olmayan veya bağımlı yabancı çocuklarınız da bu kapsamda ikamet izni alabilir."},
+ {"id": "13", "who": "turk", "text": "Peki bu izin çalışma hakkı ya da vatandaşlık sağlıyor mu?"},
+ {"id": "14", "who": "musavir", "text": "Hayır. Bu düzenleme Türkiye'de çalışmayan yatırımcılar içindir, çalışma izni yerine geçmez. Ayrıca yatırım yoluyla vatandaşlık kapsamında değerlendirilmez. Başvuruya ilişkin usul ve esasları İçişleri Bakanlığı belirleyecek."},
+ {"id": "15", "who": "yabanci", "text": "Çok teşekkürler. Süreci sizinle yürütmek isterim."},
+ {"id": "16", "who": "musavir", "text": "Memnuniyetle. Detaylı bilgi için ATG Mali Müşavirlik'e ulaşabilirsiniz."}
+]
