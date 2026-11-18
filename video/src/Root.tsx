@@ -13,6 +13,7 @@ import { KarTanesiShort } from "./videos/kar-tanesi";
 import { AtgIkamet } from "./videos/atg-ikamet";
 import { RusyaKoylerEN } from "./videos/rusya-koyler";
 import { BranEN } from "./videos/bran";
+import { CozyNoel, NOEL_FPS, NOEL_FRAMES } from "./videos/cozy-noel";
 import { BRAN_FPS, BRAN_FRAMES } from "./videos/bran/story";
 import { RU_FPS, RU_FRAMES } from "./videos/rusya-koyler/story";
 import { ATG_FPS, ATG_FRAMES } from "./videos/atg-ikamet/timeline";
@@ -197,6 +198,14 @@ export const RemotionRoot: React.FC = () => {
         component={IstanbulAlti}
         durationInFrames={ALTI_FRAMES}
         fps={ALTI_FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="CozyNoel"
+        component={CozyNoel}
+        durationInFrames={NOEL_FRAMES}
+        fps={NOEL_FPS}
         width={1920}
         height={1080}
       />
