@@ -45,3 +45,17 @@ Bkz: [[Kanal Kimliği]]
 - **Türkçe ses ayarı (2026-11-18):** `cfg_weight=0.3, exaggeration=0.65, temperature=0.75` ("canlı") + **atempo 1.08** — kullanıcı: "hepsi olur ama çok az daha hızlı konuşsun". Chatterbox V3 ağırlıkları chatterbox-tts 0.1.7 ile uyumsuz (274 eksik anahtar).
 - **İngilizce:** Kokoro `am_michael`, speed 1.0 (doğal, hızlandırma gerekmiyor).
 - Araç: `scripts/tts/kokoro_say.py` (venv `~/.venvs/tts`, Python 3.12 — 3.13'te kokoro≥0.9 kurulmuyor).
+
+## Açıklama alt bilgisi (kullanıcı kuralı, 2026-11-18 — TÜM videolar)
+Her video açıklamasının sonuna aynen eklenir (kullanıcı kendisi ekliyor; `yt-seo` açıklamayı bununla bitirmeli):
+```
+☕ Interestingly Cozy — interesting facts and cozy atmosphere in one place.
+
+🔔 Subscribe: https://www.youtube.com/@interestinglycozy?sub_confirmation=1
+
+ℹ️ This video is for general information only.
+
+#interestingfacts #didyouknow #interestinglycozy
+```
+- Kanal adresi: `@interestinglycozy`.
+- Hashtag'ler alt bilgide 3 tane var → video özel hashtag'leri en fazla 2–3 tane ekle, toplam ≤ 6–7 tut (YouTube başlığın üstünde ilk 3'ü gösterir).
