@@ -10,6 +10,8 @@ import { Test3D } from "./videos/test-3d";
 import { Avatar } from "./videos/brand/Avatar";
 import { IstanbulAlti, IstanbulAltiTR } from "./videos/istanbul-alti";
 import { KarTanesiShort } from "./videos/kar-tanesi";
+import { AtgIkamet } from "./videos/atg-ikamet";
+import { ATG_FPS, ATG_FRAMES } from "./videos/atg-ikamet/timeline";
 import {
   CikolataEN,
   CikolataEN3D,
@@ -187,6 +189,14 @@ export const RemotionRoot: React.FC = () => {
         fps={ALTI_FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="AtgIkamet"
+        component={AtgIkamet}
+        durationInFrames={ATG_FRAMES}
+        fps={ATG_FPS}
+        width={1080}
+        height={1920}
       />
       <Composition
         id="CikolataEN3D"
