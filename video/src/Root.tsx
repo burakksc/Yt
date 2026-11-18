@@ -10,6 +10,10 @@ import { Test3D } from "./videos/test-3d";
 import { Avatar } from "./videos/brand/Avatar";
 import { IstanbulAlti, IstanbulAltiTR } from "./videos/istanbul-alti";
 import { KarTanesiShort } from "./videos/kar-tanesi";
+import { CikolataEN, CikolataTR } from "./videos/cikolata";
+import { CIK_EN } from "./videos/cikolata/story_en";
+import { CIK_TR } from "./videos/cikolata/story_tr";
+import { CIK_FPS, cikFrames } from "./videos/cikolata/types";
 import { KAR_FPS, KAR_FRAMES } from "./videos/kar-tanesi/story";
 import { ALTI_FRAMES_TR } from "./videos/istanbul-alti/story_tr";
 import { CozyFireplace, FIRE_FPS, FIRE_LOOP } from "./videos/cozy-fireplace";
@@ -178,6 +182,22 @@ export const RemotionRoot: React.FC = () => {
         fps={ALTI_FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="CikolataEN"
+        component={CikolataEN}
+        durationInFrames={cikFrames(CIK_EN)}
+        fps={CIK_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CikolataTR"
+        component={CikolataTR}
+        durationInFrames={cikFrames(CIK_TR)}
+        fps={CIK_FPS}
+        width={1080}
+        height={1920}
       />
       <Composition
         id="KarTanesiShort"

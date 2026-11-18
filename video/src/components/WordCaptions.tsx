@@ -45,7 +45,14 @@ export const WordCaptions: React.FC<{
   durationInFrames: number;
   top?: number;
   highlight?: string;
-}> = ({ text, durationInFrames, top = 1480, highlight = "#ffd23f" }) => {
+  locale?: string; // "tr-TR" (default) or "en-US" — keeps I/İ correct per language
+}> = ({
+  text,
+  durationInFrames,
+  top = 1480,
+  highlight = "#ffd23f",
+  locale = "tr-TR",
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const words = timeWords(text, durationInFrames, fps);
@@ -87,7 +94,7 @@ export const WordCaptions: React.FC<{
               textShadow: "0 8px 18px rgba(0,0,0,0.45)",
             }}
           >
-            {w.text.toLocaleUpperCase("tr-TR")}
+            {w.text.toLocaleUpperCase(locale)}
           </span>
         );
       })}
