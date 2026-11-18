@@ -185,19 +185,6 @@ const ScenePage: React.FC<{ scene: RuScene; index: number }> = ({
             </div>
           </div>
         )}
-        <div
-          style={{
-            position: "absolute",
-            left: 40,
-            top: 1640,
-            fontSize: 24,
-            fontWeight: 700,
-            color: "rgba(255,255,255,0.8)",
-            textShadow: "0 2px 6px #000",
-          }}
-        >
-          AI-generated illustration
-        </div>
       </AbsoluteFill>
       <Sequence from={Math.round(RU_LEAD * fps)} layout="none">
         <Audio src={staticFile(`bran/en/${scene.id}.wav`)} />
