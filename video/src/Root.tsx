@@ -11,6 +11,8 @@ import { Avatar } from "./videos/brand/Avatar";
 import { IstanbulAlti, IstanbulAltiTR } from "./videos/istanbul-alti";
 import { KarTanesiShort } from "./videos/kar-tanesi";
 import { AtgIkamet } from "./videos/atg-ikamet";
+import { RusyaKoylerEN } from "./videos/rusya-koyler";
+import { RU_FPS, RU_FRAMES } from "./videos/rusya-koyler/story";
 import { ATG_FPS, ATG_FRAMES } from "./videos/atg-ikamet/timeline";
 import {
   CikolataEN,
@@ -189,6 +191,14 @@ export const RemotionRoot: React.FC = () => {
         fps={ALTI_FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="RusyaKoylerEN"
+        component={RusyaKoylerEN}
+        durationInFrames={RU_FRAMES}
+        fps={RU_FPS}
+        width={1080}
+        height={1920}
       />
       <Composition
         id="AtgIkamet"
