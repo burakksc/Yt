@@ -8,6 +8,7 @@ import numpy as np
 
 src, out = sys.argv[1], sys.argv[2]
 img = cv2.imread(src)
+img = cv2.copyMakeBorder(img, 40, 0, 40, 40, cv2.BORDER_REPLICATE)  # heads touching the top edge
 h, w = img.shape[:2]
 bg, fg = np.zeros((1, 65), np.float64), np.zeros((1, 65), np.float64)
 if "--tight" in sys.argv:
