@@ -10,7 +10,12 @@ import { Test3D } from "./videos/test-3d";
 import { Avatar } from "./videos/brand/Avatar";
 import { IstanbulAlti, IstanbulAltiTR } from "./videos/istanbul-alti";
 import { KarTanesiShort } from "./videos/kar-tanesi";
-import { CikolataEN, CikolataTR } from "./videos/cikolata";
+import {
+  CikolataEN,
+  CikolataEN3D,
+  CikolataTR,
+  CikolataTR3D,
+} from "./videos/cikolata";
 import { CIK_EN } from "./videos/cikolata/story_en";
 import { CIK_TR } from "./videos/cikolata/story_tr";
 import { CIK_FPS, cikFrames } from "./videos/cikolata/types";
@@ -182,6 +187,22 @@ export const RemotionRoot: React.FC = () => {
         fps={ALTI_FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="CikolataEN3D"
+        component={CikolataEN3D}
+        durationInFrames={cikFrames(CIK_EN)}
+        fps={CIK_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CikolataTR3D"
+        component={CikolataTR3D}
+        durationInFrames={cikFrames(CIK_TR)}
+        fps={CIK_FPS}
+        width={1080}
+        height={1920}
       />
       <Composition
         id="CikolataEN"

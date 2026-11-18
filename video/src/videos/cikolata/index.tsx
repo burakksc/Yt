@@ -4,6 +4,7 @@ import { loadFont } from "@remotion/google-fonts/Inter";
 import { Audio } from "@remotion/media";
 import {
   AbsoluteFill,
+  Img,
   interpolate,
   interpolateColors,
   random,
@@ -879,14 +880,152 @@ const VISUAL: Record<CikScene["id"], React.FC<{ scene: CikScene }>> = {
   loop: LoopV,
 };
 
-const ScenePage: React.FC<{ scene: CikScene; dir: string }> = ({
-  scene,
-  dir,
-}) => {
+// ---------- 3D look: one Cycles still per scene + camera move + overlays ----------
+
+const STILL: Record<CikScene["id"], string> = {
+  hook: "hook",
+  tree: "open",
+  ferment: "ferment",
+  roast: "roast",
+  conche: "conche",
+  temper: "bar",
+  loop: "hook",
+};
+
+const Photo3D: React.FC<{ scene: CikScene }> = ({ scene }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const lang = useLang();
+  const t = frame / fps;
+  const p = interpolate(frame, [0, scene.sec * fps], [0, 1], clamp);
+  const idx = Object.keys(STILL).indexOf(scene.id);
+  // hook pushes in from 1.0, loop pulls back to 1.0 -> seamless loop
+  const zoom =
+    scene.id === "loop"
+      ? interpolate(p, [0, 1], [1.14, 1.0])
+      : interpolate(p, [0, 1], [1.0, 1.14]);
+  const pan = (idx % 2 ? 1 : -1) * interpolate(p, [0, 1], [0, 30]);
+  const v = scene.vsec;
+  const at = (k: number) => CIK_LEAD + v * k;
+  const snap =
+    scene.id === "temper"
+      ? interpolate(t, [at(0.78), at(0.82)], [0, 1], clamp)
+      : 0;
+  const shake = snap > 0 && snap < 1 ? Math.sin(frame * 3) * 8 : 0;
+  return (
+    <AbsoluteFill>
+      <AbsoluteFill
+        style={{ transform: `translate(${pan + shake}px, 0) scale(${zoom})` }}
+      >
+        <Img
+          src={staticFile(`cikolata/3d/${STILL[scene.id]}.png`)}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </AbsoluteFill>
+      {/* floating warm dust, slightly out of focus */}
+      {new Array(26).fill(0).map((_, i) => {
+        const size = 4 + random(`pd${i}`) * 9;
+        const y =
+          (random(`py${i}`) * H -
+            frame * (0.4 + random(`pv${i}`) * 0.6) +
+            H * 4) %
+          H;
+        const x = random(`px${i}`) * W + Math.sin(frame / 45 + i) * 14;
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: x,
+              top: y,
+              width: size,
+              height: size,
+              borderRadius: size,
+              background: "#ffe2b0",
+              opacity: 0.1 + 0.2 * random(`po${i}`),
+              filter: "blur(2px)",
+            }}
+          />
+        );
+      })}
+      <AbsoluteFill
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 62%, rgba(0,0,0,0.7) 100%)",
+        }}
+      />
+      <AbsoluteFill
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.45) 100%)",
+        }}
+      />
+      <AbsoluteFill
+        style={{
+          background: "#fff",
+          opacity: snap > 0 && snap < 1 ? 0.25 * (1 - snap) : 0,
+        }}
+      />
+      {scene.id === "tree" && (
+        <Label
+          x={CX}
+          y={1330}
+          text={L(lang, "~40 beans", "~40 çekirdek")}
+          o={interpolate(t, [at(0.55), at(0.65)], [0, 1], clamp)}
+          size={76}
+        />
+      )}
+      {scene.id === "ferment" && (
+        <Label
+          x={CX}
+          y={1330}
+          text={`${L(lang, "DAY", "GÜN")} ${Math.max(1, Math.min(7, Math.ceil(interpolate(t, [0.5, v * 0.8], [0, 7], clamp))))} / 7`}
+          o={1}
+          size={80}
+        />
+      )}
+      {scene.id === "conche" && (
+        <Label
+          x={CX}
+          y={1330}
+          text="1879 · Rodolphe Lindt"
+          o={interpolate(t, [at(0.55), at(0.65)], [0, 1], clamp)}
+          size={62}
+          color={CREAM}
+        />
+      )}
+      {scene.id === "temper" && (
+        <Label
+          x={CX}
+          y={1330}
+          text={L(lang, "SNAP!", "ÇIT!")}
+          o={snap}
+          size={120}
+        />
+      )}
+      {scene.id === "hook" && (
+        <Label
+          x={CX}
+          y={1330}
+          text={L(lang, "BITTER?", "ACI MI?")}
+          o={interpolate(t, [at(0.4), at(0.5)], [0, 1], clamp)}
+          size={80}
+          color="#ffb08a"
+        />
+      )}
+    </AbsoluteFill>
+  );
+};
+
+const ScenePage: React.FC<{
+  scene: CikScene;
+  dir: string;
+  look: "2d" | "3d";
+}> = ({ scene, dir, look }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const frames = scene.sec * fps;
-  const V = VISUAL[scene.id];
+  const V = look === "3d" ? Photo3D : VISUAL[scene.id];
   const fade =
     scene.id === "hook" || scene.id === "loop"
       ? 1
@@ -911,7 +1050,10 @@ const ScenePage: React.FC<{ scene: CikScene; dir: string }> = ({
   );
 };
 
-const CikolataShort: React.FC<{ lang: Lang }> = ({ lang }) => {
+const CikolataShort: React.FC<{ lang: Lang; look?: "2d" | "3d" }> = ({
+  lang,
+  look = "2d",
+}) => {
   const { fps } = useVideoConfig();
   const story = lang === "tr" ? CIK_TR : CIK_EN;
   return (
@@ -925,7 +1067,7 @@ const CikolataShort: React.FC<{ lang: Lang }> = ({ lang }) => {
               durationInFrames={Math.round(scene.sec * fps)}
               premountFor={fps}
             >
-              <ScenePage scene={scene} dir={`cikolata/${lang}`} />
+              <ScenePage scene={scene} dir={`cikolata/${lang}`} look={look} />
             </Series.Sequence>
           ))}
         </Series>
@@ -937,3 +1079,9 @@ const CikolataShort: React.FC<{ lang: Lang }> = ({ lang }) => {
 
 export const CikolataEN: React.FC = () => <CikolataShort lang="en" />;
 export const CikolataTR: React.FC = () => <CikolataShort lang="tr" />;
+export const CikolataEN3D: React.FC = () => (
+  <CikolataShort lang="en" look="3d" />
+);
+export const CikolataTR3D: React.FC = () => (
+  <CikolataShort lang="tr" look="3d" />
+);

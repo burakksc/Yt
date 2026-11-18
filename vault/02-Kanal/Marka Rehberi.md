@@ -41,5 +41,7 @@ Bkz: [[Kanal Kimliği]]
 
 ## Anlatıcı sesleri (2026-11-17, kullanıcı seçti)
 - **am_michael** (Amerikan erkek) ve **bm_lewis** (İngiliz erkek) — Kokoro-82M, **Apache-2.0** (ticari kullanım OK).
-- **Türkçe anlatım (kullanıcı seçti):** Chatterbox Multilingual (**MIT**) + Michael referansı (`assets/voice/michael_ref.wav`), `cfg_weight=0` → `scripts/tts/chatterbox_tr.py`. Kokoro+espeak Türkçesi aksanlı bulundu, **kullanma**.
+- **Türkçe anlatım (kullanıcı seçti):** Chatterbox Multilingual (**MIT**) + Michael referansı (`assets/voice/michael_ref.wav`) → `scripts/tts/chatterbox_tr.py`. Kokoro+espeak Türkçesi aksanlı bulundu, **kullanma**.
+- **Türkçe ses ayarı (2026-11-18):** `cfg_weight=0.3, exaggeration=0.65, temperature=0.75` ("canlı") + **atempo 1.08** — kullanıcı: "hepsi olur ama çok az daha hızlı konuşsun". Chatterbox V3 ağırlıkları chatterbox-tts 0.1.7 ile uyumsuz (274 eksik anahtar).
+- **İngilizce:** Kokoro `am_michael`, speed 1.0 (doğal, hızlandırma gerekmiyor).
 - Araç: `scripts/tts/kokoro_say.py` (venv `~/.venvs/tts`, Python 3.12 — 3.13'te kokoro≥0.9 kurulmuyor).

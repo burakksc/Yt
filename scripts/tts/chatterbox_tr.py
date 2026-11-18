@@ -30,7 +30,7 @@ def main():
     text = a.text or open(a.text_file, encoding="utf-8").read()
     m = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
     torch.manual_seed(a.seed)
-    wav = m.generate(text, language_id="tr", audio_prompt_path=REF, cfg_weight=0.0, exaggeration=0.45)
+    wav = m.generate(text, language_id="tr", audio_prompt_path=REF, cfg_weight=0.3, exaggeration=0.65, temperature=0.75)
     torchaudio.save(a.out, wav, m.sr)
     print(f"{a.out}: {wav.shape[-1] / m.sr:.1f}s")
 
