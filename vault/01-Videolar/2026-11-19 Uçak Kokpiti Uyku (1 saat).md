@@ -11,3 +11,5 @@ durum: ses seçildi, görsel bekliyor
 - Uygulama: `scripts/3d/models/window_seat.py` (Blender, film_transparent → gökyüzü sonradan) + `scripts/ambience/flight_composite.py` (yıldız, samanyolu, 60 sn periyodik akan bulut, motor strobu, NASA Blue Marble ile İstanbul→Tokyo harita ekranı).
 - Ses: sleep_deep uğultu + piyano **4 = Mixkit "Silent Descent"** (kullanıcı "4 iyi"), çok kısık.
 - Business class 3D koridor görünümü (`business_cabin.py`) stil testi olarak kaldı.
+- **Teslim (2026-11-19):** `teslim/cozy-night-flight-1h-4k.mp4` (LFS, 216 MB, 108000 kare, düzensiz pts yok, kopya kare yok). Şehir ışıkları (kullanıcı: "alttan şehir ışıkları görünsün videodaki gibi") + gerçekçi turbofan motor (lathe profil, mavi kaporta, krom dudak) — "uçak olmamış" geri bildirimi üzerine.
+- Ses: sleep_deep uğultu + Silent Descent ~5 dk'da bir, aralarda sessizlik (piyano sürekli değil).
