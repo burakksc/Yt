@@ -40,7 +40,37 @@ Not: Bu ortamdan `wikipedia.org`, Wikipedia aynaları (cavac.at, kiwix, ipfs), B
 ## Fotoğraflar
 (aşağıda — kontakt sayfası: `video/out/ghost-towns-secenekler.jpg`, meta: `video/out/ghost-towns-secenekler.json`)
 
-PHOTOS_PLACEHOLDER
+| Kod | Yer | Lisans | Yazar | URL |
+|---|---|---|---|---|
+| K1 | Kadykchan | CC BY-SA 2.0 | Laika ac from USA | [Commons](https://commons.wikimedia.org/wiki/File:Laika_ac_Kadykchan_(6480293211).jpg) |
+| K2 | Kadykchan | CC BY-SA 2.0 | Laika ac from USA | [Commons](https://commons.wikimedia.org/wiki/File:Laika_ac_Kadykchan_(6480291477).jpg) |
+| K3 | Kadykchan | CC BY-SA 2.0 | Laika ac from USA | [Commons](https://commons.wikimedia.org/wiki/File:Laika_ac_Kadykchan_(6480171203).jpg) |
+| N1 | Neftegorsk | CC BY 4.0 | МЧС России | [Commons](https://commons.wikimedia.org/wiki/File:Neftegorsk_earthquake_01.jpg) |
+| N2 | Neftegorsk | CC BY 4.0 | МЧС России | [Commons](https://commons.wikimedia.org/wiki/File:Neftegorsk_earthquake_06.jpg) |
+| N3 | Neftegorsk | CC BY 4.0 | МЧС России | [Commons](https://commons.wikimedia.org/wiki/File:Neftegorsk_earthquake_09.jpg) |
+| P1 | Pyramiden (Svalbard, NORWAY) | CC BY-SA 4.0 | Buiobuione | [Commons](https://commons.wikimedia.org/wiki/File:Pyramiden_buiobuione.jpg) |
+| P2 | Pyramiden (Svalbard, NORWAY) | CC BY-SA 4.0 | Buiobuione | [Commons](https://commons.wikimedia.org/wiki/File:Pyramiden_detail.jpg) |
+| P3 | Pyramiden (Svalbard, NORWAY) | CC BY-SA 4.0 | Buiobuione | [Commons](https://commons.wikimedia.org/wiki/File:Pyramiden_settlement_panorama.jpg) |
+| H1 | Khalmer-Yu (ruins) | Public domain | Original uploader was El Salvador at ru.wikipedia | [Commons](https://commons.wikimedia.org/wiki/File:Khalmer-Yu_ruins.jpg) |
+| H2 | Khalmer-Yu river waterfall | CC BY-SA 4.0 | Lopaev89 | [Commons](https://commons.wikimedia.org/wiki/File:%D0%92%D0%BE%D0%B4%D0%BE%D0%BF%D0%B0%D0%B4_%D0%A5%D0%B0%D0%BB%D1%8C%D0%BC%D0%B5%D1%80-%D0%AE.jpg) |
+| M1 | Mologa town, early 1900s | Public domain | Bilinmiyor | [Commons](https://commons.wikimedia.org/wiki/File:%D0%91%D0%B0%D0%B7%D0%B0%D1%80%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%9C%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8._%D0%9D%D0%B0%D1%87._XX_%D0%B2.jpg) |
+| M2 | Rybinsk Reservoir, Poshekhonye shore | Public domain | Василий Глаголев | [Commons](https://commons.wikimedia.org/wiki/File:Rybinsk_Reservoir_003.jpg) |
+| M3 | Rybinsk Reservoir in April | CC BY-SA 3.0 | Dmitry A. Mottl | [Commons](https://commons.wikimedia.org/wiki/File:Rybinsk_Reservoir_in_April_2.jpg) |
+| I1 | Iultin road: ruined bridge | CC BY-SA 4.0 | Thabigd | [Commons](https://commons.wikimedia.org/wiki/File:%D0%90%D0%BC%D0%B3%D1%83%D1%8D%D0%BC%D0%B0.jpg) |
+| I2 | Iultin road: Arctic Circle arch | CC BY-SA 3.0 | Шабанов | [Commons](https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D1%80%D1%83%D0%B3_-_panoramio.jpg) |
+| V1 | Vorkuta: bridge to Rudnik | CC0 | Лапоть | [Commons](https://commons.wikimedia.org/wiki/File:Bridge_to_Rudnik,_Vorkuta.jpg) |
+
+**Lisans özeti:** 17 fotoğraf; **4 serbest (PD/CC0: H1, M1, M2, V1)**, **13 atıf gerekli** (CC BY 4.0: N1–N3; CC BY-SA: K1–K3, P1–P3, H2, M3, I1, I2). Atıflar video açıklamasına (JSON'daki `attribution` alanı hazır). NC/ND olan hiçbiri alınmadı.
+
+**Notlar:**
+- Kadykchan için Commons'ta tek fotoğrafçı var (Laika ac, Flickr, CC BY-SA 2.0) — hepsi yaz fotoğrafı.
+- Neftegorsk fotoğrafları 1995 kurtarma çalışmaları (МЧС России, CC BY 4.0) — "bugünkü hâli" değil, depremin hemen sonrası; N3'te insan yok, N1/N2 havadan.
+- Khalmer-Yu: kasabanın **tek** gerçek fotoğrafı H1 (PD, düşük kalite panorama 5955×1143). H2 aynı adlı nehir şelalesi — kasaba değil.
+- Mologa: kasabanın batmadan önceki fotoğrafı (M1, PD) + rezervuar (M2/M3). Su çekilince çıkan kalıntıların ticari lisanslı fotoğrafı **bulunamadı**.
+- Iultin: kasabanın gerçek fotoğrafı yok (sadece çizimler — stil kuralı gereği alınmadı); yalnızca Iultin yolu (I1, I2).
+- Pyramiden: en güçlü görseller ama **Norveç**; videoda "Rusya'da" denmemeli.
+- Sorulamayan/boş aramalar: "Нефтегорск Сахалин", "Нефтегорск мемориал", "Молога руины" (0 sonuç); "Промышленный Воркута" (yanlış yerler); Amderma, Dikson, Teriberka sonuçları terk edilmiş yapı göstermiyor (havalimanı, buzkıran, bayrak).
+
 
 ## Rakipler
 yt-dlp ile YouTube araması (2026-11-19):
