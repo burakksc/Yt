@@ -32,6 +32,24 @@ SCENES = {
                      (1303, 655, 8), (1254, 660, 7), (1232, 663, 6)],
         src_to_4k=(3840 / 1344, -17),
     ),
+    # NYC-B: modern linear gas fireplace. Painted flames removed (nycB_4k_nofire.png); real flames-over-black
+    # (Mixkit 52304, Free License) are SCREEN-blended onto the glowing bed, sheared to follow its perspective.
+    "nycB": dict(
+        base="video/public/cozy-nyc/nycB_4k_nofire.png",
+        mask="video/public/cozy-nyc/nycB_mask.png",
+        mask_squash=True,
+        topline="video/public/cozy-nyc/nycB_topline.npy",  # glass starts below the black top frame (per column)  # 1080p mask was a non-uniform resize of the 1344x768 source
+        fire="video/public/cozy-nyc/flames_B.mp4",  # 300 f = 6 laps / 60 s
+        fire_mode="screen",
+        fire_box=(3098, 1251, 435, 200),
+        fire_shear=40,  # bed drops 40 px from left to right
+        fire_clip=[(3098, 1246), (3533, 1246), (3533, 1476), (3098, 1436)],
+        fire_light=(3320, 1400),
+        light_gain=0.8,
+        windows=[(20, 110, 2860, 1460, 0.55)],
+        candles_src=[],
+        src_to_4k=(3840 / 1344, -17),
+    ),
 }
 
 
@@ -67,12 +85,23 @@ def main():
         fire.append(fr.astype(np.float32))
     fx, fy, fw, fh = S["fire_box"]
     yy, xx = np.mgrid[0:fh, 0:fw]
-    acx, acy, arx, ary = S["fire_arch"]
+    acx, acy, arx, ary = S.get("fire_arch", (0, -10**6, 1, 1))
     gx, gy = xx + fx, yy + fy
     inside = ((gy >= acy) | (((gx - acx) / arx) ** 2 + ((gy - acy) / ary) ** 2 <= 1)).astype(np.float32)
     top = np.clip(yy / 70.0, 0, 1) ** 1.5  # soft fade into the dark top of the opening (no hard rectangle)
     side = np.clip(np.minimum(xx, fw - 1 - xx) / 14.0, 0, 1)
     fmask = (cv2.GaussianBlur(inside, (0, 0), 3) * top * side)[..., None]
+    screen = S.get("fire_mode") == "screen"
+    if screen:
+        sh = S.get("fire_shear", 0)
+        fh2 = fh + sh
+        mapx = np.tile(np.arange(fw, dtype=np.float32), (fh2, 1))
+        mapy = (np.arange(fh2, dtype=np.float32)[:, None] - sh * np.arange(fw, dtype=np.float32)[None, :] / fw)
+        fire = [cv2.remap(f, mapx, mapy.astype(np.float32), cv2.INTER_LINEAR, borderValue=0) for f in fire]
+        clip = np.zeros((H, W), np.float32)
+        cv2.fillPoly(clip, [np.array(S["fire_clip"], np.int32)], 1.0)
+        clip = cv2.GaussianBlur(clip, (0, 0), 3)[fy:fy + fh2, fx:fx + fw][..., None]
+        fh = fh2
     fire_luma = np.array([f.mean() for f in fire])
     fl_mean = fire_luma.mean()
 
@@ -94,7 +123,15 @@ def main():
 
     # --- snow (periodic): particles per window ---
     wm = cv2.imread(S["mask"], cv2.IMREAD_UNCHANGED)[..., 3]
-    wmask = cv2.resize(wm, (W, H), interpolation=cv2.INTER_LINEAR).astype(np.float32) / 255
+    if S.get("mask_squash"):
+        sy = wm.shape[0] / (H + 34)  # 4K = uniform x2.857 scale of the source, cropped 17 px top/bottom
+        M = np.float32([[wm.shape[1] / W, 0, 0], [0, sy, 17 * sy]])
+        wmask = cv2.warpAffine(wm, M, (W, H), flags=cv2.INTER_LINEAR | cv2.WARP_INVERSE_MAP).astype(np.float32) / 255
+    else:
+        wmask = cv2.resize(wm, (W, H), interpolation=cv2.INTER_LINEAR).astype(np.float32) / 255
+    if S.get("topline"):
+        tl = np.load(S["topline"])
+        wmask[np.arange(H)[:, None] < tl[None, :W]] = 0
     rng = np.random.default_rng(5)
     flakes = []
     layers = [(170, (2.2, 3.6), (40, 70), 0.55, 0), (70, (4.5, 7.0), (90, 140), 0.75, 1), (22, (9, 14), (170, 240), 0.85, 3)]
@@ -122,9 +159,13 @@ def main():
         # fire
         f = fire[fi % len(fire)]
         roi = img[fy:fy + fh, fx:fx + fw]
-        img[fy:fy + fh, fx:fx + fw] = roi * (1 - fmask) + f * 0.92 * fmask
+        if screen:
+            fl = f * clip / 255
+            img[fy:fy + fh, fx:fx + fw] = 255 - (255 - roi) * (1 - fl)
+        else:
+            img[fy:fy + fh, fx:fx + fw] = roi * (1 - fmask) + f * 0.92 * fmask
         lum = fire_luma[fi % len(fire)] / fl_mean
-        img += room_light * (0.08 + 0.10 * (lum - 0.85))
+        img += room_light * S.get("light_gain", 1.0) * (0.08 + 0.10 * (lum - 0.85))
         # candles
         for (x0, y0, halo, core, seed) in candles:
             fl = periodic_noise(t, seed)
