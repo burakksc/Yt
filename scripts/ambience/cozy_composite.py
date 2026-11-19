@@ -50,6 +50,16 @@ SCENES = {
         candles_src=[],
         src_to_4k=(3840 / 1344, -17),
     ),
+    # NYC-F: no fireplace — candlelight + snow over the skyline
+    "nycF": dict(
+        base="video/public/cozy-nyc/nycF_4k.png",
+        mask="video/public/cozy-nyc/nycF_mask.png",
+        mask_squash=True,
+        fire=None,
+        windows=[(0, 100, 3072, 1520, 0.55)],
+        candles_src=[(649, 552, 8), (720, 553, 8)],
+        src_to_4k=(3840 / 1344, -17),
+    ),
 }
 
 
@@ -75,41 +85,44 @@ def main():
     base = cv2.imread(S["base"]).astype(np.float32)
     H, W = base.shape[:2]
 
-    # --- fire clip frames (already cropped to the box size) ---
-    cap = cv2.VideoCapture(S["fire"])
-    fire = []
-    while True:
-        ok, fr = cap.read()
-        if not ok:
-            break
-        fire.append(fr.astype(np.float32))
-    fx, fy, fw, fh = S["fire_box"]
-    yy, xx = np.mgrid[0:fh, 0:fw]
-    acx, acy, arx, ary = S.get("fire_arch", (0, -10**6, 1, 1))
-    gx, gy = xx + fx, yy + fy
-    inside = ((gy >= acy) | (((gx - acx) / arx) ** 2 + ((gy - acy) / ary) ** 2 <= 1)).astype(np.float32)
-    top = np.clip(yy / 70.0, 0, 1) ** 1.5  # soft fade into the dark top of the opening (no hard rectangle)
-    side = np.clip(np.minimum(xx, fw - 1 - xx) / 14.0, 0, 1)
-    fmask = (cv2.GaussianBlur(inside, (0, 0), 3) * top * side)[..., None]
-    screen = S.get("fire_mode") == "screen"
-    if screen:
-        sh = S.get("fire_shear", 0)
-        fh2 = fh + sh
-        mapx = np.tile(np.arange(fw, dtype=np.float32), (fh2, 1))
-        mapy = (np.arange(fh2, dtype=np.float32)[:, None] - sh * np.arange(fw, dtype=np.float32)[None, :] / fw)
-        fire = [cv2.remap(f, mapx, mapy.astype(np.float32), cv2.INTER_LINEAR, borderValue=0) for f in fire]
-        clip = np.zeros((H, W), np.float32)
-        cv2.fillPoly(clip, [np.array(S["fire_clip"], np.int32)], 1.0)
-        clip = cv2.GaussianBlur(clip, (0, 0), 3)[fy:fy + fh2, fx:fx + fw][..., None]
-        fh = fh2
-    fire_luma = np.array([f.mean() for f in fire])
-    fl_mean = fire_luma.mean()
+    has_fire = bool(S.get("fire"))
+    screen = False
+    if has_fire:
+        # --- fire clip frames (already cropped to the box size) ---
+        cap = cv2.VideoCapture(S["fire"])
+        fire = []
+        while True:
+            ok, fr = cap.read()
+            if not ok:
+                break
+            fire.append(fr.astype(np.float32))
+        fx, fy, fw, fh = S["fire_box"]
+        yy, xx = np.mgrid[0:fh, 0:fw]
+        acx, acy, arx, ary = S.get("fire_arch", (0, -10**6, 1, 1))
+        gx, gy = xx + fx, yy + fy
+        inside = ((gy >= acy) | (((gx - acx) / arx) ** 2 + ((gy - acy) / ary) ** 2 <= 1)).astype(np.float32)
+        top = np.clip(yy / 70.0, 0, 1) ** 1.5  # soft fade into the dark top of the opening (no hard rectangle)
+        side = np.clip(np.minimum(xx, fw - 1 - xx) / 14.0, 0, 1)
+        fmask = (cv2.GaussianBlur(inside, (0, 0), 3) * top * side)[..., None]
+        screen = S.get("fire_mode") == "screen"
+        if screen:
+            sh = S.get("fire_shear", 0)
+            fh2 = fh + sh
+            mapx = np.tile(np.arange(fw, dtype=np.float32), (fh2, 1))
+            mapy = (np.arange(fh2, dtype=np.float32)[:, None] - sh * np.arange(fw, dtype=np.float32)[None, :] / fw)
+            fire = [cv2.remap(f, mapx, mapy.astype(np.float32), cv2.INTER_LINEAR, borderValue=0) for f in fire]
+            clip = np.zeros((H, W), np.float32)
+            cv2.fillPoly(clip, [np.array(S["fire_clip"], np.int32)], 1.0)
+            clip = cv2.GaussianBlur(clip, (0, 0), 3)[fy:fy + fh2, fx:fx + fw][..., None]
+            fh = fh2
+        fire_luma = np.array([f.mean() for f in fire])
+        fl_mean = fire_luma.mean()
 
-    # --- light maps ---
-    Y, X = np.mgrid[0:H, 0:W].astype(np.float32)
-    lx, ly = S["fire_light"]
-    d2 = (X - lx) ** 2 + ((Y - ly) * 1.3) ** 2
-    room_light = (np.exp(-d2 / (2 * 900.0 ** 2)) * 0.6 + np.exp(-d2 / (2 * 350.0 ** 2)) * 0.4)[..., None] * np.array([40, 95, 190], np.float32)  # BGR warm
+        # --- light maps ---
+        Y, X = np.mgrid[0:H, 0:W].astype(np.float32)
+        lx, ly = S["fire_light"]
+        d2 = (X - lx) ** 2 + ((Y - ly) * 1.3) ** 2
+        room_light = (np.exp(-d2 / (2 * 900.0 ** 2)) * 0.6 + np.exp(-d2 / (2 * 350.0 ** 2)) * 0.4)[..., None] * np.array([40, 95, 190], np.float32)  # BGR warm
     sx, oy = S["src_to_4k"]
     candles = []
     for i, (cx, cy, r) in enumerate(S["candles_src"]):
@@ -156,16 +169,17 @@ def main():
     for fi in range(frames):
         t = fi / FPS
         img = base.copy()
-        # fire
-        f = fire[fi % len(fire)]
-        roi = img[fy:fy + fh, fx:fx + fw]
-        if screen:
-            fl = f * clip / 255
-            img[fy:fy + fh, fx:fx + fw] = 255 - (255 - roi) * (1 - fl)
-        else:
-            img[fy:fy + fh, fx:fx + fw] = roi * (1 - fmask) + f * 0.92 * fmask
-        lum = fire_luma[fi % len(fire)] / fl_mean
-        img += room_light * S.get("light_gain", 1.0) * (0.08 + 0.10 * (lum - 0.85))
+        if has_fire:
+            # fire
+            f = fire[fi % len(fire)]
+            roi = img[fy:fy + fh, fx:fx + fw]
+            if screen:
+                fl = f * clip / 255
+                img[fy:fy + fh, fx:fx + fw] = 255 - (255 - roi) * (1 - fl)
+            else:
+                img[fy:fy + fh, fx:fx + fw] = roi * (1 - fmask) + f * 0.92 * fmask
+            lum = fire_luma[fi % len(fire)] / fl_mean
+            img += room_light * S.get("light_gain", 1.0) * (0.08 + 0.10 * (lum - 0.85))
         # candles
         for (x0, y0, halo, core, seed) in candles:
             fl = periodic_noise(t, seed)
