@@ -121,14 +121,50 @@ scr = cube("SM_screen", SCR["c"] - Vector((math.sin(-SCR["yaw"]) * 0.0, 0.019, 0
            rot=(0, 0, SCR["yaw"]))
 cube("SM_suitewall", (-0.30, 0.86, 0.8), (1.2, 0.06, 1.6), M["panel"], bevel=0.03, rot=(0, 0, SCR["yaw"]))
 
-# --- outside: engine nacelle + a bit of wing (static relative to us) ---
-bpy.ops.mesh.primitive_cylinder_add(vertices=96, radius=1.2, depth=3.6, location=(-7.2, 3.2, -1.45), rotation=(math.radians(90), 0, 0))
-eng = finish(bpy.context.active_object, M["cowl"], bevel=0.25, seg=6)
-eng.name = "SM_engine"
-bpy.ops.mesh.primitive_torus_add(major_radius=1.18, minor_radius=0.08, location=(-7.2, 5.0, -1.45), rotation=(math.radians(90), 0, 0))
+# --- outside: turbofan nacelle (lathe profile) + pylon + wing root, static relative to us ---
+import bmesh
+EC = Vector((-6.2, 3.9, -0.95))  # engine centre; axis along +Y (front = +Y, we fly forward)
+prof = [(2.3, 1.06), (2.36, 1.15), (2.28, 1.24), (2.0, 1.30), (1.0, 1.32), (0.0, 1.28), (-1.0, 1.18), (-1.7, 1.02), (-1.9, 0.86),
+        (-2.25, 0.70), (-2.35, 0.55), (-2.9, 0.30), (-3.2, 0.04)]  # (y offset, radius): lip, cowl, fan case, core, exhaust cone
+bm = bmesh.new()
+segs = 72
+rings = []
+for (dy, r) in prof:
+    ring = [bm.verts.new((EC.x + r * math.cos(2 * math.pi * k / segs), EC.y + dy, EC.z + r * math.sin(2 * math.pi * k / segs))) for k in range(segs)]
+    rings.append(ring)
+for a_, b_ in zip(rings, rings[1:]):
+    for k in range(segs):
+        bm.faces.new((a_[k], a_[(k + 1) % segs], b_[(k + 1) % segs], b_[k]))
+me = bpy.data.meshes.new("nacelle")
+bm.to_mesh(me)
+bm.free()
+nac = bpy.data.objects.new("SM_engine", me)
+bpy.context.collection.objects.link(nac)
+bpy.context.view_layer.objects.active = nac
+nac.select_set(True)
+sub = nac.modifiers.new("sub", "SUBSURF")
+sub.levels = sub.render_levels = 2
+# materials: cowl blue, lip chrome, rear core grey
+nac.data.materials.append(M["cowl"])
+nac.data.materials.append(M["lip"])
+nac.data.materials.append(mat("M_core", (0.18, 0.18, 0.2), 0.4, metal=0.6))
+nf = len(prof) - 1
+for f in nac.data.polygons:
+    ring_i = f.index // segs
+    f.material_index = 1 if ring_i <= 1 else (2 if ring_i >= 7 else 0)
+    f.use_smooth = True
+# dark fan face inside the intake + spinner
+bpy.ops.mesh.primitive_cylinder_add(vertices=64, radius=1.05, depth=0.05, location=(EC.x, EC.y + 2.0, EC.z), rotation=(math.radians(90), 0, 0))
+finish(bpy.context.active_object, mat("M_fan", (0.02, 0.02, 0.025), 0.35, metal=0.8))
+bpy.ops.mesh.primitive_cone_add(vertices=48, radius1=0.32, depth=0.5, location=(EC.x, EC.y + 2.15, EC.z), rotation=(math.radians(-90), 0, 0))
 finish(bpy.context.active_object, M["lip"])
-bpy.ops.mesh.primitive_cylinder_add(vertices=64, radius=1.1, depth=0.1, location=(-7.2, 5.02, -1.45), rotation=(math.radians(90), 0, 0))
-finish(bpy.context.active_object, mat("M_intake", (0.01, 0.01, 0.012), 0.6))
+# pylon up to the wing, wing root (leading edge toward +Y), seen from slightly above
+# a soft light outside so the blue cowl reads (moon + wing light)
+bpy.ops.object.light_add(type="AREA", location=(EC.x + 1.5, EC.y + 1.0, EC.z + 3.5), rotation=(math.radians(-20), math.radians(25), 0))
+Lw = bpy.context.active_object
+Lw.data.energy = 40
+Lw.data.size = 3
+Lw.data.color = (0.7, 0.8, 1.0)
 
 # --- lights: very dim warm cabin spill, faint moonlight outside ---
 bpy.ops.object.light_add(type="AREA", location=(0.6, 0.4, 2.3))

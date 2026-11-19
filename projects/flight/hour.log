@@ -1,0 +1,20 @@
+/home/user/Yt/scripts/3d/models/window_seat.py:33: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+/home/user/Yt/scripts/3d/models/window_seat.py:194: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  w.use_nodes = True
+07:55.444  render           | Saved: 'projects/flight/cabin4k.png'
+08:00.589  render           | Saved: 'projects/flight/cabin4k_screenmask.png'
+saved projects/flight/cabin4k.png
+frame 0/1800
+frame 150/1800
+frame 300/1800
+frame 450/1800
+frame 600/1800
+frame 750/1800
+frame 900/1800
+frame 1050/1800
+frame 1200/1800
+frame 1350/1800
+frame 1500/1800
+frame 1650/1800
+done video/out/cozy/work4k_flight/loop60.tmp.mp4
