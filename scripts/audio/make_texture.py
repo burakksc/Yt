@@ -33,7 +33,13 @@ def smooth_env(n, rate, lo, hi, seed):
     xs = np.linspace(0, n, k)
     e = np.interp(np.arange(n), xs, pts)
     w = int(SR / max(rate, 0.05))
-    return np.convolve(e, np.ones(w) / w, mode="same")
+    c = np.cumsum(np.pad(e, (w // 2, w - w // 2), mode="edge"))  # O(n) moving average
+    return (c[w:] - c[:-w])[:n] / w
+
+
+def movavg(x, w):
+    c = np.cumsum(np.pad(x, (w // 2, w - w // 2), mode="edge"))
+    return (c[w:] - c[:-w])[:len(x)] / w
 
 
 def sweep_bandpass(x, centers, q, block=4096):
@@ -66,14 +72,14 @@ def make(kind, n):
         R = np.roll(L, 300) * 0.9 + 0.1 * L
         return L, R
     if kind == "jet_cabin":
-        b = np.cumsum(wn); b -= np.convolve(b, np.ones(2205) / 2205, mode="same")
+        b = np.cumsum(wn); b -= movavg(b, 2205)
         roar = band(b, 25, 900); roar /= np.abs(roar).max()
         air = band(rng.standard_normal(n), 1500, 7000); air /= np.abs(air).max()
         e = 0.92 + 0.08 * smooth_env(n, 0.1, 0, 1, 4)
         L = (0.7 * roar + 0.06 * air) * e
         return L, np.roll(L, 120)
     if kind == "cockpit":
-        b = np.cumsum(wn); b -= np.convolve(b, np.ones(2205) / 2205, mode="same")
+        b = np.cumsum(wn); b -= movavg(b, 2205)
         roar = band(b, 30, 1500); roar /= np.abs(roar).max()
         air = band(rng.standard_normal(n), 800, 5000); air /= np.abs(air).max()
         fan = 0.04 * np.sin(2 * np.pi * 400 * t) * (0.8 + 0.2 * np.sin(2 * np.pi * 0.3 * t)) + 0.02 * np.sin(2 * np.pi * 800 * t)
@@ -86,7 +92,7 @@ def make(kind, n):
         return L, np.roll(L, 90)
     if kind == "prop":
         base = sum(a * np.sin(2 * np.pi * f * t + rng.uniform(0, 6)) for f, a in ((92, 1.0), (184, 0.45), (93.3, 0.6), (276, 0.2)))
-        b = np.cumsum(wn); b -= np.convolve(b, np.ones(2205) / 2205, mode="same")
+        b = np.cumsum(wn); b -= movavg(b, 2205)
         roar = band(b, 30, 700); roar /= np.abs(roar).max()
         L = 0.25 * base / 2.2 + 0.55 * roar
         return L, np.roll(L, 150)
