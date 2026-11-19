@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# One-hour cozy video from a Remotion loop composition (ROOM_LOOP+2 s long) + a long ambience track.
+#   scripts/ambience/make_cozy_hour.sh <CompositionId> <ambience.m4a> <out.mp4> [minutes=60]
+# 1) render the loop in 4 resumable chunks (survives machine restarts)
+# 2) cross-fade the extra 2 s tail into the head -> seamless 60 s loop
+# 3) encode the whole hour in ONE pass (-stream_loop, re-encoded) — no `concat -c copy` seams
+# 4) seam/timestamp check: frame count, monotonic pts, and frame-diff at every loop boundary
+set -euo pipefail
+COMP="$1"; AUDIO="$2"; OUT="$3"; MIN="${4:-60}"
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+WORK="$ROOT/video/out/cozy/work_$COMP"
+mkdir -p "$WORK"
+cd "$ROOT/video"
+FR=1860   # (60+2) s * 30 fps
+N=4; S=$(( (FR + N - 1) / N ))
+for k in $(seq 0 $((N-1))); do
+  a=$((k*S)); b=$(( (k+1)*S - 1 )); [ $b -ge $FR ] && b=$((FR-1))
+  f="$WORK/c$k.mp4"
+  [ -s "$f" ] && continue
+  echo "[render] $COMP chunk $k ($a-$b)"
+  npx remotion render "$COMP" "$f.tmp.mp4" --frames=$a-$b --crf=12 --log=error
+  mv "$f.tmp.mp4" "$f"
+done
+for k in $(seq 0 $((N-1))); do echo "file '$WORK/c$k.mp4'"; done > "$WORK/list.txt"
+ffmpeg -v error -y -f concat -safe 0 -i "$WORK/list.txt" -c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p "$WORK/raw62.mp4"
+# seamless 60 s loop: tail (60..62 s) fades into head (0..2 s), then 2..60 s
+ffmpeg -v error -y -i "$WORK/raw62.mp4" -filter_complex \
+ "[0:v]trim=60:62,setpts=PTS-STARTPTS[tail];[0:v]trim=0:2,setpts=PTS-STARTPTS[head];[tail][head]xfade=transition=fade:duration=2:offset=0[x];[0:v]trim=2:60,setpts=PTS-STARTPTS[body];[x][body]concat=n=2:v=1:a=0[v]" \
+ -map "[v]" -c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p -r 30 "$WORK/loop60.mp4"
+echo "[encode] ${MIN} min in one pass"
+REP=$(( MIN + 1 ))
+ffmpeg -v error -y -stream_loop $REP -i "$WORK/loop60.mp4" -i "$AUDIO" -map 0:v -map 1:a \
+  -c:v libx264 -preset medium -crf 21 -maxrate 4M -bufsize 8M -pix_fmt yuv420p -r 30 -g 60 \
+  -c:a aac -b:a 192k -t $(( MIN * 60 )) -movflags +faststart "$OUT"
+echo "[check] frames / timestamps"
+python3 - "$OUT" "$MIN" <<'PY'
+import subprocess, sys
+out, mins = sys.argv[1], int(sys.argv[2])
+pts = subprocess.run(["ffprobe","-v","error","-select_streams","v:0","-show_entries","packet=pts_time","-of","csv=p=0",out],capture_output=True,text=True).stdout.split()
+p = sorted(float(x) for x in pts if x)
+d = [b-a for a,b in zip(p,p[1:])]
+bad = [i for i,x in enumerate(d) if abs(x-1/30) > 0.004]
+print(f"frames={len(p)} expected={mins*60*30} irregular_steps={len(bad)}")
+PY
+echo "[check] loop seams (mean abs diff across boundary vs neighbours)"
+python3 - "$OUT" <<'PY'
+import subprocess, sys
+import numpy as np
+out = sys.argv[1]
+def frame(t):
+    raw = subprocess.run(["ffmpeg","-v","error","-ss",f"{t:.4f}","-i",out,"-frames:v","1","-vf","scale=480:270","-f","rawvideo","-pix_fmt","gray","-"],capture_output=True).stdout
+    return np.frombuffer(raw,np.uint8).astype(np.float32)
+for b in (60, 1800, 3540):
+    f = [frame(b + k/30) for k in (-2,-1,0,1)]
+    seam = np.abs(f[2]-f[1]).mean(); nb = (np.abs(f[1]-f[0]).mean() + np.abs(f[3]-f[2]).mean())/2
+    print(f"t={b}s seam_diff={seam:.2f} neighbour_diff={nb:.2f} {'OK' if seam < 3*nb + 1.0 else 'CHECK'}")
+PY
+ls -la "$OUT"

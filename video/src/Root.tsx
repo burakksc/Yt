@@ -13,7 +13,7 @@ import { KarTanesiShort } from "./videos/kar-tanesi";
 import { AtgIkamet } from "./videos/atg-ikamet";
 import { RusyaKoylerEN } from "./videos/rusya-koyler";
 import { BranEN } from "./videos/bran";
-import { CozyNoel, NOEL_FPS, NOEL_FRAMES } from "./videos/cozy-noel";
+import { CozyRoom, ROOM_FPS, ROOM_FRAMES } from "./videos/cozy-room";
 import { BRAN_FPS, BRAN_FRAMES } from "./videos/bran/story";
 import { RU_FPS, RU_FRAMES } from "./videos/rusya-koyler/story";
 import { ATG_FPS, ATG_FRAMES } from "./videos/atg-ikamet/timeline";
@@ -203,11 +203,30 @@ export const RemotionRoot: React.FC = () => {
       />
       <Composition
         id="CozyNoel"
-        component={CozyNoel}
-        durationInFrames={NOEL_FRAMES}
-        fps={NOEL_FPS}
+        component={CozyRoom}
+        durationInFrames={ROOM_FRAMES}
+        fps={ROOM_FPS}
         width={1920}
         height={1080}
+        defaultProps={{ scene: "noel" }}
+      />
+      <Composition
+        id="CozyNycB"
+        component={CozyRoom}
+        durationInFrames={ROOM_FRAMES}
+        fps={ROOM_FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ scene: "nycB" }}
+      />
+      <Composition
+        id="CozyNycF"
+        component={CozyRoom}
+        durationInFrames={ROOM_FRAMES}
+        fps={ROOM_FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{ scene: "nycF" }}
       />
       <Composition
         id="BranEN"
