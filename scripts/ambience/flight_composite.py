@@ -34,6 +34,47 @@ def tile_noise(h, w, octaves, seed, base=4):
     return (out - out.min()) / (out.max() - out.min() + 1e-9)
 
 
+def periodic_field(n, sigma, seed):
+    """n x n noise, periodic in both axes (FFT low-pass), 0..1"""
+    rng = np.random.default_rng(seed)
+    F = np.fft.fft2(rng.standard_normal((n, n)))
+    k = np.fft.fftfreq(n)
+    K2 = k[:, None] ** 2 + k[None, :] ** 2
+    f = np.real(np.fft.ifft2(F * np.exp(-K2 * (n / sigma) ** 2 / 2)))
+    return ((f - f.min()) / (f.max() - f.min())).astype(np.float32)
+
+
+def city_map(n=4096, seed=7):
+    """Top-down night city lights, tileable in x and y: street grid dots, arterials, dark parks/river."""
+    rng = np.random.default_rng(seed)
+    dens = periodic_field(n, 6, seed) * 0.7 + periodic_field(n, 20, seed + 1) * 0.3
+    dens = np.clip((dens - 0.38) * 2.4, 0, 1)
+    river = np.abs(periodic_field(n, 3, seed + 2) - 0.5) < 0.012
+    dens[river] = 0
+    m = np.zeros((n, n, 3), np.float32)
+    sod, wht = np.array([40, 150, 255], np.float32), np.array([215, 225, 245], np.float32)
+    sp = 22
+    for axis in (0, 1):
+        for line in range(0, n, sp):
+            jit = (line * 7919) % 5 - 2
+            idx = np.arange(0, n, 5)
+            keep = rng.random(len(idx)) < dens[(line + jit) % n, idx] if axis == 0 else rng.random(len(idx)) < dens[idx, (line + jit) % n]
+            col = np.where(rng.random(len(idx))[:, None] < 0.72, sod, wht) * rng.uniform(0.5, 1.0, (len(idx), 1))
+            if axis == 0:
+                m[(line + jit) % n, idx[keep]] = col[keep]
+            else:
+                m[idx[keep], (line + jit) % n] = col[keep]
+    for i in range(5):  # arterial roads / highways: continuous brighter orange lines, periodic
+        y0 = rng.integers(0, n)
+        sl = rng.choice([0, 0.5, -0.5, 0.25])
+        xs = np.arange(n)
+        ys = (y0 + sl * xs).astype(int) % n
+        m[ys, xs] = np.maximum(m[ys, xs], sod * 0.6 * dens[ys, xs][:, None])
+    glow = cv2.GaussianBlur(m, (0, 0), 6)
+    m = cv2.GaussianBlur(m, (0, 0), 1.0) * 3.0 + glow * 6.0
+    return np.clip(m, 0, 255)
+
+
 def screen_map(w, h):
     """Our own flight map (NASA Blue Marble, public domain) Istanbul -> Tokyo."""
     world = cv2.imread("video/public/rusya-gizli/img/world.jpg")  # 3840x1920 equirectangular
@@ -78,6 +119,7 @@ def main():
     ap.add_argument("--audio")
     ap.add_argument("--still")
     ap.add_argument("--crf", type=int, default=16)
+    ap.add_argument("--ground", default="city", choices=["city", "clouds"])
     a = ap.parse_args()
     cab = cv2.imread(a.cabin, cv2.IMREAD_UNCHANGED).astype(np.float32)
     H, W = cab.shape[:2]
@@ -124,6 +166,22 @@ def main():
     milky = tile_noise(h, w, 5, 9, base=3)
     band = np.exp(-((np.arange(w)[None, :] - 0.35 * w - (yy - 0.2 * h) * 0.6) / (0.18 * w)) ** 2)
     sky += (milky ** 2 * band * (yy < hor))[..., None] * np.array([40, 34, 30], np.float32)
+    # city lights below (perspective ground plane, tileable map scrolled one tile per 60 s)
+    city = city_map() if a.ground == "city" else None
+    if city is not None:
+        N = city.shape[0]
+        city_small = cv2.GaussianBlur(city, (0, 0), 2.5)  # pre-filter for far rows (less shimmer)
+        SS = 2  # supersample the ground
+        rr = (np.arange((h - hor) * SS, dtype=np.float32) / SS + 1.5)[:, None]  # rows below the horizon
+        xx = (np.arange(w * SS, dtype=np.float32) / SS - w / 2)[None, :]
+        HC, FOC = 2600.0, 1900.0 * w / 740  # camera altitude (map px), focal (px)
+        gx0 = xx * HC / rr / 2.0
+        gy = np.broadcast_to(FOC * HC / rr / 2.0, gx0.shape)
+        mapy = np.mod(gy, N).astype(np.float32)
+        far = np.clip(1 - rr / (0.12 * (h - hor)), 0, 1)  # use the blurred map near the horizon
+        haze = np.clip(rr / SS / (0.10 * h), 0, 1) ** 0.8
+        dome = (np.exp(-np.arange(h - hor, dtype=np.float32) / (0.05 * h))[:, None, None] * np.array([20, 45, 80], np.float32))  # warm city glow at the horizon
+        sky += np.concatenate([np.exp(-(hor - np.arange(hor, dtype=np.float32)) / (0.05 * h))[:, None, None] * np.array([12, 28, 50], np.float32), np.zeros((h - hor, 1, 3), np.float32)])
     # cloud deck tile (twice the window width, tiles horizontally), moonlit tops
     cw = 2 * w
     cl = tile_noise(h - hor, cw, 6, 4, base=6)
@@ -154,10 +212,20 @@ def main():
         for x, y, bb, k in zip(st_x.astype(int), st_y.astype(int), st_b, tw):
             star_layer[y, x] = bb * k
         out += cv2.GaussianBlur(star_layer, (0, 0), 1.1)[..., None] * 2.2
-        off = int(round((t / P) * cw)) % cw  # one full tile per 60 s, moving left (we fly forward = right)
-        sl = np.roll(cloud_rgb, -off, axis=1)[:, :w]
-        lower = out[hor:]
-        out[hor:] = lower * (1 - fade) + (lower * 0.3 + sl) * fade
+        if city is not None:
+            mapx = np.mod(gx0 + (t / P) * N, N).astype(np.float32)  # one tile per 60 s
+            near = cv2.remap(city, mapx, mapy, cv2.INTER_LINEAR, borderMode=cv2.BORDER_WRAP)
+            farc = cv2.remap(city_small, mapx, mapy, cv2.INTER_LINEAR, borderMode=cv2.BORDER_WRAP)
+            g = near * (1 - far[..., None]) + farc * far[..., None]
+            g = cv2.resize(g, (w, h - hor), interpolation=cv2.INTER_AREA)
+            lower = out[hor:]
+            hz = haze[::SS][: h - hor, :1, None]
+            out[hor:] = lower * 0.15 + g * (0.5 + 1.9 * hz) + dome
+        else:
+            off = int(round((t / P) * cw)) % cw  # one full tile per 60 s, moving left (we fly forward = right)
+            sl = np.roll(cloud_rgb, -off, axis=1)[:, :w]
+            lower = out[hor:]
+            out[hor:] = lower * (1 - fade) + (lower * 0.3 + sl) * fade
         # anti-collision strobe: two quick white flashes every 1.5 s, lights the lower window (engine area)
         ph = (t % 1.5)
         flash = 1.0 if ph < 0.05 or 0.12 < ph < 0.17 else 0.0
