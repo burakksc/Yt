@@ -62,3 +62,6 @@ Her video açıklamasının sonuna aynen eklenir (kullanıcı kendisi ekliyor; `
 
 ## Yükleme paketi kuralı (kullanıcı, 2026-11-18 — "hiçbir zaman unutma")
 Her video için **başlık + açıklama + SEO etiketleri (tags)** birlikte verilir. Etiketler: 10–15 adet, genişten dara, toplam ≤ 500 karakter, videonun diliyle (TR/EN) + kanal adı; arama hacmi olan ifadeler önce.
+
+## Önizleme kuralı (kullanıcı, 2026-11-19 — zorunlu)
+Uzun (ambiyans/1 saatlik) videoya başlamadan önce **30–40 saniyelik önizleme** üret ve kullanıcıya onaylat. Onay yoksa uzun render yok. (Sebep: 1 saatlik Noel/NY videoları ateş efekti yüzünden çöpe gitti, kullanıcı saatlerce bekledi.)
