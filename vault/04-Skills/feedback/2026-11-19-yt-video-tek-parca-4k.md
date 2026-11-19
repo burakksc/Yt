@@ -13,3 +13,5 @@ tür: kullanıcı düzeltmesi
 - **Piyano:** sentez sinüs piyano (make_fire_ambience) beğenilmedi ("farklı bir piyano melodisi"). Yeni: `scripts/audio/compose_piano.py` = kendi bestemiz + FluidR3 (MIT) gerçek piyano örnekleri, fluidsynth. 4 tarz örnek gönderildi (arpej/hüzünlü/vals/ninni).
 - Freesound CDN (cdn.freesound.org) 403 veriyor; Pexels Cloudflare 403. Rawpixel ücretsiz görsellerde filigran var → kullanma.
 - Rusya 7 yer Short'u kullanıcı iptal etti ("bu biraz sıkıntılı olabilir, farklı kurgulayalım").
+- **Piyano tercihi (2026-11-19):** kendi bestemiz (FluidR3) de beğenilmedi; kullanıcı **"yumuşak caz piyano"** seçti. Kaynak: Mixkit Stock Music (gerçek kayıt) — 6 örnek: Lounging By Moonlight (40), Lonely in the Bar (518), Nostalgic Night (1112), Smooth Like Jazz (24), Sleepy Cat (135), Lost in a Dream (1033). Uzun videoda parçaları sırayla, aralarında yumuşak geçişle kullan.
+- Wikimedia upload'ta CC0 Chopin/Satie kayıtları var (Musopen) ama 429 nedeniyle indirilemedi.
