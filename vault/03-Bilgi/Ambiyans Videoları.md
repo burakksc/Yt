@@ -32,3 +32,10 @@ tags: [bilgi, ambiyans, remotion, ses]
 Araçlar: `scripts/ambience/make_rain_ambience.py`, `scripts/ambience/build_loop_video.sh`. Örnek: [[2026-11-13 Cozy Alley Rain 1 Saat]]
 
 Bkz: [[Bilgi MOC]], [[Remotion Notları]]
+
+## 2026-11-19 — Cozy oda videoları (Noel, New York B/F)
+- Görsel: SDXL fotogerçekçi oda (projects/cozy-noel, projects/cozy-nyc) → `CozyRoom` (video/src/videos/cozy-room): gerçek alev pikselleri SVG displacement ile dalgalanıyor, mumlar titriyor, pencere camı maskesiyle (geometrik çıta/kemer maskesi) 3 katman kar.
+- Ses: `scripts/audio/make_fire_ambience.py` (çıtırtı + alçak piyano + rüzgâr, `--city` şehir uğultusu, `--fire 0` şöminesiz). Kullanıcı şömine sesini beğendi.
+- Üretim: `scripts/ambience/cozy_pipeline.sh` → `make_cozy_hour.sh` (12 parça render, düşük bellekli döngü geçişi, 1 saat tek geçişte veryfast kodlama, ardışık kare eklem kontrolü) → `scripts/media/split_for_send.sh` (380 MiB parça + .bat/.command + sha256).
+- **Ders:** bulut makinesi oturum boşta kalınca uyuyor/yeniden başlıyor → uzun işler sadece aktif turda ilerliyor; işleri kısa, devam ettirilebilir adımlara böl ve turda bekleyerek takip et.
+- Sonuç: Noel 1,03 GB, NY-B 1,8 GB, NY-F 1,2 GB; 108.000 kare, eklemlerde tekrar kare yok.
