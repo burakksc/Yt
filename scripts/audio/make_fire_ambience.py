@@ -63,6 +63,7 @@ def main():
     ap.add_argument("--no-piano", action="store_true")
     ap.add_argument("--city", type=float, default=0.0, help="distant city hum level (0 = none, ~1 = subtle)")
     ap.add_argument("--fire", type=float, default=1.0, help="fire level (0 = no fireplace)")
+    ap.add_argument("--roar", type=float, default=1.0, help="low fire rumble/hum level relative to crackles (user: 0.5)")
     a = ap.parse_args()
     total = int(a.minutes * 60 * SR)
     block = 30 * SR
@@ -96,8 +97,8 @@ def main():
         breathe = 0.65 + 0.2 * np.sin(2 * np.pi * tt / 7.3 + phase[0]) + 0.15 * np.sin(2 * np.pi * tt / 2.9 + phase[1])
         hiss = fft_filter(RNG.standard_normal(n), 2500, 9000)
         hiss /= np.abs(hiss).max() + 1e-9
-        L = (0.28 * roar * breathe + 0.025 * hiss) * a.fire
-        R = (0.28 * np.roll(roar, 37) * breathe + 0.025 * np.roll(hiss, 91)) * a.fire
+        L = (0.28 * a.roar * roar * breathe + 0.025 * hiss) * a.fire
+        R = (0.28 * a.roar * np.roll(roar, 37) * breathe + 0.025 * np.roll(hiss, 91)) * a.fire
         # crackles: bursty Poisson process
         rate = 7 * (0.6 + 0.4 * np.sin(2 * np.pi * tt[:: SR // 10] / 11 + phase[2]) ** 2)
         for k, r in enumerate(rate):
@@ -119,8 +120,8 @@ def main():
         # faint wind outside
         wind = fft_filter(RNG.standard_normal(n), 80, 600)
         wind = wind / (np.abs(wind).max() + 1e-9) * (0.5 + 0.5 * np.sin(2 * np.pi * tt / 17 + phase[3]))
-        L += 0.02 * wind
-        R += 0.02 * np.roll(wind, 200)
+        L += 0.02 * a.roar * wind
+        R += 0.02 * a.roar * np.roll(wind, 200)
         if a.city:
             # distant city: low traffic rumble + occasional far car passes (heard through glass)
             hum = fft_filter(RNG.standard_normal(n), 35, 260)
