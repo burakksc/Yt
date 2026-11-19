@@ -63,6 +63,8 @@ def main():
     ap.add_argument("--no-piano", action="store_true")
     ap.add_argument("--city", type=float, default=0.0, help="distant city hum level (0 = none, ~1 = subtle)")
     ap.add_argument("--fire", type=float, default=1.0, help="fire level (0 = no fireplace)")
+    ap.add_argument("--hiss", type=float, default=1.0, help="high hiss/sizzle level (user: 0 = removed, heard as a whistle)")
+    ap.add_argument("--pops", type=float, default=0.35, help="wood pops per second (user: fewer, 0.12)")
     ap.add_argument("--roar", type=float, default=1.0, help="low fire rumble/hum level relative to crackles (user: 0.5)")
     a = ap.parse_args()
     total = int(a.minutes * 60 * SR)
@@ -97,8 +99,8 @@ def main():
         breathe = 0.65 + 0.2 * np.sin(2 * np.pi * tt / 7.3 + phase[0]) + 0.15 * np.sin(2 * np.pi * tt / 2.9 + phase[1])
         hiss = fft_filter(RNG.standard_normal(n), 2500, 9000)
         hiss /= np.abs(hiss).max() + 1e-9
-        L = (0.28 * a.roar * roar * breathe + 0.025 * hiss) * a.fire
-        R = (0.28 * a.roar * np.roll(roar, 37) * breathe + 0.025 * np.roll(hiss, 91)) * a.fire
+        L = (0.28 * a.roar * roar * breathe + 0.025 * a.hiss * hiss) * a.fire
+        R = (0.28 * a.roar * np.roll(roar, 37) * breathe + 0.025 * a.hiss * np.roll(hiss, 91)) * a.fire
         # crackles: bursty Poisson process
         rate = 7 * (0.6 + 0.4 * np.sin(2 * np.pi * tt[:: SR // 10] / 11 + phase[2]) ** 2)
         for k, r in enumerate(rate):
@@ -110,7 +112,7 @@ def main():
                 if e > 0:
                     L[at:at + e] += b[:e] * (1 - pan) * 0.5
                     R[at:at + e] += b[:e] * (1 + pan) * 0.5
-        for _ in range(RNG.poisson(0.35 * n / SR)):  # wood pops / snaps
+        for _ in range(RNG.poisson(a.pops * n / SR)):  # wood pops / snaps
             at = RNG.integers(n)
             b = burst(RNG.uniform(30, 90), 400, 3500) * RNG.uniform(0.35, 0.8) * a.fire
             pan = RNG.uniform(-0.4, 0.4)
