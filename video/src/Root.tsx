@@ -40,6 +40,8 @@ import { SARGI_FPS, SARGI_FRAMES } from "./videos/esnek-sargi/story";
 import { BEBEK_FPS, BEBEK_FRAMES } from "./videos/bebek-sling/story";
 import { SLING_FPS, SLING_FRAMES } from "./videos/sling/story";
 import { STORY_FPS, STORY_FRAMES } from "./videos/eksi-100-hikaye/story";
+import { RusyaGizliEN } from "./videos/rusya-gizli";
+import { GZ_FPS, GZ_FRAMES } from "./videos/rusya-gizli/story";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -233,6 +235,14 @@ export const RemotionRoot: React.FC = () => {
         component={BranEN}
         durationInFrames={BRAN_FRAMES}
         fps={BRAN_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RusyaGizliEN"
+        component={RusyaGizliEN}
+        durationInFrames={GZ_FRAMES}
+        fps={GZ_FPS}
         width={1080}
         height={1920}
       />
