@@ -39,3 +39,10 @@ Bkz: [[Bilgi MOC]], [[Remotion Notları]]
 - Üretim: `scripts/ambience/cozy_pipeline.sh` → `make_cozy_hour.sh` (12 parça render, düşük bellekli döngü geçişi, 1 saat tek geçişte veryfast kodlama, ardışık kare eklem kontrolü) → `scripts/media/split_for_send.sh` (380 MiB parça + .bat/.command + sha256).
 - **Ders:** bulut makinesi oturum boşta kalınca uyuyor/yeniden başlıyor → uzun işler sadece aktif turda ilerliyor; işleri kısa, devam ettirilebilir adımlara böl ve turda bekleyerek takip et.
 - Sonuç: Noel 1,03 GB, NY-B 1,8 GB, NY-F 1,2 GB; 108.000 kare, eklemlerde tekrar kare yok.
+
+## 2026-11-19 — Yeni 4K cozy hattı (Cozy Vesper kalitesi)
+- Eski SVG-warp ateş **reddedildi** ("komedi"). Yerine: `scripts/ambience/cozy_composite.py`, yani Real-ESRGAN 4K oda + **gerçek ateş videosu** (Mixkit Free License, atıfsız, ticari OK) şömine maskesine + ateşe bağlı oda ışığı + sadece parlaklık/hale mum titremesi + pencere maskeli kar. Hareketlerin hepsi 60 sn periyodik.
+- Mixkit 2707 klibinde kamera yavaşça zoom yapıyordu, bu yüzden döngüde kütükler çift göründü. ORB + affine ile frame 0'a **stabilize** et, sonra 1 sn çapraz geçiş yap; 225 kare = 60 sn'de 8 tur.
+- Ses: kullanıcı uğultuyu istemedi → `make_fire_ambience.py --roar 0` (sadece çıtırtı + kısık piyano).
+- **Teslim: tek parça.** Kullanıcı parça/birleştirme istemiyor ("çalışmıyor"). `make_cozy_hour_4k.sh` şunu yapıyor: döngüyü bir kez x265 slow crf 32 kapalı GOP ile kodla, sonra 60× stream-copy concat + AAC 96k. Çıktı 1 saat 4K ≈ 367 MB (<400 MiB). Döngü geçişindeki fark, iç keyframe sıçramasıyla aynı (0.67 vs 0.64); kopya kare yok.
+- Önce 40 sn önizleme → onay → 1 saat (kural).
