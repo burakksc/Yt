@@ -10,9 +10,10 @@ COMP="$1"; AUDIO="$2"; OUT="$3"; MIN="${4:-60}"
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 WORK="$ROOT/video/out/cozy/work_$COMP"
 mkdir -p "$WORK"
+[ -s "$OUT" ] && { echo "[skip] $OUT exists"; exit 0; }
 cd "$ROOT/video"
 FR=1860   # (60+2) s * 30 fps
-N=4; S=$(( (FR + N - 1) / N ))
+N=12; S=$(( (FR + N - 1) / N ))
 for k in $(seq 0 $((N-1))); do
   a=$((k*S)); b=$(( (k+1)*S - 1 )); [ $b -ge $FR ] && b=$((FR-1))
   f="$WORK/c$k.mp4"
@@ -22,16 +23,17 @@ for k in $(seq 0 $((N-1))); do
   mv "$f.tmp.mp4" "$f"
 done
 for k in $(seq 0 $((N-1))); do echo "file '$WORK/c$k.mp4'"; done > "$WORK/list.txt"
-ffmpeg -v error -y -f concat -safe 0 -i "$WORK/list.txt" -c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p "$WORK/raw62.mp4"
+[ -s "$WORK/raw62.mp4" ] || { ffmpeg -v error -y -f concat -safe 0 -i "$WORK/list.txt" -c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p "$WORK/raw62.tmp.mp4" && mv "$WORK/raw62.tmp.mp4" "$WORK/raw62.mp4"; }
 # seamless 60 s loop: tail (60..62 s) fades into head (0..2 s), then 2..60 s
-ffmpeg -v error -y -i "$WORK/raw62.mp4" -filter_complex \
+[ -s "$WORK/loop60.mp4" ] || ffmpeg -v error -y -i "$WORK/raw62.mp4" -filter_complex \
  "[0:v]trim=60:62,setpts=PTS-STARTPTS[tail];[0:v]trim=0:2,setpts=PTS-STARTPTS[head];[tail][head]xfade=transition=fade:duration=2:offset=0[x];[0:v]trim=2:60,setpts=PTS-STARTPTS[body];[x][body]concat=n=2:v=1:a=0[v]" \
- -map "[v]" -c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p -r 30 "$WORK/loop60.mp4"
+ -map "[v]" -c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p -r 30 "$WORK/loop60.tmp.mp4" && mv "$WORK/loop60.tmp.mp4" "$WORK/loop60.mp4"
 echo "[encode] ${MIN} min in one pass"
 REP=$(( MIN + 1 ))
 ffmpeg -v error -y -stream_loop $REP -i "$WORK/loop60.mp4" -i "$AUDIO" -map 0:v -map 1:a \
   -c:v libx264 -preset medium -crf 21 -maxrate 4M -bufsize 8M -pix_fmt yuv420p -r 30 -g 60 \
-  -c:a aac -b:a 192k -t $(( MIN * 60 )) -movflags +faststart "$OUT"
+  -c:a aac -b:a 192k -t $(( MIN * 60 )) -movflags +faststart "$OUT.tmp.mp4"
+mv "$OUT.tmp.mp4" "$OUT"
 echo "[check] frames / timestamps"
 python3 - "$OUT" "$MIN" <<'PY'
 import subprocess, sys

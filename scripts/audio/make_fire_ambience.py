@@ -162,7 +162,9 @@ def main():
         pos += n
     w.close()
     os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-af", "loudnorm=I=-18:TP=-1.5:LRA=11", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", a.out], check=True)
+    part = a.out + ".part.m4a"  # written fully, then renamed (safe if the machine restarts)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-af", "loudnorm=I=-18:TP=-1.5:LRA=11", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", part], check=True)
+    os.replace(part, a.out)
     os.remove(tmp)
     print("ok", a.out, a.minutes, "min")
 
