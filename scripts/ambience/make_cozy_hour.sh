@@ -6,7 +6,7 @@
 # 3) encode the whole hour in ONE pass (-stream_loop, re-encoded) — no `concat -c copy` seams
 # 4) seam/timestamp check: frame count, monotonic pts, and frame-diff at every loop boundary
 set -euo pipefail
-COMP="$1"; AUDIO="$2"; OUT="$3"; MIN="${4:-60}"
+COMP="$1"; AUDIO="$(realpath "$2")"; OUT="$(realpath -m "$3")"; MIN="${4:-60}"
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 WORK="$ROOT/video/out/cozy/work_$COMP"
 mkdir -p "$WORK"
@@ -25,9 +25,16 @@ done
 for k in $(seq 0 $((N-1))); do echo "file '$WORK/c$k.mp4'"; done > "$WORK/list.txt"
 [ -s "$WORK/raw62.mp4" ] || { ffmpeg -v error -y -f concat -safe 0 -i "$WORK/list.txt" -c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p "$WORK/raw62.tmp.mp4" && mv "$WORK/raw62.tmp.mp4" "$WORK/raw62.mp4"; }
 # seamless 60 s loop: tail (60..62 s) fades into head (0..2 s), then 2..60 s
-[ -s "$WORK/loop60.mp4" ] || ffmpeg -v error -y -i "$WORK/raw62.mp4" -filter_complex \
- "[0:v]trim=60:62,setpts=PTS-STARTPTS[tail];[0:v]trim=0:2,setpts=PTS-STARTPTS[head];[tail][head]xfade=transition=fade:duration=2:offset=0[x];[0:v]trim=2:60,setpts=PTS-STARTPTS[body];[x][body]concat=n=2:v=1:a=0[v]" \
- -map "[v]" -c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p -r 30 "$WORK/loop60.tmp.mp4" && mv "$WORK/loop60.tmp.mp4" "$WORK/loop60.mp4"
+if [ ! -s "$WORK/loop60.mp4" ]; then
+  # low-memory: cut tail/head/body separately, fade tail->head, then join
+  E="-c:v libx264 -crf 12 -preset fast -pix_fmt yuv420p -r 30 -an"
+  ffmpeg -v error -y -ss 60 -i "$WORK/raw62.mp4" -t 2 $E "$WORK/tail.mp4"
+  ffmpeg -v error -y -i "$WORK/raw62.mp4" -t 2 $E "$WORK/head.mp4"
+  ffmpeg -v error -y -ss 2 -i "$WORK/raw62.mp4" -t 58 $E "$WORK/body.mp4"
+  ffmpeg -v error -y -i "$WORK/tail.mp4" -i "$WORK/head.mp4" -filter_complex "[0:v][1:v]xfade=transition=fade:duration=2:offset=0[v]" -map "[v]" $E -t 2 "$WORK/fade.mp4"
+  printf "file '%s'\nfile '%s'\n" "$WORK/fade.mp4" "$WORK/body.mp4" > "$WORK/loop_list.txt"
+  ffmpeg -v error -y -f concat -safe 0 -i "$WORK/loop_list.txt" $E "$WORK/loop60.tmp.mp4" && mv "$WORK/loop60.tmp.mp4" "$WORK/loop60.mp4"
+fi
 echo "[encode] ${MIN} min in one pass"
 REP=$(( MIN + 1 ))
 ffmpeg -v error -y -stream_loop $REP -i "$WORK/loop60.mp4" -i "$AUDIO" -map 0:v -map 1:a \
