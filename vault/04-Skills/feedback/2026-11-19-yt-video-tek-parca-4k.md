@@ -10,3 +10,6 @@ tür: kullanıcı düzeltmesi
 - AI tablo yüzleri (kedi) bozuk olabilir → son karede yüzlere yakından bak.
 - Ses (kullanıcı tek tek dinleyip seçti): **cızırtı/tıslama (2.5–9 kHz gürültü) "ıslık" gibi duyuluyor → kaldır** (`--hiss 0`); odun patlamaları az olsun (`--pops 0.12`); uğultu yok (`--roar 0`). Kalan: çıtırtı + az patlama + çok kısık piyano. Ses AAC 128k.
 - Kullanıcı bir ses şikâyet edince: katmanları ayrı 20 sn'lik mp3'ler halinde gönder, kullanıcı seçsin (`video/out/cozy/sesler/`).
+- **Piyano:** sentez sinüs piyano (make_fire_ambience) beğenilmedi ("farklı bir piyano melodisi"). Yeni: `scripts/audio/compose_piano.py` = kendi bestemiz + FluidR3 (MIT) gerçek piyano örnekleri, fluidsynth. 4 tarz örnek gönderildi (arpej/hüzünlü/vals/ninni).
+- Freesound CDN (cdn.freesound.org) 403 veriyor; Pexels Cloudflare 403. Rawpixel ücretsiz görsellerde filigran var → kullanma.
+- Rusya 7 yer Short'u kullanıcı iptal etti ("bu biraz sıkıntılı olabilir, farklı kurgulayalım").

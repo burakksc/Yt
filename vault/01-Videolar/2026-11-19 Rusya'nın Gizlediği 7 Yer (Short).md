@@ -1,6 +1,6 @@
 ---
 tür: short (EN, Michael)
-durum: render
+durum: İPTAL (kullanıcı 2026-11-19: "farklı kurgulayalım", şimdilik iptal)
 composition: RusyaGizliEN (video/src/videos/rusya-gizli)
 ---
 # 7 Places Russia Hides (Short, ~69 sn)
