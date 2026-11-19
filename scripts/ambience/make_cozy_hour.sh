@@ -38,7 +38,7 @@ fi
 echo "[encode] ${MIN} min in one pass"
 REP=$(( MIN + 1 ))
 ffmpeg -v error -y -stream_loop $REP -i "$WORK/loop60.mp4" -i "$AUDIO" -map 0:v -map 1:a \
-  -c:v libx264 -preset medium -crf 21 -maxrate 4M -bufsize 8M -pix_fmt yuv420p -r 30 -g 60 \
+  -c:v libx264 -preset veryfast -crf 21 -maxrate 4M -bufsize 8M -pix_fmt yuv420p -r 30 -g 60 \
   -c:a aac -b:a 192k -t $(( MIN * 60 )) -movflags +faststart "$OUT.tmp.mp4"
 mv "$OUT.tmp.mp4" "$OUT"
 echo "[check] frames / timestamps"
@@ -56,12 +56,12 @@ python3 - "$OUT" <<'PY'
 import subprocess, sys
 import numpy as np
 out = sys.argv[1]
-def frame(t):
-    raw = subprocess.run(["ffmpeg","-v","error","-ss",f"{t:.4f}","-i",out,"-frames:v","1","-vf","scale=480:270","-f","rawvideo","-pix_fmt","gray","-"],capture_output=True).stdout
-    return np.frombuffer(raw,np.uint8).astype(np.float32)
 for b in (60, 1800, 3540):
-    f = [frame(b + k/30) for k in (-2,-1,0,1)]
-    seam = np.abs(f[2]-f[1]).mean(); nb = (np.abs(f[1]-f[0]).mean() + np.abs(f[3]-f[2]).mean())/2
-    print(f"t={b}s seam_diff={seam:.2f} neighbour_diff={nb:.2f} {'OK' if seam < 3*nb + 1.0 else 'CHECK'}")
+    raw = subprocess.run(["ffmpeg","-v","error","-ss",str(b-1),"-i",out,"-frames:v","60","-vf","scale=480:270","-f","rawvideo","-pix_fmt","gray","-"],capture_output=True).stdout
+    f = np.frombuffer(raw,np.uint8).reshape(-1,270,480).astype(np.float32)
+    d = [np.abs(f[i+1]-f[i]).mean() for i in range(len(f)-1)]
+    seam, nb = d[29], float(np.median(d))
+    dup = sum(1 for x in d if x < 0.05)
+    print(f"t={b}s seam_diff={seam:.2f} median_diff={nb:.2f} duplicate_frames={dup} {'OK' if seam < 4*nb + 1.0 and dup == 0 else 'CHECK'}")
 PY
 ls -la "$OUT"
