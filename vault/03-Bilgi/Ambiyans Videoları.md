@@ -46,3 +46,4 @@ Bkz: [[Bilgi MOC]], [[Remotion Notları]]
 - Ses: kullanıcı uğultuyu istemedi → `make_fire_ambience.py --roar 0` (sadece çıtırtı + kısık piyano).
 - **Teslim: tek parça.** Kullanıcı parça/birleştirme istemiyor ("çalışmıyor"). `make_cozy_hour_4k.sh` şunu yapıyor: döngüyü bir kez x265 slow crf 32 kapalı GOP ile kodla, sonra 60× stream-copy concat + AAC 96k. Çıktı 1 saat 4K ≈ 367 MB (<400 MiB). Döngü geçişindeki fark, iç keyframe sıçramasıyla aynı (0.67 vs 0.64); kopya kare yok.
 - Önce 40 sn önizleme → onay → 1 saat (kural).
+- **Teslim linki (2026-11-19):** Kullanıcı büyük dosyayı uygulamadan indiremedi. Çözüm: videoyu `teslim/` klasörüne koy (git LFS, `teslim/*.mp4`), dala push et, kullanıcıya GitHub linkini ver: `https://github.com/burakksc/Yt/raw/<dal>/teslim/<dosya>.mp4`. Ortama `lfs.github.com` eklendi. LFS kotasını izle; yüklenen eski videoları sonra sil.
