@@ -96,6 +96,15 @@ def make(kind, n):
         roar = band(b, 30, 700); roar /= np.abs(roar).max()
         L = 0.25 * base / 2.2 + 0.55 * roar
         return L, np.roll(L, 150)
+    if kind.startswith("sleep_"):  # very soft, sleep-friendly cockpit beds: no tones, no hiss, slow swells
+        b = np.cumsum(wn); b -= movavg(b, 4410)
+        lo, hi, air = {"sleep_deep": (20, 180, 0.0), "sleep_soft": (25, 350, 0.015), "sleep_warm": (40, 600, 0.0)}[kind]
+        roar = band(b, lo, hi); roar /= np.abs(roar).max()
+        e = 0.85 + 0.15 * smooth_env(n, 0.05, 0, 1, 5)
+        L = roar * e
+        if air:
+            a2 = band(rng.standard_normal(n), 600, 2500); L = L + air * a2 / np.abs(a2).max()
+        return L, np.roll(L, 200)
     raise SystemExit("unknown kind")
 
 
@@ -122,7 +131,7 @@ def main():
     y = y[:total]
     y = y / (np.abs(y).max() + 1e-9) * 0.8
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-",
-                    "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", a.out],
+                    "-af", f"loudnorm=I={-26 if a.kind.startswith('sleep_') else -20}:TP=-2:LRA=11", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", a.out],
                    input=y.astype(np.float32).tobytes(), check=True)
     print("ok", a.out)
 
