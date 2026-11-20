@@ -8,3 +8,5 @@ composition: GizemBloop / GizemTaos / GizemWow / GizemVoynich (video/src/videos/
 - Görseller: NOAA Bloop kaydı + spektrogram (PD), Bloop harita (Nojhan CC BY-SA 3.0), Taos fotoğrafları (Doug Kerr CC BY-SA 2.0), Wow çıktısı (Big Ear/NAAPO, Commons PD), Voynich sayfaları (PD). Flickr/Commons 429 → buz/okyanus/teleskop sahneleri SDXL.
 - Kullanıcı Taos'u **3D render tarzında** istedi → projects/gizem/taos3d (SDXL "3D render").
 - Sıradaki istekler: ağaç reçinesi hayatta kalma videosu (kullanıcı fikirleri yazacak), deniz altı ilginç olaylar araştırması, dönmeyen uzay araçları videosu.
+- Eklenenler: Voyager & New Horizons (NASA PD), Pine Resin (SDXL; Commons 429), Engine HP (SDXL), Yonaguni (SDXL). Build: scripts/media/gizem_build.py <slug> <imgdir> <Comp>.
+- Sıradaki: "simple bilgiler" serisi (EN): ör. arabaya yağ nasıl doldurulur (motor soğuk olmalı vb.).

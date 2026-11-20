@@ -356,6 +356,92 @@ export const STORIES: Record<string, MyStory> = {
    "goldenrecord": "Image: NASA / JPL (public domain)",
    "pluto": "Image: NASA / JHUAPL / SwRI (public domain)"
   }
+ },
+ "resin": {
+  "title": "PINE RESIN",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "forest",
+    "title": "Lost in the woods?",
+    "big": "",
+    "bigSub": "",
+    "text": "Lost in the woods, with wet wood and no lighter? Look for one thing: pine resin.",
+    "vsec": 5.4,
+    "sec": 6.15
+   },
+   {
+    "id": "what",
+    "img": "resin",
+    "title": "Pine resin",
+    "big": "",
+    "bigSub": "",
+    "text": "It's the sticky, golden sap that pine trees push out to seal their wounds. And it is full of flammable oils.",
+    "vsec": 7.33,
+    "sec": 8.07
+   },
+   {
+    "id": "fire",
+    "img": "fire",
+    "title": "Fire starter",
+    "big": "",
+    "bigSub": "",
+    "text": "A small lump of resin catches a spark easily and burns hot for minutes, even when everything around it is damp.",
+    "vsec": 7.55,
+    "sec": 8.3
+   },
+   {
+    "id": "fatwood",
+    "img": "fatwood",
+    "title": "Fatwood",
+    "big": "",
+    "bigSub": "",
+    "text": "Look for old pine stumps. Wood soaked with resin, called fatwood, smells like turpentine and lights almost instantly.",
+    "vsec": 8.25,
+    "sec": 9.0
+   },
+   {
+    "id": "torch",
+    "img": "torch",
+    "title": "A torch",
+    "big": "",
+    "bigSub": "",
+    "text": "Smear resin on the end of a stick with dry bark, and you have a torch that burns for a long time.",
+    "vsec": 6.53,
+    "sec": 7.28
+   },
+   {
+    "id": "glue",
+    "img": "glue",
+    "title": "Natural glue",
+    "big": "",
+    "bigSub": "",
+    "text": "Melt it, mix in fine charcoal, and it becomes a strong glue. People have used it to fix tools for thousands of years.",
+    "vsec": 8.05,
+    "sec": 8.8
+   },
+   {
+    "id": "water",
+    "img": "waterproof",
+    "title": "Waterproofing",
+    "big": "",
+    "bigSub": "",
+    "text": "It also seals cracks in containers and makes seams waterproof.",
+    "vsec": 4.7,
+    "sec": 5.45
+   },
+   {
+    "id": "end",
+    "img": "resin",
+    "title": "Take only a little",
+    "big": "",
+    "bigSub": "",
+    "text": "Only collect resin that has already leaked out, never cut the tree. Did you know this trick?",
+    "vsec": 6.1,
+    "sec": 6.85
+   }
+  ],
+  "credits": {}
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
