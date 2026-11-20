@@ -165,3 +165,28 @@ for ang in (15, 18):
     c_ = o.copy(); cv2.line(c_, (0, 366), (TW, 366), (0, 255, 255), 2); cv2.putText(c_, f'{ang} deg  w={int((x1-x0)*s)}', (20, 420), 0, 1.0, (0, 0, 200), 2)
     sheet += [c_, np.zeros((16, TW, 3), np.uint8)]
 cv2.imwrite(D + 'chk_k8.jpg', np.vstack(sheet))
+import cv2, numpy as np, runpy
+g = runpy.run_path('/tmp/claude-0/-home-user-Yt/c0ed126b-6344-535b-9708-226fcfc689ac/scratchpad/makrev_base.py')
+ext, P, TW, TH, VIS, D = [g[k] for k in ('ext','P','TW','TH','VIS','D')]
+def fin(o):
+    o = cv2.addWeighted(o, 1.6, cv2.GaussianBlur(o, (0, 0), 1.0), -0.6, 0)
+    o = cv2.addWeighted(o, 1.12, cv2.GaussianBlur(o, (0, 0), 6), -0.12, 0)
+    return np.clip(o + np.random.default_rng(1).normal(0, 0.6, o.shape), 0, 255).astype(np.uint8)
+ang = 18
+M = cv2.getRotationMatrix2D((2500 + P, 1500 + P), ang, 1.0); M3 = np.vstack([M, [0, 0, 1]])
+tr = lambda p: cv2.transform((np.float32(p) * 4 + P)[None], M)[0]
+v = tr([[245, 88], [400, 80], [1195, 505], [1185, 585], [680, 630], [185, 395], [125, 155], [205, 150]])
+V = tr([[675, 606]])[0]
+x0, y0 = v.min(0); x1, _ = v.max(0)
+sheet = []
+for name, top, vb in (('zoom1', 1, 362), ('zoom2', -22, 362), ('zoom3', -45, 363)):
+    s = (vb - top) / (V[1] - y0)
+    tx, ty = TW / 2 - s * (x0 + x1) / 2, top - s * y0
+    K = 3
+    S = np.float32([[K * s, 0, K * tx], [0, K * s, K * ty], [0, 0, 1]])
+    o = cv2.warpAffine(ext, (S @ M3)[:2], (K * TW, K * TH), flags=cv2.INTER_LANCZOS4, borderMode=cv2.BORDER_REPLICATE)
+    o = fin(cv2.resize(o, (TW, TH), interpolation=cv2.INTER_AREA))
+    cv2.imwrite(D + f'makrev-banner-2016x430-18derece-{name}.png', o)
+    c_ = o.copy(); cv2.line(c_, (0, 366), (TW, 366), (0, 255, 255), 2); cv2.putText(c_, f'{name} w={int((x1-x0)*s)}', (20, 420), 0, 1.0, (0, 0, 200), 2)
+    sheet += [c_, np.zeros((16, TW, 3), np.uint8)]
+cv2.imwrite(D + 'chk_k9.jpg', np.vstack(sheet))

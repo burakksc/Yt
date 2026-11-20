@@ -13,3 +13,4 @@
 - kurgu11 (sol blueprint / sağ gerçek), kurgu12 (tek hat, çapraz ışık süpürmesiyle blueprint→gerçek), kurgu13 (beyaz stüdyo: görüntü/zemin rengi bölümüyle zemin beyazlatıldı, gölgeler korundu + lacivert/kırmızı çizgiler). Karanlık showroom denemesi halo yaptı, atıldı.
 - Kullanıcı: orijinal görünümden UZAKLAŞMA (blueprint/beyaz/lacivert efekt istemiyor), sadece yerleşim değişsin. → iki-hat (aynı hat yan yana, fabrika salonu), iki-hat-derinlik (ikinci hat küçük/arkada).
 - İki hat reddedildi ('iki görsel olmaz'). 'Açıyı biraz düzelt' → tek hat, 15° ve 18° (daha yatay), üst kesiksiz, V harfi görünür alanda: 15derece.png (~906 px), 18derece.png (~958 px).
+- Kullanıcı 18°'yi seçti → zoom: 18derece-zoom1 (~991 px, kesiksiz), zoom2 (~1055 px, besleme ucu üst kenara değiyor), zoom3 (~1121 px, besleme ucu birkaç px kesik).
