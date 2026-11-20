@@ -116,3 +116,28 @@ for n in ('kurgu13', 'kurgu14'):
     c_ = cv2.imread(D + f'makrev-banner-2016x430-{n}.png'); cv2.line(c_, (0, 366), (TW, 366), (0, 255, 255), 2)
     sheet += [c_, np.zeros((16, TW, 3), np.uint8)]
 cv2.imwrite(D + 'chk_k5.jpg', np.vstack(sheet))
+import cv2, numpy as np, runpy
+g = runpy.run_path('/tmp/claude-0/-home-user-Yt/c0ed126b-6344-535b-9708-226fcfc689ac/scratchpad/makrev_base.py')
+render, tr, fin, s1, w1, bx0, bx1, by0, by1, TW, TH, VIS, D = [g[k] for k in ('render','tr','fin','s1','w1','bx0','bx1','by0','by1','TW','TH','VIS','D')]
+xs = np.arange(TW, dtype=np.float32)[None, :, None]
+out = {}
+# A: two identical lines side by side (a factory hall with two production lines)
+s = (VIS - 10) / (by1 - by0)
+wl = (bx1 - bx0) * s
+gap = (TW - 2 * wl) / 3
+L = render(s, gap - s * bx0, 5 - s * by0)
+R = render(s, 2 * gap + wl - s * bx0, 5 - s * by0)
+a = np.clip((xs - (gap + wl + gap / 2)) / 80 + 0.5, 0, 1)
+out['iki-hat'] = fin(L * (1 - a) + R * a)
+# B: same but the second line slightly behind (smaller, higher) -> depth, still original look
+s2 = s * 0.82
+R2 = render(s2, TW - gap * 0.8 - wl * 0.82 - s2 * bx0, 2 - s2 * by0)
+L2 = render(s, gap * 0.8 - s * bx0, 5 - s * by0)
+a = np.clip((xs - (gap * 0.8 + wl + 30)) / 80 + 0.5, 0, 1)
+out['iki-hat-derinlik'] = fin(L2 * (1 - a) + R2 * a)
+sheet = []
+for n, v in out.items():
+    cv2.imwrite(D + f'makrev-banner-2016x430-{n}.png', v)
+    c_ = v.copy(); cv2.line(c_, (0, 366), (TW, 366), (0, 255, 255), 2); cv2.putText(c_, n, (20, 420), 0, 1.0, (0, 0, 200), 2)
+    sheet += [c_, np.zeros((16, TW, 3), np.uint8)]
+cv2.imwrite(D + 'chk_k7.jpg', np.vstack(sheet))
