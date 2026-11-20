@@ -12,3 +12,4 @@
 - kurgu7 (lacivert çapraz panel + kırmızı şerit), kurgu8 (lacivert zemin + bej spot ışık), kurgu9 (film şeridi: geniş tam hat + 3 dar detay), kurgu10 (tam hat + 3 altıgen detay). Renkler: site lacivert BGR(72,50,37), logo kırmızı BGR(63,32,232).
 - kurgu11 (sol blueprint / sağ gerçek), kurgu12 (tek hat, çapraz ışık süpürmesiyle blueprint→gerçek), kurgu13 (beyaz stüdyo: görüntü/zemin rengi bölümüyle zemin beyazlatıldı, gölgeler korundu + lacivert/kırmızı çizgiler). Karanlık showroom denemesi halo yaptı, atıldı.
 - Kullanıcı: orijinal görünümden UZAKLAŞMA (blueprint/beyaz/lacivert efekt istemiyor), sadece yerleşim değişsin. → iki-hat (aynı hat yan yana, fabrika salonu), iki-hat-derinlik (ikinci hat küçük/arkada).
+- İki hat reddedildi ('iki görsel olmaz'). 'Açıyı biraz düzelt' → tek hat, 15° ve 18° (daha yatay), üst kesiksiz, V harfi görünür alanda: 15derece.png (~906 px), 18derece.png (~958 px).
