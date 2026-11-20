@@ -8,3 +8,4 @@
 - "Ölçüye birebir otursun" = **hat tüm genişliği doldursun** (yanlarda boş bej kalmasın; üst/alt kesilebilir). Teslim: `makrev-banner-2016x430-tam-genislik.png` — 12°, ölçek ~0.44 (orijinal 5000 px'in), soldan pano kenarı → sağda konveyör ucu, M-A-K-R-E-V harfleri görünen 366 px içinde.
 - "Kurgu yap" (hat tam görünsün + genişliği doldursun) → iki panelli kompozisyon: solda M-A-K-R-E-V ünitelerine ~2.2× yakın plan, sağda hattın tamamı (12°, ~835 px), aynı bej zeminde yumuşak geçiş: `makrev-banner-2016x430-kurgu.png`.
 - İlk iki panelli kurgu "fena değil" → 3 alternatif daha: kurgu2 (tam hat solda + konveyör yakın planı sağda), kurgu3 (üniteler yakın | tam hat ortada | konveyör ucu yakın), kurgu4 (ortada net tam hat, arkada bulanık büyük kopya — alan derinliği).
+- kurgu5 (tam hat solda + 3 çerçeveli detay karosu), kurgu6 (ortada tam hat + 2 yuvarlak büyüteç detayı, işaret çizgili). Script: scripts/media/makrev_banner_compositions.py
