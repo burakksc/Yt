@@ -41,6 +41,8 @@ import { BEBEK_FPS, BEBEK_FRAMES } from "./videos/bebek-sling/story";
 import { SLING_FPS, SLING_FRAMES } from "./videos/sling/story";
 import { STORY_FPS, STORY_FRAMES } from "./videos/eksi-100-hikaye/story";
 import { RusyaGizliEN } from "./videos/rusya-gizli";
+import { GizemShort } from "./videos/gizem";
+import { gzFrames } from "./videos/gizem/stories";
 import { GZ_FPS, GZ_FRAMES } from "./videos/rusya-gizli/story";
 
 export const RemotionRoot: React.FC = () => {
@@ -235,6 +237,42 @@ export const RemotionRoot: React.FC = () => {
         component={BranEN}
         durationInFrames={BRAN_FRAMES}
         fps={BRAN_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GizemBloop"
+        component={GizemShort}
+        defaultProps={{ slug: "bloop" }}
+        durationInFrames={gzFrames("bloop")}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GizemTaos"
+        component={GizemShort}
+        defaultProps={{ slug: "taos" }}
+        durationInFrames={gzFrames("taos")}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GizemWow"
+        component={GizemShort}
+        defaultProps={{ slug: "wow" }}
+        durationInFrames={gzFrames("wow")}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GizemVoynich"
+        component={GizemShort}
+        defaultProps={{ slug: "voynich" }}
+        durationInFrames={gzFrames("voynich")}
+        fps={30}
         width={1080}
         height={1920}
       />

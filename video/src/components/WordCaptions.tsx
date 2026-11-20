@@ -46,12 +46,14 @@ export const WordCaptions: React.FC<{
   top?: number;
   highlight?: string;
   locale?: string; // "tr-TR" (default) or "en-US" — keeps I/İ correct per language
+  fontSize?: number;
 }> = ({
   text,
   durationInFrames,
   top = 1480,
   highlight = "#ffd23f",
   locale = "tr-TR",
+  fontSize = 82,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -74,7 +76,7 @@ export const WordCaptions: React.FC<{
         right: 60,
         top,
         textAlign: "center",
-        fontSize: 82,
+        fontSize,
         fontWeight: 900,
         lineHeight: 1.12,
         transform: `scale(${0.85 + 0.15 * pop})`,

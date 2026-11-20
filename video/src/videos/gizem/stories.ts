@@ -1,0 +1,265 @@
+// generated from projects/gizem/stories.json by the build step — edit the JSON
+export const GZ_LEAD = 0.25;
+export type MyScene = {id:string;img:string;title:string;big:string;bigSub:string;text:string;sec:number;vsec:number;sfx?:string;fit?:"contain"};
+export type MyStory = {title:string;scenes:MyScene[];credits:Record<string,string>};
+export const STORIES: Record<string, MyStory> = {
+ "bloop": {
+  "title": "THE BLOOP",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "bloop_map",
+    "title": "The Bloop",
+    "big": "1997",
+    "bigSub": "Pacific Ocean",
+    "text": "In 1997, something in the Pacific Ocean made a sound so loud, it was picked up by sensors more than five thousand kilometres apart.",
+    "vsec": 9.95,
+    "sec": 10.7
+   },
+   {
+    "id": "mics",
+    "img": "ice3",
+    "title": "Listening for submarines",
+    "big": "",
+    "bigSub": "",
+    "text": "The underwater microphones were built to listen for submarines. They had never heard anything like this.",
+    "vsec": 6.83,
+    "sec": 7.58
+   },
+   {
+    "id": "sound",
+    "img": "bloop_spec",
+    "title": "The real recording",
+    "big": "",
+    "bigSub": "",
+    "text": "It rose fast and was far too powerful for any known animal. Listen.",
+    "sfx": "bloop",
+    "fit": "contain",
+    "vsec": 5.0,
+    "sec": 8.95
+   },
+   {
+    "id": "monster",
+    "img": "ice2",
+    "title": "A sea monster?",
+    "big": "",
+    "bigSub": "",
+    "text": "Many people believed it came from a giant, unknown creature in the deep.",
+    "vsec": 4.9,
+    "sec": 5.65
+   },
+   {
+    "id": "answer",
+    "img": "ice1",
+    "title": "NOAA's answer",
+    "big": "ICEQUAKE",
+    "bigSub": "an iceberg cracking off Antarctica",
+    "text": "Years later, scientists gave their answer: an icequake. A huge iceberg cracking and breaking away from Antarctica.",
+    "vsec": 8.07,
+    "sec": 8.82
+   },
+   {
+    "id": "end",
+    "img": "bloop_map",
+    "title": "Would you go down there?",
+    "big": "",
+    "bigSub": "",
+    "text": "But for years, nobody knew what made it. Would you go down and look?",
+    "vsec": 4.38,
+    "sec": 5.12
+   }
+  ],
+  "credits": {
+   "bloop_map": "Map: Nojhan · CC BY-SA 3.0 · Wikimedia Commons",
+   "bloop_spec": "Spectrogram: NOAA (public domain)"
+  }
+ },
+ "taos": {
+  "title": "THE TAOS HUM",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "taos1",
+    "title": "The Taos Hum",
+    "big": "",
+    "bigSub": "",
+    "text": "In Taos, a small desert town in New Mexico, some people hear a sound that others cannot hear.",
+    "vsec": 6.85,
+    "sec": 7.6
+   },
+   {
+    "id": "what",
+    "img": "taos2",
+    "title": "A distant engine",
+    "big": "",
+    "bigSub": "",
+    "text": "A low, steady rumble, like a diesel engine idling far away. Day and night.",
+    "vsec": 5.53,
+    "sec": 6.28
+   },
+   {
+    "id": "survey",
+    "img": "taos3",
+    "title": "Who hears it?",
+    "big": "~2%",
+    "bigSub": "of residents in a 1990s survey",
+    "text": "In a survey in the 1990s, about two percent of the people living there said they could hear it.",
+    "vsec": 6.4,
+    "sec": 7.15
+   },
+   {
+    "id": "science",
+    "img": "taos4",
+    "title": "Scientists came",
+    "big": "0",
+    "bigSub": "sources found",
+    "text": "Scientists came with sensitive microphones and instruments. They could not find where it comes from.",
+    "vsec": 6.3,
+    "sec": 7.05
+   },
+   {
+    "id": "end",
+    "img": "taos1",
+    "title": "Can you hear it?",
+    "big": "",
+    "bigSub": "",
+    "text": "The ground, power lines, or something inside the ears of the people who hear it? Nobody knows. Would you want to hear it?",
+    "vsec": 7.7,
+    "sec": 8.45
+   }
+  ],
+  "credits": {
+   "taos1": "Photo: Doug Kerr · CC BY-SA 2.0",
+   "taos2": "Photo: Doug Kerr · CC BY-SA 2.0",
+   "taos3": "Photo: Doug Kerr · CC BY-SA 2.0",
+   "taos4": "Photo: Doug Kerr · CC BY-SA 2.0"
+  }
+ },
+ "wow": {
+  "title": "THE WOW! SIGNAL",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "wow_sky",
+    "title": "The Wow! Signal",
+    "big": "1977",
+    "bigSub": "Big Ear radio telescope, Ohio",
+    "text": "On August fifteenth, 1977, a radio telescope in Ohio caught a signal from deep space.",
+    "vsec": 7.38,
+    "sec": 8.12
+   },
+   {
+    "id": "freq",
+    "img": "wow_sky",
+    "title": "The hydrogen line",
+    "big": "1420 MHz",
+    "bigSub": "",
+    "text": "It was strong and narrow, right next to the radio frequency of hydrogen, where scientists thought an alien message might be sent.",
+    "vsec": 8.5,
+    "sec": 9.25
+   },
+   {
+    "id": "wow",
+    "img": "wow_printout",
+    "title": "\"Wow!\"",
+    "big": "",
+    "bigSub": "",
+    "text": "Astronomer Jerry Ehman circled it on the printout and wrote one word: Wow!",
+    "fit": "contain",
+    "vsec": 5.17,
+    "sec": 5.92
+   },
+   {
+    "id": "sec",
+    "img": "wow_printout",
+    "title": "72 seconds",
+    "big": "72 s",
+    "bigSub": "from the direction of Sagittarius",
+    "text": "It lasted seventy two seconds, and came from the direction of the constellation Sagittarius.",
+    "fit": "contain",
+    "vsec": 6.25,
+    "sec": 7.0
+   },
+   {
+    "id": "end",
+    "img": "wow_sky",
+    "title": "It never came back",
+    "big": "",
+    "bigSub": "",
+    "text": "Astronomers have searched that spot for decades. It has never come back. Was it a message?",
+    "vsec": 6.08,
+    "sec": 6.83
+   }
+  ],
+  "credits": {
+   "wow_printout": "Big Ear Radio Observatory / NAAPO (Wikimedia Commons, public domain)"
+  }
+ },
+ "voynich": {
+  "title": "THE VOYNICH MANUSCRIPT",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "voy_3",
+    "title": "The Voynich Manuscript",
+    "big": "~600",
+    "bigSub": "years old",
+    "text": "This book is about six hundred years old, and nobody on Earth can read it.",
+    "vsec": 5.22,
+    "sec": 5.97
+   },
+   {
+    "id": "date",
+    "img": "voy_32",
+    "title": "Early 1400s",
+    "big": "1404–1438",
+    "bigSub": "radiocarbon date of the pages",
+    "text": "Carbon dating puts its pages in the early fourteen hundreds.",
+    "vsec": 4.35,
+    "sec": 5.1
+   },
+   {
+    "id": "script",
+    "img": "voy_46",
+    "title": "An unknown alphabet",
+    "big": "",
+    "bigSub": "",
+    "text": "It is written in an alphabet that appears nowhere else in the world.",
+    "vsec": 4.4,
+    "sec": 5.15
+   },
+   {
+    "id": "plants",
+    "img": "voy_66",
+    "title": "Plants that don't exist",
+    "big": "",
+    "bigSub": "",
+    "text": "Its pages are full of plants nobody can identify, star charts, and strange drawings of bathing women.",
+    "vsec": 7.38,
+    "sec": 8.12
+   },
+   {
+    "id": "tried",
+    "img": "voy_100",
+    "title": "Still unbroken",
+    "big": "",
+    "bigSub": "",
+    "text": "Codebreakers, linguists and even computers have tried. No one has cracked it.",
+    "vsec": 5.3,
+    "sec": 6.05
+   },
+   {
+    "id": "end",
+    "img": "voy_170",
+    "title": "Could you read it?",
+    "big": "",
+    "bigSub": "",
+    "text": "Today it is kept at Yale University. Do you think anyone will ever read it?",
+    "vsec": 5.25,
+    "sec": 6.0
+   }
+  ],
+  "credits": {}
+ }
+};
+export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
