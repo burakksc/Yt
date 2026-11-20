@@ -119,7 +119,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "taos1",
+    "img": "taos5",
     "title": "Can you hear it?",
     "big": "",
     "bigSub": "",
@@ -128,12 +128,7 @@ export const STORIES: Record<string, MyStory> = {
     "sec": 8.45
    }
   ],
-  "credits": {
-   "taos1": "Photo: Doug Kerr · CC BY-SA 2.0",
-   "taos2": "Photo: Doug Kerr · CC BY-SA 2.0",
-   "taos3": "Photo: Doug Kerr · CC BY-SA 2.0",
-   "taos4": "Photo: Doug Kerr · CC BY-SA 2.0"
-  }
+  "credits": {}
  },
  "wow": {
   "title": "THE WOW! SIGNAL",

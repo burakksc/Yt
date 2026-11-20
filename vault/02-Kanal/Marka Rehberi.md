@@ -65,3 +65,6 @@ Her video için **başlık + açıklama + SEO etiketleri (tags)** birlikte veril
 
 ## Önizleme kuralı (kullanıcı, 2026-11-19 — zorunlu)
 Uzun (ambiyans/1 saatlik) videoya başlamadan önce **30–40 saniyelik önizleme** üret ve kullanıcıya onaylat. Onay yoksa uzun render yok. (Sebep: 1 saatlik Noel/NY videoları ateş efekti yüzünden çöpe gitti, kullanıcı saatlerce bekledi.)
+
+## Kural (2026-11-20, kullanıcı): her video bitince 3 parça metin
+Shorts ve normal videoların edit'i bitince **her seferinde** 3 ayrı parça gönder: **1) Başlık  2) Açıklama (video içeriğine yazılacaklar, standart footer dahil)  3) Hashtag/etiketler.**
