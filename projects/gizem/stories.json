@@ -432,5 +432,66 @@
     "text": "Natural rock, or the ruins of a lost world? What do you think?"
    }
   ]
+ },
+ "oil": {
+  "title": "HOW TO ADD ENGINE OIL",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "oil1",
+    "title": "How to add engine oil",
+    "big": "",
+    "bigSub": "",
+    "text": "Here's how to check and add engine oil, the right way, in under a minute."
+   },
+   {
+    "id": "cool",
+    "img": "oil2",
+    "title": "1. Park & wait",
+    "big": "~10 min",
+    "bigSub": "engine off, level ground",
+    "text": "Park on level ground, turn the engine off, and wait about ten minutes. The oil drains back down, and the hot parts cool off."
+   },
+   {
+    "id": "stick",
+    "img": "oil3",
+    "title": "2. Find the dipstick",
+    "big": "",
+    "bigSub": "",
+    "text": "Open the hood and find the dipstick. It usually has a yellow or orange handle."
+   },
+   {
+    "id": "read",
+    "img": "oil4",
+    "title": "3. Wipe & read",
+    "big": "MIN – MAX",
+    "bigSub": "",
+    "text": "Pull it out, wipe it clean, push it all the way back in, then pull it out again. The oil should be between the two marks."
+   },
+   {
+    "id": "cap",
+    "img": "oil5",
+    "title": "4. Open the oil cap",
+    "big": "",
+    "bigSub": "",
+    "text": "If it's low, open the cap with the oil can symbol on top of the engine."
+   },
+   {
+    "id": "pour",
+    "img": "oil6",
+    "title": "5. Add a little at a time",
+    "big": "",
+    "bigSub": "",
+    "text": "Use the oil type from your owner's manual. Pour in a little, wait a minute, and check again. Never overfill."
+   },
+   {
+    "id": "end",
+    "img": "oil1",
+    "title": "Done",
+    "big": "",
+    "bigSub": "",
+    "text": "Close the cap tightly, and you're done. Check it once a month. Follow for more simple car tips."
+   }
+  ]
  }
 }
