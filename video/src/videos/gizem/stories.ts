@@ -255,6 +255,107 @@ export const STORIES: Record<string, MyStory> = {
    }
   ],
   "credits": {}
+ },
+ "voyager": {
+  "title": "NEVER COMING BACK",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "voyager",
+    "title": "Never coming back",
+    "big": "1977",
+    "bigSub": "Voyager 1 & 2 launch",
+    "text": "In 1977, NASA launched two spacecraft that will never come home: Voyager 1 and Voyager 2.",
+    "fit": "contain",
+    "vsec": 7.9,
+    "sec": 8.65
+   },
+   {
+    "id": "planets",
+    "img": "jupiter",
+    "title": "The grand tour",
+    "big": "4",
+    "bigSub": "giant planets visited",
+    "text": "Together they flew past Jupiter, Saturn, Uranus and Neptune, sending back the first close-up pictures of these worlds.",
+    "fit": "contain",
+    "vsec": 8.3,
+    "sec": 9.05
+   },
+   {
+    "id": "dot",
+    "img": "paleblue",
+    "title": "The Pale Blue Dot",
+    "big": "",
+    "bigSub": "",
+    "text": "In 1990, Voyager 1 turned around and photographed Earth from six billion kilometres away. A tiny blue dot.",
+    "vsec": 8.55,
+    "sec": 9.3
+   },
+   {
+    "id": "far",
+    "img": "helio",
+    "title": "Interstellar space",
+    "big": "25+ billion km",
+    "bigSub": "Voyager 1 from Earth",
+    "text": "Today, both Voyagers have left the Sun's bubble and are in interstellar space, the farthest human-made objects ever.",
+    "fit": "contain",
+    "vsec": 7.95,
+    "sec": 8.7
+   },
+   {
+    "id": "record",
+    "img": "goldenrecord",
+    "title": "A message for aliens",
+    "big": "",
+    "bigSub": "",
+    "text": "Each one carries a golden record with sounds and pictures of Earth, in case anyone ever finds it.",
+    "fit": "contain",
+    "vsec": 6.92,
+    "sec": 7.67
+   },
+   {
+    "id": "nh",
+    "img": "pluto",
+    "title": "New Horizons",
+    "big": "2015",
+    "bigSub": "first visit to Pluto",
+    "text": "In 2015, a newer probe, New Horizons, gave us our first close look at Pluto, with its giant heart-shaped glacier.",
+    "fit": "contain",
+    "vsec": 8.55,
+    "sec": 9.3
+   },
+   {
+    "id": "arrokoth",
+    "img": "arrokoth",
+    "title": "Arrokoth",
+    "big": "",
+    "bigSub": "",
+    "text": "Then it flew past Arrokoth, the most distant object ever explored up close, and kept going.",
+    "fit": "contain",
+    "vsec": 6.55,
+    "sec": 7.3
+   },
+   {
+    "id": "end",
+    "img": "voyager",
+    "title": "Into the dark",
+    "big": "",
+    "bigSub": "",
+    "text": "None of them will ever return. When their power runs out, they will drift silently between the stars for millions of years.",
+    "fit": "contain",
+    "vsec": 8.0,
+    "sec": 8.75
+   }
+  ],
+  "credits": {
+   "voyager": "Image: NASA / JPL (public domain)",
+   "arrokoth": "Image: NASA / JHUAPL / SwRI (public domain)",
+   "jupiter": "Image: NASA, ESA / Hubble (public domain)",
+   "paleblue": "Image: NASA / JPL (public domain)",
+   "helio": "Image: NASA / JPL (public domain)",
+   "goldenrecord": "Image: NASA / JPL (public domain)",
+   "pluto": "Image: NASA / JHUAPL / SwRI (public domain)"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
