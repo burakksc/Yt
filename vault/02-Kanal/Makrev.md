@@ -10,3 +10,4 @@
 - İlk iki panelli kurgu "fena değil" → 3 alternatif daha: kurgu2 (tam hat solda + konveyör yakın planı sağda), kurgu3 (üniteler yakın | tam hat ortada | konveyör ucu yakın), kurgu4 (ortada net tam hat, arkada bulanık büyük kopya — alan derinliği).
 - kurgu5 (tam hat solda + 3 çerçeveli detay karosu), kurgu6 (ortada tam hat + 2 yuvarlak büyüteç detayı, işaret çizgili). Script: scripts/media/makrev_banner_compositions.py
 - kurgu7 (lacivert çapraz panel + kırmızı şerit), kurgu8 (lacivert zemin + bej spot ışık), kurgu9 (film şeridi: geniş tam hat + 3 dar detay), kurgu10 (tam hat + 3 altıgen detay). Renkler: site lacivert BGR(72,50,37), logo kırmızı BGR(63,32,232).
+- kurgu11 (sol blueprint / sağ gerçek), kurgu12 (tek hat, çapraz ışık süpürmesiyle blueprint→gerçek), kurgu13 (beyaz stüdyo: görüntü/zemin rengi bölümüyle zemin beyazlatıldı, gölgeler korundu + lacivert/kırmızı çizgiler). Karanlık showroom denemesi halo yaptı, atıldı.
