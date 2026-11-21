@@ -261,9 +261,9 @@ def main():
             reg = img[ny0:ny1, nx0:nx1]
             if eyes > 0.001:
                 reg = reg * (1 - em * eyes) + closed_roi * (em * eyes)
-            a = np.deg2rad(nod["angle"] * down + 0.25 * breath)
+            ang = np.deg2rad(nod["angle"] * down + 0.25 * breath)
             dy = (nod["drop"] * down + 0.6 * breath) * sx
-            ca, sa = np.cos(a), np.sin(a)
+            ca, sa = np.cos(ang), np.sin(ang)
             # inverse map of: rotate about the neck pivot, then move down
             qx, qy = nxx - npx, nyy - dy - npy
             mx = npx + ca * qx + sa * qy
