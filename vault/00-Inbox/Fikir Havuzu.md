@@ -26,3 +26,7 @@ tür: inbox
 - 43 miğfer: Roma değil ortaçağ (İspanya kıyısı)
 - Morocco'da 4.000 yıllık kale (Eki 2026)
 - North Sea Silverpit kraterinin sırrı çözüldü (Eki 2026)
+
+## Seri: Then vs Now (kullanıcı seçti, 2026-11-21)
+- "A day in 1900" Shorts (PD tarihi fotoğraflar: Library of Congress, NARA, Commons)
+- İlginç eski meslekler serisi: knocker-up, lamplighter, human computers, ice cutter, rat catcher, pinsetter, switchboard operator, lector (fabrika okuyucusu), log driver, milkman/iceman, town crier, leech collector
