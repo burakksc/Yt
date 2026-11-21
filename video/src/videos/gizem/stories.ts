@@ -833,12 +833,12 @@ export const STORIES: Record<string, MyStory> = {
   }
  },
  "baalbek": {
-  "title": "THE BIGGEST STONE EVER CUT",
+  "title": "THE BIGGEST STONE OF ANTIQUITY",
   "scenes": [
    {
     "id": "hook",
     "img": "quarry",
-    "title": "The biggest stone ever cut",
+    "title": "The biggest stone of antiquity",
     "big": "~1,650 t",
     "bigSub": "one single block",
     "text": "See the tiny person? These are the biggest stone blocks known from the ancient world, and they never left the quarry.",
@@ -931,6 +931,97 @@ export const STORIES: Record<string, MyStory> = {
    "block2014": "Photo: Lodo27 (CC BY-SA 2.0)",
    "wall": "Photo: Lodo27 (CC BY-SA 2.0)",
    "ruins": "Photo: ISAW / isawnyu (CC BY 2.0)"
+  }
+ },
+ "yamantau": {
+  "title": "RUSSIA'S SECRET MOUNTAIN",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "urals_dusk",
+    "title": "Russia's secret mountain",
+    "big": "",
+    "bigSub": "",
+    "text": "In Russia's Ural Mountains, there's a mountain the United States spent years asking about.",
+    "fit": "contain",
+    "vsec": 6.83,
+    "sec": 7.58
+   },
+   {
+    "id": "peak",
+    "img": "urals_ridge",
+    "title": "Mount Yamantau",
+    "big": "1,640 m",
+    "bigSub": "highest peak of the Southern Urals",
+    "text": "Mount Yamantau. At 1,640 metres, it's the highest peak in the Southern Urals.",
+    "fit": "contain",
+    "vsec": 7.83,
+    "sec": 8.57
+   },
+   {
+    "id": "town",
+    "img": "inzer",
+    "title": "A closed town",
+    "big": "",
+    "bigSub": "",
+    "text": "At its foot lies Mezhgorye, a closed military town that outsiders can't simply visit.",
+    "fit": "contain",
+    "vsec": 7.0,
+    "sec": 7.75
+   },
+   {
+    "id": "inside",
+    "img": "bunker_tunnel",
+    "title": "Inside the mountain",
+    "big": "",
+    "bigSub": "",
+    "text": "Since Soviet times, a huge underground complex has reportedly been built inside the mountain.",
+    "fit": "contain",
+    "vsec": 7.4,
+    "sec": 8.15
+   },
+   {
+    "id": "answers",
+    "img": "forest",
+    "title": "Changing answers",
+    "big": "?",
+    "bigSub": "official explanations",
+    "text": "Asked what it was, Russian officials gave different answers. A mine. A store for treasures. A food warehouse. A bunker for leaders.",
+    "fit": "contain",
+    "vsec": 10.03,
+    "sec": 10.78
+   },
+   {
+    "id": "congress",
+    "img": "capitol",
+    "title": "Washington asks",
+    "big": "1997",
+    "bigSub": "U.S. Congress asks for answers",
+    "text": "In 1997, the U.S. Congress urged Russia to explain it, and to allow an inspection.",
+    "fit": "contain",
+    "vsec": 7.62,
+    "sec": 8.38
+   },
+   {
+    "id": "end",
+    "img": "rocks",
+    "title": "Still a secret",
+    "big": "",
+    "bigSub": "",
+    "text": "Many analysts suspect a nuclear war bunker. But its purpose has never been confirmed.",
+    "fit": "contain",
+    "vsec": 6.97,
+    "sec": 7.72
+   }
+  ],
+  "credits": {
+   "urals_dusk": "View from Iremel, Southern Urals. Photo: Pawel Maryanov · CC BY 2.0 · Flickr",
+   "urals_ridge": "Southern Urals. Photo: Aleksandr Zykov · CC BY-SA 2.0 · Flickr",
+   "inzer": "Inzer valley, Bashkortostan. Photo: Borya · CC BY-SA 2.0 · Flickr",
+   "bunker_tunnel": "Illustrative: a Cold War bunker tunnel (not Yamantau). Photo: archer10 (Dennis) · CC BY-SA 2.0 · Flickr",
+   "forest": "Southern Urals. Photo: Aleksandr Zykov · CC BY-SA 2.0 · Flickr",
+   "capitol": "U.S. Capitol. Photo: John Brighenti · CC BY 2.0 · Flickr",
+   "rocks": "Southern Urals. Photo: Aleksandr Zykov · CC BY-SA 2.0 · Flickr"
   }
  }
 };
