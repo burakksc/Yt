@@ -4,8 +4,8 @@ import { Img, staticFile } from "remotion";
 /** Small channel logo, bottom-right (all vertical Shorts). Sits above the Shorts UI strip. */
 export const Watermark: React.FC<{ size?: number; right?: number; top?: number; opacity?: number }> = ({
   size = 120,
-  right = 56,
-  top = 1760,
+  right = 40,
+  top = 880,
   opacity = 0.9,
 }) => (
   <Img
