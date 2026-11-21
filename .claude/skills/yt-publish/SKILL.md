@@ -29,3 +29,6 @@ Bu skill YouTube'a kendisi yükleme YAPMAZ (API anahtarı/OAuth yoksa). Yükleme
 
 ## Changelog
 - 1.0.0 (2026-11-13): ilk sürüm.
+
+## Güvenli yayın standardı (zorunlu, 2026-11-21)
+Her teslim `vault/02-Kanal/Güvenli Yayın Standardı.md` ve `Yayın Öncesi Kontrol Listesi.md` ile uyumlu olmalı: önce kamu malı/CC0 görsel, sonra CC BY; sahne sahne atıflı açıklama (`scripts/media/gizem_credits.py <slug> --nolinks`); AI/sentetik etiketi; başlık yanıltıcı değil; teslimde risk özeti. Lisansı doğrulanamayan görsel kullanılmaz.
