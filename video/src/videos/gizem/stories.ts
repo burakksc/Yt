@@ -163,9 +163,8 @@ export const STORIES: Record<string, MyStory> = {
     "big": "",
     "bigSub": "",
     "text": "Astronomer Jerry Ehman circled it on the printout and wrote one word: Wow!",
-    "sfx": "wow",
     "vsec": 5.17,
-    "sec": 9.12
+    "sec": 5.92
    },
    {
     "id": "sec",
