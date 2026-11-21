@@ -22,4 +22,8 @@ There are modules in UNet2DConditionModel that should be kept in float32: []. Ca
 Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
 Loading weights:  53%|█████▎    | 104/196 [00:00<00:00, 1017.44it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1265.83it/s]
 Loading pipeline components...:  86%|████████▌ | 6/7 [00:02<00:00,  3.30it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:02<00:00,  3.06it/s]
-  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:20<01:01, 20.37s/it] 50%|█████     | 2/4 [00:25<00:23, 11.67s/it] 75%|███████▌  | 3/4 [00:31<00:08,  8.97s/it]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:20<01:01, 20.37s/it] 50%|█████     | 2/4 [00:25<00:23, 11.67s/it] 75%|███████▌  | 3/4 [00:31<00:08,  8.97s/it]100%|██████████| 4/4 [00:38<00:00,  7.95s/it]100%|██████████| 4/4 [00:38<00:00,  9.52s/it]
+saved projects/gizem/ai/flannan/imgs_fix/flannan__gone_s2.png 59
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.05s/it] 50%|█████     | 2/4 [00:12<00:12,  6.26s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.25s/it]100%|██████████| 4/4 [00:24<00:00,  6.16s/it]100%|██████████| 4/4 [00:24<00:00,  6.18s/it]
+saved projects/gizem/ai/flannan/imgs_fix/flannan__gone_s3.png 43
+ALLDONE
