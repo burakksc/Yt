@@ -10,13 +10,21 @@
    "prompt": "a small green cliff island with seabirds circling and a lighthouse, far out in the wide ocean"
   },
   "flannan__dark": {
-   "prompt": "an old steamship at night passing a dark island where the lighthouse is not shining, black sea, stars"
+   "prompt": "a dark unlit lighthouse tower on a black rocky island at night, no light shining, a small steamship passing far away on black sea, stars",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "flannan__relief": {
    "prompt": "a small relief boat approaching steep island cliffs with an empty stone landing and steps, grey overcast"
   },
   "flannan__gone": {
-   "prompt": "one yellow oilskin coat hanging on a hook in an empty old lighthouse room, cold window light, quiet"
+   "prompt": "an empty room with nobody in it, a single yellow oilskin raincoat hanging alone on a wall hook by a door, cold grey window light, still life",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "flannan__myth": {
    "prompt": "an old wooden table with a candle, an open logbook with blank pages and a tipped chair, eerie quiet room"

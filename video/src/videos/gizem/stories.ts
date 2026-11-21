@@ -1756,51 +1756,47 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "f_light",
+    "img": "flannan__hook",
     "title": "The lighthouse mystery",
     "big": "1900",
     "bigSub": "three keepers vanish",
     "text": "In December 1900, three lighthouse keepers vanished from a remote Scottish island.",
-    "fit": "contain",
     "vsec": 6.7,
     "sec": 7.45
    },
    {
     "id": "where",
-    "img": "f_islet",
+    "img": "flannan__where",
     "title": "The Flannan Isles",
     "big": "32 km",
     "bigSub": "west of Lewis, Scotland",
     "text": "Eilean Mòr, far out in the Atlantic. Just seabirds, cliffs and a lighthouse.",
-    "fit": "contain",
     "vsec": 6.0,
     "sec": 6.75
    },
    {
     "id": "dark",
-    "img": "f_sea",
+    "img": "flannan__dark",
     "title": "The light goes out",
     "big": "15 Dec",
     "bigSub": "light seen dark",
     "text": "On the fifteenth of December, a passing steamer noticed the light was not shining.",
-    "fit": "contain",
     "vsec": 5.95,
     "sec": 6.7
    },
    {
     "id": "relief",
-    "img": "f_cliff",
+    "img": "flannan__relief",
     "title": "No one waiting",
     "big": "26 Dec",
     "bigSub": "relief ship arrives",
     "text": "Storms delayed the relief ship until Boxing Day. No one came down to meet it.",
-    "fit": "contain",
     "vsec": 5.95,
     "sec": 6.7
    },
    {
     "id": "gone",
-    "img": "f_rails",
+    "img": "flannan__gone",
     "title": "Gone",
     "big": "",
     "bigSub": "Ducat · Marshall · MacArthur",
@@ -1810,46 +1806,44 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "myth",
-    "img": "f_waves",
+    "img": "flannan__myth",
     "title": "Legend vs. record",
     "big": "",
     "bigSub": "",
     "text": "Later tales added an untouched meal, a fallen chair and eerie log entries. None of that is in the official report.",
-    "fit": "contain",
     "vsec": 9.32,
     "sec": 10.07
    },
    {
     "id": "wave",
-    "img": "f_rock",
+    "img": "flannan__wave",
     "title": "The likely answer",
     "big": "",
     "bigSub": "",
     "text": "Storm damage high above the west landing suggested a huge wave swept them away.",
-    "fit": "contain",
     "vsec": 6.55,
     "sec": 7.3
    },
    {
     "id": "end",
-    "img": "f_light",
+    "img": "flannan__end",
     "title": "Never found",
     "big": "",
     "bigSub": "",
     "text": "Their bodies were never found. The sea kept its secret.",
-    "fit": "contain",
     "vsec": 4.53,
     "sec": 5.28
    }
   ],
   "credits": {
-   "f_light": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
-   "f_cliff": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
-   "f_sea": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
-   "f_rails": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
-   "f_rock": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
-   "f_islet": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
-   "f_waves": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons"
+   "flannan__hook": "AI-generated illustration",
+   "flannan__where": "AI-generated illustration",
+   "flannan__dark": "AI-generated illustration",
+   "flannan__relief": "AI-generated illustration",
+   "flannan__gone": "AI-generated illustration",
+   "flannan__myth": "AI-generated illustration",
+   "flannan__wave": "AI-generated illustration",
+   "flannan__end": "AI-generated illustration"
   }
  },
  "maryceleste": {
