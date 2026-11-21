@@ -1789,6 +1789,207 @@ export const STORIES: Record<string, MyStory> = {
    "porder2": "Photo: IISG, 1947 · CC BY-SA 2.0 · Wikimedia Commons",
    "clock": "Photo: Lankyrider · CC BY-SA 4.0 · Wikimedia Commons"
   }
+ },
+ "flannan": {
+  "title": "THE FLANNAN ISLES",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "f_light",
+    "title": "The lighthouse mystery",
+    "big": "1900",
+    "bigSub": "three keepers vanish",
+    "text": "In December 1900, three lighthouse keepers vanished from a remote Scottish island.",
+    "fit": "contain",
+    "vsec": 6.7,
+    "sec": 7.45
+   },
+   {
+    "id": "where",
+    "img": "f_islet",
+    "title": "The Flannan Isles",
+    "big": "32 km",
+    "bigSub": "west of Lewis, Scotland",
+    "text": "Eilean Mòr, far out in the Atlantic. Just seabirds, cliffs and a lighthouse.",
+    "fit": "contain",
+    "vsec": 6.0,
+    "sec": 6.75
+   },
+   {
+    "id": "dark",
+    "img": "f_sea",
+    "title": "The light goes out",
+    "big": "15 Dec",
+    "bigSub": "light seen dark",
+    "text": "On the fifteenth of December, a passing steamer noticed the light was not shining.",
+    "fit": "contain",
+    "vsec": 5.95,
+    "sec": 6.7
+   },
+   {
+    "id": "relief",
+    "img": "f_cliff",
+    "title": "No one waiting",
+    "big": "26 Dec",
+    "bigSub": "relief ship arrives",
+    "text": "Storms delayed the relief ship until Boxing Day. No one came down to meet it.",
+    "fit": "contain",
+    "vsec": 5.95,
+    "sec": 6.7
+   },
+   {
+    "id": "gone",
+    "img": "f_rails",
+    "title": "Gone",
+    "big": "",
+    "bigSub": "Ducat · Marshall · MacArthur",
+    "text": "All three men were gone. One set of oilskins was still hanging inside.",
+    "vsec": 5.67,
+    "sec": 6.42
+   },
+   {
+    "id": "myth",
+    "img": "f_waves",
+    "title": "Legend vs. record",
+    "big": "",
+    "bigSub": "",
+    "text": "Later tales added an untouched meal, a fallen chair and eerie log entries. None of that is in the official report.",
+    "fit": "contain",
+    "vsec": 9.32,
+    "sec": 10.07
+   },
+   {
+    "id": "wave",
+    "img": "f_rock",
+    "title": "The likely answer",
+    "big": "",
+    "bigSub": "",
+    "text": "Storm damage high above the west landing suggested a huge wave swept them away.",
+    "fit": "contain",
+    "vsec": 6.55,
+    "sec": 7.3
+   },
+   {
+    "id": "end",
+    "img": "f_light",
+    "title": "Never found",
+    "big": "",
+    "bigSub": "",
+    "text": "Their bodies were never found. The sea kept its secret.",
+    "fit": "contain",
+    "vsec": 4.53,
+    "sec": 5.28
+   }
+  ],
+  "credits": {
+   "f_light": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
+   "f_cliff": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
+   "f_sea": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
+   "f_rails": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
+   "f_rock": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
+   "f_islet": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons",
+   "f_waves": "Photo: Chris Downer (geograph) · CC BY-SA 2.0 · Wikimedia Commons"
+  }
+ },
+ "maryceleste": {
+  "title": "THE MARY CELESTE",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "mc_amazon",
+    "title": "The ghost ship",
+    "big": "1872",
+    "bigSub": "found adrift",
+    "text": "In December 1872, a ship was found adrift in the Atlantic, with no one aboard.",
+    "fit": "contain",
+    "vsec": 7.53,
+    "sec": 8.28
+   },
+   {
+    "id": "ship",
+    "img": "mc_ship",
+    "title": "The Mary Celeste",
+    "big": "1,701",
+    "bigSub": "barrels of alcohol",
+    "text": "She was the Mary Celeste, bound from New York to Genoa with barrels of alcohol.",
+    "fit": "contain",
+    "vsec": 6.15,
+    "sec": 6.9
+   },
+   {
+    "id": "found",
+    "img": "mc_sea",
+    "title": "Found adrift",
+    "big": "~400 mi",
+    "bigSub": "east of the Azores",
+    "text": "Another ship, the Dei Gratia, found her about four hundred miles east of the Azores.",
+    "fit": "contain",
+    "vsec": 6.67,
+    "sec": 7.42
+   },
+   {
+    "id": "aboard",
+    "img": "mc_flag",
+    "title": "What was left",
+    "big": "6 months",
+    "bigSub": "of food and water",
+    "text": "Six months of food and water were still aboard. But the lifeboat was gone.",
+    "fit": "contain",
+    "vsec": 5.85,
+    "sec": 6.6
+   },
+   {
+    "id": "people",
+    "img": "mc_sea",
+    "title": "Ten people",
+    "big": "10",
+    "bigSub": "never seen again",
+    "text": "Captain Briggs, his wife, their little daughter and seven crew were never seen again.",
+    "fit": "contain",
+    "vsec": 6.25,
+    "sec": 7.0
+   },
+   {
+    "id": "court",
+    "img": "mc_gib",
+    "title": "The inquiry",
+    "big": "",
+    "bigSub": "Gibraltar, 1873",
+    "text": "An inquiry in Gibraltar found no sign of violence.",
+    "fit": "contain",
+    "vsec": 4.65,
+    "sec": 5.4
+   },
+   {
+    "id": "doyle",
+    "img": "mc_doyle",
+    "title": "Fiction becomes legend",
+    "big": "1884",
+    "bigSub": "Conan Doyle's story",
+    "text": "In 1884, Arthur Conan Doyle wrote a story about it, and its invented details became legend.",
+    "vsec": 8.55,
+    "sec": 9.3
+   },
+   {
+    "id": "end",
+    "img": "mc_amazon",
+    "title": "What happened?",
+    "big": "",
+    "bigSub": "",
+    "text": "One theory: fearing the alcohol might explode, they fled in the lifeboat.",
+    "fit": "contain",
+    "vsec": 5.65,
+    "sec": 6.4
+   }
+  ],
+  "credits": {
+   "mc_amazon": "Painting: anonymous, 1861 (public domain)",
+   "mc_ship": "Painting: anonymous, 1861 (public domain)",
+   "mc_flag": "Painting: anonymous, 1861 (public domain)",
+   "mc_doyle": "Photo: Arnold Genthe / Library of Congress (CC0)",
+   "mc_gib": "Photo: kanu101 · CC BY 2.0 · Flickr",
+   "mc_sea": "Photo: M McBey · CC BY 2.0 · Flickr"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
