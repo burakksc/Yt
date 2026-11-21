@@ -493,5 +493,66 @@
     "text": "Close the cap tightly, and you're done. Check it once a month. Follow for more simple car tips."
    }
   ]
+ },
+ "svalbard": {
+  "title": "THE DOOMSDAY VAULT",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "vault_dusk",
+    "title": "The Doomsday Vault",
+    "big": "",
+    "bigSub": "",
+    "text": "Inside a frozen mountain in the Arctic, there is a vault built to survive the end of the world."
+   },
+   {
+    "id": "where",
+    "img": "svalbard_mtn",
+    "title": "Svalbard, Norway",
+    "big": "1,300 km",
+    "bigSub": "from the North Pole",
+    "text": "It's the Svalbard Global Seed Vault, on a Norwegian island about thirteen hundred kilometres from the North Pole."
+   },
+   {
+    "id": "tunnel",
+    "img": "tunnel",
+    "title": "Into the rock",
+    "big": "-18°C",
+    "bigSub": "storage temperature",
+    "text": "A tunnel runs more than a hundred metres into the rock, down to chambers kept at minus eighteen degrees Celsius."
+   },
+   {
+    "id": "seeds",
+    "img": "seeds",
+    "title": "The treasure",
+    "big": "1.3 million+",
+    "bigSub": "seed samples stored",
+    "text": "What's inside isn't gold. It's seeds. More than one point three million samples of the world's crops."
+   },
+   {
+    "id": "frozen",
+    "img": "vault_land",
+    "title": "Built to last",
+    "big": "4.5 million",
+    "bigSub": "sample capacity",
+    "text": "If the power ever fails, the permafrost around it should keep the seeds frozen. And there is room for four and a half million samples."
+   },
+   {
+    "id": "syria",
+    "img": "icarda",
+    "title": "The first withdrawal",
+    "big": "2015",
+    "bigSub": "seeds return to Syria's scientists",
+    "text": "In 2015, it was opened for its first withdrawal. War in Syria had cut scientists off from their gene bank near Aleppo, so they took back their backup seeds and grew them again."
+   },
+   {
+    "id": "end",
+    "img": "vault_snow",
+    "title": "One seed at a time",
+    "big": "",
+    "bigSub": "",
+    "text": "So the doomsday vault isn't just waiting for doomsday. It's already saving our crops, one seed at a time."
+   }
+  ]
  }
 }
