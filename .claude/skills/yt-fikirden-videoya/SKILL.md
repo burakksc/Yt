@@ -12,7 +12,7 @@ Kural: Kullanıcı fikri verince **sormadan** ön çalışmayı başlat; tek ona
 1. **Araştırma (5 dk):** 3–5 güvenilir kaynak; sayıları ve tarihleri doğrula; tek kaynaklı iddiayı "reportedly" yap; efsane/komplo kısmını açıkça ayır. Kaynakları vault'a yaz (`vault/01-Videolar/<tarih> <konu>.md`).
 2. **Senaryo (EN):** 6–8 sahne, toplam ≤ ~110 kelime (Kokoro am_michael ≈ 2.1 kelime/sn → ≤ 60 sn). Kendi cümlelerimiz; ilk cümle kanca; son cümle soru/döngü. Başlık yanıltıcı olmasın.
 3. **Görsel planı:** her sahne için tek cümlelik AI illüstrasyon (kısa prompt, yüzsüz figür, yazı/logo yok, gerçek kişi benzerliği yok; trajedide saygılı). Stil: `projects/gizem/ai/prompts.json` içindeki stil satırı.
-4. **Yayın metni taslağı:** başlık, linksiz açıklama (özet + `Sources:` + Kokoro notu (açıklamada "Images" satırı YOK) + linksiz footer), hashtag satırı, etiket satırı (`#`siz, virgülle), Studio ayarı, risk özeti.
+4. **Yayın metni taslağı:** başlık, linksiz açıklama (özet + `Sources:` + Kokoro notu (açıklamada "Images" satırı YOK) + linksiz footer), SADECE etiket satırı (`#`siz, virgülle; ayrı hashtag satırı yok), Studio ayarı, risk özeti.
 5. **Kullanıcıya TEK mesaj:** senaryo (sahne sahne anlatım + görsel) + başlık. "Onay / değişiklik" iste. Başka soru sorma.
 
 ## Onaydan sonra (otomatik)

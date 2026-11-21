@@ -52,3 +52,6 @@ Her video hazır olur olmaz, sıradakini beklemeden DİREKT gönder (video + ba�
 
 ## Açıklama: "Images" satırı YOK (kullanıcı, 2026-11-21)
 AI illüstrasyonlu videolarda açıklamaya "Images: All images ... AI-generated illustrations" satırı **konmaz**. Kalanlar: özet, Sources, "Narration: AI voice (Kokoro TTS).", linksiz footer, hashtag. (Video içindeki küçük "AI-generated illustration" etiketi ve Studio sentetik kutusu kuralları geçerli.) Gerçek fotoğraf kullanılırsa atıf satırları yine zorunlu.
+
+## Etiket/hashtag teslimi (kullanıcı, 2026-11-21)
+Ayrı **hashtag satırı/bloğu VERME** (kullanıcı yazdıklarımı Studio'daki Tags alanına yapıştırıyor). Sadece **Etiketler (Tags)**: `#`siz, küçük harf, virgülle ayrılmış, tek satır, tek kod bloğu (≤500 karakter). Açıklamadaki standart footer olduğu gibi kalır.
