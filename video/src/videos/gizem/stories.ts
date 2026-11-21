@@ -938,7 +938,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "urals_dusk",
+    "img": "urals_ridge",
     "title": "Russia's secret mountain",
     "big": "",
     "bigSub": "",
@@ -949,7 +949,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "peak",
-    "img": "urals_ridge",
+    "img": "urals_dusk",
     "title": "Mount Yamantau",
     "big": "1,640 m",
     "bigSub": "highest peak of the Southern Urals",
@@ -1022,6 +1022,106 @@ export const STORIES: Record<string, MyStory> = {
    "forest": "Southern Urals. Photo: Aleksandr Zykov · CC BY-SA 2.0 · Flickr",
    "capitol": "U.S. Capitol. Photo: John Brighenti · CC BY 2.0 · Flickr",
    "rocks": "Southern Urals. Photo: Aleksandr Zykov · CC BY-SA 2.0 · Flickr"
+  }
+ },
+ "sentinel": {
+  "title": "THE FORBIDDEN ISLAND",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "nsi_sat",
+    "title": "The forbidden island",
+    "big": "NO ENTRY",
+    "bigSub": "by Indian law",
+    "text": "There is an island you are not allowed to visit. And its people want it that way.",
+    "fit": "contain",
+    "vsec": 5.9,
+    "sec": 6.65
+   },
+   {
+    "id": "where",
+    "img": "nsi_plane",
+    "title": "North Sentinel Island",
+    "big": "~60 km²",
+    "bigSub": "Andaman Islands, India",
+    "text": "North Sentinel Island, in India's Andaman Islands: thick forest, ringed by coral reef.",
+    "vsec": 7.17,
+    "sec": 7.92
+   },
+   {
+    "id": "people",
+    "img": "nsi_air",
+    "title": "The Sentinelese",
+    "big": "?",
+    "bigSub": "population unknown",
+    "text": "It is home to the Sentinelese, one of the last uncontacted peoples on Earth.",
+    "fit": "contain",
+    "vsec": 6.08,
+    "sec": 6.83
+   },
+   {
+    "id": "law",
+    "img": "nsi_reef",
+    "title": "A protected reserve",
+    "big": "1956",
+    "bigSub": "declared a tribal reserve",
+    "text": "India protects it as a tribal reserve. Even sailing close is illegal.",
+    "fit": "contain",
+    "vsec": 6.17,
+    "sec": 6.92
+   },
+   {
+    "id": "tsunami",
+    "img": "nsi_coast",
+    "title": "After the tsunami",
+    "big": "2004",
+    "bigSub": "Indian Ocean tsunami",
+    "text": "After the 2004 tsunami, a helicopter flew over to check on them. A man on the beach shot arrows at it.",
+    "vsec": 8.88,
+    "sec": 9.62
+   },
+   {
+    "id": "visitors",
+    "img": "nsi_strip",
+    "title": "Keep out",
+    "big": "2018",
+    "bigSub": "an outsider is killed",
+    "text": "Outsiders who landed have been killed, most recently an American missionary in 2018.",
+    "fit": "contain",
+    "vsec": 7.1,
+    "sec": 7.85
+   },
+   {
+    "id": "disease",
+    "img": "nsi_tall",
+    "title": "Why stay away?",
+    "big": "",
+    "bigSub": "",
+    "text": "And contact could be deadly for them too. They may have no immunity to our diseases.",
+    "vsec": 6.55,
+    "sec": 7.3
+   },
+   {
+    "id": "end",
+    "img": "nsi_window",
+    "title": "Eyes on, hands off",
+    "big": "",
+    "bigSub": "",
+    "text": "So the rule is simple: watch from afar, and leave them in peace.",
+    "fit": "contain",
+    "vsec": 4.88,
+    "sec": 5.62
+   }
+  ],
+  "credits": {
+   "nsi_sat": "Photo: DLR (public domain mark) · Flickr",
+   "nsi_plane": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
+   "nsi_air": "Photo: Medici82 · CC BY-SA 4.0 · Wikimedia Commons",
+   "nsi_reef": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
+   "nsi_coast": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
+   "nsi_strip": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
+   "nsi_tall": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
+   "nsi_window": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons"
   }
  }
 };

@@ -629,7 +629,7 @@
   "scenes": [
    {
     "id": "hook",
-    "img": "urals_dusk",
+    "img": "urals_ridge",
     "title": "Russia's secret mountain",
     "big": "",
     "bigSub": "",
@@ -637,7 +637,7 @@
    },
    {
     "id": "peak",
-    "img": "urals_ridge",
+    "img": "urals_dusk",
     "title": "Mount Yamantau",
     "big": "1,640 m",
     "bigSub": "highest peak of the Southern Urals",
@@ -694,7 +694,7 @@
     "title": "Snake Island",
     "big": "NO LANDING",
     "bigSub": "without permission",
-    "text": "Off the coast of Brazil, there is an island you are not allowed to land on."
+    "text": "Off the coast of Brazil lies an island you are not allowed to land on."
    },
    {
     "id": "where",
@@ -702,7 +702,7 @@
     "title": "Ilha da Queimada Grande",
     "big": "33 km",
     "bigSub": "off São Paulo, Brazil",
-    "text": "Ilha da Queimada Grande, thirty three kilometres off São Paulo. Better known as Snake Island."
+    "text": "Ilha da Queimada Grande, off São Paulo. Better known as Snake Island."
    },
    {
     "id": "snake",
@@ -889,6 +889,67 @@
     "big": "",
     "bigSub": "",
     "text": "But exactly how the trilithon was lifted is still debated."
+   }
+  ]
+ },
+ "stardust": {
+  "title": "STENDEC",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "andes_crossing",
+    "title": "The last word",
+    "big": "1947",
+    "bigSub": "over the Andes",
+    "text": "In 1947, an airliner over the Andes sent one last strange word in Morse code. Stendec. Then it vanished."
+   },
+   {
+    "id": "plane",
+    "img": "lancastrian",
+    "title": "Star Dust",
+    "big": "11",
+    "bigSub": "people aboard",
+    "text": "It was Star Dust, an Avro Lancastrian with eleven people aboard, flying from Buenos Aires to Santiago."
+   },
+   {
+    "id": "morse",
+    "img": "morse_key",
+    "title": "The final message",
+    "big": "STENDEC",
+    "bigSub": "last Morse message",
+    "text": "Its final message gave an arrival time in Santiago, then ended with Stendec. No one has ever explained that word."
+   },
+   {
+    "id": "search",
+    "img": "andes_clouds",
+    "title": "Vanished",
+    "big": "",
+    "bigSub": "",
+    "text": "Search teams found nothing. Rumours spread of sabotage, and even UFOs."
+   },
+   {
+    "id": "found",
+    "img": "tupungato",
+    "title": "Mount Tupungato",
+    "big": "1998",
+    "bigSub": "wreckage found",
+    "text": "Then, in 1998, climbers on Mount Tupungato found an engine and wreckage, coming out of a glacier."
+   },
+   {
+    "id": "cause",
+    "img": "jetstream",
+    "title": "The jet stream",
+    "big": "",
+    "bigSub": "",
+    "text": "Investigators concluded that the jet stream, a powerful headwind, had slowed the plane. The crew thought they had crossed the Andes, and descended too early."
+   },
+   {
+    "id": "end",
+    "img": "glacier_ice",
+    "title": "Still a mystery",
+    "big": "50+ years",
+    "bigSub": "hidden in the ice",
+    "text": "The glacier hid Star Dust for over fifty years. But Stendec is still a mystery."
    }
   ]
  }
