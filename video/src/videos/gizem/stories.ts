@@ -520,7 +520,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "yon1",
+    "img": "yonaguni__hook",
     "title": "A pyramid under the sea?",
     "big": "1986",
     "bigSub": "discovered by a diver",
@@ -530,7 +530,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "what",
-    "img": "yon2",
+    "img": "yonaguni__what",
     "title": "The Yonaguni Monument",
     "big": "~25 m",
     "bigSub": "below the surface",
@@ -540,7 +540,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "theory",
-    "img": "yon3",
+    "img": "yonaguni__theory",
     "title": "Lost civilization?",
     "big": "10,000 years",
     "bigSub": "claimed age",
@@ -550,7 +550,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "nature",
-    "img": "yon4",
+    "img": "yonaguni__nature",
     "title": "Or nature?",
     "big": "",
     "bigSub": "",
@@ -560,7 +560,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "yon1",
+    "img": "yonaguni__end",
     "title": "You decide",
     "big": "",
     "bigSub": "",
@@ -569,7 +569,13 @@ export const STORIES: Record<string, MyStory> = {
     "sec": 5.4
    }
   ],
-  "credits": {}
+  "credits": {
+   "yonaguni__hook": "AI-generated illustration",
+   "yonaguni__what": "AI-generated illustration",
+   "yonaguni__theory": "AI-generated illustration",
+   "yonaguni__nature": "AI-generated illustration",
+   "yonaguni__end": "AI-generated illustration"
+  }
  },
  "oil": {
   "title": "HOW TO ADD ENGINE OIL",
