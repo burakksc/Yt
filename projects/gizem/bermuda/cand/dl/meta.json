@@ -1,0 +1,58 @@
+{
+ "avengers_line": {
+  "title": "TBM Avengers",
+  "creator": "Armchair Aviator",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=337119360",
+  "source": "flickr"
+ },
+ "avenger": {
+  "title": "Grumman TBM Avenger",
+  "creator": "Eric Friedebach",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=53043995619",
+  "source": "flickr"
+ },
+ "route_map": {
+  "title": "Flight 19 vector map",
+  "creator": "Merikanto",
+  "license": "by-sa",
+  "license_version": "4.0",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Flight_19_vector_map.svg",
+  "source": "wikimedia"
+ },
+ "mariner": {
+  "title": "A Martin PBM-3D Mariner prepares to launch",
+  "creator": "Smithsonian National Air and Space Museum",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=50262821516",
+  "source": "flickr"
+ },
+ "mariners_clouds": {
+  "title": "Martin PBM-3 marine patrol bomber in formation",
+  "creator": "aeroman3 (uploader)",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=30381662318",
+  "source": "flickr"
+ },
+ "atlantic": {
+  "title": "The Atlantic Ocean",
+  "creator": "milan.boers",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=3506659147",
+  "source": "flickr"
+ },
+ "stormy_sea": {
+  "title": "Stormy",
+  "creator": "luke_wes",
+  "license": "by-sa",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=6277400228",
+  "source": "flickr"
+ }
+}
