@@ -57,7 +57,7 @@ export const SCENES: { sec: number; Scene: React.FC }[] = [
 
 // English (Michael) version: narration wav lengths per scene, filled in after TTS.
 export const EN_LEAD = 0.25;
-const EN_VSEC = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const EN_VSEC = [4.95, 5.92, 3.08, 4.12, 4.5, 3.48, 4.15, 3.45, 4.53, 10.55];
 export const EKSI100_EN_SECS = SCENES.map((s, i) =>
   Math.max(s.sec, Math.round((EN_VSEC[i] + EN_LEAD + 0.55) * 10) / 10),
 );
