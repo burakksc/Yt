@@ -46,3 +46,6 @@ Kanal telefon doğrulanana kadar açıklamada `https://` yok; atıf: eser adı +
 - Kanal logosu: sağ altta, 120 px, üstte 1760 / sağ kenardan 70 px (`video/src/components/Watermark.tsx`).
 - "AI-generated illustration" etiketi: sol altta, 15 px, top 1816 / sol 64 px (`videos/gizem/index.tsx`).
 - Tüm yeni Short'lar bu yerleşimle çıkar. **Biten videolar yeniden render EDİLMEZ** (kullanıcı: "yeniden render yok").
+
+## Teslim sırası (kullanıcı, 2026-11-21)
+Her video hazır olur olmaz, sıradakini beklemeden DİREKT gönder (video + başlık + linksiz açıklama + hashtag/etiket + Studio ayarı + risk özeti).
