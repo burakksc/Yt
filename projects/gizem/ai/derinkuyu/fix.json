@@ -1,0 +1,14 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "derinkuyu__life": {
+   "prompt": "cozy underground cave room carved in soft rock, clay jars, a stone water well and goats in a small pen, a beam of light from an air shaft above",
+   "seeds": [
+    2,
+    3
+   ]
+  }
+ }
+}

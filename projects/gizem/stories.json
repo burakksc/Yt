@@ -1087,7 +1087,7 @@
   "scenes": [
    {
     "id": "hook",
-    "img": "d_stair",
+    "img": "derinkuyu__hook",
     "title": "Behind the wall",
     "big": "1963",
     "bigSub": "a hidden passage",
@@ -1095,7 +1095,7 @@
    },
    {
     "id": "where",
-    "img": "d_capp",
+    "img": "derinkuyu__where",
     "title": "Cappadocia, Türkiye",
     "big": "",
     "bigSub": "",
@@ -1103,7 +1103,7 @@
    },
    {
     "id": "deep",
-    "img": "d_shaft",
+    "img": "derinkuyu__deep",
     "title": "How deep?",
     "big": "~85 m",
     "bigSub": "deep",
@@ -1111,7 +1111,7 @@
    },
    {
     "id": "people",
-    "img": "d_halls",
+    "img": "derinkuyu__people",
     "title": "A city for thousands",
     "big": "20,000",
     "bigSub": "people, by estimates",
@@ -1119,7 +1119,7 @@
    },
    {
     "id": "life",
-    "img": "d_rooms",
+    "img": "derinkuyu__life",
     "title": "Life underground",
     "big": "",
     "bigSub": "",
@@ -1127,7 +1127,7 @@
    },
    {
     "id": "doors",
-    "img": "d_stone",
+    "img": "derinkuyu__doors",
     "title": "Stone doors",
     "big": "~500 kg",
     "bigSub": "rolling stone door",
@@ -1135,7 +1135,7 @@
    },
    {
     "id": "why",
-    "img": "d_tunnel",
+    "img": "derinkuyu__why",
     "title": "Why build it?",
     "big": "",
     "bigSub": "",
@@ -1143,7 +1143,7 @@
    },
    {
     "id": "end",
-    "img": "d_hall",
+    "img": "derinkuyu__end",
     "title": "Look behind it",
     "big": "",
     "bigSub": "",

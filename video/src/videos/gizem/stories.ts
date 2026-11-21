@@ -1476,7 +1476,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "d_stair",
+    "img": "derinkuyu__hook",
     "title": "Behind the wall",
     "big": "1963",
     "bigSub": "a hidden passage",
@@ -1486,29 +1486,27 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "where",
-    "img": "d_capp",
+    "img": "derinkuyu__where",
     "title": "Cappadocia, Türkiye",
     "big": "",
     "bigSub": "",
     "text": "It led to a whole city carved into the rock beneath Derinkuyu, in Cappadocia.",
-    "fit": "contain",
     "vsec": 6.2,
     "sec": 6.95
    },
    {
     "id": "deep",
-    "img": "d_shaft",
+    "img": "derinkuyu__deep",
     "title": "How deep?",
     "big": "~85 m",
     "bigSub": "deep",
     "text": "It reaches about eighty five metres down, with as many as eighteen levels by some counts.",
-    "fit": "contain",
     "vsec": 6.85,
     "sec": 7.6
    },
    {
     "id": "people",
-    "img": "d_halls",
+    "img": "derinkuyu__people",
     "title": "A city for thousands",
     "big": "20,000",
     "bigSub": "people, by estimates",
@@ -1518,18 +1516,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "life",
-    "img": "d_rooms",
+    "img": "derinkuyu__life",
     "title": "Life underground",
     "big": "",
     "bigSub": "",
     "text": "There were stables, wine presses, wells, chapels, and air shafts reaching the surface.",
-    "fit": "contain",
     "vsec": 6.2,
     "sec": 6.95
    },
    {
     "id": "doors",
-    "img": "d_stone",
+    "img": "derinkuyu__doors",
     "title": "Stone doors",
     "big": "~500 kg",
     "bigSub": "rolling stone door",
@@ -1539,18 +1536,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "why",
-    "img": "d_tunnel",
+    "img": "derinkuyu__why",
     "title": "Why build it?",
     "big": "",
     "bigSub": "",
     "text": "It was greatly expanded in Byzantine times, as a refuge from raids.",
-    "fit": "contain",
     "vsec": 5.85,
     "sec": 6.6
    },
    {
     "id": "end",
-    "img": "d_hall",
+    "img": "derinkuyu__end",
     "title": "Look behind it",
     "big": "",
     "bigSub": "",
@@ -1560,14 +1556,14 @@ export const STORIES: Record<string, MyStory> = {
    }
   ],
   "credits": {
-   "d_capp": "Photo: Edgardo W. Olivera (Çavuşin, Cappadocia) · CC BY 2.0 · Flickr",
-   "d_shaft": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
-   "d_stone": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
-   "d_stair": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
-   "d_hall": "Photo: Ali Weheda Photography · CC BY-SA 2.0 · Flickr",
-   "d_rooms": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
-   "d_tunnel": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
-   "d_halls": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons"
+   "derinkuyu__hook": "AI-generated illustration",
+   "derinkuyu__where": "AI-generated illustration",
+   "derinkuyu__deep": "AI-generated illustration",
+   "derinkuyu__people": "AI-generated illustration",
+   "derinkuyu__life": "AI-generated illustration",
+   "derinkuyu__doors": "AI-generated illustration",
+   "derinkuyu__why": "AI-generated illustration",
+   "derinkuyu__end": "AI-generated illustration"
   }
  },
  "day1900": {
