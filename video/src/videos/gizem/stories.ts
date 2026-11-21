@@ -2190,6 +2190,89 @@ export const STORIES: Record<string, MyStory> = {
    "launch": "Photo: NASA, 1962 · Public domain",
    "women1959": "Photo: NASA, 1959 · Public domain"
   }
+ },
+ "chocolate": {
+  "title": "CHOCOLATE",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "hook",
+    "title": "Bitter, not sweet?",
+    "big": "",
+    "bigSub": "",
+    "text": "If you picked a cacao bean straight off the tree and bit into it, it wouldn't taste like chocolate at all. So where does that flavor come from?",
+    "vsec": 9.35,
+    "sec": 10.1
+   },
+   {
+    "id": "tree",
+    "img": "tree",
+    "title": "Fruit on the trunk",
+    "big": "",
+    "bigSub": "",
+    "text": "Cacao pods grow right out of the tree's trunk. Each one holds about forty seeds, wrapped in a sweet, white pulp.",
+    "vsec": 8.03,
+    "sec": 8.78
+   },
+   {
+    "id": "ferment",
+    "img": "ferment",
+    "title": "A week of magic",
+    "big": "",
+    "bigSub": "",
+    "text": "The beans ferment under leaves for about a week. This is where chocolate's aroma is born.",
+    "vsec": 6.42,
+    "sec": 7.17
+   },
+   {
+    "id": "roast",
+    "img": "roast",
+    "title": "Dry · Roast · Crack",
+    "big": "",
+    "bigSub": "",
+    "text": "Then they're dried in the sun, roasted, and cracked. Without their shells, the pieces are ground into a thick, dark liquid.",
+    "vsec": 7.97,
+    "sec": 8.72
+   },
+   {
+    "id": "conche",
+    "img": "conche",
+    "title": "1879: the long stir",
+    "big": "",
+    "bigSub": "",
+    "text": "It's mixed with sugar and stirred for hours, sometimes days. A Swiss chocolatier, Rodolphe Lindt, invented this in 1879.",
+    "vsec": 9.93,
+    "sec": 10.68
+   },
+   {
+    "id": "temper",
+    "img": "temper",
+    "title": "Why it snaps",
+    "big": "",
+    "bigSub": "",
+    "text": "The last secret is temperature. Chocolate that's heated and cooled just right turns glossy, and snaps when you break it.",
+    "vsec": 8.15,
+    "sec": 8.9
+   },
+   {
+    "id": "loop",
+    "img": "tree",
+    "title": "Back to the tree",
+    "big": "",
+    "bigSub": "",
+    "text": "And the whole journey starts again, on a tree.",
+    "vsec": 3.38,
+    "sec": 4.12
+   }
+  ],
+  "credits": {
+   "hook": "AI-generated illustration",
+   "tree": "AI-generated illustration",
+   "ferment": "AI-generated illustration",
+   "roast": "AI-generated illustration",
+   "conche": "AI-generated illustration",
+   "temper": "AI-generated illustration"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);

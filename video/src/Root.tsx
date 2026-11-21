@@ -497,6 +497,15 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
       />
       <Composition
+        id="GizemChocolate"
+        component={GizemShort}
+        defaultProps={{ slug: "chocolate" }}
+        durationInFrames={gzFrames("chocolate")}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
         id="GizemBloop"
         component={GizemShort}
         defaultProps={{ slug: "bloop" }}
