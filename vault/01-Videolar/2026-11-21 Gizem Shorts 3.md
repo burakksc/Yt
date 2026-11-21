@@ -49,3 +49,11 @@ Metinler: [[2026-11-21 Gizem Shorts 3 - Metinler]] · Önceki: [[2026-11-20 Gize
 - Yetim render: `pkill -f "npm exec…"` node alt sürecini öldürmüyor (PPID 1'e geçip eski görselle render etmeye devam etti) → `pkill -f "render <Comp>"` ile node'u hedefle.
 - Başka biri /tmp'deki remotion bundle'ını silince render "getStaticCompositions undefined / 404" ile ölür → yeniden başlat.
 - Kelime bütçesi 8 sahnede ~120 kelime → 60.5 s çıktı (fazla); ≤110 kelime hedefle.
+
+## AI illüstrasyon sürümü (2026-11-21 akşam)
+Kullanıcı kararıyla sentinel, snakeisland, metro2, maryceleste **yerel SDXL-Lightning (4 adım, CreativeML OpenRAIL++-M)** illüstrasyonlarıyla yeniden kuruluyor. Derinkuyu ve Flannan bu turda yok.
+- Stil (tüm sahneler): "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration"; 768×1344.
+- Promptlar: `projects/gizem/ai/<slug>/prompts.json`; sahne görsel adı `<slug>__<sahne>`. Seslendirme ve senaryo aynı.
+- Kurallar: Sentinel'de adalılar **hiç çizilmez** (ada, resif, deniz, helikopter, tekne). Mary Celeste'de basit stilize gemi, mürettebat/yüz yok; Conan Doyle yerine masa + tüy kalem. Metro-2'de işçiler arkadan, yazı/logo yok.
+- Ağır işler `scripts/queue/heavy.sh <slug> …` kuyruğundan (order.txt sırası) geçer; doğrudan flock kullanma.
+- Teslim: `video/out/ready/<slug>.mp4` (önce) + `<slug>.txt` (sonra; linksiz açıklama, Studio sentetik kutusu **Evet**).
