@@ -1,5 +1,6 @@
 // Short (1080x1920): why snowflakes are six-sided. Visuals are SVG; narration + captions per scene.
 import React from "react";
+import { Watermark } from "../../components/Watermark";
 import { loadFont } from "@remotion/google-fonts/Inter";
 import { Audio } from "@remotion/media";
 import {
@@ -769,7 +770,8 @@ export const KarTanesiShort: React.FC<{ lang?: Lang }> = ({ lang = "tr" }) => {
             </Series.Sequence>
           ))}
         </Series>
-        <Audio src={staticFile("kar-tanesi/bed.m4a")} volume={0.35} />
+        <Watermark />
+      <Audio src={staticFile("kar-tanesi/bed.m4a")} volume={0.35} />
       </AbsoluteFill>
     </LangCtx.Provider>
   );

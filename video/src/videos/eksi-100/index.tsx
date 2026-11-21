@@ -1,4 +1,5 @@
 import React from "react";
+import { Watermark } from "../../components/Watermark";
 import { loadFont } from "@remotion/google-fonts/Inter";
 import { Audio } from "@remotion/media";
 import {
@@ -262,6 +263,7 @@ export const Eksi100: React.FC<Eksi100Props> = ({
           ))}
         </Series>
         <Title title={title} subtitle={subtitle} />
+        <Watermark />
         <Audio src={staticFile("eksi-100/wind.mp3")} volume={en ? 0.45 : 0.9} />
       </AbsoluteFill>
     </LangCtx.Provider>

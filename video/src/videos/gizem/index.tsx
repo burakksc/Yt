@@ -1,6 +1,7 @@
 // Mystery Shorts (1080x1920): real photos / PD scans + English narration (Michael) + smaller captions.
 // One component for every story; data in ./stories.ts (generated from projects/gizem/stories.json).
 import React from "react";
+import { Watermark } from "../../components/Watermark";
 import { loadFont } from "@remotion/google-fonts/Inter";
 import { Audio } from "@remotion/media";
 import {
@@ -77,6 +78,7 @@ const ScenePage: React.FC<{ slug: string; scene: MyScene; index: number; credit?
       {credit && (
         <div style={{ position: "absolute", left: 40, right: 40, top: 1700, fontSize: 15, fontWeight: 600, color: "rgba(255,255,255,0.6)", textShadow: "0 2px 6px #000" }}>{credit}</div>
       )}
+      <Watermark />
       <Sequence from={Math.round(GZ_LEAD * fps)} layout="none">
         <Audio src={staticFile(`gizem/${slug}/en/${scene.id}.wav`)} />
         <WordCaptions text={scene.text} durationInFrames={Math.round(scene.vsec * fps)} top={1440} highlight={ACCENT} locale="en-US" fontSize={58} />
