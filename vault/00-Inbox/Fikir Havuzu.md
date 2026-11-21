@@ -14,3 +14,15 @@ tür: inbox
 8. Betelgeuse'un gizli eşi Siwarha ("onun bileziği"), 2027 Kasım'da görünecek
 9. 8.000 kurbağa kemiği tek hendekte (Roma dönemi İngiltere, 17 Kas 2026)
 10. Avi Loeb'un UFO fotoğraflayacak radar+teleskop gözlemevi (Kas 2026, kaynaklar zayıf)
+
+### Ek adaylar (2026-11-21, kullanıcı: "her biri ayrı Shorts, başka konular getir")
+- 1998 KY26: yerçekimiyle açıklanamayan şekilde hızlanan asteroit (EarthSky, 20 Kas 2026; Icarus)
+- Tutankamon mezarının duvarı arkasında gizli oda? (KV62 radar taramaları, Eyl 2026; Nefertiti hipotezi)
+- Büyük Piramit'te kapalı koridor (ScanPyramids) — içinde ne var?
+- Dünyanın en büyük tek çanaklı teleskobu (FAST) açıklanamayan sinyal (4 Kas 2026; tek kaynak, doğrula)
+- Okul otobüsü boyunda "hayalet denizanası" Stygiomedusa (Schmidt Ocean)
+- Derin denizde 28 yeni tür + bir VHS kaset (Arjantin, Schmidt Ocean)
+- Mısırlı prensesler okçu muydu? (Dahshur mumyalarında kemik izleri)
+- 43 miğfer: Roma değil ortaçağ (İspanya kıyısı)
+- Morocco'da 4.000 yıllık kale (Eki 2026)
+- North Sea Silverpit kraterinin sırrı çözüldü (Eki 2026)
