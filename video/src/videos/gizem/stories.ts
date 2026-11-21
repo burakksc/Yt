@@ -274,29 +274,27 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "voyager",
+    "img": "hook",
     "title": "Never coming back",
     "big": "1977",
     "bigSub": "Voyager 1 & 2 launch",
     "text": "In 1977, NASA launched two spacecraft that will never come home: Voyager 1 and Voyager 2.",
-    "fit": "contain",
     "vsec": 7.9,
     "sec": 8.65
    },
    {
     "id": "planets",
-    "img": "jupiter",
+    "img": "planets",
     "title": "The grand tour",
     "big": "4",
     "bigSub": "giant planets visited",
     "text": "Together they flew past Jupiter, Saturn, Uranus and Neptune, sending back the first close-up pictures of these worlds.",
-    "fit": "contain",
     "vsec": 8.3,
     "sec": 9.05
    },
    {
     "id": "dot",
-    "img": "paleblue",
+    "img": "dot",
     "title": "The Pale Blue Dot",
     "big": "",
     "bigSub": "",
@@ -306,34 +304,31 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "far",
-    "img": "helio",
+    "img": "far",
     "title": "Interstellar space",
     "big": "25+ billion km",
     "bigSub": "Voyager 1 from Earth",
     "text": "Today, both Voyagers have left the Sun's bubble and are in interstellar space, the farthest human-made objects ever.",
-    "fit": "contain",
     "vsec": 7.95,
     "sec": 8.7
    },
    {
     "id": "record",
-    "img": "goldenrecord",
+    "img": "record",
     "title": "A message for aliens",
     "big": "",
     "bigSub": "",
     "text": "Each one carries a golden record with sounds and pictures of Earth, in case anyone ever finds it.",
-    "fit": "contain",
     "vsec": 6.92,
     "sec": 7.67
    },
    {
     "id": "nh",
-    "img": "pluto",
+    "img": "nh",
     "title": "New Horizons",
     "big": "2015",
     "bigSub": "first visit to Pluto",
     "text": "In 2015, a newer probe, New Horizons, gave us our first close look at Pluto, with its giant heart-shaped glacier.",
-    "fit": "contain",
     "vsec": 8.55,
     "sec": 9.3
    },
@@ -344,30 +339,29 @@ export const STORIES: Record<string, MyStory> = {
     "big": "",
     "bigSub": "",
     "text": "Then it flew past Arrokoth, the most distant object ever explored up close, and kept going.",
-    "fit": "contain",
     "vsec": 6.55,
     "sec": 7.3
    },
    {
     "id": "end",
-    "img": "voyager",
+    "img": "end",
     "title": "Into the dark",
     "big": "",
     "bigSub": "",
     "text": "None of them will ever return. When their power runs out, they will drift silently between the stars for millions of years.",
-    "fit": "contain",
     "vsec": 8.0,
     "sec": 8.75
    }
   ],
   "credits": {
-   "voyager": "Image: NASA / JPL (public domain)",
-   "arrokoth": "Image: NASA / JHUAPL / SwRI (public domain)",
-   "jupiter": "Image: NASA, ESA / Hubble (public domain)",
-   "paleblue": "Image: NASA / JPL (public domain)",
-   "helio": "Image: NASA / JPL (public domain)",
-   "goldenrecord": "Image: NASA / JPL (public domain)",
-   "pluto": "Image: NASA / JHUAPL / SwRI (public domain)"
+   "hook": "AI-generated illustration",
+   "planets": "AI-generated illustration",
+   "dot": "AI-generated illustration",
+   "far": "AI-generated illustration",
+   "record": "AI-generated illustration",
+   "nh": "AI-generated illustration",
+   "arrokoth": "AI-generated illustration",
+   "end": "AI-generated illustration"
   }
  },
  "resin": {

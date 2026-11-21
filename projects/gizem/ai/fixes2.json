@@ -1,0 +1,7 @@
+{"w":768,"h":1344,
+ "style":"flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items":{
+  "voyager__hook":{"prompt":"a small spacecraft with one big round white dish antenna and a long thin boom, floating alone in dark space with stars, no people, no buildings","seeds":[2,3]},
+  "voyager__arrokoth":{"prompt":"a small dark reddish space rock shaped like two rounded lobes touching, floating in dark space with faint stars, no snowman, no people","seeds":[2,3]},
+  "voyager__end":{"prompt":"a tiny probe spacecraft drifting silently among countless stars in vast darkness, no rocket flames, no people","seeds":[2,3]}
+ }}
