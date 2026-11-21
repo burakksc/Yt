@@ -186,7 +186,7 @@ export const RemotionRoot: React.FC = () => {
             },
             {
               badge: "THE END",
-              text: "The coldest ever recorded is minus 89.2, in Antarctica. Minus 100? Never measured. Follow for the next what if.",
+              text: "The coldest ever recorded is minus 89 degrees, in Antarctica. Minus 100? Never measured. Follow for more.",
             },
           ],
         }}
