@@ -1,0 +1,6 @@
+{"w":768,"h":1344,
+ "style":"flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items":{
+  "voyager__arrokoth":{"prompt":"a dark red peanut-shaped asteroid made of two round parts joined together, floating in starry space","seeds":[4,5,6]},
+  "voyager__end":{"prompt":"a tiny satellite with a round dish antenna far away among countless stars, quiet lonely deep space","seeds":[4,5,6]}
+ }}
