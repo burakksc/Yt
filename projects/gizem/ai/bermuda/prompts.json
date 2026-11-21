@@ -4,10 +4,18 @@
  "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
  "items": {
   "bermuda__hook": {
-   "prompt": "five 1940s propeller planes flying in formation over a bright blue ocean near a sunny Florida coast, no markings, no text"
+   "prompt": "five small dark blue single-engine monoplanes flying in a row over a calm turquoise ocean, plain unpainted wings without symbols, sunny coast far away",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "bermuda__flight": {
-   "prompt": "a single dark blue 1940s single-engine propeller bomber plane flying over calm sea, no markings, no text"
+   "prompt": "one plain dark blue 1940s single-engine monoplane with a big round canopy flying over calm sea, wings without symbols or markings",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "bermuda__lost": {
    "prompt": "an old aviation compass with a spinning needle on a plane dashboard, dark sea and orange sunset outside the window"
