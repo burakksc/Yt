@@ -1055,7 +1055,6 @@ export const STORIES: Record<string, MyStory> = {
     "big": "?",
     "bigSub": "population unknown",
     "text": "It is home to the Sentinelese, one of the last uncontacted peoples on Earth.",
-    "fit": "contain",
     "vsec": 6.08,
     "sec": 6.83
    },
@@ -1114,9 +1113,9 @@ export const STORIES: Record<string, MyStory> = {
    }
   ],
   "credits": {
-   "nsi_sat": "Photo: DLR (public domain mark) · Flickr",
+   "nsi_sat": "Photo: DLR_next (DLR) · Public Domain Mark · Flickr",
    "nsi_plane": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
-   "nsi_air": "Photo: Medici82 · CC BY-SA 4.0 · Wikimedia Commons",
+   "nsi_air": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
    "nsi_reef": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
    "nsi_coast": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
    "nsi_strip": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
