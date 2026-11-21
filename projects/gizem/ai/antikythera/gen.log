@@ -5,3 +5,33 @@
 /root/.venvs/sd/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
   warnings.warn(
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:  86%|████████▌ | 168/196 [00:00<00:00, 1594.27it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1753.16it/s]
+Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:00,  9.48it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:  20%|██        | 104/517 [00:00<00:00, 1019.23it/s][A
+Loading weights:  40%|███▉      | 206/517 [00:00<00:00, 1013.39it/s][A
+Loading weights:  63%|██████▎   | 328/517 [00:00<00:00, 1052.69it/s][A
+Loading weights:  85%|████████▌ | 440/517 [00:00<00:00, 1057.43it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 1080.29it/s]
+Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:01,  3.29it/s]Loading pipeline components...:  71%|███████▏  | 5/7 [00:00<00:00,  5.39it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  7.56it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  6.41it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:26<01:18, 26.03s/it] 50%|█████     | 2/4 [00:35<00:32, 16.18s/it] 75%|███████▌  | 3/4 [00:41<00:11, 11.47s/it]100%|██████████| 4/4 [00:47<00:00,  9.30s/it]100%|██████████| 4/4 [00:47<00:00, 11.79s/it]
+saved projects/gizem/ai/antikythera/imgs/antikythera__hook_s1.png 65
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:16,  5.55s/it] 50%|█████     | 2/4 [00:11<00:11,  5.65s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.78s/it]100%|██████████| 4/4 [00:23<00:00,  5.89s/it]100%|██████████| 4/4 [00:23<00:00,  5.81s/it]
+saved projects/gizem/ai/antikythera/imgs/antikythera__wreck_s1.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.78s/it] 50%|█████     | 2/4 [00:11<00:11,  5.88s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.85s/it]100%|██████████| 4/4 [00:22<00:00,  5.67s/it]100%|██████████| 4/4 [00:22<00:00,  5.74s/it]
+saved projects/gizem/ai/antikythera/imgs/antikythera__gears_s1.png 40
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:16,  5.56s/it] 50%|█████     | 2/4 [00:11<00:11,  5.57s/it] 75%|███████▌  | 3/4 [00:16<00:05,  5.60s/it]100%|██████████| 4/4 [00:22<00:00,  5.58s/it]100%|██████████| 4/4 [00:22<00:00,  5.58s/it]
+saved projects/gizem/ai/antikythera/imgs/antikythera__cosmos_s1.png 38
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:16,  5.53s/it] 50%|█████     | 2/4 [00:11<00:11,  5.58s/it] 75%|███████▌  | 3/4 [00:16<00:05,  5.63s/it]100%|██████████| 4/4 [00:22<00:00,  5.67s/it]100%|██████████| 4/4 [00:22<00:00,  5.64s/it]
+saved projects/gizem/ai/antikythera/imgs/antikythera__eclipse_s1.png 40
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.90s/it] 50%|█████     | 2/4 [00:11<00:11,  5.90s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.96s/it]100%|██████████| 4/4 [00:23<00:00,  5.87s/it]100%|██████████| 4/4 [00:23<00:00,  5.89s/it]
+saved projects/gizem/ai/antikythera/imgs/antikythera__xray_s1.png 40
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.72s/it] 50%|█████     | 2/4 [00:11<00:11,  5.84s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.79s/it]100%|██████████| 4/4 [00:23<00:00,  5.76s/it]100%|██████████| 4/4 [00:23<00:00,  5.77s/it]
+saved projects/gizem/ai/antikythera/imgs/antikythera__model_s1.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.02s/it] 50%|█████     | 2/4 [00:11<00:11,  6.00s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.91s/it]100%|██████████| 4/4 [00:23<00:00,  5.84s/it]100%|██████████| 4/4 [00:23<00:00,  5.89s/it]
+saved projects/gizem/ai/antikythera/imgs/antikythera__end_s1.png 41
+ALLDONE

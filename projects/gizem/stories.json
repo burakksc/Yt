@@ -758,7 +758,7 @@
   "scenes": [
    {
     "id": "hook",
-    "img": "fragment",
+    "img": "antikythera__hook",
     "title": "A 2,000-year-old computer",
     "big": "2,000+ yrs",
     "bigSub": "old, and full of gears",
@@ -766,7 +766,7 @@
    },
    {
     "id": "wreck",
-    "img": "wreck",
+    "img": "antikythera__wreck",
     "title": "The shipwreck",
     "big": "1901",
     "bigSub": "recovered off Antikythera, Greece",
@@ -774,7 +774,7 @@
    },
    {
     "id": "gears",
-    "img": "gears",
+    "img": "antikythera__gears",
     "title": "Hidden gears",
     "big": "30",
     "bigSub": "bronze gears survive",
@@ -782,7 +782,7 @@
    },
    {
     "id": "cosmos",
-    "img": "front",
+    "img": "antikythera__cosmos",
     "title": "A pocket cosmos",
     "big": "",
     "bigSub": "",
@@ -790,7 +790,7 @@
    },
    {
     "id": "eclipse",
-    "img": "back",
+    "img": "antikythera__eclipse",
     "title": "Predicting the sky",
     "big": "223 months",
     "bigSub": "eclipse cycle on the back dial",
@@ -798,7 +798,7 @@
    },
    {
     "id": "xray",
-    "img": "xray",
+    "img": "antikythera__xray",
     "title": "X-ray secrets",
     "big": "2005",
     "bigSub": "X-ray CT scans",
@@ -806,7 +806,7 @@
    },
    {
     "id": "model",
-    "img": "model",
+    "img": "antikythera__model",
     "title": "Rebuilding it",
     "big": "2021",
     "bigSub": "UCL's new model of the front",
@@ -814,7 +814,7 @@
    },
    {
     "id": "end",
-    "img": "museum",
+    "img": "antikythera__end",
     "title": "Who built it?",
     "big": "",
     "bigSub": "",
