@@ -743,6 +743,7 @@ const ScenePage: React.FC<{ scene: KarScene }> = ({ scene }) => {
           durationInFrames={Math.round(scene.vsec * fps)}
           top={1440}
           highlight={ACCENT}
+          locale={lang === "en" ? "en-US" : "tr-TR"}
         />
       </Sequence>
     </AbsoluteFill>
