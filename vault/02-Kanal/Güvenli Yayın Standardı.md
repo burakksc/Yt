@@ -15,6 +15,7 @@ Uygulama kuralları:
 - **Araç/araba:** AI kalite sorunu (kullanıcı: "saçma") → bu konular kamu malı fotoğraf veya kodla çizim.
 - **Kamu malı (NASA/NOAA/LoC) görsel de serbest:** lisans riski AI ile aynı seviyede sıfır; gerçek veri/harita/uzay görüntüsü için bunlar tercih.
 - Studio: sentetik içerik kutusu **Evet** (gerçekçi görünüyorsa), açıklamada AI notu.
+- **Kullanıcı (2026-11-21): İSTİSNA YOK, hepsi AI** (Human Computers, Mary Celeste dahil). Gerçek kişi anlatılan videolarda: **yüzsüz/silüet/arkadan, genel dönem karakterleri**; isimli gerçek kişinin yüz benzerliği çizilmez. Gemi/araç: sade stilize illüstrasyon (detay hatası yoksa), kalite kötüyse kullanıcıya göster.
 - Eski (gerçek foto atıflı) videolar kalır; istenirse sonra AI/PD'ye çevrilir.
 - Kalan riskler (AI ağırlıklı kanal = YouTube "özgün olmayan içerik" gözlemi): her videoya özgün anlatım/senaryo, farklı yapı; aynı şablonla toplu üretme.
 
