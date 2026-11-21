@@ -10,3 +10,4 @@ composition: GizemBloop / GizemTaos / GizemWow / GizemVoynich (video/src/videos/
 - Sıradaki istekler: ağaç reçinesi hayatta kalma videosu (kullanıcı fikirleri yazacak), deniz altı ilginç olaylar araştırması, dönmeyen uzay araçları videosu.
 - Eklenenler: Voyager & New Horizons (NASA PD), Pine Resin (SDXL; Commons 429), Engine HP (SDXL), Yonaguni (SDXL). Build: scripts/media/gizem_build.py <slug> <imgdir> <Comp>.
 - Sıradaki: "simple bilgiler" serisi (EN): ör. arabaya yağ nasıl doldurulur (motor soğuk olmalı vb.).
+- Kullanıcı (2026-11-21): araba videoları (Engine HP, Engine Oil) 'olmamış, saçma sapan görseller' → SDXL araba/motor görselleri kötü. Araba konularında AI görsel KULLANMA; gerçek fotoğraf (Commons/CC) ya da gerçek video bul.
