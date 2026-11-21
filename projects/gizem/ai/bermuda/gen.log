@@ -1,0 +1,34 @@
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/configuration_utils.py:281: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a model, please use <class 'diffusers.models.unets.unet_2d_condition.UNet2DConditionModel'>.load_config(...) followed by <class 'diffusers.models.unets.unet_2d_condition.UNet2DConditionModel'>.from_config(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+/root/.venvs/sd/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:03,  1.53it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1972.80it/s]
+Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:01,  2.63it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:  20%|██        | 104/517 [00:00<00:00, 954.72it/s][A
+Loading weights:  39%|███▊      | 200/517 [00:00<00:00, 956.76it/s][A
+Loading weights:  59%|█████▉    | 307/517 [00:00<00:00, 999.82it/s][A
+Loading weights:  79%|███████▉  | 408/517 [00:00<00:00, 941.37it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 991.78it/s]
+Loading pipeline components...:  86%|████████▌ | 6/7 [00:01<00:00,  4.40it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  4.75it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  4.07it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:07<00:21,  7.29s/it] 50%|█████     | 2/4 [00:12<00:12,  6.27s/it] 75%|███████▌  | 3/4 [00:18<00:05,  5.90s/it]100%|██████████| 4/4 [00:23<00:00,  5.69s/it]100%|██████████| 4/4 [00:23<00:00,  5.92s/it]
+saved projects/gizem/ai/bermuda/imgs/bermuda__hook_s1.png 40
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.77s/it] 50%|█████     | 2/4 [00:11<00:11,  5.79s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.70s/it]100%|██████████| 4/4 [00:22<00:00,  5.59s/it]100%|██████████| 4/4 [00:22<00:00,  5.65s/it]
+saved projects/gizem/ai/bermuda/imgs/bermuda__flight_s1.png 40
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.96s/it] 50%|█████     | 2/4 [00:12<00:12,  6.12s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.97s/it]100%|██████████| 4/4 [00:23<00:00,  5.81s/it]100%|██████████| 4/4 [00:23<00:00,  5.89s/it]
+saved projects/gizem/ai/bermuda/imgs/bermuda__lost_s1.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.72s/it] 50%|█████     | 2/4 [00:11<00:11,  5.61s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.76s/it]100%|██████████| 4/4 [00:23<00:00,  5.86s/it]100%|██████████| 4/4 [00:23<00:00,  5.80s/it]
+saved projects/gizem/ai/bermuda/imgs/bermuda__rescue_s1.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.14s/it] 50%|█████     | 2/4 [00:12<00:12,  6.15s/it] 75%|███████▌  | 3/4 [00:19<00:06,  6.42s/it]100%|██████████| 4/4 [00:24<00:00,  6.19s/it]100%|██████████| 4/4 [00:24<00:00,  6.22s/it]
+saved projects/gizem/ai/bermuda/imgs/bermuda__flame_s1.png 42
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:16,  5.36s/it] 50%|█████     | 2/4 [00:10<00:10,  5.47s/it] 75%|███████▌  | 3/4 [00:16<00:05,  5.56s/it]100%|██████████| 4/4 [00:22<00:00,  5.60s/it]100%|██████████| 4/4 [00:22<00:00,  5.56s/it]
+saved projects/gizem/ai/bermuda/imgs/bermuda__legend_s1.png 39
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.18s/it] 50%|█████     | 2/4 [00:12<00:11,  5.99s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.87s/it]100%|██████████| 4/4 [00:23<00:00,  5.90s/it]100%|██████████| 4/4 [00:23<00:00,  5.93s/it]
+saved projects/gizem/ai/bermuda/imgs/bermuda__twist_s1.png 41
+ALLDONE
