@@ -4,10 +4,18 @@
  "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
  "items": {
   "stardust__hook": {
-   "prompt": "snowy Andes mountain peaks above a sea of clouds at dusk, a tiny old four-engine propeller plane far away, calm and solemn"
+   "prompt": "snowy Andes peaks above a sea of clouds at dusk, a tiny silver plane far away in the sky flying level, calm solemn mood, no text",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "stardust__plane": {
-   "prompt": "a 1940s four-engine propeller airliner flying peacefully over brown mountains, silver body, no markings, no text"
+   "prompt": "side view of a silver 1940s airliner with four propeller engines on long straight wings, flying level above white clouds, plain unmarked body, no text",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "stardust__morse": {
    "prompt": "an old brass telegraph morse key on a wooden desk with headphones and a glowing radio dial, cosy night lamp"
