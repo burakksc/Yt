@@ -5,3 +5,18 @@
 /root/.venvs/sd/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
   warnings.warn(
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:01,  6.00it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:  16%|█▌        | 81/517 [00:00<00:00, 809.86it/s][A
+Loading weights:  33%|███▎      | 170/517 [00:00<00:00, 851.82it/s][A
+Loading weights:  51%|█████▏    | 266/517 [00:00<00:00, 894.85it/s][A
+Loading weights:  70%|██████▉   | 360/517 [00:00<00:00, 906.92it/s][A
+Loading weights:  91%|█████████▏| 472/517 [00:00<00:00, 953.88it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 947.30it/s]
+Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:02,  2.05it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:  69%|██████▉   | 136/196 [00:00<00:00, 1359.70it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1435.27it/s]
+Loading pipeline components...:  86%|████████▌ | 6/7 [00:01<00:00,  6.34it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  6.03it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
