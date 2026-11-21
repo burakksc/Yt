@@ -442,6 +442,204 @@ export const STORIES: Record<string, MyStory> = {
    }
   ],
   "credits": {}
+ },
+ "engine": {
+  "title": "HORSEPOWER",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "hoods",
+    "title": "Same size, different power",
+    "big": "150 vs 421 hp",
+    "bigSub": "both 2.0-litre, 4 cylinders",
+    "text": "These two engines are both two litres, with four cylinders. One makes about one hundred fifty horsepower. The other makes four hundred twenty one. How?",
+    "vsec": 9.85,
+    "sec": 10.6
+   },
+   {
+    "id": "air",
+    "img": "intake",
+    "title": "It's all about air",
+    "big": "",
+    "bigSub": "",
+    "text": "An engine is basically an air pump. The more air and fuel it can burn every second, the more power it makes.",
+    "vsec": 7.42,
+    "sec": 8.18
+   },
+   {
+    "id": "turbo",
+    "img": "turbo",
+    "title": "Turbochargers",
+    "big": "",
+    "bigSub": "",
+    "text": "A turbocharger uses hot exhaust gas to spin a fan that squeezes extra air into the cylinders. More air, bigger explosion.",
+    "vsec": 9.03,
+    "sec": 9.78
+   },
+   {
+    "id": "rpm",
+    "img": "tacho",
+    "title": "Revs",
+    "big": "power = torque × rpm",
+    "bigSub": "",
+    "text": "Power is force times speed. An engine that can safely spin faster makes more power from the same size.",
+    "vsec": 7.25,
+    "sec": 8.0
+   },
+   {
+    "id": "parts",
+    "img": "pistons",
+    "title": "Stronger parts",
+    "big": "",
+    "bigSub": "",
+    "text": "High power engines use forged pistons, stronger rods, better cooling and smarter computers, so they don't melt under the pressure.",
+    "vsec": 9.3,
+    "sec": 10.05
+   },
+   {
+    "id": "cost",
+    "img": "hoods",
+    "title": "The price",
+    "big": "",
+    "bigSub": "",
+    "text": "That's why the powerful one costs more, uses more fuel and needs more care. Which one would you choose?",
+    "vsec": 7.22,
+    "sec": 7.97
+   }
+  ],
+  "credits": {}
+ },
+ "yonaguni": {
+  "title": "YONAGUNI",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "yon1",
+    "title": "A pyramid under the sea?",
+    "big": "1986",
+    "bigSub": "discovered by a diver",
+    "text": "In 1986, a diver off the tiny Japanese island of Yonaguni found something strange on the sea floor.",
+    "vsec": 8.12,
+    "sec": 8.88
+   },
+   {
+    "id": "what",
+    "img": "yon2",
+    "title": "The Yonaguni Monument",
+    "big": "~25 m",
+    "bigSub": "below the surface",
+    "text": "Giant stone terraces, flat platforms and sharp right angles, like steps, about twenty five metres under the water.",
+    "vsec": 8.22,
+    "sec": 8.97
+   },
+   {
+    "id": "theory",
+    "img": "yon3",
+    "title": "Lost civilization?",
+    "big": "10,000 years",
+    "bigSub": "claimed age",
+    "text": "A Japanese geologist believed it was carved by people over ten thousand years ago, when this land was still above the sea.",
+    "vsec": 8.18,
+    "sec": 8.93
+   },
+   {
+    "id": "nature",
+    "img": "yon4",
+    "title": "Or nature?",
+    "big": "",
+    "bigSub": "",
+    "text": "Most scientists disagree. This sandstone naturally cracks along straight lines, which can create step-like shapes.",
+    "vsec": 7.75,
+    "sec": 8.5
+   },
+   {
+    "id": "end",
+    "img": "yon1",
+    "title": "You decide",
+    "big": "",
+    "bigSub": "",
+    "text": "Natural rock, or the ruins of a lost world? What do you think?",
+    "vsec": 4.65,
+    "sec": 5.4
+   }
+  ],
+  "credits": {}
+ },
+ "oil": {
+  "title": "HOW TO ADD ENGINE OIL",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "oil1",
+    "title": "How to add engine oil",
+    "big": "",
+    "bigSub": "",
+    "text": "Here's how to check and add engine oil, the right way, in under a minute.",
+    "vsec": 4.95,
+    "sec": 5.7
+   },
+   {
+    "id": "cool",
+    "img": "oil2",
+    "title": "1. Park & wait",
+    "big": "~10 min",
+    "bigSub": "engine off, level ground",
+    "text": "Park on level ground, turn the engine off, and wait about ten minutes. The oil drains back down, and the hot parts cool off.",
+    "vsec": 8.18,
+    "sec": 8.93
+   },
+   {
+    "id": "stick",
+    "img": "oil3",
+    "title": "2. Find the dipstick",
+    "big": "",
+    "bigSub": "",
+    "text": "Open the hood and find the dipstick. It usually has a yellow or orange handle.",
+    "vsec": 5.47,
+    "sec": 6.22
+   },
+   {
+    "id": "read",
+    "img": "oil4",
+    "title": "3. Wipe & read",
+    "big": "MIN – MAX",
+    "bigSub": "",
+    "text": "Pull it out, wipe it clean, push it all the way back in, then pull it out again. The oil should be between the two marks.",
+    "vsec": 7.3,
+    "sec": 8.05
+   },
+   {
+    "id": "cap",
+    "img": "oil5",
+    "title": "4. Open the oil cap",
+    "big": "",
+    "bigSub": "",
+    "text": "If it's low, open the cap with the oil can symbol on top of the engine.",
+    "vsec": 4.92,
+    "sec": 5.67
+   },
+   {
+    "id": "pour",
+    "img": "oil6",
+    "title": "5. Add a little at a time",
+    "big": "",
+    "bigSub": "",
+    "text": "Use the oil type from your owner's manual. Pour in a little, wait a minute, and check again. Never overfill.",
+    "vsec": 7.2,
+    "sec": 7.95
+   },
+   {
+    "id": "end",
+    "img": "oil1",
+    "title": "Done",
+    "big": "",
+    "bigSub": "",
+    "text": "Close the cap tightly, and you're done. Check it once a month. Follow for more simple car tips.",
+    "vsec": 6.03,
+    "sec": 6.78
+   }
+  ],
+  "credits": {}
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
