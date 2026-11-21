@@ -1,0 +1,7 @@
+{"w":768,"h":1344,
+ "style":"flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items":{
+  "bloop__monster":{"prompt":"a huge dark whale-sized shadow gliding deep under the surface of a stormy dark blue ocean seen from above, ominous, no people, no figures","seeds":[2,3]},
+  "voynich__script":{"prompt":"close-up of an aged parchment page filled with rows of invented flowing script characters in brown ink with small decorative borders, no figures, no faces","seeds":[2,3]},
+  "wow__sec":{"prompt":"deep night sky with a teapot-shaped group of bright stars joined by thin lines and a glowing bright pulse among them, milky way, no animals, no people","seeds":[2,3]}
+ }}

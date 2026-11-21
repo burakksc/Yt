@@ -8,7 +8,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "bloop_map",
+    "img": "hook",
     "title": "The Bloop",
     "big": "1997",
     "bigSub": "Pacific Ocean",
@@ -18,7 +18,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "mics",
-    "img": "ice3",
+    "img": "mics",
     "title": "Listening for submarines",
     "big": "",
     "bigSub": "",
@@ -28,19 +28,18 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "sound",
-    "img": "bloop_spec",
+    "img": "sound",
     "title": "The real recording",
     "big": "",
     "bigSub": "",
     "text": "It rose fast and was far too powerful for any known animal. Listen.",
     "sfx": "bloop",
-    "fit": "contain",
     "vsec": 5.0,
     "sec": 8.95
    },
    {
     "id": "monster",
-    "img": "ice2",
+    "img": "monster",
     "title": "A sea monster?",
     "big": "",
     "bigSub": "",
@@ -50,7 +49,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "answer",
-    "img": "ice1",
+    "img": "answer",
     "title": "NOAA's answer",
     "big": "ICEQUAKE",
     "bigSub": "an iceberg cracking off Antarctica",
@@ -60,7 +59,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "bloop_map",
+    "img": "end",
     "title": "Would you go down there?",
     "big": "",
     "bigSub": "",
@@ -70,8 +69,12 @@ export const STORIES: Record<string, MyStory> = {
    }
   ],
   "credits": {
-   "bloop_map": "Map: Nojhan · CC BY-SA 3.0 · Wikimedia Commons",
-   "bloop_spec": "Spectrogram: NOAA (public domain)"
+   "hook": "AI-generated illustration",
+   "mics": "AI-generated illustration",
+   "sound": "AI-generated illustration",
+   "monster": "AI-generated illustration",
+   "answer": "AI-generated illustration",
+   "end": "AI-generated illustration"
   }
  },
  "taos": {
@@ -135,7 +138,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "wow_sky",
+    "img": "hook",
     "title": "The Wow! Signal",
     "big": "1977",
     "bigSub": "Big Ear radio telescope, Ohio",
@@ -145,7 +148,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "freq",
-    "img": "wow_sky",
+    "img": "freq",
     "title": "The hydrogen line",
     "big": "1420 MHz",
     "bigSub": "",
@@ -155,29 +158,28 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "wow",
-    "img": "wow_printout",
+    "img": "wow",
     "title": "\"Wow!\"",
     "big": "",
     "bigSub": "",
     "text": "Astronomer Jerry Ehman circled it on the printout and wrote one word: Wow!",
-    "fit": "contain",
+    "sfx": "wow",
     "vsec": 5.17,
-    "sec": 5.92
+    "sec": 9.12
    },
    {
     "id": "sec",
-    "img": "wow_printout",
+    "img": "sec",
     "title": "72 seconds",
     "big": "72 s",
     "bigSub": "from the direction of Sagittarius",
     "text": "It lasted seventy two seconds, and came from the direction of the constellation Sagittarius.",
-    "fit": "contain",
     "vsec": 6.25,
     "sec": 7.0
    },
    {
     "id": "end",
-    "img": "wow_sky",
+    "img": "end",
     "title": "It never came back",
     "big": "",
     "bigSub": "",
@@ -187,7 +189,11 @@ export const STORIES: Record<string, MyStory> = {
    }
   ],
   "credits": {
-   "wow_printout": "Big Ear Radio Observatory / NAAPO (Wikimedia Commons, public domain)"
+   "hook": "AI-generated illustration",
+   "freq": "AI-generated illustration",
+   "wow": "AI-generated illustration",
+   "sec": "AI-generated illustration",
+   "end": "AI-generated illustration"
   }
  },
  "voynich": {
@@ -195,7 +201,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "voy_3",
+    "img": "hook",
     "title": "The Voynich Manuscript",
     "big": "~600",
     "bigSub": "years old",
@@ -205,7 +211,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "date",
-    "img": "voy_32",
+    "img": "date",
     "title": "Early 1400s",
     "big": "1404–1438",
     "bigSub": "radiocarbon date of the pages",
@@ -215,7 +221,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "script",
-    "img": "voy_46",
+    "img": "script",
     "title": "An unknown alphabet",
     "big": "",
     "bigSub": "",
@@ -225,7 +231,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "plants",
-    "img": "voy_66",
+    "img": "plants",
     "title": "Plants that don't exist",
     "big": "",
     "bigSub": "",
@@ -235,7 +241,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "tried",
-    "img": "voy_100",
+    "img": "tried",
     "title": "Still unbroken",
     "big": "",
     "bigSub": "",
@@ -245,7 +251,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "voy_170",
+    "img": "end",
     "title": "Could you read it?",
     "big": "",
     "bigSub": "",
@@ -254,7 +260,14 @@ export const STORIES: Record<string, MyStory> = {
     "sec": 6.0
    }
   ],
-  "credits": {}
+  "credits": {
+   "hook": "AI-generated illustration",
+   "date": "AI-generated illustration",
+   "script": "AI-generated illustration",
+   "plants": "AI-generated illustration",
+   "tried": "AI-generated illustration",
+   "end": "AI-generated illustration"
+  }
  },
  "voyager": {
   "title": "NEVER COMING BACK",
@@ -2272,6 +2285,79 @@ export const STORIES: Record<string, MyStory> = {
    "roast": "AI-generated illustration",
    "conche": "AI-generated illustration",
    "temper": "AI-generated illustration"
+  }
+ },
+ "russia": {
+  "title": "RUSSIA",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "hook",
+    "title": "24,751 empty villages",
+    "big": "",
+    "bigSub": "",
+    "text": "In Russia, twenty four thousand, seven hundred and fifty one villages have no one left. Not a single person.",
+    "vsec": 7.67,
+    "sec": 8.43
+   },
+   {
+    "id": "noroad",
+    "img": "noroad",
+    "title": "No road out",
+    "big": "",
+    "bigSub": "",
+    "text": "Many villages that are still alive have no real road out. In 2011, the government itself said forty six thousand villages had no road you could use all year.",
+    "vsec": 11.3,
+    "sec": 12.05
+   },
+   {
+    "id": "ice",
+    "img": "ice",
+    "title": "Roads made of ice",
+    "big": "",
+    "bigSub": "",
+    "text": "So in winter, people drive on ice. In Yakutia alone, crews open more than eleven thousand kilometres of winter roads, across frozen rivers and swamps. In spring, they simply melt away.",
+    "vsec": 13.35,
+    "sec": 14.1
+   },
+   {
+    "id": "yakutia",
+    "img": "yakutia",
+    "title": "Bigger than Argentina",
+    "big": "",
+    "bigSub": "",
+    "text": "Yakutia is bigger than Argentina, and about ninety percent of it has no year round transport at all.",
+    "vsec": 7.05,
+    "sec": 7.8
+   },
+   {
+    "id": "delivery",
+    "img": "delivery",
+    "title": "One delivery a year",
+    "big": "",
+    "bigSub": "",
+    "text": "About eighteen hundred Arctic settlements wait for one big delivery a year. Fuel and food come by barge or helicopter, before the ice closes in.",
+    "vsec": 10.12,
+    "sec": 10.88
+   },
+   {
+    "id": "end",
+    "img": "end",
+    "title": "Would you live here?",
+    "big": "",
+    "bigSub": "",
+    "text": "Out here, life runs on seasons, not schedules. Would you live somewhere you can only reach when the river freezes?",
+    "vsec": 7.85,
+    "sec": 8.6
+   }
+  ],
+  "credits": {
+   "hook": "AI-generated illustration",
+   "noroad": "AI-generated illustration",
+   "ice": "AI-generated illustration",
+   "yakutia": "AI-generated illustration",
+   "delivery": "AI-generated illustration",
+   "end": "AI-generated illustration"
   }
  }
 };
