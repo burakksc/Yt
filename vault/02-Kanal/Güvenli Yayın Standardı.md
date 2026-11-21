@@ -41,3 +41,8 @@ Kanal telefon doğrulanana kadar açıklamada `https://` yok; atıf: eser adı +
 
 ## Yayın öncesi kapı
 [[Yayın Öncesi Kontrol Listesi]] tamamen ✅ olmadan "hazır" denmez. Bkz: [[Lisans ve Para Kazanma Kuralları]]
+
+## Short yerleşimi (kullanıcı, 2026-11-21)
+- Kanal logosu: sağ altta, 120 px, üstte 1760 / sağ kenardan 70 px (`video/src/components/Watermark.tsx`).
+- "AI-generated illustration" etiketi: sol altta, 15 px, top 1816 / sol 64 px (`videos/gizem/index.tsx`).
+- Tüm yeni Short'lar bu yerleşimle çıkar. **Biten videolar yeniden render EDİLMEZ** (kullanıcı: "yeniden render yok").
