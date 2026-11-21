@@ -5,6 +5,7 @@
 kinds:
   wind_glass   winter wind heard through a closed window: low gusts + soft resonant howl
   blizzard     stronger snowstorm wind, whistling gusts, fine snow hiss against glass
+  blizzard_soft  same storm without the high hiss (sleep-friendly)
   jet_cabin    airliner cruise: smooth low engine roar (brown/pink), faint high air hiss
   cockpit      cockpit at cruise: airflow roar + soft avionics/fan hum + rare gentle chime
   prop         turboprop cruise drone: low steady propeller hum with beating harmonics
@@ -59,14 +60,14 @@ def sweep_bandpass(x, centers, q, block=4096):
 def make(kind, n):
     t = np.arange(n) / SR
     wn = rng.standard_normal(n)
-    if kind in ("wind_glass", "blizzard"):
-        strong = kind == "blizzard"
+    if kind in ("wind_glass", "blizzard", "blizzard_soft"):
+        strong = kind != "wind_glass"
         gust = smooth_env(n, 0.15 if not strong else 0.3, 0.15, 1.0, 1) ** 1.5
         low = band(wn, 60, 500) * gust
         cen = 280 + 450 * smooth_env(n, 0.2, 0, 1, 2) + (300 if strong else 0) * gust
         howl = sweep_bandpass(rng.standard_normal(n), cen, 9 if strong else 7) * gust
         L = low / np.abs(low).max() * 0.5 + howl / np.abs(howl).max() * (0.35 if strong else 0.22)
-        if strong:
+        if kind == "blizzard":  # blizzard_soft: same storm, no 3-9 kHz hiss (heard as a whistle)
             hiss = band(rng.standard_normal(n), 3000, 9000) * smooth_env(n, 0.5, 0.0, 1.0, 3) * 0.05
             L = L + hiss
         R = np.roll(L, 300) * 0.9 + 0.1 * L

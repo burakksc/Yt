@@ -60,6 +60,20 @@ SCENES = {
         candles_src=[(649, 552, 8), (720, 553, 8)],
         src_to_4k=(3840 / 1344, -17),
     ),
+    # Cat cabin (AI still, Real-ESRGAN 4K): the painted campfire is brought to life by a periodic upward
+    # flicker warp of its own flame pixels (logs stay fixed) + fire-driven warm room light; candles, lantern, snow.
+    "cat": dict(
+        base="video/public/cozy-cat/room4k.png",
+        mask="video/public/cozy-cat/window_mask.png",
+        mask_squash=True,
+        fire=None,
+        flame_warp=(300, 620, 460, 760, 650),  # 4K roi x, y, w, h + base line (y in roi) of the flame
+        fire_light=(528, 1180),
+        light_gain=1.0,
+        windows=[(50, 0, 1160, 1370, 0.8), (2860, 0, 980, 940, 0.8)],
+        candles_src=[(381, 478, 6), (36, 508, 5), (935, 105, 9)],
+        src_to_4k=(3840 / 1344, -17),
+    ),
 }
 
 
@@ -123,6 +137,30 @@ def main():
         lx, ly = S["fire_light"]
         d2 = (X - lx) ** 2 + ((Y - ly) * 1.3) ** 2
         room_light = (np.exp(-d2 / (2 * 900.0 ** 2)) * 0.6 + np.exp(-d2 / (2 * 350.0 ** 2)) * 0.4)[..., None] * np.array([40, 95, 190], np.float32)  # BGR warm
+    fw_ = S.get("flame_warp")
+    if fw_:  # animate the painted flame itself
+        wx0, wy0, ww_, wh_, yb = fw_
+        froi = base[wy0:wy0 + wh_, wx0:wx0 + ww_].copy()
+        b_, g_, r_ = froi[..., 0], froi[..., 1], froi[..., 2]
+        fmw = (np.clip((froi.max(2) - 205) / 40, 0, 1) * np.clip((g_ - 140) / 40, 0, 1)).astype(np.float32)
+        fmw[int(yb) + 40:] = 0
+        fmw = cv2.GaussianBlur(cv2.dilate(fmw, np.ones((21, 21), np.uint8)), (0, 0), 10)[..., None]
+        wyy, wxx = np.mgrid[0:wh_, 0:ww_].astype(np.float32)
+        hh = np.clip((yb - wyy) / yb, 0, 1)
+        Y, X = np.mgrid[0:H, 0:W].astype(np.float32)
+        lx, ly = S["fire_light"]
+        d2 = (X - lx) ** 2 + ((Y - ly) * 1.3) ** 2
+        room_light = (np.exp(-d2 / (2 * 900.0 ** 2)) * 0.6 + np.exp(-d2 / (2 * 350.0 ** 2)) * 0.4)[..., None] * np.array([40, 95, 190], np.float32)
+        del Y, X, d2
+
+        def flame_at(t):
+            dx = np.zeros_like(wyy)
+            for (cyc, lam, ph, amp) in ((70, 180, 0.3, 1.0), (110, 95, 1.7, 0.5), (43, 300, 2.9, 0.7)):
+                dx += amp * np.sin(2 * np.pi * (wyy / lam + cyc * t / P) + ph)
+            dx *= 14 * hh ** 1.4
+            st = 0.06 * np.sin(2 * np.pi * 55 * t / P) + 0.04 * np.sin(2 * np.pi * 97 * t / P + 1)
+            out = cv2.remap(froi, wxx + dx, (wyy + (yb - wyy) * st * hh).astype(np.float32), cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+            return froi * (1 - fmw) + out * fmw, st
     sx, oy = S["src_to_4k"]
     candles = []
     for i, (cx, cy, r) in enumerate(S["candles_src"]):
@@ -180,6 +218,11 @@ def main():
                 img[fy:fy + fh, fx:fx + fw] = roi * (1 - fmask) + f * 0.92 * fmask
             lum = fire_luma[fi % len(fire)] / fl_mean
             img += room_light * S.get("light_gain", 1.0) * (0.08 + 0.10 * (lum - 0.85))
+        if fw_:
+            reg, st = flame_at(t)
+            fk = periodic_noise(t, 77)
+            img[wy0:wy0 + wh_, wx0:wx0 + ww_] = reg * (0.96 + 0.08 * fk)
+            img += room_light * S.get("light_gain", 1.0) * (0.06 + 0.06 * fk + 0.4 * st)
         # candles
         for (x0, y0, halo, core, seed) in candles:
             fl = periodic_noise(t, seed)
