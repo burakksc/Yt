@@ -5,7 +5,7 @@ import { Img, staticFile } from "remotion";
 export const Watermark: React.FC<{ size?: number; right?: number; top?: number; opacity?: number }> = ({
   size = 84,
   right = 36,
-  top = 1690,
+  top = 1790,
   opacity = 0.9,
 }) => (
   <Img
