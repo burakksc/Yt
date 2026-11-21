@@ -1,0 +1,58 @@
+{
+ "harvard": {
+  "title": "Pickering's Harvard computers (c. 1891)",
+  "creator": "Harvard College Observatory",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Astronomer_Edward_Charles_Pickering%27s_Harvard_computers.jpg"
+ },
+ "plates": {
+  "title": "Observatory women computers, 1891",
+  "creator": "Harvard University Archives",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Observatory_women_computers%2C_1891.jpg"
+ },
+ "cannon": {
+  "title": "Annie Jump Cannon & Henrietta Swan Leavitt, 1913",
+  "creator": "unattributed (Harvard University Library)",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Annie_Jump_Cannon_%26_Henrietta_Swan_Leavitt%2C_1913.jpg"
+ },
+ "dryden": {
+  "title": "Human computers at NACA Dryden (1949)",
+  "creator": "NACA / NASA",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Human_computers_-_Dryden.jpg"
+ },
+ "johnson": {
+  "title": "Katherine Johnson at NASA, 1966",
+  "creator": "NASA",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Katherine_Johnson_at_NASA%2C_in_1966.jpg"
+ },
+ "glenn": {
+  "title": "John Glenn in front of Friendship 7 (1962)",
+  "creator": "NASA",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:John_Glenn_in_front_of_the_Friendship_7.jpg"
+ },
+ "launch": {
+  "title": "Mercury-Atlas 6 launch (1962)",
+  "creator": "NASA",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Mercury-Atlas_6_launch.jpg"
+ },
+ "women1959": {
+  "title": "NASA human computers, 1959",
+  "creator": "NASA",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:NASA_human_computers_-_Women_at_NASA_1959_from_left_-_Lucille_Coltrane_-_Jean_Clark_Keating_-_Katherine_Collie_Speegle_-_Doris_%27Dot%27_Lee_--_Ruth_I._Whitman_-_Emily_Stephens_Mueller.jpg"
+ }
+}

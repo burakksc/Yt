@@ -1,0 +1,58 @@
+{
+ "havana": {
+  "title": "Reader in Cigar Factory, Havana (postcard, c. 1907)",
+  "creator": "Harris Brothers, Havana",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Havana_-_cigar_factory_reader.jpg"
+ },
+ "reader": {
+  "title": "A 'Reader' in cigar factory, Tampa, Fla. (1909)",
+  "creator": "Lewis Hine",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:A_%27Reader%27_in_cigar_factory%2C_Tampa%2C_Fla._He_reads_books_and_newspapers_at_top_of_his_voice_all_day_long._This_is_all_the_education_many_of_these_workers_receive._He_is_paid_by_them_and_they_LOC_cph.3b36568.jpg"
+ },
+ "platform": {
+  "title": "Lector reading at Cuesta-Rey Cigar Company, Tampa (1929)",
+  "creator": "Burgert Brothers",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Lector_reading_at_Cuesta-Rey_Cigar_Company_-_Tampa%2C_Florida%2C_1929.jpg"
+ },
+ "workers": {
+  "title": "Ybor City cigar workers (1920)",
+  "creator": "unknown photographer",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Ybor_Cigar_workers.jpg"
+ },
+ "tampa": {
+  "title": "Interior view of cigar factory, Ybor City (postcard)",
+  "creator": "Tichnor Brothers (Boston Public Library)",
+  "license": "by-sa",
+  "license_version": "4.0",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Interior_view_of_cigar_factory%2C_Ybor_City.jpg"
+ },
+ "montecristo": {
+  "title": "Dantès sur son rocher - Monte Cristo poster (1846)",
+  "creator": "Louis Français",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Louis_Fran%C3%A7ais-Dant%C3%A8s_sur_son_rocher.jpg"
+ },
+ "romeo": {
+  "title": "Romeo and Juliet (1884)",
+  "creator": "Frank Bernard Dicksee",
+  "license": "pdm",
+  "license_version": "",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Frank_Bernard_Dicksee_-_Romeo_and_Juliet%2C_1884.jpg"
+ },
+ "stand": {
+  "title": "Ybor City Museum cigar lector stand",
+  "creator": "Infrogmation of New Orleans",
+  "license": "by-sa",
+  "license_version": "3.0",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:YborMuseumAug08CigarLectorStand.jpg"
+ }
+}
