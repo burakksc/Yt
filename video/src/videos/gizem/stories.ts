@@ -1505,6 +1505,105 @@ export const STORIES: Record<string, MyStory> = {
    "atlantic": "The Atlantic Ocean. Photo: milan.boers · CC BY 2.0 · Flickr",
    "stormy_sea": "Photo: luke_wes · CC BY-SA 2.0 · Flickr"
   }
+ },
+ "derinkuyu": {
+  "title": "DERINKUYU",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "d_stair",
+    "title": "Behind the wall",
+    "big": "1963",
+    "bigSub": "a hidden passage",
+    "text": "In 1963, a man in Türkiye knocked through a wall in his house, and found a passage.",
+    "vsec": 7.38,
+    "sec": 8.12
+   },
+   {
+    "id": "where",
+    "img": "d_capp",
+    "title": "Cappadocia, Türkiye",
+    "big": "",
+    "bigSub": "",
+    "text": "It led to a whole city carved into the rock beneath Derinkuyu, in Cappadocia.",
+    "fit": "contain",
+    "vsec": 6.2,
+    "sec": 6.95
+   },
+   {
+    "id": "deep",
+    "img": "d_shaft",
+    "title": "How deep?",
+    "big": "~85 m",
+    "bigSub": "deep",
+    "text": "It reaches about eighty five metres down, with as many as eighteen levels by some counts.",
+    "fit": "contain",
+    "vsec": 6.85,
+    "sec": 7.6
+   },
+   {
+    "id": "people",
+    "img": "d_halls",
+    "title": "A city for thousands",
+    "big": "20,000",
+    "bigSub": "people, by estimates",
+    "text": "It may have sheltered up to twenty thousand people, along with their animals and food.",
+    "vsec": 6.2,
+    "sec": 6.95
+   },
+   {
+    "id": "life",
+    "img": "d_rooms",
+    "title": "Life underground",
+    "big": "",
+    "bigSub": "",
+    "text": "There were stables, wine presses, wells, chapels, and air shafts reaching the surface.",
+    "fit": "contain",
+    "vsec": 6.2,
+    "sec": 6.95
+   },
+   {
+    "id": "doors",
+    "img": "d_stone",
+    "title": "Stone doors",
+    "big": "~500 kg",
+    "bigSub": "rolling stone door",
+    "text": "Huge rolling stone doors could seal each level from the inside.",
+    "vsec": 5.22,
+    "sec": 5.97
+   },
+   {
+    "id": "why",
+    "img": "d_tunnel",
+    "title": "Why build it?",
+    "big": "",
+    "bigSub": "",
+    "text": "It was greatly expanded in Byzantine times, as a refuge from raids.",
+    "fit": "contain",
+    "vsec": 5.85,
+    "sec": 6.6
+   },
+   {
+    "id": "end",
+    "img": "d_hall",
+    "title": "Look behind it",
+    "big": "",
+    "bigSub": "",
+    "text": "Today, part of it is open to visitors. So if you ever knock down a wall, look behind it.",
+    "vsec": 6.75,
+    "sec": 7.5
+   }
+  ],
+  "credits": {
+   "d_capp": "Photo: Edgardo W. Olivera (Çavuşin, Cappadocia) · CC BY 2.0 · Flickr",
+   "d_shaft": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
+   "d_stone": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
+   "d_stair": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
+   "d_hall": "Photo: Ali Weheda Photography · CC BY-SA 2.0 · Flickr",
+   "d_rooms": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
+   "d_tunnel": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
+   "d_halls": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
