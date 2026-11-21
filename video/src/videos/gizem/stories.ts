@@ -1023,18 +1023,17 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "nsi_sat",
+    "img": "sentinel__hook",
     "title": "The forbidden island",
     "big": "NO ENTRY",
     "bigSub": "by Indian law",
     "text": "There is an island you are not allowed to visit. And its people want it that way.",
-    "fit": "contain",
     "vsec": 5.9,
     "sec": 6.65
    },
    {
     "id": "where",
-    "img": "nsi_plane",
+    "img": "sentinel__where",
     "title": "North Sentinel Island",
     "big": "~60 km²",
     "bigSub": "Andaman Islands, India",
@@ -1044,7 +1043,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "people",
-    "img": "nsi_air",
+    "img": "sentinel__people",
     "title": "The Sentinelese",
     "big": "?",
     "bigSub": "population unknown",
@@ -1054,18 +1053,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "law",
-    "img": "nsi_reef",
+    "img": "sentinel__law",
     "title": "A protected reserve",
     "big": "1956",
     "bigSub": "declared a tribal reserve",
     "text": "India protects it as a tribal reserve. Even sailing close is illegal.",
-    "fit": "contain",
     "vsec": 6.17,
     "sec": 6.92
    },
    {
     "id": "tsunami",
-    "img": "nsi_coast",
+    "img": "sentinel__tsunami",
     "title": "After the tsunami",
     "big": "2004",
     "bigSub": "Indian Ocean tsunami",
@@ -1075,18 +1073,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "visitors",
-    "img": "nsi_strip",
+    "img": "sentinel__visitors",
     "title": "Keep out",
     "big": "2018",
     "bigSub": "an outsider is killed",
     "text": "Outsiders who landed have been killed, most recently an American missionary in 2018.",
-    "fit": "contain",
     "vsec": 7.1,
     "sec": 7.85
    },
    {
     "id": "disease",
-    "img": "nsi_tall",
+    "img": "sentinel__disease",
     "title": "Why stay away?",
     "big": "",
     "bigSub": "",
@@ -1096,25 +1093,24 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "nsi_window",
+    "img": "sentinel__end",
     "title": "Eyes on, hands off",
     "big": "",
     "bigSub": "",
     "text": "So the rule is simple: watch from afar, and leave them in peace.",
-    "fit": "contain",
     "vsec": 4.88,
     "sec": 5.62
    }
   ],
   "credits": {
-   "nsi_sat": "Photo: DLR_next (DLR) · Public Domain Mark · Flickr",
-   "nsi_plane": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
-   "nsi_air": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
-   "nsi_reef": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
-   "nsi_coast": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
-   "nsi_strip": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
-   "nsi_tall": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
-   "nsi_window": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons"
+   "sentinel__hook": "AI-generated illustration",
+   "sentinel__where": "AI-generated illustration",
+   "sentinel__people": "AI-generated illustration",
+   "sentinel__law": "AI-generated illustration",
+   "sentinel__tsunami": "AI-generated illustration",
+   "sentinel__visitors": "AI-generated illustration",
+   "sentinel__disease": "AI-generated illustration",
+   "sentinel__end": "AI-generated illustration"
   }
  },
  "snakeisland": {
