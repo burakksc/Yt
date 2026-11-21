@@ -731,6 +731,207 @@ export const STORIES: Record<string, MyStory> = {
    "icarda": "ICARDA, Syria, 1991. Photo: JIRCAS · CC BY 2.0 · Flickr",
    "vault_snow": "Photo: Dag Endresen · CC BY 2.0 · Flickr"
   }
+ },
+ "antikythera": {
+  "title": "A 2,000-YEAR-OLD COMPUTER",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "fragment",
+    "title": "A 2,000-year-old computer",
+    "big": "2,000+ yrs",
+    "bigSub": "old, and full of gears",
+    "text": "This lump of bronze came from a Greek shipwreck. Inside are gears, over two thousand years old.",
+    "fit": "contain",
+    "vsec": 7.42,
+    "sec": 8.18
+   },
+   {
+    "id": "wreck",
+    "img": "wreck",
+    "title": "The shipwreck",
+    "big": "1901",
+    "bigSub": "recovered off Antikythera, Greece",
+    "text": "Divers found it in 1901, in a wreck off Antikythera that sank around 60 BC.",
+    "fit": "contain",
+    "vsec": 7.4,
+    "sec": 8.15
+   },
+   {
+    "id": "gears",
+    "img": "gears",
+    "title": "Hidden gears",
+    "big": "30",
+    "bigSub": "bronze gears survive",
+    "text": "Today it survives in 82 fragments, with 30 bronze gears.",
+    "fit": "contain",
+    "vsec": 5.5,
+    "sec": 6.25
+   },
+   {
+    "id": "cosmos",
+    "img": "front",
+    "title": "A pocket cosmos",
+    "big": "",
+    "bigSub": "",
+    "text": "Turn a handle, and it showed the Sun, the Moon and its phases, and likely the planets.",
+    "vsec": 6.17,
+    "sec": 6.92
+   },
+   {
+    "id": "eclipse",
+    "img": "back",
+    "title": "Predicting the sky",
+    "big": "223 months",
+    "bigSub": "eclipse cycle on the back dial",
+    "text": "It predicted eclipses, and even tracked the four-year Olympic cycle.",
+    "vsec": 5.4,
+    "sec": 6.15
+   },
+   {
+    "id": "xray",
+    "img": "xray",
+    "title": "X-ray secrets",
+    "big": "2005",
+    "bigSub": "X-ray CT scans",
+    "text": "In 2005, X-ray scans revealed hidden gears and thousands of tiny inscriptions.",
+    "fit": "contain",
+    "vsec": 7.42,
+    "sec": 8.18
+   },
+   {
+    "id": "model",
+    "img": "model",
+    "title": "Rebuilding it",
+    "big": "2021",
+    "bigSub": "UCL's new model of the front",
+    "text": "In 2021, a UCL team rebuilt its lost front as a model of the cosmos.",
+    "vsec": 7.15,
+    "sec": 7.9
+   },
+   {
+    "id": "end",
+    "img": "museum",
+    "title": "Who built it?",
+    "big": "",
+    "bigSub": "",
+    "text": "Nothing this complex returns for a thousand years. Its maker is still a mystery.",
+    "fit": "contain",
+    "vsec": 6.58,
+    "sec": 7.33
+   }
+  ],
+  "credits": {
+   "fragment": "Photo: Tilemahos Efthimiadis (CC BY 2.0)",
+   "wreck": "Photo: Tilemahos Efthimiadis (CC BY 2.0)",
+   "gears": "Photo: Tilemahos Efthimiadis (CC BY 2.0)",
+   "front": "Photo: Tilemahos Efthimiadis (CC BY 2.0) · replica",
+   "back": "Photo: Tilemahos Efthimiadis (CC BY 2.0) · replica",
+   "xray": "Photo: Tilemahos Efthimiadis (CC BY 2.0)",
+   "model": "Photo: Tilemahos Efthimiadis (CC BY 2.0) · replica",
+   "museum": "Photo: Weekend Wayfarers (CC BY 2.0)"
+  }
+ },
+ "baalbek": {
+  "title": "THE BIGGEST STONE EVER CUT",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "quarry",
+    "title": "The biggest stone ever cut",
+    "big": "~1,650 t",
+    "bigSub": "one single block",
+    "text": "See the tiny person? These are the biggest stone blocks known from the ancient world, and they never left the quarry.",
+    "fit": "contain",
+    "vsec": 8.47,
+    "sec": 9.22
+   },
+   {
+    "id": "temple",
+    "img": "temple",
+    "title": "Baalbek, Lebanon",
+    "big": "AD 60",
+    "bigSub": "Temple of Jupiter completed",
+    "text": "This is Baalbek, Lebanon, and its giant Roman Temple of Jupiter.",
+    "vsec": 5.58,
+    "sec": 6.33
+   },
+   {
+    "id": "columns",
+    "img": "columns",
+    "title": "Giant columns",
+    "big": "~20 m",
+    "bigSub": "six columns still stand",
+    "text": "Six columns still stand, each about twenty metres tall.",
+    "vsec": 4.7,
+    "sec": 5.45
+   },
+   {
+    "id": "trilithon",
+    "img": "trilithon",
+    "title": "The trilithon",
+    "big": "~800 t",
+    "bigSub": "each of three blocks",
+    "text": "In its base: the trilithon, three blocks of about eight hundred tonnes each.",
+    "fit": "contain",
+    "vsec": 5.7,
+    "sec": 6.45
+   },
+   {
+    "id": "pregnant",
+    "img": "pregnant",
+    "title": "Stone of the Pregnant Woman",
+    "big": "~1,000 t",
+    "bigSub": "left in the quarry",
+    "text": "In the quarry lies the Stone of the Pregnant Woman: about a thousand tonnes, never moved.",
+    "fit": "contain",
+    "vsec": 6.9,
+    "sec": 7.65
+   },
+   {
+    "id": "find",
+    "img": "block2014",
+    "title": "An even bigger one",
+    "big": "2014",
+    "bigSub": "19.6 m long, ~1,650 tonnes",
+    "text": "In 2014, archaeologists found a bigger one beside it: about sixteen hundred and fifty tonnes.",
+    "fit": "contain",
+    "vsec": 8.25,
+    "sec": 9.0
+   },
+   {
+    "id": "how",
+    "img": "wall",
+    "title": "How did they do it?",
+    "big": "~800 m",
+    "bigSub": "from quarry to temple",
+    "text": "Most archaeologists credit Roman engineers, with ramps, rollers and capstans, from a quarry just uphill.",
+    "fit": "contain",
+    "vsec": 8.6,
+    "sec": 9.35
+   },
+   {
+    "id": "end",
+    "img": "ruins",
+    "title": "Still debated",
+    "big": "",
+    "bigSub": "",
+    "text": "But exactly how the trilithon was lifted is still debated.",
+    "fit": "contain",
+    "vsec": 4.8,
+    "sec": 5.55
+   }
+  ],
+  "credits": {
+   "quarry": "Photo: Lodo27 (CC BY-SA 2.0)",
+   "temple": "Photo: Arian Zwegers (CC BY 2.0)",
+   "columns": "Photo: Eusebius@Commons (CC BY 2.0)",
+   "trilithon": "Photo: Lodo27 (CC BY-SA 2.0)",
+   "pregnant": "Photo: Following Hadrian (CC BY-SA 2.0)",
+   "block2014": "Photo: Lodo27 (CC BY-SA 2.0)",
+   "wall": "Photo: Lodo27 (CC BY-SA 2.0)",
+   "ruins": "Photo: ISAW / isawnyu (CC BY 2.0)"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);

@@ -564,7 +564,7 @@
     "title": "The forbidden island",
     "big": "NO ENTRY",
     "bigSub": "by Indian law",
-    "text": "There is an island you are not allowed to visit. And the people who live there want it that way."
+    "text": "There is an island you are not allowed to visit. And its people want it that way."
    },
    {
     "id": "where",
@@ -572,7 +572,7 @@
     "title": "North Sentinel Island",
     "big": "~60 km²",
     "bigSub": "Andaman Islands, India",
-    "text": "North Sentinel Island, in India's Andaman Islands. Thick forest, ringed by coral reef."
+    "text": "North Sentinel Island, in India's Andaman Islands: thick forest, ringed by coral reef."
    },
    {
     "id": "people",
@@ -580,7 +580,7 @@
     "title": "The Sentinelese",
     "big": "?",
     "bigSub": "population unknown",
-    "text": "It is home to the Sentinelese, one of the last uncontacted peoples on Earth. Nobody knows how many there are."
+    "text": "It is home to the Sentinelese, one of the last uncontacted peoples on Earth."
    },
    {
     "id": "law",
@@ -588,7 +588,7 @@
     "title": "A protected reserve",
     "big": "1956",
     "bigSub": "declared a tribal reserve",
-    "text": "India protects it as a tribal reserve. Even sailing close to the shore is illegal."
+    "text": "India protects it as a tribal reserve. Even sailing close is illegal."
    },
    {
     "id": "tsunami",
@@ -612,7 +612,7 @@
     "title": "Why stay away?",
     "big": "",
     "bigSub": "",
-    "text": "And contact could be deadly for them too. They may have no immunity to diseases like flu or measles."
+    "text": "And contact could be deadly for them too. They may have no immunity to our diseases."
    },
    {
     "id": "end",
@@ -673,7 +673,7 @@
     "title": "Washington asks",
     "big": "1997",
     "bigSub": "U.S. Congress asks for answers",
-    "text": "In 1997, the U.S. Congress urged Russia to explain the project, and to allow an inspection."
+    "text": "In 1997, the U.S. Congress urged Russia to explain it, and to allow an inspection."
    },
    {
     "id": "end",
@@ -681,7 +681,214 @@
     "title": "Still a secret",
     "big": "",
     "bigSub": "",
-    "text": "Many analysts think it's a nuclear war bunker. But officially, its purpose has never been confirmed."
+    "text": "Many analysts suspect a nuclear war bunker. But its purpose has never been confirmed."
+   }
+  ]
+ },
+ "snakeisland": {
+  "title": "SNAKE ISLAND",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "si_aerial",
+    "title": "Snake Island",
+    "big": "NO LANDING",
+    "bigSub": "without permission",
+    "text": "Off the coast of Brazil, there is an island you are not allowed to land on."
+   },
+   {
+    "id": "where",
+    "img": "si_island",
+    "title": "Ilha da Queimada Grande",
+    "big": "33 km",
+    "bigSub": "off São Paulo, Brazil",
+    "text": "Ilha da Queimada Grande, thirty three kilometres off São Paulo. Better known as Snake Island."
+   },
+   {
+    "id": "snake",
+    "img": "si_gold",
+    "title": "The golden lancehead",
+    "big": "",
+    "bigSub": "found nowhere else",
+    "text": "It is the only home on Earth of the golden lancehead, a highly venomous pit viper."
+   },
+   {
+    "id": "count",
+    "img": "si_coil",
+    "title": "How many?",
+    "big": "2,000–4,000",
+    "bigSub": "estimated snakes",
+    "text": "Scientists estimate a few thousand live here, on less than half a square kilometre."
+   },
+   {
+    "id": "birds",
+    "img": "si_branch",
+    "title": "Hunting in the trees",
+    "big": "",
+    "bigSub": "",
+    "text": "Cut off by rising seas long ago, with no prey on the ground, the snakes learned to hunt birds."
+   },
+   {
+    "id": "light",
+    "img": "si_light",
+    "title": "The lighthouse",
+    "big": "1909",
+    "bigSub": "lighthouse built",
+    "text": "A lighthouse has stood here since 1909. Legend says snakes killed its keeper's family, but there is no proof."
+   },
+   {
+    "id": "navy",
+    "img": "si_navy",
+    "title": "Who can land?",
+    "big": "",
+    "bigSub": "Brazilian Navy & scientists",
+    "text": "Today the light is automatic, and only the Navy and approved scientists may land."
+   },
+   {
+    "id": "end",
+    "img": "si_leaf",
+    "title": "Critically endangered",
+    "big": "",
+    "bigSub": "",
+    "text": "The ban protects the snakes too. They are critically endangered."
+   }
+  ]
+ },
+ "antikythera": {
+  "title": "A 2,000-YEAR-OLD COMPUTER",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "fragment",
+    "title": "A 2,000-year-old computer",
+    "big": "2,000+ yrs",
+    "bigSub": "old, and full of gears",
+    "text": "This lump of bronze came from a Greek shipwreck. Inside are gears, over two thousand years old."
+   },
+   {
+    "id": "wreck",
+    "img": "wreck",
+    "title": "The shipwreck",
+    "big": "1901",
+    "bigSub": "recovered off Antikythera, Greece",
+    "text": "Divers found it in 1901, in a wreck off Antikythera that sank around 60 BC."
+   },
+   {
+    "id": "gears",
+    "img": "gears",
+    "title": "Hidden gears",
+    "big": "30",
+    "bigSub": "bronze gears survive",
+    "text": "Today it survives in 82 fragments, with 30 bronze gears."
+   },
+   {
+    "id": "cosmos",
+    "img": "front",
+    "title": "A pocket cosmos",
+    "big": "",
+    "bigSub": "",
+    "text": "Turn a handle, and it showed the Sun, the Moon and its phases, and likely the planets."
+   },
+   {
+    "id": "eclipse",
+    "img": "back",
+    "title": "Predicting the sky",
+    "big": "223 months",
+    "bigSub": "eclipse cycle on the back dial",
+    "text": "It predicted eclipses, and even tracked the four-year Olympic cycle."
+   },
+   {
+    "id": "xray",
+    "img": "xray",
+    "title": "X-ray secrets",
+    "big": "2005",
+    "bigSub": "X-ray CT scans",
+    "text": "In 2005, X-ray scans revealed hidden gears and thousands of tiny inscriptions."
+   },
+   {
+    "id": "model",
+    "img": "model",
+    "title": "Rebuilding it",
+    "big": "2021",
+    "bigSub": "UCL's new model of the front",
+    "text": "In 2021, a UCL team rebuilt its lost front as a model of the cosmos."
+   },
+   {
+    "id": "end",
+    "img": "museum",
+    "title": "Who built it?",
+    "big": "",
+    "bigSub": "",
+    "text": "Nothing this complex returns for a thousand years. Its maker is still a mystery."
+   }
+  ]
+ },
+ "baalbek": {
+  "title": "THE BIGGEST STONE EVER CUT",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "quarry",
+    "title": "The biggest stone ever cut",
+    "big": "~1,650 t",
+    "bigSub": "one single block",
+    "text": "See the tiny person? These are the biggest stone blocks known from the ancient world, and they never left the quarry."
+   },
+   {
+    "id": "temple",
+    "img": "temple",
+    "title": "Baalbek, Lebanon",
+    "big": "AD 60",
+    "bigSub": "Temple of Jupiter completed",
+    "text": "This is Baalbek, Lebanon, and its giant Roman Temple of Jupiter."
+   },
+   {
+    "id": "columns",
+    "img": "columns",
+    "title": "Giant columns",
+    "big": "~20 m",
+    "bigSub": "six columns still stand",
+    "text": "Six columns still stand, each about twenty metres tall."
+   },
+   {
+    "id": "trilithon",
+    "img": "trilithon",
+    "title": "The trilithon",
+    "big": "~800 t",
+    "bigSub": "each of three blocks",
+    "text": "In its base: the trilithon, three blocks of about eight hundred tonnes each."
+   },
+   {
+    "id": "pregnant",
+    "img": "pregnant",
+    "title": "Stone of the Pregnant Woman",
+    "big": "~1,000 t",
+    "bigSub": "left in the quarry",
+    "text": "In the quarry lies the Stone of the Pregnant Woman: about a thousand tonnes, never moved."
+   },
+   {
+    "id": "find",
+    "img": "block2014",
+    "title": "An even bigger one",
+    "big": "2014",
+    "bigSub": "19.6 m long, ~1,650 tonnes",
+    "text": "In 2014, archaeologists found a bigger one beside it: about sixteen hundred and fifty tonnes."
+   },
+   {
+    "id": "how",
+    "img": "wall",
+    "title": "How did they do it?",
+    "big": "~800 m",
+    "bigSub": "from quarry to temple",
+    "text": "Most archaeologists credit Roman engineers, with ramps, rollers and capstans, from a quarry just uphill."
+   },
+   {
+    "id": "end",
+    "img": "ruins",
+    "title": "Still debated",
+    "big": "",
+    "bigSub": "",
+    "text": "But exactly how the trilithon was lifted is still debated."
    }
   ]
  }
