@@ -5,3 +5,34 @@
 /root/.venvs/sd/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
   warnings.warn(
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00, 13.28it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:  17%|█▋        | 90/517 [00:00<00:00, 894.88it/s][A
+Loading weights:  39%|███▊      | 200/517 [00:00<00:00, 963.99it/s][A
+Loading weights:  57%|█████▋    | 297/517 [00:00<00:00, 962.67it/s][A
+Loading weights:  76%|███████▌  | 394/517 [00:00<00:00, 934.30it/s][A
+Loading weights:  97%|█████████▋| 504/517 [00:00<00:00, 975.96it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 978.66it/s]
+Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00,  5.78it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:  53%|█████▎    | 104/196 [00:00<00:00, 1030.10it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1220.93it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  5.57it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  6.07it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:07<00:22,  7.38s/it] 50%|█████     | 2/4 [00:13<00:12,  6.41s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.14s/it]100%|██████████| 4/4 [00:24<00:00,  5.86s/it]100%|██████████| 4/4 [00:24<00:00,  6.09s/it]
+saved projects/gizem/ai/metro2/imgs/metro2__hook_s1.png 42
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.91s/it] 50%|█████     | 2/4 [00:11<00:11,  5.87s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.95s/it]100%|██████████| 4/4 [00:24<00:00,  6.09s/it]100%|██████████| 4/4 [00:24<00:00,  6.02s/it]
+saved projects/gizem/ai/metro2/imgs/metro2__what_s1.png 42
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  6.00s/it] 50%|█████     | 2/4 [00:12<00:12,  6.20s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.17s/it]100%|██████████| 4/4 [00:24<00:00,  6.17s/it]100%|██████████| 4/4 [00:24<00:00,  6.16s/it]
+saved projects/gizem/ai/metro2/imgs/metro2__stalin_s1.png 42
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.97s/it] 50%|█████     | 2/4 [00:11<00:11,  5.96s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.09s/it]100%|██████████| 4/4 [00:24<00:00,  6.09s/it]100%|██████████| 4/4 [00:24<00:00,  6.06s/it]
+saved projects/gizem/ai/metro2/imgs/metro2__report_s1.png 42
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:16,  5.59s/it] 50%|█████     | 2/4 [00:11<00:11,  5.78s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.22s/it]100%|██████████| 4/4 [00:25<00:00,  6.50s/it]100%|██████████| 4/4 [00:25<00:00,  6.29s/it]
+saved projects/gizem/ai/metro2/imgs/metro2__mgu_s1.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.98s/it] 50%|█████     | 2/4 [00:12<00:12,  6.01s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.02s/it]100%|██████████| 4/4 [00:23<00:00,  5.99s/it]100%|██████████| 4/4 [00:23<00:00,  6.00s/it]
+saved projects/gizem/ai/metro2/imgs/metro2__bunker_s1.png 42
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.93s/it] 50%|█████     | 2/4 [00:11<00:11,  5.85s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.89s/it]100%|██████████| 4/4 [00:23<00:00,  5.89s/it]100%|██████████| 4/4 [00:23<00:00,  5.89s/it]
+saved projects/gizem/ai/metro2/imgs/metro2__official_s1.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.08s/it] 50%|█████     | 2/4 [00:12<00:12,  6.01s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.11s/it]100%|██████████| 4/4 [00:24<00:00,  6.05s/it]100%|██████████| 4/4 [00:24<00:00,  6.06s/it]
+saved projects/gizem/ai/metro2/imgs/metro2__end_s1.png 42
+ALLDONE

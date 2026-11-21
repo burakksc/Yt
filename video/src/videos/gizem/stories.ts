@@ -1297,7 +1297,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "m2_tunnel",
+    "img": "metro2__hook",
     "title": "A secret metro?",
     "big": "METRO-2",
     "bigSub": "never officially confirmed",
@@ -1307,91 +1307,84 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "what",
-    "img": "m2_kremlin",
+    "img": "metro2__what",
     "title": "Metro-2",
     "big": "",
     "bigSub": "",
     "text": "It's called Metro-2. Reportedly, deep tunnels linking the Kremlin to government bunkers.",
-    "fit": "contain",
     "vsec": 7.03,
     "sec": 7.78
    },
    {
     "id": "stalin",
-    "img": "m2_1935",
+    "img": "metro2__stalin",
     "title": "Started under Stalin?",
     "big": "D-6",
     "bigSub": "rumoured code name",
     "text": "The story says it was started under Stalin, and given the code name D-6.",
-    "fit": "contain",
     "vsec": 5.75,
     "sec": 6.5
    },
    {
     "id": "report",
-    "img": "m2_signal",
+    "img": "metro2__report",
     "title": "A US report",
     "big": "",
     "bigSub": "",
     "text": "A US Defense Department report later described it, with a diagram of the possible lines.",
-    "fit": "contain",
     "vsec": 7.28,
     "sec": 8.03
    },
    {
     "id": "mgu",
-    "img": "m2_mgu",
+    "img": "metro2__mgu",
     "title": "Where does it go?",
     "big": "",
     "bigSub": "rumoured route",
     "text": "One line is said to run toward Moscow State University.",
-    "fit": "contain",
     "vsec": 4.62,
     "sec": 5.38
    },
    {
     "id": "bunker",
-    "img": "m2_bunker",
+    "img": "metro2__bunker",
     "title": "Real bunkers",
     "big": "65 m",
     "bigSub": "Bunker 42, now a museum",
     "text": "Real Cold War bunkers do exist here. Bunker 42 is now a museum.",
-    "fit": "contain",
     "vsec": 6.4,
     "sec": 7.15
    },
    {
     "id": "official",
-    "img": "m2_mayak",
+    "img": "metro2__official",
     "title": "Officially?",
     "big": "",
     "bigSub": "",
     "text": "But Metro-2 itself? Officials have never confirmed it exists. And never clearly denied it.",
-    "fit": "contain",
     "vsec": 7.45,
     "sec": 8.2
    },
    {
     "id": "end",
-    "img": "m2_platform",
+    "img": "metro2__end",
     "title": "Right below you",
     "big": "",
     "bigSub": "",
     "text": "So next time you ride the Moscow metro, there might be another one right below you.",
-    "fit": "contain",
     "vsec": 6.12,
     "sec": 6.88
    }
   ],
   "credits": {
-   "m2_tunnel": "Photo: Moscow Government press service (mos.ru) · CC BY 4.0 · Wikimedia Commons",
-   "m2_kremlin": "Photo: ikhou · CC BY-SA 2.0 · Flickr",
-   "m2_1935": "Photo: Trondheim byarkiv (c. 1935) · CC BY 2.0 · Flickr",
-   "m2_signal": "Photo: Moscow Government press service (mos.ru) · CC BY 4.0 · Wikimedia Commons",
-   "m2_mgu": "Photo: Phuketian.S · CC BY 2.0 · Flickr",
-   "m2_bunker": "Photo: M1key.me · CC BY 2.0 · Flickr",
-   "m2_mayak": "Photo: greg westfall · CC BY 2.0 · Flickr",
-   "m2_platform": "Photo: Trondheim byarkiv (c. 1935) · CC BY 2.0 · Flickr"
+   "metro2__hook": "AI-generated illustration",
+   "metro2__what": "AI-generated illustration",
+   "metro2__stalin": "AI-generated illustration",
+   "metro2__report": "AI-generated illustration",
+   "metro2__mgu": "AI-generated illustration",
+   "metro2__bunker": "AI-generated illustration",
+   "metro2__official": "AI-generated illustration",
+   "metro2__end": "AI-generated illustration"
   }
  },
  "bermuda": {
