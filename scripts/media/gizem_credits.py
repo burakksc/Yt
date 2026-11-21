@@ -19,6 +19,8 @@ import sys
 import cv2
 import numpy as np
 
+NOLINKS = "--nolinks" in sys.argv
+sys.argv = [a for a in sys.argv if a != "--nolinks"]
 slug = sys.argv[1]
 root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 story = json.load(open(f"{root}/projects/gizem/stories.json"))[slug]
@@ -71,7 +73,14 @@ for s, v in zip(story["scenes"], vsec):
         r = meta[best]
         lic = LIC.get(r["license"], r["license"].upper())
         ver = f" {r['license_version']}" if r.get("license_version") and r["license"] not in ("cc0", "pdm") else ""
-        print(f"{ts} {s['title']} — \"{r['title']}\" by {r['creator']}, {lic}{ver}, {r['foreign_landing_url']}")
+        url = r["foreign_landing_url"]
+        if NOLINKS:  # unverified channels cannot post links: name site + photo id instead
+            site = "Flickr" if "flickr" in url else "Wikimedia Commons" if "wikimedia" in url else url.split("/")[2]
+            pid = url.rstrip("/").split("/")[-1]
+            tail = f"via {site} (photo ID {pid})" if site == "Flickr" else f"via {site}"
+        else:
+            tail = url
+        print(f"{ts} {s['title']} — \"{r['title']}\" by {r['creator']}, {lic}{ver}, {tail}")
     else:
         print(f"{ts} {s['title']} — [no source match for {s['img']}.jpg — check manually]")
     t += v + pad
