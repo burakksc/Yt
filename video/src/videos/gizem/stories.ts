@@ -1220,90 +1220,83 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "andes_crossing",
+    "img": "stardust__hook",
     "title": "The last word",
     "big": "1947",
     "bigSub": "over the Andes",
     "text": "In 1947, a plane over the Andes sent one last word in Morse code. Stendec. Then it vanished.",
-    "fit": "contain",
     "vsec": 9.1,
     "sec": 9.85
    },
    {
     "id": "plane",
-    "img": "lancastrian",
+    "img": "stardust__plane",
     "title": "Star Dust",
     "big": "11",
     "bigSub": "people aboard",
     "text": "Star Dust, an Avro Lancastrian with eleven people aboard, flying from Buenos Aires to Santiago.",
-    "fit": "contain",
     "vsec": 8.38,
     "sec": 9.12
    },
    {
     "id": "morse",
-    "img": "morse_key",
+    "img": "stardust__morse",
     "title": "The final message",
     "big": "STENDEC",
     "bigSub": "last Morse message",
     "text": "Its final message ended with Stendec. No one has ever explained that word.",
-    "fit": "contain",
     "vsec": 6.28,
     "sec": 7.03
    },
    {
     "id": "search",
-    "img": "andes_clouds",
+    "img": "stardust__search",
     "title": "Vanished",
     "big": "",
     "bigSub": "",
     "text": "Search teams found nothing. Rumours spread of sabotage, and even UFOs.",
-    "fit": "contain",
     "vsec": 6.05,
     "sec": 6.8
    },
    {
     "id": "found",
-    "img": "tupungato",
+    "img": "stardust__found",
     "title": "Mount Tupungato",
     "big": "1998",
     "bigSub": "wreckage found",
     "text": "In 1998, climbers on Mount Tupungato found its wreckage, coming out of a glacier.",
-    "fit": "contain",
     "vsec": 7.38,
     "sec": 8.12
    },
    {
     "id": "cause",
-    "img": "jetstream",
+    "img": "stardust__cause",
     "title": "The jet stream",
     "big": "",
     "bigSub": "",
     "text": "Investigators concluded a powerful jet stream headwind had slowed the plane, so the crew descended too early, into the mountain.",
-    "fit": "contain",
     "vsec": 9.65,
     "sec": 10.4
    },
    {
     "id": "end",
-    "img": "glacier_ice",
+    "img": "stardust__end",
     "title": "Still a mystery",
     "big": "50+ years",
     "bigSub": "hidden in the ice",
     "text": "The glacier hid Star Dust for over fifty years. But Stendec is still a mystery.",
-    "fit": "contain",
     "vsec": 6.33,
     "sec": 7.08
    }
   ],
   "credits": {
-   "andes_crossing": "Crossing the Andes. Photo: alonso_inostrosa · CC BY-SA 2.0 · Flickr",
-   "lancastrian": "An Avro Lancastrian (VH742, 1948), same type as Star Dust. Photo: RuthAS · CC BY 3.0 · Wikimedia Commons",
-   "morse_key": "Morse key. Photo: mrbill · CC BY 2.0 · Flickr",
-   "andes_clouds": "The Andes. Photo: Jorge Lascar · CC BY 2.0 · Flickr",
-   "tupungato": "Mount Tupungato. Photo: Diode · CC BY-SA 3.0 · Wikimedia Commons",
-   "jetstream": "Jet stream clouds (over the Rockies). Photo: formulanone · CC BY-SA 2.0 · Flickr",
-   "glacier_ice": "Glacier ice. Photo: Aztlek · CC BY-SA 2.0 · Flickr"
+   "stardust__hook": "AI-generated illustration",
+   "stardust__plane": "AI-generated illustration",
+   "stardust__morse": "AI-generated illustration",
+   "stardust__search": "AI-generated illustration",
+   "stardust__found": "AI-generated illustration",
+   "stardust__cause": "AI-generated illustration",
+   "stardust__end": "AI-generated illustration"
   }
  },
  "metro2": {
