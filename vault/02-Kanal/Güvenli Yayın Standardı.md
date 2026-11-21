@@ -49,3 +49,6 @@ Kanal telefon doğrulanana kadar açıklamada `https://` yok; atıf: eser adı +
 
 ## Teslim sırası (kullanıcı, 2026-11-21)
 Her video hazır olur olmaz, sıradakini beklemeden DİREKT gönder (video + başlık + linksiz açıklama + hashtag/etiket + Studio ayarı + risk özeti).
+
+## Açıklama: "Images" satırı YOK (kullanıcı, 2026-11-21)
+AI illüstrasyonlu videolarda açıklamaya "Images: All images ... AI-generated illustrations" satırı **konmaz**. Kalanlar: özet, Sources, "Narration: AI voice (Kokoro TTS).", linksiz footer, hashtag. (Video içindeki küçük "AI-generated illustration" etiketi ve Studio sentetik kutusu kuralları geçerli.) Gerçek fotoğraf kullanılırsa atıf satırları yine zorunlu.
