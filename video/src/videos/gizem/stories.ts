@@ -831,18 +831,17 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "quarry",
+    "img": "baalbek__hook",
     "title": "The biggest stone of antiquity",
     "big": "~1,650 t",
     "bigSub": "one single block",
     "text": "See the tiny person? These are the biggest stone blocks known from the ancient world, and they never left the quarry.",
-    "fit": "contain",
     "vsec": 8.47,
     "sec": 9.22
    },
    {
     "id": "temple",
-    "img": "temple",
+    "img": "baalbek__temple",
     "title": "Baalbek, Lebanon",
     "big": "AD 60",
     "bigSub": "Temple of Jupiter completed",
@@ -852,7 +851,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "columns",
-    "img": "columns",
+    "img": "baalbek__columns",
     "title": "Giant columns",
     "big": "~20 m",
     "bigSub": "six columns still stand",
@@ -862,69 +861,64 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "trilithon",
-    "img": "trilithon",
+    "img": "baalbek__trilithon",
     "title": "The trilithon",
     "big": "~800 t",
     "bigSub": "each of three blocks",
     "text": "In its base: the trilithon, three blocks of about eight hundred tonnes each.",
-    "fit": "contain",
     "vsec": 5.7,
     "sec": 6.45
    },
    {
     "id": "pregnant",
-    "img": "pregnant",
+    "img": "baalbek__pregnant",
     "title": "Stone of the Pregnant Woman",
     "big": "~1,000 t",
     "bigSub": "left in the quarry",
     "text": "In the quarry lies the Stone of the Pregnant Woman: about a thousand tonnes, never moved.",
-    "fit": "contain",
     "vsec": 6.9,
     "sec": 7.65
    },
    {
     "id": "find",
-    "img": "block2014",
+    "img": "baalbek__find",
     "title": "An even bigger one",
     "big": "2014",
     "bigSub": "19.6 m long, ~1,650 tonnes",
     "text": "In 2014, archaeologists found a bigger one beside it: about sixteen hundred and fifty tonnes.",
-    "fit": "contain",
     "vsec": 8.25,
     "sec": 9.0
    },
    {
     "id": "how",
-    "img": "wall",
+    "img": "baalbek__how",
     "title": "How did they do it?",
     "big": "~800 m",
     "bigSub": "from quarry to temple",
     "text": "Most archaeologists credit Roman engineers, with ramps, rollers and capstans, from a quarry just uphill.",
-    "fit": "contain",
     "vsec": 8.6,
     "sec": 9.35
    },
    {
     "id": "end",
-    "img": "ruins",
+    "img": "baalbek__end",
     "title": "Still debated",
     "big": "",
     "bigSub": "",
     "text": "But exactly how the trilithon was lifted is still debated.",
-    "fit": "contain",
     "vsec": 4.8,
     "sec": 5.55
    }
   ],
   "credits": {
-   "quarry": "Photo: Lodo27 (CC BY-SA 2.0)",
-   "temple": "Photo: Arian Zwegers (CC BY 2.0)",
-   "columns": "Photo: Eusebius@Commons (CC BY 2.0)",
-   "trilithon": "Photo: Lodo27 (CC BY-SA 2.0)",
-   "pregnant": "Photo: Following Hadrian (CC BY-SA 2.0)",
-   "block2014": "Photo: Lodo27 (CC BY-SA 2.0)",
-   "wall": "Photo: Lodo27 (CC BY-SA 2.0)",
-   "ruins": "Photo: ISAW / isawnyu (CC BY 2.0)"
+   "baalbek__hook": "AI-generated illustration",
+   "baalbek__temple": "AI-generated illustration",
+   "baalbek__columns": "AI-generated illustration",
+   "baalbek__trilithon": "AI-generated illustration",
+   "baalbek__pregnant": "AI-generated illustration",
+   "baalbek__find": "AI-generated illustration",
+   "baalbek__how": "AI-generated illustration",
+   "baalbek__end": "AI-generated illustration"
   }
  },
  "yamantau": {
