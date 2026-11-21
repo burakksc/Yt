@@ -1,6 +1,6 @@
 ---
 tür: shorts (EN, Michael)
-durum: render
+durum: render bitti (2026-11-21)
 composition: GizemAntikythera / GizemBaalbek (video/src/videos/gizem, veri projects/gizem/stories.json)
 ---
 # Gizem Shorts 4 (2026-11-21): Antikythera + Baalbek
@@ -21,3 +21,7 @@ Metinler: [[2026-11-21 Gizem Shorts 4 - Metinler]] · Önceki: [[2026-11-20 Gize
 - Antikythera: Tilemahos Efthimiadis (CC BY 2.0, Flickr) ×7 (3'ü müzedeki replika), Weekend Wayfarers (CC BY 2.0).
 - Baalbek: Lodo27 (CC BY-SA 2.0) ×4, Arian Zwegers (CC BY 2.0), Eusebius@Commons (CC BY 2.0), Following Hadrian (CC BY-SA 2.0), isawnyu (CC BY 2.0).
 - Linkler: Metinler notundaki açıklamalarda.
+
+## Render
+- `video/out/gizem-antikythera-en.mp4` 59.1 s, `video/out/gizem-baalbek-en.mp4` 59.1 s; kareler ve ses (-27.7 dB ortalama) kontrol edildi.
+- Sorun: paralel ajanlarla disk %100 doldu → Chrome "ran out of memory or disk space". `npm cache clean --force` (~650 MB) + `--concurrency=2` ile çözüldü. Ders: render öncesi `df -h /` kontrol et.
