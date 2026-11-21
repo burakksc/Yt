@@ -1289,5 +1289,135 @@
     "text": "One theory: fearing the alcohol might explode, they fled in the lifeboat."
    }
   ]
+ },
+ "day1900": {
+  "title": "A DAY IN 1900",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "street",
+    "title": "Then vs Now",
+    "big": "1900",
+    "bigSub": "one ordinary day · USA",
+    "text": "Then versus now. One ordinary day in America, in 1900."
+   },
+   {
+    "id": "morning",
+    "img": "ice",
+    "title": "Dawn deliveries",
+    "big": "",
+    "bigSub": "",
+    "text": "At dawn, the milkman and the iceman arrive by horse and wagon. There's no fridge."
+   },
+   {
+    "id": "power",
+    "img": "lamp",
+    "title": "No electricity",
+    "big": "< 5%",
+    "bigSub": "of US homes had electricity",
+    "text": "Fewer than one in twenty homes have electricity. You read by kerosene lamp."
+   },
+   {
+    "id": "bath",
+    "img": "outhouse",
+    "title": "The bathroom? Outside",
+    "big": "",
+    "bigSub": "",
+    "text": "The toilet? Usually an outhouse in the yard."
+   },
+   {
+    "id": "work",
+    "img": "mill",
+    "title": "Work",
+    "big": "~60 h",
+    "bigSub": "average work week · USA 1900",
+    "text": "The average worker puts in nearly sixty hours a week, often over six days."
+   },
+   {
+    "id": "life",
+    "img": "people",
+    "title": "A shorter life",
+    "big": "47",
+    "bigSub": "US life expectancy at birth, 1900",
+    "text": "A baby born in the US in 1900 could expect to live about forty seven years. Today, it's nearly eighty."
+   },
+   {
+    "id": "dusk",
+    "img": "lamplighter",
+    "title": "Dusk",
+    "big": "",
+    "bigSub": "",
+    "text": "At dusk, the lamplighter lights the gas lamps, one by one."
+   },
+   {
+    "id": "end",
+    "img": "lamplighter2",
+    "title": "Then vs Now",
+    "big": "",
+    "bigSub": "",
+    "text": "Could you live one day in 1900?"
+   }
+  ]
+ },
+ "knockerup": {
+  "title": "THE KNOCKER-UP",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "slide",
+    "title": "Then vs Now",
+    "big": "5 a.m.",
+    "bigSub": "a human alarm clock",
+    "text": "Then versus now. Before cheap alarm clocks, people paid someone to wake them up."
+   },
+   {
+    "id": "job",
+    "img": "blackburn",
+    "title": "The knocker-up",
+    "big": "",
+    "bigSub": "",
+    "text": "In the mill towns of Britain and Ireland, they were called knocker-ups."
+   },
+   {
+    "id": "pole",
+    "img": "slide",
+    "title": "Tap, tap, tap",
+    "big": "",
+    "bigSub": "",
+    "text": "Before dawn, they tapped on bedroom windows with long poles, until you answered."
+   },
+   {
+    "id": "peas",
+    "img": "peashooter",
+    "title": "Or a pea shooter",
+    "big": "6d",
+    "bigSub": "sixpence a week · London",
+    "text": "In London's East End, Mary Smith used a pea shooter, for sixpence a week."
+   },
+   {
+    "id": "dutch",
+    "img": "porder",
+    "title": "Not just Britain",
+    "big": "",
+    "bigSub": "",
+    "text": "The Netherlands had them too. There, they were called porders."
+   },
+   {
+    "id": "who",
+    "img": "porder2",
+    "title": "Who woke the knocker-up?",
+    "big": "",
+    "bigSub": "",
+    "text": "So who woke the knocker-up? Usually, nobody. Many worked all night and slept by day."
+   },
+   {
+    "id": "end",
+    "img": "clock",
+    "title": "Then vs Now",
+    "big": "",
+    "bigSub": "",
+    "text": "Then, a tap on the glass. Now, your phone."
+   }
+  ]
  }
 }

@@ -1604,6 +1604,191 @@ export const STORIES: Record<string, MyStory> = {
    "d_tunnel": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons",
    "d_halls": "Photo: Nevit Dilmen · CC BY-SA 3.0 · Wikimedia Commons"
   }
+ },
+ "day1900": {
+  "title": "A DAY IN 1900",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "street",
+    "title": "Then vs Now",
+    "big": "1900",
+    "bigSub": "one ordinary day · USA",
+    "text": "Then versus now. One ordinary day in America, in 1900.",
+    "fit": "contain",
+    "vsec": 5.95,
+    "sec": 6.7
+   },
+   {
+    "id": "morning",
+    "img": "ice",
+    "title": "Dawn deliveries",
+    "big": "",
+    "bigSub": "",
+    "text": "At dawn, the milkman and the iceman arrive by horse and wagon. There's no fridge.",
+    "fit": "contain",
+    "vsec": 6.35,
+    "sec": 7.1
+   },
+   {
+    "id": "power",
+    "img": "lamp",
+    "title": "No electricity",
+    "big": "< 5%",
+    "bigSub": "of US homes had electricity",
+    "text": "Fewer than one in twenty homes have electricity. You read by kerosene lamp.",
+    "vsec": 6.17,
+    "sec": 6.92
+   },
+   {
+    "id": "bath",
+    "img": "outhouse",
+    "title": "The bathroom? Outside",
+    "big": "",
+    "bigSub": "",
+    "text": "The toilet? Usually an outhouse in the yard.",
+    "fit": "contain",
+    "vsec": 3.9,
+    "sec": 4.65
+   },
+   {
+    "id": "work",
+    "img": "mill",
+    "title": "Work",
+    "big": "~60 h",
+    "bigSub": "average work week · USA 1900",
+    "text": "The average worker puts in nearly sixty hours a week, often over six days.",
+    "fit": "contain",
+    "vsec": 6.28,
+    "sec": 7.03
+   },
+   {
+    "id": "life",
+    "img": "people",
+    "title": "A shorter life",
+    "big": "47",
+    "bigSub": "US life expectancy at birth, 1900",
+    "text": "A baby born in the US in 1900 could expect to live about forty seven years. Today, it's nearly eighty.",
+    "fit": "contain",
+    "vsec": 9.05,
+    "sec": 9.8
+   },
+   {
+    "id": "dusk",
+    "img": "lamplighter",
+    "title": "Dusk",
+    "big": "",
+    "bigSub": "",
+    "text": "At dusk, the lamplighter lights the gas lamps, one by one.",
+    "vsec": 4.85,
+    "sec": 5.6
+   },
+   {
+    "id": "end",
+    "img": "lamplighter2",
+    "title": "Then vs Now",
+    "big": "",
+    "bigSub": "",
+    "text": "Could you live one day in 1900?",
+    "vsec": 3.45,
+    "sec": 4.2
+   }
+  ],
+  "credits": {
+   "street": "Photo: Detroit Publishing Co., c.1900 · Public domain (LoC)",
+   "ice": "Photo: Charles H. Currier, 1890 · Public domain (LoC)",
+   "lamp": "Photo: Navneetnivariya1993 · CC BY-SA 4.0 · Wikimedia Commons",
+   "outhouse": "Photo: Carol M. Highsmith · Public domain (LoC)",
+   "mill": "Photo: Lewis Hine, 1909 · Public domain (LoC)",
+   "people": "Photo: Detroit Photographic Co., c.1900 · Public domain (LoC)",
+   "lamplighter": "Photo: c.1903, via Jim Griffin · CC0",
+   "lamplighter2": "Photo: Boston Herald-Traveler, c.1926 · Public domain"
+  }
+ },
+ "knockerup": {
+  "title": "THE KNOCKER-UP",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "slide",
+    "title": "Then vs Now",
+    "big": "5 a.m.",
+    "bigSub": "a human alarm clock",
+    "text": "Then versus now. Before cheap alarm clocks, people paid someone to wake them up.",
+    "vsec": 6.2,
+    "sec": 6.95
+   },
+   {
+    "id": "job",
+    "img": "blackburn",
+    "title": "The knocker-up",
+    "big": "",
+    "bigSub": "",
+    "text": "In the mill towns of Britain and Ireland, they were called knocker-ups.",
+    "fit": "contain",
+    "vsec": 5.25,
+    "sec": 6.0
+   },
+   {
+    "id": "pole",
+    "img": "slide",
+    "title": "Tap, tap, tap",
+    "big": "",
+    "bigSub": "",
+    "text": "Before dawn, they tapped on bedroom windows with long poles, until you answered.",
+    "vsec": 6.45,
+    "sec": 7.2
+   },
+   {
+    "id": "peas",
+    "img": "peashooter",
+    "title": "Or a pea shooter",
+    "big": "6d",
+    "bigSub": "sixpence a week · London",
+    "text": "In London's East End, Mary Smith used a pea shooter, for sixpence a week.",
+    "vsec": 6.1,
+    "sec": 6.85
+   },
+   {
+    "id": "dutch",
+    "img": "porder",
+    "title": "Not just Britain",
+    "big": "",
+    "bigSub": "",
+    "text": "The Netherlands had them too. There, they were called porders.",
+    "vsec": 4.47,
+    "sec": 5.22
+   },
+   {
+    "id": "who",
+    "img": "porder2",
+    "title": "Who woke the knocker-up?",
+    "big": "",
+    "bigSub": "",
+    "text": "So who woke the knocker-up? Usually, nobody. Many worked all night and slept by day.",
+    "vsec": 6.6,
+    "sec": 7.35
+   },
+   {
+    "id": "end",
+    "img": "clock",
+    "title": "Then vs Now",
+    "big": "",
+    "bigSub": "",
+    "text": "Then, a tap on the glass. Now, your phone.",
+    "fit": "contain",
+    "vsec": 3.85,
+    "sec": 4.6
+   }
+  ],
+  "credits": {
+   "slide": "Lantern slide, 1880-1900 · Public domain · Museums Victoria",
+   "blackburn": "Photo: Blackburn mill workers · Public domain (Cotton Town)",
+   "peashooter": "Painting: Eglon van der Neer, 1664 · Public domain",
+   "porder": "Photo: Nationaal Archief, 1947 · No known restrictions",
+   "porder2": "Photo: IISG, 1947 · CC BY-SA 2.0 · Wikimedia Commons",
+   "clock": "Photo: Lankyrider · CC BY-SA 4.0 · Wikimedia Commons"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
