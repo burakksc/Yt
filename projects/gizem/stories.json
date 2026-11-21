@@ -901,7 +901,7 @@
     "title": "The last word",
     "big": "1947",
     "bigSub": "over the Andes",
-    "text": "In 1947, an airliner over the Andes sent one last strange word in Morse code. Stendec. Then it vanished."
+    "text": "In 1947, a plane over the Andes sent one last word in Morse code. Stendec. Then it vanished."
    },
    {
     "id": "plane",
@@ -909,7 +909,7 @@
     "title": "Star Dust",
     "big": "11",
     "bigSub": "people aboard",
-    "text": "It was Star Dust, an Avro Lancastrian with eleven people aboard, flying from Buenos Aires to Santiago."
+    "text": "Star Dust, an Avro Lancastrian with eleven people aboard, flying from Buenos Aires to Santiago."
    },
    {
     "id": "morse",
@@ -917,7 +917,7 @@
     "title": "The final message",
     "big": "STENDEC",
     "bigSub": "last Morse message",
-    "text": "Its final message gave an arrival time in Santiago, then ended with Stendec. No one has ever explained that word."
+    "text": "Its final message ended with Stendec. No one has ever explained that word."
    },
    {
     "id": "search",
@@ -933,7 +933,7 @@
     "title": "Mount Tupungato",
     "big": "1998",
     "bigSub": "wreckage found",
-    "text": "Then, in 1998, climbers on Mount Tupungato found an engine and wreckage, coming out of a glacier."
+    "text": "In 1998, climbers on Mount Tupungato found its wreckage, coming out of a glacier."
    },
    {
     "id": "cause",
@@ -941,7 +941,7 @@
     "title": "The jet stream",
     "big": "",
     "bigSub": "",
-    "text": "Investigators concluded that the jet stream, a powerful headwind, had slowed the plane. The crew thought they had crossed the Andes, and descended too early."
+    "text": "Investigators concluded a powerful jet stream headwind had slowed the plane, so the crew descended too early, into the mountain."
    },
    {
     "id": "end",
