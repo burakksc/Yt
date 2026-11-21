@@ -70,7 +70,7 @@ SCENES = {
         flame_warp=(300, 620, 460, 760, 650),  # 4K roi x, y, w, h + base line (y in roi) of the flame
         # sleepy cat: eyes close (inpainted closed-eye still, 4K) while the head droops, then wakes. 30 s cycle.
         nod=dict(closed="video/public/cozy-cat/closed4k.png", eyes=[(722, 409, 24, 16), (797, 405, 29, 15)],
-                 head=(790, 405, 135, 125), pivot=(815, 540), angle=4.0, drop=7, cycle=30.0),
+                 head=(790, 405, 135, 125), pivot=(815, 540), angle=4.0, drop=7, body_follow=0.45, cycle=30.0),
         fire_light=(528, 1180),
         light_gain=1.0,
         windows=[(50, 0, 1160, 1370, 0.8), (2860, 0, 980, 940, 0.8)],
@@ -177,6 +177,9 @@ def main():
         nyy, nxx = np.mgrid[ny0:ny1, nx0:nx1].astype(np.float32)
         hw = np.clip(1.25 - (((nxx - hcx) / hrx) ** 2 + ((nyy - hcy) / hry) ** 2), 0, 1)
         hw = cv2.GaussianBlur(hw, (0, 0), 40)  # deformation weight: 1 on the head, fades into body/background
+        # neck/shoulder follow: soft weight below the head so the chest sinks a little with the head
+        bw = np.clip(1.0 - (((nxx - hcx) / (hrx * 1.7)) ** 2 + ((nyy - (hcy + hry * 1.5)) / (hry * 1.4)) ** 2), 0, 1)
+        bw = cv2.GaussianBlur(bw, (0, 0), 55) * (1 - hw)
         em = np.zeros((H, W), np.float32)
         for (ex, ey, erx, ery) in nod["eyes"]:
             cv2.ellipse(em, (int(ex * sx), int(ey * sx + oy)), (int(erx * sx), int(ery * sx)), 0, 0, 360, 1.0, -1)
@@ -190,8 +193,9 @@ def main():
 
         def nod_state(t):
             u = t % nod["cycle"]
-            down = ss(6, 10, u) - ss(21, 24.5, u)  # 0 awake .. 1 asleep
-            eyes = ss(6.5, 9.5, u) - ss(21.5, 23.5, u)
+            # dozing off: sink to ~.55, a small startle back up, then fully asleep; wakes slowly
+            down = 0.55 * ss(6, 9, u) - 0.25 * ss(10, 10.8, u) + 0.70 * ss(11.5, 15, u) - ss(21, 24.5, u)
+            eyes = 0.9 * ss(6.5, 9, u) - 0.5 * ss(10, 10.6, u) + 0.6 * ss(11.5, 14, u) - ss(21.5, 23.5, u)
             blink = max(0.0, 1 - abs(u - 3.0) / 0.18) + max(0.0, 1 - abs(u - 27.5) / 0.18)  # quick blinks while awake
             breath = np.sin(2 * np.pi * 15 * t / P)  # 15 breaths / min
             return down, min(1.0, eyes + blink), breath
@@ -270,6 +274,7 @@ def main():
             my = npy - sa * qx + ca * qy
             mx = nxx + hw * (mx - nxx)
             my = nyy + hw * (my - nyy)
+            my = my - nod.get("body_follow", 0.0) * dy * bw
             img[ny0:ny1, nx0:nx1] = cv2.remap(np.ascontiguousarray(reg, np.float32), (mx - nx0).astype(np.float32), (my - ny0).astype(np.float32),
                                               cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
         # candles
