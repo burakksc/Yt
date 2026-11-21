@@ -1414,6 +1414,97 @@ export const STORIES: Record<string, MyStory> = {
    "m2_mayak": "Photo: greg westfall · CC BY 2.0 · Flickr",
    "m2_platform": "Photo: Trondheim byarkiv (c. 1935) · CC BY 2.0 · Flickr"
   }
+ },
+ "bermuda": {
+  "title": "FLIGHT 19",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "avengers_line",
+    "title": "They never came back",
+    "big": "1945",
+    "bigSub": "Florida",
+    "text": "In 1945, five U.S. Navy bombers left Florida on a training flight. They never came back.",
+    "fit": "contain",
+    "vsec": 8.47,
+    "sec": 9.22
+   },
+   {
+    "id": "flight",
+    "img": "avenger",
+    "title": "Flight 19",
+    "big": "5",
+    "bigSub": "TBM Avengers, 14 men",
+    "text": "Flight 19. Five TBM Avengers and fourteen men, led by Lieutenant Charles Taylor.",
+    "fit": "contain",
+    "vsec": 7.6,
+    "sec": 8.35
+   },
+   {
+    "id": "lost",
+    "img": "route_map",
+    "title": "Lost",
+    "big": "",
+    "bigSub": "",
+    "text": "Taylor said his compasses had failed, and thought they were over the Florida Keys. Night fell, and fuel ran low.",
+    "fit": "contain",
+    "vsec": 8.18,
+    "sec": 8.93
+   },
+   {
+    "id": "rescue",
+    "img": "mariner",
+    "title": "The rescue plane",
+    "big": "13",
+    "bigSub": "men aboard the Mariner",
+    "text": "A Mariner flying boat with thirteen men went out to search. It vanished too.",
+    "fit": "contain",
+    "vsec": 5.95,
+    "sec": 6.7
+   },
+   {
+    "id": "flame",
+    "img": "mariners_clouds",
+    "title": "Flying gas tanks",
+    "big": "",
+    "bigSub": "",
+    "text": "A ship saw a burst of flame in the sky. Mariners were nicknamed flying gas tanks.",
+    "fit": "contain",
+    "vsec": 6.7,
+    "sec": 7.45
+   },
+   {
+    "id": "legend",
+    "img": "atlantic",
+    "title": "A legend is born",
+    "big": "27",
+    "bigSub": "men lost in one day",
+    "text": "Twenty seven men, gone in one day. And the legend of the Bermuda Triangle grew.",
+    "fit": "contain",
+    "vsec": 6.65,
+    "sec": 7.4
+   },
+   {
+    "id": "twist",
+    "img": "stormy_sea",
+    "title": "The twist",
+    "big": "",
+    "bigSub": "",
+    "text": "But here's the twist: the Coast Guard and insurers like Lloyd's say it's no more dangerous than any other busy stretch of sea.",
+    "fit": "contain",
+    "vsec": 9.07,
+    "sec": 9.82
+   }
+  ],
+  "credits": {
+   "avengers_line": "TBM Avengers. Photo: Armchair Aviator · CC BY 2.0 · Flickr",
+   "avenger": "TBM Avenger. Photo: Eric Friedebach · CC BY 2.0 · Flickr",
+   "route_map": "Flight 19 route map. Map: Merikanto · CC BY-SA 4.0 · Wikimedia Commons",
+   "mariner": "Martin PBM Mariner. Smithsonian National Air and Space Museum · public domain · Flickr",
+   "mariners_clouds": "Martin PBM Mariners. Photo via aeroman3 · public domain · Flickr",
+   "atlantic": "The Atlantic Ocean. Photo: milan.boers · CC BY 2.0 · Flickr",
+   "stormy_sea": "Photo: luke_wes · CC BY-SA 2.0 · Flickr"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
