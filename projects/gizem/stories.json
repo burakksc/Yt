@@ -1169,7 +1169,7 @@
     "title": "The Flannan Isles",
     "big": "32 km",
     "bigSub": "west of Lewis, Scotland",
-    "text": "Eilean Mòr, in the Flannan Isles, far out in the Atlantic. Just seabirds, cliffs and a lighthouse."
+    "text": "Eilean Mòr, far out in the Atlantic. Just seabirds, cliffs and a lighthouse."
    },
    {
     "id": "dark",
@@ -1209,7 +1209,7 @@
     "title": "The likely answer",
     "big": "",
     "bigSub": "",
-    "text": "Investigators found storm damage high above the west landing. They concluded a huge wave swept the men away."
+    "text": "Storm damage high above the west landing suggested a huge wave swept them away."
    },
    {
     "id": "end",
@@ -1230,7 +1230,7 @@
     "title": "The ghost ship",
     "big": "1872",
     "bigSub": "found adrift",
-    "text": "In December 1872, a ship was found drifting in the Atlantic, with no one on board."
+    "text": "In December 1872, a ship was found adrift in the Atlantic, with no one aboard."
    },
    {
     "id": "ship",
@@ -1278,7 +1278,7 @@
     "title": "Fiction becomes legend",
     "big": "1884",
     "bigSub": "Conan Doyle's story",
-    "text": "In 1884, a young Arthur Conan Doyle wrote a story about it, and its invented details became legend."
+    "text": "In 1884, Arthur Conan Doyle wrote a story about it, and its invented details became legend."
    },
    {
     "id": "end",
@@ -1286,7 +1286,7 @@
     "title": "What happened?",
     "big": "",
     "bigSub": "",
-    "text": "One theory: alcohol fumes made them fear an explosion, so they took to the lifeboat and lost the ship."
+    "text": "One theory: fearing the alcohol might explode, they fled in the lifeboat."
    }
   ]
  }

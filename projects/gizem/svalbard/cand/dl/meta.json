@@ -1,0 +1,58 @@
+{
+ "vault_dusk": {
+  "title": "Global Seed Vault",
+  "creator": "the tinz (Martyn Smith)",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=16064027324",
+  "source": "flickr"
+ },
+ "svalbard_mtn": {
+  "title": "Svalbard mountain tops in the clouds",
+  "creator": "Kitty Terwolbeck",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=10884682814",
+  "source": "flickr"
+ },
+ "tunnel": {
+  "title": "SGSV entrance tunnel",
+  "creator": "Dag Endresen",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=4190683490",
+  "source": "flickr"
+ },
+ "seeds": {
+  "title": "Genebank 2011 15",
+  "creator": "CIAT International Center for Tropical Agriculture",
+  "license": "by-sa",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=5445557409",
+  "source": "flickr"
+ },
+ "vault_land": {
+  "title": "The Seed Vault. Svalbard",
+  "creator": "Christopher Michel",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=29179377673",
+  "source": "flickr"
+ },
+ "icarda": {
+  "title": "ICARDA (Syria, 1991)",
+  "creator": "JIRCAS",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=36725207585",
+  "source": "flickr"
+ },
+ "vault_snow": {
+  "title": "Svalbard Global Seed Vault",
+  "creator": "Dag Endresen",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=4190685740",
+  "source": "flickr"
+ }
+}

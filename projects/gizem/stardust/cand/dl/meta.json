@@ -1,0 +1,58 @@
+{
+ "andes_crossing": {
+  "title": "Crossing the Andes - Argentina",
+  "creator": "alonso_inostrosa",
+  "license": "by-sa",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=4055062920",
+  "source": "flickr"
+ },
+ "lancastrian": {
+  "title": "Avro 691 Lancastrian Nene VH742, Ringway 24.04.48 (same type as Star Dust)",
+  "creator": "RuthAS",
+  "license": "by",
+  "license_version": "3.0",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Avro_691_Lancastrian_Nene_VH742_Ringway_24.04.48_edited-2.jpg",
+  "source": "wikimedia"
+ },
+ "morse_key": {
+  "title": "MFJ Telegraph Key",
+  "creator": "mrbill",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=40588740",
+  "source": "flickr"
+ },
+ "andes_clouds": {
+  "title": "The Andes - The world's longest mountain range",
+  "creator": "Jorge Lascar",
+  "license": "by",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=4569738346",
+  "source": "flickr"
+ },
+ "tupungato": {
+  "title": "Mount Tupungato",
+  "creator": "Diode",
+  "license": "by-sa",
+  "license_version": "3.0",
+  "foreign_landing_url": "https://commons.wikimedia.org/wiki/File:Mount_Tupungato.jpg",
+  "source": "wikimedia"
+ },
+ "jetstream": {
+  "title": "Rockies with Jet Stream",
+  "creator": "formulanone",
+  "license": "by-sa",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=11987463643",
+  "source": "flickr"
+ },
+ "glacier_ice": {
+  "title": "Blue ice II",
+  "creator": "Aztlek",
+  "license": "by-sa",
+  "license_version": "2.0",
+  "foreign_landing_url": "https://www.flickr.com/photo.gne?id=5923884037",
+  "source": "flickr"
+ }
+}
