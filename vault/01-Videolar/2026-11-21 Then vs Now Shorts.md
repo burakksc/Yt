@@ -2,7 +2,7 @@
 tür: video
 seri: Then vs Now
 dil: en
-durum: render
+durum: durduruldu (AI illüstrasyonla yeniden yapılacak)
 tarih: 2026-11-21
 ---
 # Then vs Now Shorts (4 adet)
@@ -38,3 +38,11 @@ Hepsi kamu malı / CC0 / CC BY-SA (NC/ND yok). CC BY-SA: kerosen lambası (4.0),
 - loc.gov, images-api.nasa.gov, archive.org, wikidata engelli → Commons kopyaları kullanıldı.
 - İlk metinler uzundu (day1900 ~74 s) → kısaltıldı; humancomputers/lector ikinci kez kısaltıldı (≤60 s).
 - Disk ~%96 dolu; gereksiz ham görseller silindi.
+
+## Durum (2026-11-21, kullanıcı emri: DUR)
+- Hiçbir mp4 tamamlanmadı: tüm renderlar kullanıcı emriyle durduruldu (day1900 ~%23, lector ~%6'da kesildi). `video/out/` boş (bu 4 slug için).
+- Karar: Shorts **AI illüstrasyonla** (stilize, fotogerçekçi değil) yeniden kurulacak → [[Güvenli Yayın Standardı]] KARAR.
+- Hazır olanlar: anlatım wav'ları (`video/public/gizem/<slug>/en/`), stories.json/stories.ts sahneleri, kompozisyonlar (GizemDay1900, GizemKnockerUp, GizemLector, GizemHumanComputers), doğrulanmış metinler/kaynaklar.
+- knockerup için SDXL prompt seti hazır: `projects/gizem/knockerup/ai/prompts.json` (gouache/storybook tarzı, 768x1344). İlk deneme OOM ile öldü (6 paralel render varken RAM ~5 GB). SDXL'i yalnız, renderlar yokken çalıştır (≥9 GB boş RAM).
+- humancomputers: tüm görseller kamu malı (NASA/Harvard PD); gerçek kişiler (K. Johnson, J. Glenn) AI ile çizilemez ("gerçek kişi yok" kuralı) → bu Short için PD fotoğraflar korunabilir; karar kullanıcıda.
+- Yeniden yaparken açıklamalar `gizem_credits.py <slug> --nolinks` + linksiz footer + Studio satırı + risk özeti ile yazılmalı (Metinler notundaki linkli sürüm eski standarda göre).
