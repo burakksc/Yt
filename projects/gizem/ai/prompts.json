@@ -1,42 +1,121 @@
-{"w":768,"h":1344,
- "style":"storybook gouache illustration, painterly textured brush strokes, muted warm palette, soft cinematic light, hand-painted look, no text, no letters, no watermark, no faces, not a photograph, not photorealistic",
- "items":{
-  "chocolate__hook":{"prompt":"a single raw cacao pod split open showing white pulp and dark beans beside a bitter dark bean on a wooden table, a chocolate bar blurred behind it, tropical green light"},
-  "chocolate__tree":{"prompt":"a cacao tree with colourful yellow and red pods growing straight out of the trunk, lush tropical rainforest, dappled sunlight"},
-  "chocolate__ferment":{"prompt":"cacao beans in white pulp piled in a wooden fermenting box covered with banana leaves, warm steam rising, rustic farm"},
-  "chocolate__roast":{"prompt":"cacao beans drying in the sun on large wooden trays, a rotating roaster drum and cracked beans and shells, warm golden light"},
-  "chocolate__conche":{"prompt":"a vintage copper chocolate conching machine stirring thick glossy dark liquid chocolate, old Swiss factory interior, warm amber light"},
-  "chocolate__temper":{"prompt":"a shiny glossy chocolate bar snapping in half on a marble slab, tempered chocolate on a cooling table, gentle studio light"},
-  "chocolate__loop":{"prompt":"a young cacao tree seedling growing in rich soil with a small ripe pod, soft dawn light, tropical garden"},
-  "russia__hook":{"prompt":"an empty abandoned Russian village of weathered wooden izba houses with birch trees growing through, overcast sky, nobody around, melancholic autumn"},
-  "russia__noroad":{"prompt":"a muddy dirt track ending in a swampy forest, a lonely wooden village in the far distance, grey sky, no vehicles"},
-  "russia__ice":{"prompt":"a winter road made of ice across a frozen river in Siberia, a truck far away leaving a trail, snowy taiga on both banks, pale blue light"},
-  "russia__yakutia":{"prompt":"vast endless Siberian taiga and frozen rivers seen from above, tiny scattered settlements, pale northern light, wide epic landscape"},
-  "russia__delivery":{"prompt":"a cargo barge on a northern river unloading crates at a small arctic wooden village pier, a helicopter overhead, grey cold light"},
-  "russia__end":{"prompt":"a single cozy wooden house with a lit window at the edge of a frozen river in the Siberian winter dusk, smoke from chimney, calm"},
-  "bloop__hook":{"prompt":"deep dark ocean with sound waves rippling through the water as a glowing blue sonar pattern, abstract underwater scene, no creatures"},
-  "bloop__mics":{"prompt":"an underwater hydrophone microphone array on the deep sea floor with faint sonar rings, deep blue gloom"},
-  "bloop__sound":{"prompt":"abstract glowing sound waveform rising sharply in the dark deep ocean water, blue and teal light"},
-  "bloop__monster":{"prompt":"an enormous mysterious shadow silhouette deep in dark ocean water far away, ominous and vague, deep blue"},
-  "bloop__answer":{"prompt":"a huge Antarctic iceberg cracking and breaking away from an ice shelf, cold blue light, grey sea"},
-  "bloop__end":{"prompt":"a tiny submersible with a light descending into the dark deep ocean, lonely and mysterious"},
-  "voynich__hook":{"prompt":"an old medieval manuscript lying open on a wooden desk with unreadable invented script and strange plant drawings, candle light, aged vellum"},
-  "voynich__date":{"prompt":"a calendar-like parchment scroll next to an old quill and ink, scientific carbon dating lab tools softly in the background, warm light"},
-  "voynich__script":{"prompt":"a vellum page of invented flowing alien script characters in brown ink, with decorative flourishes, extreme close-up, aged paper"},
-  "voynich__plants":{"prompt":"a medieval herbal page with fantastical impossible plants with strange roots and colourful leaves, star diagrams and circular charts, aged vellum"},
-  "voynich__tried":{"prompt":"a desk with codebreaking notes, a magnifying glass, an old typewriter and a vintage computer, puzzled mood, lamp light"},
-  "voynich__end":{"prompt":"an old university library with a glass display case holding a closed ancient book, gothic windows, quiet blue evening light"},
-  "wow__hook":{"prompt":"a large radio telescope dish in an Ohio field at night under a starry sky with the milky way, quiet and dark"},
-  "wow__freq":{"prompt":"glowing hydrogen atom diagram and a narrow bright radio wave signal line across a dark space background, scientific illustration"},
-  "wow__wow":{"prompt":"a vintage computer line-printer paper printout with columns of numbers and one circled item in red ink, retro desk, warm lamp"},
-  "wow__sec":{"prompt":"the constellation Sagittarius with a bright signal pulse among stars, deep night sky, a clock face faintly overlaid"},
-  "wow__end":{"prompt":"a lone radio telescope listening to the sky at dawn, empty field, a faint single star above, hopeful and mysterious"},
-  "voyager__hook":{"prompt":"a Voyager-style spacecraft with a big white dish antenna and long boom drifting in black space, tiny sun in the distance"},
-  "voyager__planets":{"prompt":"Jupiter and Saturn with rings and Uranus and Neptune in a row, a tiny spacecraft passing by, deep space"},
-  "voyager__dot":{"prompt":"a vast dark space with a single tiny pale blue dot caught in a beam of sunlight, minimal and emotional"},
-  "voyager__far":{"prompt":"a small spacecraft leaving a glowing bubble around the sun and entering dark interstellar space with distant stars"},
-  "voyager__record":{"prompt":"a shiny golden phonograph record disc with spiral grooves and a stylus in a gold cover on a spacecraft, stars behind, no text"},
-  "voyager__nh":{"prompt":"the dwarf planet Pluto with a pale heart-shaped glacier region seen from a passing spacecraft, icy tones"},
-  "voyager__arrokoth":{"prompt":"a small dark reddish snowman-shaped icy rock, two lobes joined together, in deep space with faint stars"},
-  "voyager__end":{"prompt":"a tiny spacecraft silhouette drifting silently between countless stars, vast darkness, lonely and peaceful"}
- }}
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "chocolate__hook": {
+   "prompt": "a single raw cacao pod split open showing white pulp and dark beans beside a bitter dark bean on a wooden table, a chocolate bar blurred behind it, tropical green light"
+  },
+  "chocolate__tree": {
+   "prompt": "a cacao tree with colourful yellow and red pods growing straight out of the trunk, lush tropical rainforest, dappled sunlight"
+  },
+  "chocolate__ferment": {
+   "prompt": "cacao beans in white pulp piled in a wooden fermenting box covered with banana leaves, warm steam rising, rustic farm"
+  },
+  "chocolate__roast": {
+   "prompt": "cacao beans drying in the sun on large wooden trays, a rotating roaster drum and cracked beans and shells, warm golden light"
+  },
+  "chocolate__conche": {
+   "prompt": "a vintage copper chocolate conching machine stirring thick glossy dark liquid chocolate, old Swiss factory interior, warm amber light"
+  },
+  "chocolate__temper": {
+   "prompt": "a shiny glossy chocolate bar snapping in half on a marble slab, tempered chocolate on a cooling table, gentle studio light"
+  },
+  "chocolate__loop": {
+   "prompt": "a young cacao tree seedling growing in rich soil with a small ripe pod, soft dawn light, tropical garden"
+  },
+  "russia__hook": {
+   "prompt": "an empty abandoned Russian village of weathered wooden izba houses with birch trees growing through, overcast sky, nobody around, melancholic autumn"
+  },
+  "russia__noroad": {
+   "prompt": "a muddy dirt track ending in a swampy forest, a lonely wooden village in the far distance, grey sky, no vehicles"
+  },
+  "russia__ice": {
+   "prompt": "a winter road made of ice across a frozen river in Siberia, a truck far away leaving a trail, snowy taiga on both banks, pale blue light"
+  },
+  "russia__yakutia": {
+   "prompt": "vast endless Siberian taiga and frozen rivers seen from above, tiny scattered settlements, pale northern light, wide epic landscape"
+  },
+  "russia__delivery": {
+   "prompt": "a cargo barge on a northern river unloading crates at a small arctic wooden village pier, a helicopter overhead, grey cold light"
+  },
+  "russia__end": {
+   "prompt": "a single cozy wooden house with a lit window at the edge of a frozen river in the Siberian winter dusk, smoke from chimney, calm"
+  },
+  "bloop__hook": {
+   "prompt": "deep dark ocean with sound waves rippling through the water as a glowing blue sonar pattern, abstract underwater scene, no creatures"
+  },
+  "bloop__mics": {
+   "prompt": "an underwater hydrophone microphone array on the deep sea floor with faint sonar rings, deep blue gloom"
+  },
+  "bloop__sound": {
+   "prompt": "abstract glowing sound waveform rising sharply in the dark deep ocean water, blue and teal light"
+  },
+  "bloop__monster": {
+   "prompt": "an enormous mysterious shadow silhouette deep in dark ocean water far away, ominous and vague, deep blue"
+  },
+  "bloop__answer": {
+   "prompt": "a huge Antarctic iceberg cracking and breaking away from an ice shelf, cold blue light, grey sea"
+  },
+  "bloop__end": {
+   "prompt": "a tiny submersible with a light descending into the dark deep ocean, lonely and mysterious"
+  },
+  "voynich__hook": {
+   "prompt": "an old medieval manuscript lying open on a wooden desk with unreadable invented script and strange plant drawings, candle light, aged vellum"
+  },
+  "voynich__date": {
+   "prompt": "a calendar-like parchment scroll next to an old quill and ink, scientific carbon dating lab tools softly in the background, warm light"
+  },
+  "voynich__script": {
+   "prompt": "a vellum page of invented flowing alien script characters in brown ink, with decorative flourishes, extreme close-up, aged paper"
+  },
+  "voynich__plants": {
+   "prompt": "a medieval herbal page with fantastical impossible plants with strange roots and colourful leaves, star diagrams and circular charts, aged vellum"
+  },
+  "voynich__tried": {
+   "prompt": "a desk with codebreaking notes, a magnifying glass, an old typewriter and a vintage computer, puzzled mood, lamp light"
+  },
+  "voynich__end": {
+   "prompt": "an old university library with a glass display case holding a closed ancient book, gothic windows, quiet blue evening light"
+  },
+  "wow__hook": {
+   "prompt": "a large radio telescope dish in an Ohio field at night under a starry sky with the milky way, quiet and dark"
+  },
+  "wow__freq": {
+   "prompt": "glowing hydrogen atom diagram and a narrow bright radio wave signal line across a dark space background, scientific illustration"
+  },
+  "wow__wow": {
+   "prompt": "a vintage computer line-printer paper printout with columns of numbers and one circled item in red ink, retro desk, warm lamp"
+  },
+  "wow__sec": {
+   "prompt": "the constellation Sagittarius with a bright signal pulse among stars, deep night sky, a clock face faintly overlaid"
+  },
+  "wow__end": {
+   "prompt": "a lone radio telescope listening to the sky at dawn, empty field, a faint single star above, hopeful and mysterious"
+  },
+  "voyager__hook": {
+   "prompt": "a Voyager-style spacecraft with a big white dish antenna and long boom drifting in black space, tiny sun in the distance"
+  },
+  "voyager__planets": {
+   "prompt": "Jupiter and Saturn with rings and Uranus and Neptune in a row, a tiny spacecraft passing by, deep space"
+  },
+  "voyager__dot": {
+   "prompt": "a vast dark space with a single tiny pale blue dot caught in a beam of sunlight, minimal and emotional"
+  },
+  "voyager__far": {
+   "prompt": "a small spacecraft leaving a glowing bubble around the sun and entering dark interstellar space with distant stars"
+  },
+  "voyager__record": {
+   "prompt": "a shiny golden phonograph record disc with spiral grooves and a stylus in a gold cover on a spacecraft, stars behind, no text"
+  },
+  "voyager__nh": {
+   "prompt": "the dwarf planet Pluto with a pale heart-shaped glacier region seen from a passing spacecraft, icy tones"
+  },
+  "voyager__arrokoth": {
+   "prompt": "a small dark reddish snowman-shaped icy rock, two lobes joined together, in deep space with faint stars"
+  },
+  "voyager__end": {
+   "prompt": "a tiny spacecraft silhouette drifting silently between countless stars, vast darkness, lonely and peaceful"
+  }
+ }
+}
