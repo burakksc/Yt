@@ -6,6 +6,18 @@ updated: 2026-11-21
 Kullanıcı: "Bundan sonra oluşturacağın videoları ve açıklamalarını bana **mutlaka %100 yasal olarak güvenli, paylaşmaya hazır** gönder. Herhangi bir riskle karşılaşmak istemiyorum."
 Not: %100 garanti verilemez (hukuki tavsiye değil); hedef = bilinen tüm riskleri kapatmak, kalan riski açıkça yazmak.
 
+## KARAR (kullanıcı, 2026-11-21): yeni videolar yapay görselle
+Kullanıcı: "tüm videoları yapay görsellerle yapalım, en azından lisans riski olmasın."
+Uygulama kuralları:
+- **Tarz:** tutarlı, **stilize illüstrasyon** (fotogerçekçi DEĞİL) → yanıltıcı içerik ve "gerçek sanıldı" riskini düşürür; kanal kimliği tek tip olur.
+- **Gerçek yer/olay/nesne:** gerçek fotoğraf gibi görünen AI görsel yok; "illustration" tarzı + açıklamada "AI-generated illustrations, not photographs".
+- **Araç:** yerel SDXL (CreativeML OpenRAIL++-M, ticari kullanım serbest). Üretim parametrelerini (model, prompt) vault'a kaydet. Gerçek kişi/marka/logo promptu yok; ünlü kişi benzerliği yok.
+- **Araç/araba:** AI kalite sorunu (kullanıcı: "saçma") → bu konular kamu malı fotoğraf veya kodla çizim.
+- **Kamu malı (NASA/NOAA/LoC) görsel de serbest:** lisans riski AI ile aynı seviyede sıfır; gerçek veri/harita/uzay görüntüsü için bunlar tercih.
+- Studio: sentetik içerik kutusu **Evet** (gerçekçi görünüyorsa), açıklamada AI notu.
+- Eski (gerçek foto atıflı) videolar kalır; istenirse sonra AI/PD'ye çevrilir.
+- Kalan riskler (AI ağırlıklı kanal = YouTube "özgün olmayan içerik" gözlemi): her videoya özgün anlatım/senaryo, farklı yapı; aynı şablonla toplu üretme.
+
 ## Görsel kaynak sırası (sıkı)
 1. **Kamu malı / CC0** (NASA, ESA/Hubble, NOAA, Library of Congress, Smithsonian Open Access, Met/Rijksmuseum/Europeana Open Access, Commons "Public domain"/CC0) → atıf riski ~0.
 2. **CC BY** → tam atıf (sahne/zaman — eser adı, yazar, lisans, site).
