@@ -33,6 +33,7 @@ Her iş adımının bir skill'i var — işe başlamadan uygun skill'i yükle.
 | Thumbnail | `yt-thumbnail` |
 | Başlık/açıklama/etiket | `yt-seo` |
 | Shorts | `yt-shorts` |
+| Fikir verilince hemen ön çalışma (araştırma→senaryo→görsel planı→kuyruk) | `yt-fikirden-videoya` |
 | Yayın kontrolü | `yt-publish` |
 | Performans analizi | `yt-analytics` |
 | AI görsel/video üretimi (Higgsfield, 38 model) | `open-higgsfield` |
