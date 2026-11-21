@@ -1,9 +1,10 @@
 ---
 tür: shorts (EN, Michael)
-durum: render
+durum: durduruldu (render yok) — AI illüstrasyonla yeniden yapılacak
 composition: GizemSentinel / GizemSnakeIsland / GizemMetro2 / GizemDerinkuyu / GizemFlannan / GizemMaryCeleste (video/src/videos/gizem, veri projects/gizem/stories.json)
 ---
 # Gizem Shorts 3 (2026-11-21): yasak/kayıp yerler ve gizemler
+> **DURUM (2026-11-21 14:05):** Kullanıcı emriyle tüm render'lar durduruldu; **hiçbir mp4 bitmedi**. Shorts AI illüstrasyonlarıyla ([[Güvenli Yayın Standardı]] KARAR) yeniden kurulacak. Hazır olan ve yeniden kullanılabilecekler: senaryolar (`projects/gizem/stories.json`), seslendirme wav'ları (`video/public/gizem/<slug>/en/`), doğrulanmış gerçekler + kaynaklar (aşağıda), başlık/açıklama/etiket taslakları ([[2026-11-21 Gizem Shorts 3 - Metinler]]). AI'ya geçişte: açıklamadaki "Images (by scene)" bloğu → "All images are AI-generated illustrations, not photographs." Mary Celeste gemi/araç → AI yok kuralı: 1861 kamu malı tablo kalabilir.
 Metinler: [[2026-11-21 Gizem Shorts 3 - Metinler]] · Önceki: [[2026-11-20 Gizem Shorts]] · Paralel: [[2026-11-21 Gizem Shorts 4]]
 
 ## Yapılan
@@ -13,8 +14,8 @@ Metinler: [[2026-11-21 Gizem Shorts 3 - Metinler]] · Önceki: [[2026-11-20 Gize
 | snakeisland | GizemSnakeIsland | ~57.9 s | 8 |
 | metro2 | GizemMetro2 | ~54.9 s | 8 |
 | derinkuyu | GizemDerinkuyu | ~56.6 s | 8 |
-| flannan | GizemFlannan | (bkz. Metinler) | 7 |
-| maryceleste | GizemMaryCeleste | (bkz. Metinler) | 4 + 1861 tablosundan 2 kırpma |
+| flannan | GizemFlannan | ~56.7 s | 7 |
+| maryceleste | GizemMaryCeleste | ~57.3 s | 4 + 1861 tablosundan 2 kırpma |
 
 - 8'er sahne, Kokoro am_michael (0.92). Kelime bütçesi: 8 sahnede ≤ ~115 kelime → ~57–59 s.
 - Sentinel: saygılı dil, kabile üyesi fotoğrafı yok; yalnız uçaktan/uydudan ada görünümleri.
@@ -32,7 +33,7 @@ Metinler: [[2026-11-21 Gizem Shorts 3 - Metinler]] · Önceki: [[2026-11-20 Gize
 
 ## Lisans (hepsi ticari kullanıma uygun; tam linkler Metinler notunda)
 - Ses: Kokoro-82M (Apache-2.0).
-- Sentinel: PJeganathan (CC BY-SA 4.0) ×6, Medici82 (CC BY-SA 4.0), DLR_next (Public Domain Mark).
+- Sentinel: PJeganathan (CC BY-SA 4.0) ×7, DLR_next (Public Domain Mark).
 - Snake Island: Marinha do Brasil (CC BY-SA 2.0) ×3, Prefeitura de Itanhaém (CC BY 2.5), Nayeryouakim (CC BY-SA 4.0), Otavio A. Marques (CC BY 4.0) ×3.
 - Metro-2: Moskova Hükümeti basın servisi (CC BY 4.0) ×2, ikhou (CC BY-SA 2.0), Trondheim byarkiv (CC BY 2.0) ×2, Phuketian.S, M1key.me, greg westfall (CC BY 2.0).
 - Derinkuyu: Nevit Dilmen (CC BY-SA 3.0) ×6, Ali Weheda (CC BY-SA 2.0), Edgardo W. Olivera (CC BY 2.0).
@@ -44,3 +45,7 @@ Metinler: [[2026-11-21 Gizem Shorts 3 - Metinler]] · Önceki: [[2026-11-20 Gize
 - Openverse thumb proxy (`/thumb/?full_size=true`) Wikimedia için çoğunlukla 424.
 - Scratchpad paylaşımlı: paralel ajanlar aynı `tools/` dosya adlarını ezdi → her ajan kendi alt klasörünü kullanmalı.
 - Paralel render'larda rspack önbellek kilidi çakışıyor → `--bundle-cache=false`. Yük ~22 iken bir Shorts render'ı 30+ dk sürdü; render'ı `nohup setsid` ile başlat (arka plan görev limiti 30 dk).
+- Medici82 'Gallery-1491391768-…' Commons dosyası dergi galerisi adı taşıyor → olası lisans aklama, **çıkarıldı** (Güvenli Yayın Standardı). Dosya adında `Gallery-<epoch>` / stok kalıbı görürsen kullanma.
+- Yetim render: `pkill -f "npm exec…"` node alt sürecini öldürmüyor (PPID 1'e geçip eski görselle render etmeye devam etti) → `pkill -f "render <Comp>"` ile node'u hedefle.
+- Başka biri /tmp'deki remotion bundle'ını silince render "getStaticCompositions undefined / 404" ile ölür → yeniden başlat.
+- Kelime bütçesi 8 sahnede ~120 kelime → 60.5 s çıktı (fazla); ≤110 kelime hedefle.
