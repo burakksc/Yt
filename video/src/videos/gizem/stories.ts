@@ -1118,7 +1118,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "si_aerial",
+    "img": "snakeisland__hook",
     "title": "Snake Island",
     "big": "NO LANDING",
     "bigSub": "without permission",
@@ -1128,18 +1128,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "where",
-    "img": "si_island",
+    "img": "snakeisland__where",
     "title": "Ilha da Queimada Grande",
     "big": "33 km",
     "bigSub": "off São Paulo, Brazil",
     "text": "Ilha da Queimada Grande, off São Paulo. Better known as Snake Island.",
-    "fit": "contain",
     "vsec": 5.72,
     "sec": 6.47
    },
    {
     "id": "snake",
-    "img": "si_gold",
+    "img": "snakeisland__snake",
     "title": "The golden lancehead",
     "big": "",
     "bigSub": "found nowhere else",
@@ -1149,18 +1148,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "count",
-    "img": "si_coil",
+    "img": "snakeisland__count",
     "title": "How many?",
     "big": "2,000–4,000",
     "bigSub": "estimated snakes",
     "text": "Scientists estimate a few thousand live here, on less than half a square kilometre.",
-    "fit": "contain",
     "vsec": 6.22,
     "sec": 6.97
    },
    {
     "id": "birds",
-    "img": "si_branch",
+    "img": "snakeisland__birds",
     "title": "Hunting in the trees",
     "big": "",
     "bigSub": "",
@@ -1170,7 +1168,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "light",
-    "img": "si_light",
+    "img": "snakeisland__light",
     "title": "The lighthouse",
     "big": "1909",
     "bigSub": "lighthouse built",
@@ -1180,7 +1178,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "navy",
-    "img": "si_navy",
+    "img": "snakeisland__navy",
     "title": "Who can land?",
     "big": "",
     "bigSub": "Brazilian Navy & scientists",
@@ -1190,25 +1188,24 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "si_leaf",
+    "img": "snakeisland__end",
     "title": "Critically endangered",
     "big": "",
     "bigSub": "",
     "text": "The ban protects the snakes too. They are critically endangered.",
-    "fit": "contain",
     "vsec": 5.05,
     "sec": 5.8
    }
   ],
   "credits": {
-   "si_aerial": "Photo: Prefeitura Municipal de Itanhaém · CC BY 2.5 · Wikimedia Commons",
-   "si_island": "Photo: Marinha do Brasil · CC BY-SA 2.0 · Wikimedia Commons",
-   "si_gold": "Photo: Nayeryouakim · CC BY-SA 4.0 · Wikimedia Commons",
-   "si_coil": "Photo: Otavio A. Marques · CC BY 4.0 · Wikimedia Commons",
-   "si_branch": "Photo: Otavio A. Marques · CC BY 4.0 · Wikimedia Commons",
-   "si_light": "Photo: Marinha do Brasil · CC BY-SA 2.0 · Wikimedia Commons",
-   "si_navy": "Photo: Marinha do Brasil · CC BY-SA 2.0 · Wikimedia Commons",
-   "si_leaf": "Photo: Otavio A. Marques · CC BY 4.0 · Wikimedia Commons"
+   "snakeisland__hook": "AI-generated illustration",
+   "snakeisland__where": "AI-generated illustration",
+   "snakeisland__snake": "AI-generated illustration",
+   "snakeisland__count": "AI-generated illustration",
+   "snakeisland__birds": "AI-generated illustration",
+   "snakeisland__light": "AI-generated illustration",
+   "snakeisland__navy": "AI-generated illustration",
+   "snakeisland__end": "AI-generated illustration"
   }
  },
  "stardust": {
