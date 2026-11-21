@@ -13,7 +13,11 @@
    "prompt": "a long straight rock tunnel with cold blue lights leading deep into a mountain, frosty walls, quiet and empty"
   },
   "svalbard__seeds": {
-   "prompt": "rows of tall metal shelves stacked with plain sealed boxes of seeds inside a frosty vault, cold blue light, no text"
+   "prompt": "a frosty cold storage room with metal racks holding plain grey plastic crates and small silver foil seed packets, handful of seeds in front, blue light, no books",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "svalbard__frozen": {
    "prompt": "a frozen arctic mountain slope covered in snow and permafrost, a small vault door in the rock, calm winter light"

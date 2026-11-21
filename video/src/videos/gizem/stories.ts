@@ -652,90 +652,83 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "vault_dusk",
+    "img": "svalbard__hook",
     "title": "The Doomsday Vault",
     "big": "",
     "bigSub": "",
     "text": "Inside an Arctic mountain, there's a vault built to survive the end of the world.",
-    "fit": "contain",
     "vsec": 6.17,
     "sec": 6.92
    },
    {
     "id": "where",
-    "img": "svalbard_mtn",
+    "img": "svalbard__where",
     "title": "Svalbard, Norway",
     "big": "1,300 km",
     "bigSub": "from the North Pole",
     "text": "The Svalbard Global Seed Vault sits on a Norwegian island, about 1,300 kilometres from the North Pole.",
-    "fit": "contain",
     "vsec": 8.9,
     "sec": 9.65
    },
    {
     "id": "tunnel",
-    "img": "tunnel",
+    "img": "svalbard__tunnel",
     "title": "Into the rock",
     "big": "-18°C",
     "bigSub": "storage temperature",
     "text": "A tunnel runs over 100 metres into the rock, to chambers kept at minus 18 degrees.",
-    "fit": "contain",
     "vsec": 7.75,
     "sec": 8.5
    },
    {
     "id": "seeds",
-    "img": "seeds",
+    "img": "svalbard__seeds",
     "title": "The treasure",
     "big": "1.3 million+",
     "bigSub": "seed samples stored",
     "text": "The treasure inside? Seeds. Over 1.3 million samples of the world's crops.",
-    "fit": "contain",
     "vsec": 6.85,
     "sec": 7.6
    },
    {
     "id": "frozen",
-    "img": "vault_land",
+    "img": "svalbard__frozen",
     "title": "Built to last",
     "big": "",
     "bigSub": "",
     "text": "Even if the power fails, the permafrost should keep them frozen.",
-    "fit": "contain",
     "vsec": 5.1,
     "sec": 5.85
    },
    {
     "id": "syria",
-    "img": "icarda",
+    "img": "svalbard__syria",
     "title": "The first withdrawal",
     "big": "2015",
     "bigSub": "first withdrawal",
     "text": "In 2015, war in Syria cut scientists off from their gene bank near Aleppo. So they withdrew their backup seeds, and grew them again.",
-    "fit": "contain",
     "vsec": 10.5,
     "sec": 11.25
    },
    {
     "id": "end",
-    "img": "vault_snow",
+    "img": "svalbard__end",
     "title": "One seed at a time",
     "big": "",
     "bigSub": "",
     "text": "The doomsday vault isn't just waiting for doomsday. It's already saving our crops.",
-    "fit": "contain",
     "vsec": 6.17,
     "sec": 6.92
    }
   ],
   "credits": {
-   "vault_dusk": "Photo: the tinz · CC BY 2.0 · Flickr",
-   "svalbard_mtn": "Photo: Kitty Terwolbeck · CC BY 2.0 · Flickr",
-   "tunnel": "Photo: Dag Endresen · CC BY 2.0 · Flickr",
-   "seeds": "Photo: CIAT · CC BY-SA 2.0 · Flickr",
-   "vault_land": "Photo: Christopher Michel · CC BY 2.0 · Flickr",
-   "icarda": "ICARDA, Syria, 1991. Photo: JIRCAS · CC BY 2.0 · Flickr",
-   "vault_snow": "Photo: Dag Endresen · CC BY 2.0 · Flickr"
+   "svalbard__hook": "AI-generated illustration",
+   "svalbard__where": "AI-generated illustration",
+   "svalbard__tunnel": "AI-generated illustration",
+   "svalbard__seeds": "AI-generated illustration",
+   "svalbard__frozen": "AI-generated illustration",
+   "svalbard__syria": "AI-generated illustration",
+   "svalbard__end": "AI-generated illustration"
   }
  },
  "antikythera": {
