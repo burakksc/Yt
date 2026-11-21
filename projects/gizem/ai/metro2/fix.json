@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "metro2__mgu": {
+   "prompt": "a single tall stepped Soviet skyscraper with one central spire topped by a star, at dusk, wide empty park in front, plain walls",
+   "seeds": [
+    2,
+    3
+   ]
+  },
+  "metro2__end": {
+   "prompt": "cross-section of the ground: a lit subway station with a train on top, and a second dark empty tunnel far below it, plain walls",
+   "seeds": [
+    2,
+    3
+   ]
+  },
+  "metro2__report": {
+   "prompt": "a blue blueprint drawing of winding underground tunnels seen from above on a wooden desk under a warm lamp, simple lines only",
+   "seeds": [
+    2,
+    3
+   ]
+  }
+ }
+}
