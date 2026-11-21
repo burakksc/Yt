@@ -503,7 +503,7 @@
     "title": "The Doomsday Vault",
     "big": "",
     "bigSub": "",
-    "text": "Inside a frozen mountain in the Arctic, there is a vault built to survive the end of the world."
+    "text": "Inside an Arctic mountain, there's a vault built to survive the end of the world."
    },
    {
     "id": "where",
@@ -511,7 +511,7 @@
     "title": "Svalbard, Norway",
     "big": "1,300 km",
     "bigSub": "from the North Pole",
-    "text": "It's the Svalbard Global Seed Vault, on a Norwegian island about thirteen hundred kilometres from the North Pole."
+    "text": "The Svalbard Global Seed Vault sits on a Norwegian island, about 1,300 kilometres from the North Pole."
    },
    {
     "id": "tunnel",
@@ -519,7 +519,7 @@
     "title": "Into the rock",
     "big": "-18°C",
     "bigSub": "storage temperature",
-    "text": "A tunnel runs more than a hundred metres into the rock, down to chambers kept at minus eighteen degrees Celsius."
+    "text": "A tunnel runs over 100 metres into the rock, to chambers kept at minus 18 degrees."
    },
    {
     "id": "seeds",
@@ -527,23 +527,23 @@
     "title": "The treasure",
     "big": "1.3 million+",
     "bigSub": "seed samples stored",
-    "text": "What's inside isn't gold. It's seeds. More than one point three million samples of the world's crops."
+    "text": "The treasure inside? Seeds. Over 1.3 million samples of the world's crops."
    },
    {
     "id": "frozen",
     "img": "vault_land",
     "title": "Built to last",
-    "big": "4.5 million",
-    "bigSub": "sample capacity",
-    "text": "If the power ever fails, the permafrost around it should keep the seeds frozen. And there is room for four and a half million samples."
+    "big": "",
+    "bigSub": "",
+    "text": "Even if the power fails, the permafrost should keep them frozen."
    },
    {
     "id": "syria",
     "img": "icarda",
     "title": "The first withdrawal",
     "big": "2015",
-    "bigSub": "seeds return to Syria's scientists",
-    "text": "In 2015, it was opened for its first withdrawal. War in Syria had cut scientists off from their gene bank near Aleppo, so they took back their backup seeds and grew them again."
+    "bigSub": "first withdrawal",
+    "text": "In 2015, war in Syria cut scientists off from their gene bank near Aleppo. So they withdrew their backup seeds, and grew them again."
    },
    {
     "id": "end",
@@ -551,7 +551,137 @@
     "title": "One seed at a time",
     "big": "",
     "bigSub": "",
-    "text": "So the doomsday vault isn't just waiting for doomsday. It's already saving our crops, one seed at a time."
+    "text": "The doomsday vault isn't just waiting for doomsday. It's already saving our crops."
+   }
+  ]
+ },
+ "sentinel": {
+  "title": "THE FORBIDDEN ISLAND",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "nsi_sat",
+    "title": "The forbidden island",
+    "big": "NO ENTRY",
+    "bigSub": "by Indian law",
+    "text": "There is an island you are not allowed to visit. And the people who live there want it that way."
+   },
+   {
+    "id": "where",
+    "img": "nsi_plane",
+    "title": "North Sentinel Island",
+    "big": "~60 km²",
+    "bigSub": "Andaman Islands, India",
+    "text": "North Sentinel Island, in India's Andaman Islands. Thick forest, ringed by coral reef."
+   },
+   {
+    "id": "people",
+    "img": "nsi_air",
+    "title": "The Sentinelese",
+    "big": "?",
+    "bigSub": "population unknown",
+    "text": "It is home to the Sentinelese, one of the last uncontacted peoples on Earth. Nobody knows how many there are."
+   },
+   {
+    "id": "law",
+    "img": "nsi_reef",
+    "title": "A protected reserve",
+    "big": "1956",
+    "bigSub": "declared a tribal reserve",
+    "text": "India protects it as a tribal reserve. Even sailing close to the shore is illegal."
+   },
+   {
+    "id": "tsunami",
+    "img": "nsi_coast",
+    "title": "After the tsunami",
+    "big": "2004",
+    "bigSub": "Indian Ocean tsunami",
+    "text": "After the 2004 tsunami, a helicopter flew over to check on them. A man on the beach shot arrows at it."
+   },
+   {
+    "id": "visitors",
+    "img": "nsi_strip",
+    "title": "Keep out",
+    "big": "2018",
+    "bigSub": "an outsider is killed",
+    "text": "Outsiders who landed have been killed, most recently an American missionary in 2018."
+   },
+   {
+    "id": "disease",
+    "img": "nsi_tall",
+    "title": "Why stay away?",
+    "big": "",
+    "bigSub": "",
+    "text": "And contact could be deadly for them too. They may have no immunity to diseases like flu or measles."
+   },
+   {
+    "id": "end",
+    "img": "nsi_window",
+    "title": "Eyes on, hands off",
+    "big": "",
+    "bigSub": "",
+    "text": "So the rule is simple: watch from afar, and leave them in peace."
+   }
+  ]
+ },
+ "yamantau": {
+  "title": "RUSSIA'S SECRET MOUNTAIN",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "urals_dusk",
+    "title": "Russia's secret mountain",
+    "big": "",
+    "bigSub": "",
+    "text": "In Russia's Ural Mountains, there's a mountain the United States spent years asking about."
+   },
+   {
+    "id": "peak",
+    "img": "urals_ridge",
+    "title": "Mount Yamantau",
+    "big": "1,640 m",
+    "bigSub": "highest peak of the Southern Urals",
+    "text": "Mount Yamantau. At 1,640 metres, it's the highest peak in the Southern Urals."
+   },
+   {
+    "id": "town",
+    "img": "inzer",
+    "title": "A closed town",
+    "big": "",
+    "bigSub": "",
+    "text": "At its foot lies Mezhgorye, a closed military town that outsiders can't simply visit."
+   },
+   {
+    "id": "inside",
+    "img": "bunker_tunnel",
+    "title": "Inside the mountain",
+    "big": "",
+    "bigSub": "",
+    "text": "Since Soviet times, a huge underground complex has reportedly been built inside the mountain."
+   },
+   {
+    "id": "answers",
+    "img": "forest",
+    "title": "Changing answers",
+    "big": "?",
+    "bigSub": "official explanations",
+    "text": "Asked what it was, Russian officials gave different answers. A mine. A store for treasures. A food warehouse. A bunker for leaders."
+   },
+   {
+    "id": "congress",
+    "img": "capitol",
+    "title": "Washington asks",
+    "big": "1997",
+    "bigSub": "U.S. Congress asks for answers",
+    "text": "In 1997, the U.S. Congress urged Russia to explain the project, and to allow an inspection."
+   },
+   {
+    "id": "end",
+    "img": "rocks",
+    "title": "Still a secret",
+    "big": "",
+    "bigSub": "",
+    "text": "Many analysts think it's a nuclear war bunker. But officially, its purpose has never been confirmed."
    }
   ]
  }

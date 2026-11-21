@@ -1,0 +1,69 @@
+{
+ "title": "THE BIGGEST STONE EVER CUT",
+ "scenes": [
+  {
+   "id": "hook",
+   "img": "quarry",
+   "title": "The biggest stone ever cut",
+   "big": "~1,650 t",
+   "bigSub": "one single block",
+   "text": "See the tiny person? These are the biggest stone blocks known from the ancient world, and they never left the quarry."
+  },
+  {
+   "id": "temple",
+   "img": "temple",
+   "title": "Baalbek, Lebanon",
+   "big": "AD 60",
+   "bigSub": "Temple of Jupiter completed",
+   "text": "This is Baalbek, Lebanon, and its Roman Temple of Jupiter, one of Rome's largest."
+  },
+  {
+   "id": "columns",
+   "img": "columns",
+   "title": "Giant columns",
+   "big": "~20 m",
+   "bigSub": "six columns still stand",
+   "text": "Six columns still stand, each about twenty metres tall."
+  },
+  {
+   "id": "trilithon",
+   "img": "trilithon",
+   "title": "The trilithon",
+   "big": "~800 t",
+   "bigSub": "each of three blocks",
+   "text": "In its base: the trilithon, three blocks of about eight hundred tonnes each."
+  },
+  {
+   "id": "pregnant",
+   "img": "pregnant",
+   "title": "Stone of the Pregnant Woman",
+   "big": "~1,000 t",
+   "bigSub": "left in the quarry",
+   "text": "In the quarry lies the Stone of the Pregnant Woman: about a thousand tonnes, never moved."
+  },
+  {
+   "id": "find",
+   "img": "block2014",
+   "title": "An even bigger one",
+   "big": "2014",
+   "bigSub": "19.6 m long, ~1,650 tonnes",
+   "text": "In 2014, German archaeologists found a bigger one beside it: around sixteen hundred and fifty tonnes."
+  },
+  {
+   "id": "how",
+   "img": "wall",
+   "title": "How did they do it?",
+   "big": "~800 m",
+   "bigSub": "from quarry to temple",
+   "text": "Archaeologists credit Roman engineers. The quarry is slightly uphill, eight hundred metres away. Ramps, rollers and capstans could do it."
+  },
+  {
+   "id": "end",
+   "img": "ruins",
+   "title": "Still debated",
+   "big": "",
+   "bigSub": "",
+   "text": "But exactly how the trilithon was lifted is still debated."
+  }
+ ]
+}
