@@ -55,3 +55,6 @@ AI illüstrasyonlu videolarda açıklamaya "Images: All images ... AI-generated 
 
 ## Etiket/hashtag teslimi (kullanıcı, 2026-11-21)
 Ayrı **hashtag satırı/bloğu VERME** (kullanıcı yazdıklarımı Studio'daki Tags alanına yapıştırıyor). Sadece **Etiketler (Tags)**: `#`siz, küçük harf, virgülle ayrılmış, tek satır, tek kod bloğu (≤500 karakter). Açıklamadaki standart footer olduğu gibi kalır.
+
+## Logo (kullanıcı, 2026-11-21): KALDIRILDI
+Short'larda kanal logosu watermark'ı YOK ("logoyu kaldıralım"). `Watermark.tsx` no-op. Yukarıdaki "Short yerleşimi" bölümündeki logo satırı geçersiz; sadece sol alttaki küçük "AI-generated illustration" etiketi kalır.
