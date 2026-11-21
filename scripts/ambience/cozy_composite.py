@@ -68,6 +68,9 @@ SCENES = {
         mask_squash=True,
         fire=None,
         flame_warp=(300, 620, 460, 760, 650),  # 4K roi x, y, w, h + base line (y in roi) of the flame
+        # sleepy cat: eyes close (inpainted closed-eye still, 4K) while the head droops, then wakes. 30 s cycle.
+        nod=dict(closed="video/public/cozy-cat/closed4k.png", eyes=[(722, 409, 24, 16), (797, 405, 29, 15)],
+                 head=(790, 405, 135, 125), pivot=(815, 540), angle=4.0, drop=7, cycle=30.0),
         fire_light=(528, 1180),
         light_gain=1.0,
         windows=[(50, 0, 1160, 1370, 0.8), (2860, 0, 980, 940, 0.8)],
@@ -94,6 +97,7 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--audio")
     ap.add_argument("--crf", type=int, default=18)
+    ap.add_argument("--start", type=float, default=0, help="time offset (s), for checking single moments")
     a = ap.parse_args()
     S = SCENES[a.scene]
     base = cv2.imread(S["base"]).astype(np.float32)
@@ -162,6 +166,35 @@ def main():
             out = cv2.remap(froi, wxx + dx, (wyy + (yb - wyy) * st * hh).astype(np.float32), cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
             return froi * (1 - fmw) + out * fmw, st
     sx, oy = S["src_to_4k"]
+    nod = S.get("nod")
+    if nod:
+        closed = cv2.imread(nod["closed"]).astype(np.float32)
+        hcx, hcy, hrx, hry = [v * sx for v in nod["head"]]
+        hcy += oy
+        mg = 1.6
+        nx0, ny0 = int(hcx - hrx * mg), int(max(0, hcy - hry * mg))
+        nx1, ny1 = int(hcx + hrx * mg), int(min(H, hcy + hry * mg))
+        nyy, nxx = np.mgrid[ny0:ny1, nx0:nx1].astype(np.float32)
+        hw = np.clip(1.25 - (((nxx - hcx) / hrx) ** 2 + ((nyy - hcy) / hry) ** 2), 0, 1)
+        hw = cv2.GaussianBlur(hw, (0, 0), 40)  # deformation weight: 1 on the head, fades into body/background
+        em = np.zeros((H, W), np.float32)
+        for (ex, ey, erx, ery) in nod["eyes"]:
+            cv2.ellipse(em, (int(ex * sx), int(ey * sx + oy)), (int(erx * sx), int(ery * sx)), 0, 0, 360, 1.0, -1)
+        em = cv2.GaussianBlur(em, (0, 0), 10)[ny0:ny1, nx0:nx1, None]
+        closed_roi = closed[ny0:ny1, nx0:nx1]
+        npx, npy = nod["pivot"][0] * sx, nod["pivot"][1] * sx + oy
+
+        def ss(e0, e1, x):
+            u = np.clip((x - e0) / (e1 - e0), 0, 1)
+            return u * u * (3 - 2 * u)
+
+        def nod_state(t):
+            u = t % nod["cycle"]
+            down = ss(6, 10, u) - ss(21, 24.5, u)  # 0 awake .. 1 asleep
+            eyes = ss(6.5, 9.5, u) - ss(21.5, 23.5, u)
+            blink = max(0.0, 1 - abs(u - 3.0) / 0.18) + max(0.0, 1 - abs(u - 27.5) / 0.18)  # quick blinks while awake
+            breath = np.sin(2 * np.pi * 15 * t / P)  # 15 breaths / min
+            return down, min(1.0, eyes + blink), breath
     candles = []
     for i, (cx, cy, r) in enumerate(S["candles_src"]):
         X0, Y0, R = cx * sx, cy * sx + oy, r * sx
@@ -205,7 +238,7 @@ def main():
     enc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     snow_layer = np.zeros((H, W), np.float32)
     for fi in range(frames):
-        t = fi / FPS
+        t = a.start + fi / FPS
         img = base.copy()
         if has_fire:
             # fire
@@ -223,6 +256,22 @@ def main():
             fk = periodic_noise(t, 77)
             img[wy0:wy0 + wh_, wx0:wx0 + ww_] = reg * (0.96 + 0.08 * fk)
             img += room_light * S.get("light_gain", 1.0) * (0.06 + 0.06 * fk + 0.4 * st)
+        if nod:
+            down, eyes, breath = nod_state(t)
+            reg = img[ny0:ny1, nx0:nx1]
+            if eyes > 0.001:
+                reg = reg * (1 - em * eyes) + closed_roi * (em * eyes)
+            a = np.deg2rad(nod["angle"] * down + 0.25 * breath)
+            dy = (nod["drop"] * down + 0.6 * breath) * sx
+            ca, sa = np.cos(a), np.sin(a)
+            # inverse map of: rotate about the neck pivot, then move down
+            qx, qy = nxx - npx, nyy - dy - npy
+            mx = npx + ca * qx + sa * qy
+            my = npy - sa * qx + ca * qy
+            mx = nxx + hw * (mx - nxx)
+            my = nyy + hw * (my - nyy)
+            img[ny0:ny1, nx0:nx1] = cv2.remap(np.ascontiguousarray(reg, np.float32), (mx - nx0).astype(np.float32), (my - ny0).astype(np.float32),
+                                              cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
         # candles
         for (x0, y0, halo, core, seed) in candles:
             fl = periodic_noise(t, seed)
