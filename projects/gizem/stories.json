@@ -1419,5 +1419,143 @@
     "text": "Then, a tap on the glass. Now, your phone."
    }
   ]
+ },
+ "lector": {
+  "title": "THE LECTOR",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "havana",
+    "title": "Then vs Now",
+    "big": "1865",
+    "bigSub": "Havana, Cuba",
+    "text": "Then versus now. Imagine rolling cigars all day while someone reads you novels."
+   },
+   {
+    "id": "who",
+    "img": "reader",
+    "title": "El lector",
+    "big": "",
+    "bigSub": "",
+    "text": "In Cuban cigar factories, this was a real job, starting in Havana in 1865."
+   },
+   {
+    "id": "platform",
+    "img": "platform",
+    "title": "News, then novels",
+    "big": "",
+    "bigSub": "",
+    "text": "From a platform, he read the news in the morning, and novels in the afternoon."
+   },
+   {
+    "id": "paid",
+    "img": "workers",
+    "title": "Paid by the workers",
+    "big": "",
+    "bigSub": "",
+    "text": "The workers paid him themselves, and voted on what he read."
+   },
+   {
+    "id": "tampa",
+    "img": "tampa",
+    "title": "Tampa, Florida",
+    "big": "1931",
+    "bigSub": "readers banned in Tampa",
+    "text": "The tradition reached Tampa, Florida. After a strike in 1931, owners banned the readers."
+   },
+   {
+    "id": "monte",
+    "img": "montecristo",
+    "title": "Named after a novel?",
+    "big": "",
+    "bigSub": "",
+    "text": "The Montecristo cigar is often said to be named after a favourite read: The Count of Monte Cristo."
+   },
+   {
+    "id": "romeo",
+    "img": "romeo",
+    "title": "Romeo y Julieta",
+    "big": "",
+    "bigSub": "",
+    "text": "And Romeo y Julieta takes its name from Shakespeare."
+   },
+   {
+    "id": "end",
+    "img": "stand",
+    "title": "Then vs Now",
+    "big": "",
+    "bigSub": "",
+    "text": "Cuba still has lectors today. Then, one voice for the room. Now, a podcast in every ear."
+   }
+  ]
+ },
+ "humancomputers": {
+  "title": "HUMAN COMPUTERS",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "harvard",
+    "title": "Then vs Now",
+    "big": "Computer",
+    "bigSub": "was once a job title",
+    "text": "Then versus now. A computer used to be a person, often a woman with a pencil."
+   },
+   {
+    "id": "plates",
+    "img": "plates",
+    "title": "The Harvard computers",
+    "big": "",
+    "bigSub": "",
+    "text": "From the 1880s, Harvard Observatory hired women to study stars on glass plates."
+   },
+   {
+    "id": "stars",
+    "img": "cannon",
+    "title": "Annie Jump Cannon",
+    "big": "350,000",
+    "bigSub": "stars classified by hand",
+    "text": "Annie Jump Cannon alone classified about three hundred and fifty thousand stars."
+   },
+   {
+    "id": "naca",
+    "img": "dryden",
+    "title": "Computing flight",
+    "big": "",
+    "bigSub": "",
+    "text": "NACA, later NASA, hired women computers too."
+   },
+   {
+    "id": "kj",
+    "img": "johnson",
+    "title": "Katherine Johnson",
+    "big": "",
+    "bigSub": "",
+    "text": "Katherine Johnson calculated flight paths for America's first space missions."
+   },
+   {
+    "id": "glenn",
+    "img": "glenn",
+    "title": "Check the numbers",
+    "big": "1962",
+    "bigSub": "Friendship 7",
+    "text": "In 1962, John Glenn wanted her to check the machine. Reportedly: if she says they're good, I'm ready to go."
+   },
+   {
+    "id": "launch",
+    "img": "launch",
+    "title": "Three orbits",
+    "big": "",
+    "bigSub": "",
+    "text": "She did. Glenn orbited Earth three times and came home safely."
+   },
+   {
+    "id": "end",
+    "img": "women1959",
+    "title": "Then vs Now",
+    "big": "",
+    "bigSub": "",
+    "text": "Then, rooms of pencils. Now, billions of sums a second, in your pocket."
+   }
+  ]
  }
 }

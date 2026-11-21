@@ -1990,6 +1990,207 @@ export const STORIES: Record<string, MyStory> = {
    "mc_gib": "Photo: kanu101 · CC BY 2.0 · Flickr",
    "mc_sea": "Photo: M McBey · CC BY 2.0 · Flickr"
   }
+ },
+ "lector": {
+  "title": "THE LECTOR",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "havana",
+    "title": "Then vs Now",
+    "big": "1865",
+    "bigSub": "Havana, Cuba",
+    "text": "Then versus now. Imagine rolling cigars all day while someone reads you novels.",
+    "fit": "contain",
+    "vsec": 6.53,
+    "sec": 7.28
+   },
+   {
+    "id": "who",
+    "img": "reader",
+    "title": "El lector",
+    "big": "",
+    "bigSub": "",
+    "text": "In Cuban cigar factories, this was a real job, starting in Havana in 1865.",
+    "fit": "contain",
+    "vsec": 7.62,
+    "sec": 8.38
+   },
+   {
+    "id": "platform",
+    "img": "platform",
+    "title": "News, then novels",
+    "big": "",
+    "bigSub": "",
+    "text": "From a platform, he read the news in the morning, and novels in the afternoon.",
+    "fit": "contain",
+    "vsec": 6.0,
+    "sec": 6.75
+   },
+   {
+    "id": "paid",
+    "img": "workers",
+    "title": "Paid by the workers",
+    "big": "",
+    "bigSub": "",
+    "text": "The workers paid him themselves, and voted on what he read.",
+    "fit": "contain",
+    "vsec": 4.62,
+    "sec": 5.38
+   },
+   {
+    "id": "tampa",
+    "img": "tampa",
+    "title": "Tampa, Florida",
+    "big": "1931",
+    "bigSub": "readers banned in Tampa",
+    "text": "The tradition reached Tampa, Florida. After a strike in 1931, owners banned the readers.",
+    "fit": "contain",
+    "vsec": 7.85,
+    "sec": 8.6
+   },
+   {
+    "id": "monte",
+    "img": "montecristo",
+    "title": "Named after a novel?",
+    "big": "",
+    "bigSub": "",
+    "text": "The Montecristo cigar is often said to be named after a favourite read: The Count of Monte Cristo.",
+    "vsec": 8.18,
+    "sec": 8.93
+   },
+   {
+    "id": "romeo",
+    "img": "romeo",
+    "title": "Romeo y Julieta",
+    "big": "",
+    "bigSub": "",
+    "text": "And Romeo y Julieta takes its name from Shakespeare.",
+    "vsec": 4.47,
+    "sec": 5.22
+   },
+   {
+    "id": "end",
+    "img": "stand",
+    "title": "Then vs Now",
+    "big": "",
+    "bigSub": "",
+    "text": "Cuba still has lectors today. Then, one voice for the room. Now, a podcast in every ear.",
+    "fit": "contain",
+    "vsec": 7.28,
+    "sec": 8.03
+   }
+  ],
+  "credits": {
+   "havana": "Postcard: Harris Bros., Havana, c.1907 · Public domain",
+   "reader": "Photo: Lewis Hine, 1909 · Public domain (LoC)",
+   "platform": "Photo: Burgert Bros., Tampa 1929 · Public domain",
+   "workers": "Photo: Ybor City, 1920 · Public domain",
+   "tampa": "Postcard: Tichnor Bros. (BPL) · CC BY-SA 4.0 · Wikimedia Commons",
+   "montecristo": "Poster: Louis Français, 1846 · Public domain",
+   "romeo": "Painting: Frank Dicksee, 1884 · Public domain",
+   "stand": "Photo: Infrogmation · CC BY-SA 3.0 · Wikimedia Commons"
+  }
+ },
+ "humancomputers": {
+  "title": "HUMAN COMPUTERS",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "harvard",
+    "title": "Then vs Now",
+    "big": "Computer",
+    "bigSub": "was once a job title",
+    "text": "Then versus now. A computer used to be a person, often a woman with a pencil.",
+    "fit": "contain",
+    "vsec": 6.38,
+    "sec": 7.12
+   },
+   {
+    "id": "plates",
+    "img": "plates",
+    "title": "The Harvard computers",
+    "big": "",
+    "bigSub": "",
+    "text": "From the 1880s, Harvard Observatory hired women to study stars on glass plates.",
+    "fit": "contain",
+    "vsec": 7.3,
+    "sec": 8.05
+   },
+   {
+    "id": "stars",
+    "img": "cannon",
+    "title": "Annie Jump Cannon",
+    "big": "350,000",
+    "bigSub": "stars classified by hand",
+    "text": "Annie Jump Cannon alone classified about three hundred and fifty thousand stars.",
+    "vsec": 6.3,
+    "sec": 7.05
+   },
+   {
+    "id": "naca",
+    "img": "dryden",
+    "title": "Computing flight",
+    "big": "",
+    "bigSub": "",
+    "text": "NACA, later NASA, hired women computers too.",
+    "fit": "contain",
+    "vsec": 4.75,
+    "sec": 5.5
+   },
+   {
+    "id": "kj",
+    "img": "johnson",
+    "title": "Katherine Johnson",
+    "big": "",
+    "bigSub": "",
+    "text": "Katherine Johnson calculated flight paths for America's first space missions.",
+    "vsec": 5.97,
+    "sec": 6.72
+   },
+   {
+    "id": "glenn",
+    "img": "glenn",
+    "title": "Check the numbers",
+    "big": "1962",
+    "bigSub": "Friendship 7",
+    "text": "In 1962, John Glenn wanted her to check the machine. Reportedly: if she says they're good, I'm ready to go.",
+    "fit": "contain",
+    "vsec": 8.78,
+    "sec": 9.53
+   },
+   {
+    "id": "launch",
+    "img": "launch",
+    "title": "Three orbits",
+    "big": "",
+    "bigSub": "",
+    "text": "She did. Glenn orbited Earth three times and came home safely.",
+    "vsec": 5.05,
+    "sec": 5.8
+   },
+   {
+    "id": "end",
+    "img": "women1959",
+    "title": "Then vs Now",
+    "big": "",
+    "bigSub": "",
+    "text": "Then, rooms of pencils. Now, billions of sums a second, in your pocket.",
+    "fit": "contain",
+    "vsec": 5.92,
+    "sec": 6.67
+   }
+  ],
+  "credits": {
+   "harvard": "Photo: Harvard College Observatory, c.1891 · Public domain",
+   "plates": "Photo: Harvard University Archives, 1891 · Public domain",
+   "cannon": "Photo: Harvard, 1913 · Public domain",
+   "dryden": "Photo: NACA, 1949 · Public domain (NASA)",
+   "johnson": "Photo: NASA, 1966 · Public domain",
+   "glenn": "Photo: NASA, 1962 · Public domain",
+   "launch": "Photo: NASA, 1962 · Public domain",
+   "women1959": "Photo: NASA, 1959 · Public domain"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
