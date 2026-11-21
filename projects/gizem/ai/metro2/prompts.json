@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "metro2__hook": {
+   "prompt": "a long dark underground railway tunnel with dim lamps fading into darkness, mysterious, empty"
+  },
+  "metro2__what": {
+   "prompt": "red brick fortress towers at night above a city, with glowing secret tunnels drawn underground below it, cross-section"
+  },
+  "metro2__stalin": {
+   "prompt": "a 1930s underground construction site, workers seen from behind digging a tunnel by lamplight, steam"
+  },
+  "metro2__report": {
+   "prompt": "a vintage blueprint diagram of underground tunnels and lines on a desk under a lamp, no text"
+  },
+  "metro2__mgu": {
+   "prompt": "a tall wedding-cake skyscraper with a spire at dusk, a hidden tunnel drawn beneath it, cross-section"
+  },
+  "metro2__bunker": {
+   "prompt": "a heavy round steel blast door in a concrete Cold War bunker corridor, dim green light, empty"
+  },
+  "metro2__official": {
+   "prompt": "a closed metal hatch in a dark tunnel with a question mark shaped shadow, mysterious, empty"
+  },
+  "metro2__end": {
+   "prompt": "cross-section of a city: a lit ornate subway station with a train above and a dark secret tunnel below"
+  }
+ }
+}

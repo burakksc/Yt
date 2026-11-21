@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "derinkuyu__hook": {
+   "prompt": "a faceless man seen from behind breaking a hole in a stone house wall revealing a dark tunnel, lantern light"
+  },
+  "derinkuyu__where": {
+   "prompt": "Cappadocia landscape with fairy chimney rock towers and a small village, warm morning, hot air balloons"
+  },
+  "derinkuyu__deep": {
+   "prompt": "cross-section of a multi-level underground city carved in rock, many floors going deep down"
+  },
+  "derinkuyu__people": {
+   "prompt": "many faceless villagers with goats and sacks of grain walking through carved rock halls, lamp light"
+  },
+  "derinkuyu__life": {
+   "prompt": "underground rock room with a stable, a wine press, a well and an air shaft beam of light"
+  },
+  "derinkuyu__doors": {
+   "prompt": "a huge round rolling stone door in a narrow rock tunnel, oil lamp light"
+  },
+  "derinkuyu__why": {
+   "prompt": "Byzantine era villagers seen from behind hurrying into a cave entrance carrying bundles, dusk"
+  },
+  "derinkuyu__end": {
+   "prompt": "a glowing doorway in a dark rock tunnel leading to a hidden underground hall, warm light"
+  }
+ }
+}

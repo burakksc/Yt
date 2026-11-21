@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "antikythera__hook": {
+   "prompt": "a corroded green bronze lump with ancient gear wheels visible inside, lying on sand, soft museum light"
+  },
+  "antikythera__wreck": {
+   "prompt": "ancient wooden Greek ship sinking in deep blue sea, amphorae and bronze statues on the seabed, a faceless diver silhouette from behind"
+  },
+  "antikythera__gears": {
+   "prompt": "close-up of many interlocking ancient bronze gear wheels with tiny triangular teeth, green patina"
+  },
+  "antikythera__cosmos": {
+   "prompt": "an ancient bronze dial with sun and moon pointers and a starry zodiac ring, a hand turning a side crank"
+  },
+  "antikythera__eclipse": {
+   "prompt": "a dark moon covering the sun in a solar eclipse over ancient Greek columns, crowd silhouettes watching"
+  },
+  "antikythera__xray": {
+   "prompt": "glowing blue x-ray view of hidden gear wheels inside a stone lump, dark lab background"
+  },
+  "antikythera__model": {
+   "prompt": "a shiny new brass reconstruction of an ancient gear machine with dials, on a wooden workbench"
+  },
+  "antikythera__end": {
+   "prompt": "an ancient bronze gear mechanism floating in a starry night sky with planets, mysterious mood"
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "day1900__hook": {
+   "prompt": "busy 1900 American city street with horse carriages, brick shops, people seen from behind, morning light"
+  },
+  "day1900__morning": {
+   "prompt": "horse-drawn ice wagon at dawn, an iceman seen from behind carrying a big ice block with tongs, quiet street"
+  },
+  "day1900__power": {
+   "prompt": "a glowing kerosene lamp on a wooden table in a dark cozy room, open book, warm flame"
+  },
+  "day1900__bath": {
+   "prompt": "a small white wooden outhouse with a crescent moon on the door in a green backyard"
+  },
+  "day1900__work": {
+   "prompt": "a 1900 textile mill interior with rows of spinning machines, workers seen from behind"
+  },
+  "day1900__life": {
+   "prompt": "an old family photo frame on a mantel beside a cradle, faded sepia mood, cozy parlour"
+  },
+  "day1900__dusk": {
+   "prompt": "a lamplighter seen from behind on a ladder lighting a gas street lamp at dusk"
+  },
+  "day1900__end": {
+   "prompt": "a row of glowing gas street lamps along an evening street, deep blue sky, first stars"
+  }
+ }
+}

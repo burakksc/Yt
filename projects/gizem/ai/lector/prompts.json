@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "lector__hook": {
+   "prompt": "a long cigar factory hall, rows of faceless workers rolling cigars at wooden benches, a reader on a raised platform"
+  },
+  "lector__who": {
+   "prompt": "a man seen from behind reading a newspaper aloud on a raised wooden platform above a cigar factory floor"
+  },
+  "lector__platform": {
+   "prompt": "a raised wooden reading platform with an open novel and a lamp, cigar workers' benches below"
+  },
+  "lector__paid": {
+   "prompt": "faceless cigar workers' hands dropping coins into a tin can on a wooden bench, tobacco leaves"
+  },
+  "lector__tampa": {
+   "prompt": "a red brick cigar factory building with palm trees in old Florida, sunny street"
+  },
+  "lector__monte": {
+   "prompt": "a lone sailor seen from behind on a rocky island at sea under a stormy sky, adventure novel mood"
+  },
+  "lector__romeo": {
+   "prompt": "a moonlit stone balcony with ivy and a lantern, Renaissance Italian courtyard, romantic night"
+  },
+  "lector__end": {
+   "prompt": "cozy evening, a small radio and an empty reader's chair beside stacked cigar boxes, warm lamp"
+  }
+ }
+}

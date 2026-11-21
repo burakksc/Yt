@@ -1,0 +1,22 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "yonaguni__hook": {
+   "prompt": "a faceless scuba diver seen from behind swimming over strange stone shapes on the blue sea floor"
+  },
+  "yonaguni__what": {
+   "prompt": "underwater giant stone terraces and flat steps with sharp right angles, blue water, fish, sun rays"
+  },
+  "yonaguni__theory": {
+   "prompt": "imagined ancient people building stone terraces on a green island coast long ago, faceless figures"
+  },
+  "yonaguni__nature": {
+   "prompt": "layered sandstone rock cracking naturally into straight steps by the sea, waves"
+  },
+  "yonaguni__end": {
+   "prompt": "stylized underwater stone steps in deep blue sea with a curious sea turtle, light rays from above, mysterious mood"
+  }
+ }
+}

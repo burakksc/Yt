@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "sentinel__hook": {
+   "prompt": "a small remote forested island ringed by white surf and turquoise reef seen from high above, deep blue ocean, no people"
+  },
+  "sentinel__where": {
+   "prompt": "aerial view of a round island covered in thick green jungle, wide pale coral reef around it, calm blue sea"
+  },
+  "sentinel__people": {
+   "prompt": "dense tropical forest canopy meeting an empty sandy beach, tall trees, soft morning mist, no people"
+  },
+  "sentinel__law": {
+   "prompt": "a grey coast guard boat waiting far offshore, a distant green island on the horizon, calm sea, no people visible"
+  },
+  "sentinel__tsunami": {
+   "prompt": "a small helicopter flying over a jungle island coastline after a storm, broken trees, bright sea, seen from far away"
+  },
+  "sentinel__visitors": {
+   "prompt": "an empty small wooden canoe pulled up on a lonely beach of a jungle island, footprints washed by waves, dusk"
+  },
+  "sentinel__disease": {
+   "prompt": "a lonely tropical island at sunset seen through sea haze, quiet and untouched, no people"
+  },
+  "sentinel__end": {
+   "prompt": "a distant green island on the horizon at golden sunset, a ship far away turning back, peaceful sea"
+  }
+ }
+}

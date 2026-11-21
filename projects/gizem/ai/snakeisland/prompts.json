@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "snakeisland__hook": {
+   "prompt": "a steep rocky green island rising from the Atlantic ocean seen from above, white waves crashing, no people"
+  },
+  "snakeisland__where": {
+   "prompt": "a rocky forested island off a tropical coast, small white lighthouse on top, blue sea, sunny day"
+  },
+  "snakeisland__snake": {
+   "prompt": "a golden yellow pit viper snake coiled on a mossy branch, stylized, tropical forest background"
+  },
+  "snakeisland__count": {
+   "prompt": "many golden yellow snakes resting among rocks and grass on an island hillside, stylized, no people"
+  },
+  "snakeisland__birds": {
+   "prompt": "a golden yellow snake on a tree branch watching a small songbird, tropical leaves, stylized"
+  },
+  "snakeisland__light": {
+   "prompt": "a small white lighthouse on a rocky island at dusk, glowing lamp, lonely, waves below"
+  },
+  "snakeisland__navy": {
+   "prompt": "a grey navy boat anchored near a rocky green island, a small lighthouse on top, calm sea"
+  },
+  "snakeisland__end": {
+   "prompt": "a golden yellow snake resting peacefully on a green leaf, soft sunlight, stylized nature"
+  }
+ }
+}

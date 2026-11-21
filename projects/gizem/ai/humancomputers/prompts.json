@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "humancomputers__hook": {
+   "prompt": "a 1890s office with women seen from behind at desks writing with pencils, bookshelves, warm lamp"
+  },
+  "humancomputers__plates": {
+   "prompt": "hands holding a glass photographic plate full of tiny stars over a light table, magnifying glass"
+  },
+  "humancomputers__stars": {
+   "prompt": "a night sky full of stars sorted into colourful labelled-free groups above an old observatory dome"
+  },
+  "humancomputers__naca": {
+   "prompt": "a 1950s office with rows of desks and mechanical calculators, women seen from behind working"
+  },
+  "humancomputers__kj": {
+   "prompt": "a woman seen from behind at a 1960s desk covered in papers of orbit drawings and a slide rule"
+  },
+  "humancomputers__glenn": {
+   "prompt": "a 1960s space capsule on a launch tower at dawn, a sheet of handwritten calculations in the foreground"
+  },
+  "humancomputers__launch": {
+   "prompt": "a white rocket launching into a blue sky with a big plume of smoke, Earth orbit path drawn as dotted line"
+  },
+  "humancomputers__end": {
+   "prompt": "a modern smartphone with a blank screen lying on a stack of old pencil-written calculation sheets"
+  }
+ }
+}

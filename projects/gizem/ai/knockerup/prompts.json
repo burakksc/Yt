@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "knockerup__hook": {
+   "prompt": "a man in a flat cap seen from behind tapping an upstairs window with a long pole, brick terraced houses before dawn"
+  },
+  "knockerup__job": {
+   "prompt": "a cobbled mill town street at dawn, tall factory chimneys with smoke, workers in shawls seen from behind"
+  },
+  "knockerup__pole": {
+   "prompt": "the tip of a long wooden pole tapping on an upstairs sash window glass, candle glow inside"
+  },
+  "knockerup__peas": {
+   "prompt": "an old woman in a shawl seen from the side blowing a long pea shooter up at a window, cobbled lane"
+  },
+  "knockerup__dutch": {
+   "prompt": "old Dutch gabled canal houses at dawn, a man seen from behind knocking a door with a stick"
+  },
+  "knockerup__who": {
+   "prompt": "a tired man seen from behind walking home at sunrise carrying a long pole, empty street"
+  },
+  "knockerup__end": {
+   "prompt": "a cozy nightstand with a vintage brass alarm clock beside a plain blank smartphone, morning window light"
+  }
+ }
+}

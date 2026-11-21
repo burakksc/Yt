@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "baalbek__hook": {
+   "prompt": "an enormous rectangular stone block in an ancient limestone quarry, a tiny faceless person standing beside it for scale"
+  },
+  "baalbek__temple": {
+   "prompt": "a huge ancient Roman temple with tall columns on a hill in a green valley, mountains behind, sunset"
+  },
+  "baalbek__columns": {
+   "prompt": "six giant ancient Roman columns standing alone against a blue sky, ruins below"
+  },
+  "baalbek__trilithon": {
+   "prompt": "a temple wall base made of three gigantic smooth stone blocks, small faceless worker for scale"
+  },
+  "baalbek__pregnant": {
+   "prompt": "a giant stone block lying tilted in an old quarry, half buried, trees and blue sky"
+  },
+  "baalbek__find": {
+   "prompt": "faceless archaeologists in hats digging beside an even larger buried stone block in a quarry"
+  },
+  "baalbek__how": {
+   "prompt": "many Roman workers seen from behind pulling ropes and wooden capstans to move a huge stone on log rollers up a ramp"
+  },
+  "baalbek__end": {
+   "prompt": "ancient Roman temple ruins at dusk with giant stone blocks, warm last light, mysterious mood"
+  }
+ }
+}

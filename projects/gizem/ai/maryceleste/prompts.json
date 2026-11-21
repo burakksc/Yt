@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "maryceleste__hook": {
+   "prompt": "an old two-masted sailing ship drifting alone on a grey Atlantic ocean, sails loose, empty deck, no people"
+  },
+  "maryceleste__ship": {
+   "prompt": "an old two-masted wooden sailing ship at sea with wooden barrels on deck, calm water, no people"
+  },
+  "maryceleste__found": {
+   "prompt": "two old sailing ships far apart on the open ocean, one approaching the other, wide sea, cloudy sky"
+  },
+  "maryceleste__aboard": {
+   "prompt": "empty wooden deck of an old sailing ship with barrels and crates, empty lifeboat davits, ropes, no people"
+  },
+  "maryceleste__people": {
+   "prompt": "a small empty wooden lifeboat alone on a vast grey ocean, mist, melancholic"
+  },
+  "maryceleste__court": {
+   "prompt": "a huge limestone rock rising above a harbour with old sailing ships, sunny Mediterranean sky"
+  },
+  "maryceleste__doyle": {
+   "prompt": "an old wooden writing desk with a quill, ink bottle and stacked papers by candlelight, no text"
+  },
+  "maryceleste__end": {
+   "prompt": "an old sailing ship drifting away in fog, a tiny lifeboat on the waves, moody sea"
+  }
+ }
+}
