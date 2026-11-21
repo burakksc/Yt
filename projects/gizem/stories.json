@@ -952,5 +952,342 @@
     "text": "The glacier hid Star Dust for over fifty years. But Stendec is still a mystery."
    }
   ]
+ },
+ "metro2": {
+  "title": "METRO-2",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "m2_tunnel",
+    "title": "A secret metro?",
+    "big": "METRO-2",
+    "bigSub": "never officially confirmed",
+    "text": "Under Moscow, there may be a second, secret metro."
+   },
+   {
+    "id": "what",
+    "img": "m2_kremlin",
+    "title": "Metro-2",
+    "big": "",
+    "bigSub": "",
+    "text": "It's called Metro-2. Reportedly, deep tunnels linking the Kremlin to government bunkers."
+   },
+   {
+    "id": "stalin",
+    "img": "m2_1935",
+    "title": "Started under Stalin?",
+    "big": "D-6",
+    "bigSub": "rumoured code name",
+    "text": "The story says it was started under Stalin, and given the code name D-6."
+   },
+   {
+    "id": "report",
+    "img": "m2_signal",
+    "title": "A US report",
+    "big": "",
+    "bigSub": "",
+    "text": "A US Defense Department report later described it, with a diagram of the possible lines."
+   },
+   {
+    "id": "mgu",
+    "img": "m2_mgu",
+    "title": "Where does it go?",
+    "big": "",
+    "bigSub": "rumoured route",
+    "text": "One line is said to run toward Moscow State University."
+   },
+   {
+    "id": "bunker",
+    "img": "m2_bunker",
+    "title": "Real bunkers",
+    "big": "65 m",
+    "bigSub": "Bunker 42, now a museum",
+    "text": "Real Cold War bunkers do exist here. Bunker 42 is now a museum."
+   },
+   {
+    "id": "official",
+    "img": "m2_mayak",
+    "title": "Officially?",
+    "big": "",
+    "bigSub": "",
+    "text": "But Metro-2 itself? Officials have never confirmed it exists. And never clearly denied it."
+   },
+   {
+    "id": "end",
+    "img": "m2_platform",
+    "title": "Right below you",
+    "big": "",
+    "bigSub": "",
+    "text": "So next time you ride the Moscow metro, there might be another one right below you."
+   }
+  ]
+ },
+ "bermuda": {
+  "title": "FLIGHT 19",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "avengers_line",
+    "title": "They never came back",
+    "big": "1945",
+    "bigSub": "Florida",
+    "text": "In 1945, five U.S. Navy bombers left Florida on a training flight. They never came back."
+   },
+   {
+    "id": "flight",
+    "img": "avenger",
+    "title": "Flight 19",
+    "big": "5",
+    "bigSub": "TBM Avengers, 14 men",
+    "text": "Flight 19. Five TBM Avengers and fourteen men, led by Lieutenant Charles Taylor."
+   },
+   {
+    "id": "lost",
+    "img": "route_map",
+    "title": "Lost",
+    "big": "",
+    "bigSub": "",
+    "text": "Taylor said his compasses had failed, and thought they were over the Florida Keys. Night fell, and fuel ran low."
+   },
+   {
+    "id": "rescue",
+    "img": "mariner",
+    "title": "The rescue plane",
+    "big": "13",
+    "bigSub": "men aboard the Mariner",
+    "text": "A Mariner flying boat with thirteen men went out to search. It vanished too."
+   },
+   {
+    "id": "flame",
+    "img": "mariners_clouds",
+    "title": "Flying gas tanks",
+    "big": "",
+    "bigSub": "",
+    "text": "A ship saw a burst of flame in the sky. Mariners were nicknamed flying gas tanks."
+   },
+   {
+    "id": "legend",
+    "img": "atlantic",
+    "title": "A legend is born",
+    "big": "27",
+    "bigSub": "men lost in one day",
+    "text": "Twenty seven men, gone in one day. And the legend of the Bermuda Triangle grew."
+   },
+   {
+    "id": "twist",
+    "img": "stormy_sea",
+    "title": "The twist",
+    "big": "",
+    "bigSub": "",
+    "text": "But here's the twist: the Coast Guard and insurers like Lloyd's say it's no more dangerous than any other busy stretch of sea."
+   }
+  ]
+ },
+ "derinkuyu": {
+  "title": "DERINKUYU",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "d_stair",
+    "title": "Behind the wall",
+    "big": "1963",
+    "bigSub": "a hidden passage",
+    "text": "In 1963, a man in Türkiye knocked through a wall in his house, and found a passage."
+   },
+   {
+    "id": "where",
+    "img": "d_capp",
+    "title": "Cappadocia, Türkiye",
+    "big": "",
+    "bigSub": "",
+    "text": "It led to a whole city carved into the rock beneath Derinkuyu, in Cappadocia."
+   },
+   {
+    "id": "deep",
+    "img": "d_shaft",
+    "title": "How deep?",
+    "big": "~85 m",
+    "bigSub": "deep",
+    "text": "It reaches about eighty five metres down, with as many as eighteen levels by some counts."
+   },
+   {
+    "id": "people",
+    "img": "d_halls",
+    "title": "A city for thousands",
+    "big": "20,000",
+    "bigSub": "people, by estimates",
+    "text": "It may have sheltered up to twenty thousand people, along with their animals and food."
+   },
+   {
+    "id": "life",
+    "img": "d_rooms",
+    "title": "Life underground",
+    "big": "",
+    "bigSub": "",
+    "text": "There were stables, wine presses, wells, chapels, and air shafts reaching the surface."
+   },
+   {
+    "id": "doors",
+    "img": "d_stone",
+    "title": "Stone doors",
+    "big": "~500 kg",
+    "bigSub": "rolling stone door",
+    "text": "Huge rolling stone doors could seal each level from the inside."
+   },
+   {
+    "id": "why",
+    "img": "d_tunnel",
+    "title": "Why build it?",
+    "big": "",
+    "bigSub": "",
+    "text": "It was greatly expanded in Byzantine times, as a refuge from raids."
+   },
+   {
+    "id": "end",
+    "img": "d_hall",
+    "title": "Look behind it",
+    "big": "",
+    "bigSub": "",
+    "text": "Today, part of it is open to visitors. So if you ever knock down a wall, look behind it."
+   }
+  ]
+ },
+ "flannan": {
+  "title": "THE FLANNAN ISLES",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "f_light",
+    "title": "The lighthouse mystery",
+    "big": "1900",
+    "bigSub": "three keepers vanish",
+    "text": "In December 1900, three lighthouse keepers vanished from a remote Scottish island."
+   },
+   {
+    "id": "where",
+    "img": "f_islet",
+    "title": "The Flannan Isles",
+    "big": "32 km",
+    "bigSub": "west of Lewis, Scotland",
+    "text": "Eilean Mòr, in the Flannan Isles, far out in the Atlantic. Just seabirds, cliffs and a lighthouse."
+   },
+   {
+    "id": "dark",
+    "img": "f_sea",
+    "title": "The light goes out",
+    "big": "15 Dec",
+    "bigSub": "light seen dark",
+    "text": "On the fifteenth of December, a passing steamer noticed the light was not shining."
+   },
+   {
+    "id": "relief",
+    "img": "f_cliff",
+    "title": "No one waiting",
+    "big": "26 Dec",
+    "bigSub": "relief ship arrives",
+    "text": "Storms delayed the relief ship until Boxing Day. No one came down to meet it."
+   },
+   {
+    "id": "gone",
+    "img": "f_rails",
+    "title": "Gone",
+    "big": "",
+    "bigSub": "Ducat · Marshall · MacArthur",
+    "text": "All three men were gone. One set of oilskins was still hanging inside."
+   },
+   {
+    "id": "myth",
+    "img": "f_waves",
+    "title": "Legend vs. record",
+    "big": "",
+    "bigSub": "",
+    "text": "Later tales added an untouched meal, a fallen chair and eerie log entries. None of that is in the official report."
+   },
+   {
+    "id": "wave",
+    "img": "f_rock",
+    "title": "The likely answer",
+    "big": "",
+    "bigSub": "",
+    "text": "Investigators found storm damage high above the west landing. They concluded a huge wave swept the men away."
+   },
+   {
+    "id": "end",
+    "img": "f_light",
+    "title": "Never found",
+    "big": "",
+    "bigSub": "",
+    "text": "Their bodies were never found. The sea kept its secret."
+   }
+  ]
+ },
+ "maryceleste": {
+  "title": "THE MARY CELESTE",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "mc_amazon",
+    "title": "The ghost ship",
+    "big": "1872",
+    "bigSub": "found adrift",
+    "text": "In December 1872, a ship was found drifting in the Atlantic, with no one on board."
+   },
+   {
+    "id": "ship",
+    "img": "mc_ship",
+    "title": "The Mary Celeste",
+    "big": "1,701",
+    "bigSub": "barrels of alcohol",
+    "text": "She was the Mary Celeste, bound from New York to Genoa with barrels of alcohol."
+   },
+   {
+    "id": "found",
+    "img": "mc_sea",
+    "title": "Found adrift",
+    "big": "~400 mi",
+    "bigSub": "east of the Azores",
+    "text": "Another ship, the Dei Gratia, found her about four hundred miles east of the Azores."
+   },
+   {
+    "id": "aboard",
+    "img": "mc_flag",
+    "title": "What was left",
+    "big": "6 months",
+    "bigSub": "of food and water",
+    "text": "Six months of food and water were still aboard. But the lifeboat was gone."
+   },
+   {
+    "id": "people",
+    "img": "mc_sea",
+    "title": "Ten people",
+    "big": "10",
+    "bigSub": "never seen again",
+    "text": "Captain Briggs, his wife, their little daughter and seven crew were never seen again."
+   },
+   {
+    "id": "court",
+    "img": "mc_gib",
+    "title": "The inquiry",
+    "big": "",
+    "bigSub": "Gibraltar, 1873",
+    "text": "An inquiry in Gibraltar found no sign of violence."
+   },
+   {
+    "id": "doyle",
+    "img": "mc_doyle",
+    "title": "Fiction becomes legend",
+    "big": "1884",
+    "bigSub": "Conan Doyle's story",
+    "text": "In 1884, a young Arthur Conan Doyle wrote a story about it, and its invented details became legend."
+   },
+   {
+    "id": "end",
+    "img": "mc_amazon",
+    "title": "What happened?",
+    "big": "",
+    "bigSub": "",
+    "text": "One theory: alcohol fumes made them fear an explosion, so they took to the lifeboat and lost the ship."
+   }
+  ]
  }
 }

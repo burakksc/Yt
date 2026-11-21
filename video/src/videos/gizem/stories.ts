@@ -1123,6 +1123,297 @@ export const STORIES: Record<string, MyStory> = {
    "nsi_tall": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons",
    "nsi_window": "Photo: PJeganathan · CC BY-SA 4.0 · Wikimedia Commons"
   }
+ },
+ "snakeisland": {
+  "title": "SNAKE ISLAND",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "si_aerial",
+    "title": "Snake Island",
+    "big": "NO LANDING",
+    "bigSub": "without permission",
+    "text": "Off the coast of Brazil lies an island you are not allowed to land on.",
+    "vsec": 5.65,
+    "sec": 6.4
+   },
+   {
+    "id": "where",
+    "img": "si_island",
+    "title": "Ilha da Queimada Grande",
+    "big": "33 km",
+    "bigSub": "off São Paulo, Brazil",
+    "text": "Ilha da Queimada Grande, off São Paulo. Better known as Snake Island.",
+    "fit": "contain",
+    "vsec": 5.72,
+    "sec": 6.47
+   },
+   {
+    "id": "snake",
+    "img": "si_gold",
+    "title": "The golden lancehead",
+    "big": "",
+    "bigSub": "found nowhere else",
+    "text": "It is the only home on Earth of the golden lancehead, a highly venomous pit viper.",
+    "vsec": 6.58,
+    "sec": 7.33
+   },
+   {
+    "id": "count",
+    "img": "si_coil",
+    "title": "How many?",
+    "big": "2,000–4,000",
+    "bigSub": "estimated snakes",
+    "text": "Scientists estimate a few thousand live here, on less than half a square kilometre.",
+    "fit": "contain",
+    "vsec": 6.22,
+    "sec": 6.97
+   },
+   {
+    "id": "birds",
+    "img": "si_branch",
+    "title": "Hunting in the trees",
+    "big": "",
+    "bigSub": "",
+    "text": "Cut off by rising seas long ago, with no prey on the ground, the snakes learned to hunt birds.",
+    "vsec": 7.45,
+    "sec": 8.2
+   },
+   {
+    "id": "light",
+    "img": "si_light",
+    "title": "The lighthouse",
+    "big": "1909",
+    "bigSub": "lighthouse built",
+    "text": "A lighthouse has stood here since 1909. Legend says snakes killed its keeper's family, but there is no proof.",
+    "vsec": 8.78,
+    "sec": 9.53
+   },
+   {
+    "id": "navy",
+    "img": "si_navy",
+    "title": "Who can land?",
+    "big": "",
+    "bigSub": "Brazilian Navy & scientists",
+    "text": "Today the light is automatic, and only the Navy and approved scientists may land.",
+    "vsec": 6.4,
+    "sec": 7.15
+   },
+   {
+    "id": "end",
+    "img": "si_leaf",
+    "title": "Critically endangered",
+    "big": "",
+    "bigSub": "",
+    "text": "The ban protects the snakes too. They are critically endangered.",
+    "fit": "contain",
+    "vsec": 5.05,
+    "sec": 5.8
+   }
+  ],
+  "credits": {
+   "si_aerial": "Photo: Prefeitura Municipal de Itanhaém · CC BY 2.5 · Wikimedia Commons",
+   "si_island": "Photo: Marinha do Brasil · CC BY-SA 2.0 · Wikimedia Commons",
+   "si_gold": "Photo: Nayeryouakim · CC BY-SA 4.0 · Wikimedia Commons",
+   "si_coil": "Photo: Otavio A. Marques · CC BY 4.0 · Wikimedia Commons",
+   "si_branch": "Photo: Otavio A. Marques · CC BY 4.0 · Wikimedia Commons",
+   "si_light": "Photo: Marinha do Brasil · CC BY-SA 2.0 · Wikimedia Commons",
+   "si_navy": "Photo: Marinha do Brasil · CC BY-SA 2.0 · Wikimedia Commons",
+   "si_leaf": "Photo: Otavio A. Marques · CC BY 4.0 · Wikimedia Commons"
+  }
+ },
+ "stardust": {
+  "title": "STENDEC",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "andes_crossing",
+    "title": "The last word",
+    "big": "1947",
+    "bigSub": "over the Andes",
+    "text": "In 1947, a plane over the Andes sent one last word in Morse code. Stendec. Then it vanished.",
+    "fit": "contain",
+    "vsec": 9.1,
+    "sec": 9.85
+   },
+   {
+    "id": "plane",
+    "img": "lancastrian",
+    "title": "Star Dust",
+    "big": "11",
+    "bigSub": "people aboard",
+    "text": "Star Dust, an Avro Lancastrian with eleven people aboard, flying from Buenos Aires to Santiago.",
+    "fit": "contain",
+    "vsec": 8.38,
+    "sec": 9.12
+   },
+   {
+    "id": "morse",
+    "img": "morse_key",
+    "title": "The final message",
+    "big": "STENDEC",
+    "bigSub": "last Morse message",
+    "text": "Its final message ended with Stendec. No one has ever explained that word.",
+    "fit": "contain",
+    "vsec": 6.28,
+    "sec": 7.03
+   },
+   {
+    "id": "search",
+    "img": "andes_clouds",
+    "title": "Vanished",
+    "big": "",
+    "bigSub": "",
+    "text": "Search teams found nothing. Rumours spread of sabotage, and even UFOs.",
+    "fit": "contain",
+    "vsec": 6.05,
+    "sec": 6.8
+   },
+   {
+    "id": "found",
+    "img": "tupungato",
+    "title": "Mount Tupungato",
+    "big": "1998",
+    "bigSub": "wreckage found",
+    "text": "In 1998, climbers on Mount Tupungato found its wreckage, coming out of a glacier.",
+    "fit": "contain",
+    "vsec": 7.38,
+    "sec": 8.12
+   },
+   {
+    "id": "cause",
+    "img": "jetstream",
+    "title": "The jet stream",
+    "big": "",
+    "bigSub": "",
+    "text": "Investigators concluded a powerful jet stream headwind had slowed the plane, so the crew descended too early, into the mountain.",
+    "fit": "contain",
+    "vsec": 9.65,
+    "sec": 10.4
+   },
+   {
+    "id": "end",
+    "img": "glacier_ice",
+    "title": "Still a mystery",
+    "big": "50+ years",
+    "bigSub": "hidden in the ice",
+    "text": "The glacier hid Star Dust for over fifty years. But Stendec is still a mystery.",
+    "fit": "contain",
+    "vsec": 6.33,
+    "sec": 7.08
+   }
+  ],
+  "credits": {
+   "andes_crossing": "Crossing the Andes. Photo: alonso_inostrosa · CC BY-SA 2.0 · Flickr",
+   "lancastrian": "An Avro Lancastrian (VH742, 1948), same type as Star Dust. Photo: RuthAS · CC BY 3.0 · Wikimedia Commons",
+   "morse_key": "Morse key. Photo: mrbill · CC BY 2.0 · Flickr",
+   "andes_clouds": "The Andes. Photo: Jorge Lascar · CC BY 2.0 · Flickr",
+   "tupungato": "Mount Tupungato. Photo: Diode · CC BY-SA 3.0 · Wikimedia Commons",
+   "jetstream": "Jet stream clouds (over the Rockies). Photo: formulanone · CC BY-SA 2.0 · Flickr",
+   "glacier_ice": "Glacier ice. Photo: Aztlek · CC BY-SA 2.0 · Flickr"
+  }
+ },
+ "metro2": {
+  "title": "METRO-2",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "m2_tunnel",
+    "title": "A secret metro?",
+    "big": "METRO-2",
+    "bigSub": "never officially confirmed",
+    "text": "Under Moscow, there may be a second, secret metro.",
+    "vsec": 4.22,
+    "sec": 4.97
+   },
+   {
+    "id": "what",
+    "img": "m2_kremlin",
+    "title": "Metro-2",
+    "big": "",
+    "bigSub": "",
+    "text": "It's called Metro-2. Reportedly, deep tunnels linking the Kremlin to government bunkers.",
+    "fit": "contain",
+    "vsec": 7.03,
+    "sec": 7.78
+   },
+   {
+    "id": "stalin",
+    "img": "m2_1935",
+    "title": "Started under Stalin?",
+    "big": "D-6",
+    "bigSub": "rumoured code name",
+    "text": "The story says it was started under Stalin, and given the code name D-6.",
+    "fit": "contain",
+    "vsec": 5.75,
+    "sec": 6.5
+   },
+   {
+    "id": "report",
+    "img": "m2_signal",
+    "title": "A US report",
+    "big": "",
+    "bigSub": "",
+    "text": "A US Defense Department report later described it, with a diagram of the possible lines.",
+    "fit": "contain",
+    "vsec": 7.28,
+    "sec": 8.03
+   },
+   {
+    "id": "mgu",
+    "img": "m2_mgu",
+    "title": "Where does it go?",
+    "big": "",
+    "bigSub": "rumoured route",
+    "text": "One line is said to run toward Moscow State University.",
+    "fit": "contain",
+    "vsec": 4.62,
+    "sec": 5.38
+   },
+   {
+    "id": "bunker",
+    "img": "m2_bunker",
+    "title": "Real bunkers",
+    "big": "65 m",
+    "bigSub": "Bunker 42, now a museum",
+    "text": "Real Cold War bunkers do exist here. Bunker 42 is now a museum.",
+    "fit": "contain",
+    "vsec": 6.4,
+    "sec": 7.15
+   },
+   {
+    "id": "official",
+    "img": "m2_mayak",
+    "title": "Officially?",
+    "big": "",
+    "bigSub": "",
+    "text": "But Metro-2 itself? Officials have never confirmed it exists. And never clearly denied it.",
+    "fit": "contain",
+    "vsec": 7.45,
+    "sec": 8.2
+   },
+   {
+    "id": "end",
+    "img": "m2_platform",
+    "title": "Right below you",
+    "big": "",
+    "bigSub": "",
+    "text": "So next time you ride the Moscow metro, there might be another one right below you.",
+    "fit": "contain",
+    "vsec": 6.12,
+    "sec": 6.88
+   }
+  ],
+  "credits": {
+   "m2_tunnel": "Photo: Moscow Government press service (mos.ru) · CC BY 4.0 · Wikimedia Commons",
+   "m2_kremlin": "Photo: ikhou · CC BY-SA 2.0 · Flickr",
+   "m2_1935": "Photo: Trondheim byarkiv (c. 1935) · CC BY 2.0 · Flickr",
+   "m2_signal": "Photo: Moscow Government press service (mos.ru) · CC BY 4.0 · Wikimedia Commons",
+   "m2_mgu": "Photo: Phuketian.S · CC BY 2.0 · Flickr",
+   "m2_bunker": "Photo: M1key.me · CC BY 2.0 · Flickr",
+   "m2_mayak": "Photo: greg westfall · CC BY 2.0 · Flickr",
+   "m2_platform": "Photo: Trondheim byarkiv (c. 1935) · CC BY 2.0 · Flickr"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
