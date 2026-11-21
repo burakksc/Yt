@@ -14,7 +14,20 @@ import {
   useVideoConfig,
 } from "remotion";
 import { WordCaptions } from "../../components/WordCaptions";
-import { KAR_LEAD, KAR_STORY, type KarScene, type KarTag } from "./story";
+import {
+  KAR_LEAD,
+  KAR_STORY,
+  KAR_STORY_EN,
+  type KarScene,
+  type KarTag,
+} from "./story";
+
+type Lang = "tr" | "en";
+const LangCtx = React.createContext<Lang>("tr");
+const TEMP_LABELS: Record<Lang, [string, string, string]> = {
+  tr: ["−2 °C·düz plaka", "−5 °C·iğne", "−15 °C·yıldız"],
+  en: ["−2 °C·flat plate", "−5 °C·needle", "−15 °C·star"],
+};
 
 const { fontFamily } = loadFont("normal", {
   weights: ["700", "800", "900"],
@@ -31,6 +44,8 @@ const ACCENT = "#ffcc00";
 const TAG_COLOR: Record<Exclude<KarTag, "">, string> = {
   GERÇEK: "#7be0a6",
   BELKİ: "#ffcf6a",
+  FACT: "#7be0a6",
+  MAYBE: "#ffcf6a",
 };
 
 const useSec = () => {
@@ -387,7 +402,7 @@ const MoleculeV: React.FC = () => {
         fontFamily={fontFamily}
         opacity={interpolate(t, [0.6, 1.2, 2.4, 2.8], [0, 1, 1, 0], clamp)}
       >
-        H₂O · 104,5°
+        {React.useContext(LangCtx) === "en" ? "H₂O · 104.5°" : "H₂O · 104,5°"}
       </text>
     </svg>
   );
@@ -461,6 +476,7 @@ const Row: React.FC<{
 
 const TempV: React.FC<{ scene: KarScene }> = ({ scene }) => {
   const t = useSec();
+  const labels = TEMP_LABELS[React.useContext(LangCtx)];
   const { fps } = useVideoConfig();
   const v = scene.vsec;
   return (
@@ -469,7 +485,7 @@ const TempV: React.FC<{ scene: KarScene }> = ({ scene }) => {
         y={640}
         at={KAR_LEAD + v * 0.38}
         kind="plate"
-        label="−2 °C·düz plaka"
+        label={labels[0]}
         t={t}
         fps={fps}
         seed="p"
@@ -478,7 +494,7 @@ const TempV: React.FC<{ scene: KarScene }> = ({ scene }) => {
         y={940}
         at={KAR_LEAD + v * 0.62}
         kind="needle"
-        label="−5 °C·iğne"
+        label={labels[1]}
         t={t}
         fps={fps}
         seed="n"
@@ -487,7 +503,7 @@ const TempV: React.FC<{ scene: KarScene }> = ({ scene }) => {
         y={1240}
         at={KAR_LEAD + v * 0.82}
         kind="star"
-        label="−15 °C·yıldız"
+        label={labels[2]}
         t={t}
         fps={fps}
         seed="st"
@@ -643,6 +659,7 @@ const Title: React.FC<{ scene: KarScene }> = ({ scene }) => {
   const { fps } = useVideoConfig();
   const s = spring({ frame, fps, config: { damping: 14 } });
   const parts = scene.title.split(/(6)/);
+  const lang = React.useContext(LangCtx);
   return (
     <div
       style={{
@@ -666,7 +683,7 @@ const Title: React.FC<{ scene: KarScene }> = ({ scene }) => {
       >
         {parts.map((p, i) => (
           <span key={i} style={{ color: p === "6" ? ACCENT : undefined }}>
-            {p.toLocaleUpperCase("tr-TR")}
+            {p.toLocaleUpperCase(lang === "en" ? "en-US" : "tr-TR")}
           </span>
         ))}
       </div>
@@ -708,6 +725,7 @@ const ScenePage: React.FC<{ scene: KarScene }> = ({ scene }) => {
   const { fps } = useVideoConfig();
   const frames = scene.sec * fps;
   const V = VISUAL[scene.id];
+  const lang = React.useContext(LangCtx);
   const fade =
     scene.id === "hook" || scene.id === "loop"
       ? 1
@@ -719,7 +737,7 @@ const ScenePage: React.FC<{ scene: KarScene }> = ({ scene }) => {
         <Title scene={scene} />
       </AbsoluteFill>
       <Sequence from={Math.round(KAR_LEAD * fps)} layout="none">
-        <Audio src={staticFile(`kar-tanesi/tr/${scene.id}.wav`)} />
+        <Audio src={staticFile(`kar-tanesi/${lang}/${scene.id}.wav`)} />
         <WordCaptions
           text={scene.text}
           durationInFrames={Math.round(scene.vsec * fps)}
@@ -731,14 +749,18 @@ const ScenePage: React.FC<{ scene: KarScene }> = ({ scene }) => {
   );
 };
 
-export const KarTanesiShort: React.FC = () => {
+export const KarTanesiShort: React.FC<{ lang?: Lang }> = ({
+  lang = "tr",
+}) => {
   const { fps } = useVideoConfig();
+  const story = lang === "en" ? KAR_STORY_EN : KAR_STORY;
   return (
+    <LangCtx.Provider value={lang}>
     <AbsoluteFill style={{ fontFamily, backgroundColor: "#0a1424" }}>
       <Sky />
       <Snowfall />
       <Series>
-        {KAR_STORY.map((scene) => (
+        {story.map((scene) => (
           <Series.Sequence
             key={scene.id}
             durationInFrames={Math.round(scene.sec * fps)}
@@ -750,5 +772,6 @@ export const KarTanesiShort: React.FC = () => {
       </Series>
       <Audio src={staticFile("kar-tanesi/bed.m4a")} volume={0.35} />
     </AbsoluteFill>
+    </LangCtx.Provider>
   );
 };

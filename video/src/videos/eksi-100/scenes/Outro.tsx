@@ -1,6 +1,14 @@
 import React from "react";
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { clamp, SceneSvg, Sky, Snow, Stars, Thermometer } from "./common";
+import {
+  clamp,
+  LangCtx,
+  SceneSvg,
+  Sky,
+  Snow,
+  Stars,
+  Thermometer,
+} from "./common";
 
 // 9: The real record (-89.2°C, Vostok station, Antarctica, 21 July 1983) vs. -100°C.
 export const OutroScene: React.FC = () => {
@@ -9,6 +17,7 @@ export const OutroScene: React.FC = () => {
   const appear = (delaySec: number) =>
     interpolate(frame, [delaySec * fps, (delaySec + 0.4) * fps], [0, 1], clamp);
   const lift = (delaySec: number) => (1 - appear(delaySec)) * 20;
+  const en = React.useContext(LangCtx) === "en";
 
   const cx = 760;
   return (
@@ -26,7 +35,7 @@ export const OutroScene: React.FC = () => {
           fill="#8fc8f5"
           letterSpacing={3}
         >
-          REKOR
+          {en ? "RECORD" : "REKOR"}
         </text>
         <text
           x={cx}
@@ -36,7 +45,7 @@ export const OutroScene: React.FC = () => {
           fontWeight={900}
           fill="white"
         >
-          -89,2°C
+          {en ? "-89.2°C" : "-89,2°C"}
         </text>
         <text
           x={cx}
@@ -46,7 +55,7 @@ export const OutroScene: React.FC = () => {
           fontWeight={700}
           fill="#b8c8e0"
         >
-          Antarktika, 1983
+          {en ? "Antarctica, 1983" : "Antarktika, 1983"}
         </text>
       </g>
       <g opacity={appear(1.0)} transform={`translate(0 ${lift(1.0)})`}>
@@ -68,7 +77,7 @@ export const OutroScene: React.FC = () => {
           fontWeight={700}
           fill="white"
         >
-          Henüz hiç ölçülmedi.
+          {en ? "Never measured." : "Henüz hiç ölçülmedi."}
         </text>
       </g>
       <Thermometer x={1620} y={110} h={860} level={0.02} />

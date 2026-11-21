@@ -1,7 +1,7 @@
 // Short: "Kar taneleri neden hep altı köşeli?" — Turkish, Michael (Chatterbox) narration.
 // Narration text = scripts/tts/kar_tanesi_tr.json (keep in sync); audio in public/kar-tanesi/tr/<id>.wav.
 // `sec` (scene length) and `vsec` (narration length) are filled in from the wav files after TTS.
-export type KarTag = "GERÇEK" | "BELKİ" | "";
+export type KarTag = "GERÇEK" | "BELKİ" | "FACT" | "MAYBE" | "";
 export type KarSceneId =
   | "hook"
   | "molecule"
@@ -79,8 +79,34 @@ export const KAR_STORY: KarScene[] = [
   },
 ];
 
+// English version (Michael / Kokoro am_michael). Text = scripts/tts/kar_tanesi_en.json;
+// audio in public/kar-tanesi/en/<id>.wav. vsec = wav length, sec = vsec + 0.8.
+const EN: [KarSceneId, string, KarTag, number][] = [
+  ["hook", "Why always 6 sides?", "", 0],
+  ["molecule", "The water molecule", "FACT", 0],
+  ["grow", "Six arms, same air", "FACT", 0],
+  ["temp", "Temperature picks the shape", "FACT", 0],
+  ["twins", "Twin snowflakes?", "MAYBE", 0],
+  ["white", "Snow isn't white", "FACT", 0],
+  ["loop", "All 6-sided", "", 0],
+];
+export const KAR_EN_VSEC: Record<KarSceneId, number> = {
+  hook: 0, molecule: 0, grow: 0, temp: 0, twins: 0, white: 0, loop: 0,
+};
+export const KAR_EN_TEXT: Record<KarSceneId, string> = {
+  hook: "", molecule: "", grow: "", temp: "", twins: "", white: "", loop: "",
+};
+export const KAR_STORY_EN: KarScene[] = EN.map(([id, title, tag]) => ({
+  id,
+  title,
+  tag,
+  text: KAR_EN_TEXT[id],
+  vsec: KAR_EN_VSEC[id],
+  sec: Math.round((KAR_EN_VSEC[id] + 0.8) * 10) / 10,
+}));
+
 export const KAR_FPS = 30;
 export const KAR_LEAD = 0.3; // narration starts this many seconds into each scene
-export const KAR_FRAMES = Math.round(
-  KAR_STORY.reduce((s, x) => s + x.sec, 0) * KAR_FPS,
-);
+export const karFrames = (story: KarScene[]) =>
+  Math.round(story.reduce((s, x) => s + x.sec, 0) * KAR_FPS);
+export const KAR_FRAMES = karFrames(KAR_STORY);

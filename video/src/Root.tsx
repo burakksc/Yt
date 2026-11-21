@@ -1,6 +1,11 @@
 import { Composition, Still } from "remotion";
 import { TitleCard } from "./components/TitleCard";
-import { Eksi100, EKSI100_DURATION, EKSI100_FPS } from "./videos/eksi-100";
+import {
+  Eksi100,
+  EKSI100_DURATION,
+  EKSI100_EN_SECS,
+  EKSI100_FPS,
+} from "./videos/eksi-100";
 import { Eksi100Hikaye } from "./videos/eksi-100-hikaye";
 import { CozyAlley, LOOP_FPS, LOOP_FRAMES } from "./videos/cozy-alley";
 import { SlingVideo } from "./videos/sling";
@@ -26,7 +31,12 @@ import {
 import { CIK_EN } from "./videos/cikolata/story_en";
 import { CIK_TR } from "./videos/cikolata/story_tr";
 import { CIK_FPS, cikFrames } from "./videos/cikolata/types";
-import { KAR_FPS, KAR_FRAMES } from "./videos/kar-tanesi/story";
+import {
+  KAR_FPS,
+  KAR_FRAMES,
+  KAR_STORY_EN,
+  karFrames,
+} from "./videos/kar-tanesi/story";
 import { ALTI_FRAMES_TR } from "./videos/istanbul-alti/story_tr";
 import {
   IstanbulAltiShortEN,
@@ -121,6 +131,33 @@ export const RemotionRoot: React.FC = () => {
               text: "Nefesin çıkar çıkmaz buz kristallerine dönüşür.",
             },
             { badge: "SON", text: 'Takip et, bir sonraki "ne olurdu?" için.' },
+          ],
+        }}
+      />
+      <Composition
+        id="Eksi100EN"
+        component={Eksi100}
+        durationInFrames={Math.round(
+          EKSI100_EN_SECS.reduce((a, b) => a + b, 0) * EKSI100_FPS,
+        )}
+        fps={EKSI100_FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          lang: "en" as const,
+          title: "AT -100°C",
+          subtitle: "WHAT HAPPENS?",
+          captions: [
+            { badge: "TEMPERATURE DROPPING", text: "What if the whole world dropped to minus 100 degrees Celsius?" },
+            { badge: "1 · HUMANS", text: "Exposed skin freezes in seconds. Hypothermia sets in within minutes." },
+            { badge: "2 · WATER", text: "Pipes burst, and lakes freeze solid." },
+            { badge: "3 · ELECTRONICS", text: "Batteries die. Phones and computers shut down." },
+            { badge: "4 · VEHICLES", text: "Oil turns thick, diesel gels, and tires turn brittle." },
+            { badge: "5 · POWER", text: "Power lines snap, and cities go dark." },
+            { badge: "6 · BUILDINGS", text: "Concrete and steel crack, and buildings get damaged." },
+            { badge: "7 · NATURE", text: "Plants die, and farming comes to an end." },
+            { badge: "8 · AIR", text: "Your breath turns into ice crystals the moment you exhale." },
+            { badge: "THE END", text: "The coldest ever recorded is minus 89.2, in Antarctica. Minus 100? Never measured. Follow for the next what if." },
           ],
         }}
       />
@@ -474,6 +511,15 @@ export const RemotionRoot: React.FC = () => {
         fps={KAR_FPS}
         width={1080}
         height={1920}
+      />
+      <Composition
+        id="KarTanesiShortEN"
+        component={KarTanesiShort}
+        durationInFrames={karFrames(KAR_STORY_EN)}
+        fps={KAR_FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{ lang: "en" as const }}
       />
       <Composition
         id="IstanbulAltiShortEN"

@@ -9,6 +9,8 @@ import {
 } from "remotion";
 
 // Scenes are drawn in a 1920x1080 coordinate system and scaled into the card.
+export const LangCtx = React.createContext<"tr" | "en">("tr");
+
 export const W = 1920;
 export const H = 1080;
 export const GROUND_Y = 860;

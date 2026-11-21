@@ -4,6 +4,7 @@ import { Audio } from "@remotion/media";
 import {
   AbsoluteFill,
   interpolate,
+  Sequence,
   Series,
   spring,
   staticFile,
@@ -20,6 +21,7 @@ import { BuildingsScene } from "./scenes/Buildings";
 import { NatureScene } from "./scenes/Nature";
 import { BreathScene } from "./scenes/Breath";
 import { OutroScene } from "./scenes/Outro";
+import { LangCtx } from "./scenes/common";
 
 const { fontFamily } = loadFont("normal", {
   weights: ["600", "700", "800", "900"],
@@ -35,6 +37,8 @@ export type Eksi100Props = {
   readonly title: string;
   readonly subtitle: string;
   readonly captions: Caption[];
+  /** "en": Michael narration from public/eksi-100/en/<i>.wav, scene lengths from EKSI100_EN_SECS. */
+  readonly lang?: "tr" | "en";
 };
 
 // Scene order and length in seconds. Captions (defaultProps) map 1:1 onto this list.
@@ -50,6 +54,13 @@ export const SCENES: { sec: number; Scene: React.FC }[] = [
   { sec: 5, Scene: BreathScene },
   { sec: 5, Scene: OutroScene },
 ];
+
+// English (Michael) version: narration wav lengths per scene, filled in after TTS.
+export const EN_LEAD = 0.25;
+const EN_VSEC = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+export const EKSI100_EN_SECS = SCENES.map((s, i) =>
+  Math.max(s.sec, Math.round((EN_VSEC[i] + EN_LEAD + 0.55) * 10) / 10),
+);
 
 export const EKSI100_FPS = 30;
 export const EKSI100_DURATION =
@@ -222,26 +233,40 @@ export const Eksi100: React.FC<Eksi100Props> = ({
   title,
   subtitle,
   captions,
+  lang = "tr",
 }) => {
   const { fps } = useVideoConfig();
+  const en = lang === "en";
   return (
-    <AbsoluteFill style={{ backgroundColor: "#0f1726", fontFamily }}>
-      <Series>
-        {SCENES.map(({ sec, Scene }, i) => (
-          <Series.Sequence
-            key={i}
-            durationInFrames={sec * fps}
-            premountFor={fps}
-          >
-            <ScenePage
-              Scene={Scene}
-              caption={captions[i] ?? { badge: "", text: "" }}
-            />
-          </Series.Sequence>
-        ))}
-      </Series>
-      <Title title={title} subtitle={subtitle} />
-      <Audio src={staticFile("eksi-100/wind.mp3")} volume={0.9} />
-    </AbsoluteFill>
+    <LangCtx.Provider value={lang}>
+      <AbsoluteFill style={{ backgroundColor: "#0f1726", fontFamily }}>
+        <Series>
+          {SCENES.map(({ sec, Scene }, i) => (
+            <Series.Sequence
+              key={i}
+              durationInFrames={Math.round(
+                (en ? EKSI100_EN_SECS[i] : sec) * fps,
+              )}
+              premountFor={fps}
+            >
+              <ScenePage
+                Scene={Scene}
+                caption={captions[i] ?? { badge: "", text: "" }}
+              />
+              {en && (
+                <Sequence from={Math.round(EN_LEAD * fps)} layout="none">
+                  <Audio src={staticFile(`eksi-100/en/${i}.wav`)} />
+                </Sequence>
+              )}
+            </Series.Sequence>
+          ))}
+        </Series>
+        <Title title={title} subtitle={subtitle} />
+        <Audio
+          src={staticFile("eksi-100/wind.mp3")}
+          volume={en ? 0.45 : 0.9}
+        />
+      </AbsoluteFill>
+    </LangCtx.Provider>
   );
 };
