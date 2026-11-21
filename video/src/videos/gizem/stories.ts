@@ -736,40 +736,37 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "fragment",
+    "img": "antikythera__hook",
     "title": "A 2,000-year-old computer",
     "big": "2,000+ yrs",
     "bigSub": "old, and full of gears",
     "text": "This lump of bronze came from a Greek shipwreck. Inside are gears, over two thousand years old.",
-    "fit": "contain",
     "vsec": 7.42,
     "sec": 8.18
    },
    {
     "id": "wreck",
-    "img": "wreck",
+    "img": "antikythera__wreck",
     "title": "The shipwreck",
     "big": "1901",
     "bigSub": "recovered off Antikythera, Greece",
     "text": "Divers found it in 1901, in a wreck off Antikythera that sank around 60 BC.",
-    "fit": "contain",
     "vsec": 7.4,
     "sec": 8.15
    },
    {
     "id": "gears",
-    "img": "gears",
+    "img": "antikythera__gears",
     "title": "Hidden gears",
     "big": "30",
     "bigSub": "bronze gears survive",
     "text": "Today it survives in 82 fragments, with 30 bronze gears.",
-    "fit": "contain",
     "vsec": 5.5,
     "sec": 6.25
    },
    {
     "id": "cosmos",
-    "img": "front",
+    "img": "antikythera__cosmos",
     "title": "A pocket cosmos",
     "big": "",
     "bigSub": "",
@@ -779,7 +776,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "eclipse",
-    "img": "back",
+    "img": "antikythera__eclipse",
     "title": "Predicting the sky",
     "big": "223 months",
     "bigSub": "eclipse cycle on the back dial",
@@ -789,18 +786,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "xray",
-    "img": "xray",
+    "img": "antikythera__xray",
     "title": "X-ray secrets",
     "big": "2005",
     "bigSub": "X-ray CT scans",
     "text": "In 2005, X-ray scans revealed hidden gears and thousands of tiny inscriptions.",
-    "fit": "contain",
     "vsec": 7.42,
     "sec": 8.18
    },
    {
     "id": "model",
-    "img": "model",
+    "img": "antikythera__model",
     "title": "Rebuilding it",
     "big": "2021",
     "bigSub": "UCL's new model of the front",
@@ -810,25 +806,24 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "museum",
+    "img": "antikythera__end",
     "title": "Who built it?",
     "big": "",
     "bigSub": "",
     "text": "Nothing this complex returns for a thousand years. Its maker is still a mystery.",
-    "fit": "contain",
     "vsec": 6.58,
     "sec": 7.33
    }
   ],
   "credits": {
-   "fragment": "Photo: Tilemahos Efthimiadis (CC BY 2.0)",
-   "wreck": "Photo: Tilemahos Efthimiadis (CC BY 2.0)",
-   "gears": "Photo: Tilemahos Efthimiadis (CC BY 2.0)",
-   "front": "Photo: Tilemahos Efthimiadis (CC BY 2.0) · replica",
-   "back": "Photo: Tilemahos Efthimiadis (CC BY 2.0) · replica",
-   "xray": "Photo: Tilemahos Efthimiadis (CC BY 2.0)",
-   "model": "Photo: Tilemahos Efthimiadis (CC BY 2.0) · replica",
-   "museum": "Photo: Weekend Wayfarers (CC BY 2.0)"
+   "antikythera__hook": "AI-generated illustration",
+   "antikythera__wreck": "AI-generated illustration",
+   "antikythera__gears": "AI-generated illustration",
+   "antikythera__cosmos": "AI-generated illustration",
+   "antikythera__eclipse": "AI-generated illustration",
+   "antikythera__xray": "AI-generated illustration",
+   "antikythera__model": "AI-generated illustration",
+   "antikythera__end": "AI-generated illustration"
   }
  },
  "baalbek": {
