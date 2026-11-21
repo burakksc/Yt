@@ -41,3 +41,5 @@ Bkz: [[Kanal Kimliği]], [[Marka Rehberi]]
 
 ## Kural: her görsel/alıntıya referans (kullanıcı, 2026-11-21)
 Kullanılan **her görsel ve her alıntı** için kaynak ver: videoda kare altı kredi (yazar · lisans · site), açıklamada "Images:" listesi (yazar, başlık, lisans, link) + "Sources:" (bilgi/alıntı kaynakları), kullanıcıya sunarken de aynı referanslar.
+
+**Ek (2026-11-21):** Açıklamada her görsel için **hangi sahnede/karede kullanıldığı + kimden olduğu** yazılır: `<sahne/zaman> — <görsel adı>, by <yazar>, <lisans>, <URL>`.

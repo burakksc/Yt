@@ -80,7 +80,7 @@ export const KAR_STORY: KarScene[] = [
 ];
 
 // English version (Michael / Kokoro am_michael). Text = scripts/tts/kar_tanesi_en.json;
-// audio in public/kar-tanesi/en/<id>.wav. vsec = wav length, sec = vsec + 0.8.
+// audio in public/kar-tanesi/en/<id>.wav. vsec = wav length, sec = vsec + 0.65 (wavs sped up 1.14x to fit 60 s).
 const EN: [KarSceneId, string, KarTag, number][] = [
   ["hook", "Why always 6 sides?", "", 0],
   ["molecule", "The water molecule", "FACT", 0],
@@ -91,10 +91,25 @@ const EN: [KarSceneId, string, KarTag, number][] = [
   ["loop", "All 6-sided", "", 0],
 ];
 export const KAR_EN_VSEC: Record<KarSceneId, number> = {
-  hook: 0, molecule: 0, grow: 0, temp: 0, twins: 0, white: 0, loop: 0,
+  hook: 5.65,
+  molecule: 8.92,
+  grow: 8.24,
+  temp: 9.36,
+  twins: 8.68,
+  white: 8.97,
+  loop: 5.23,
 };
 export const KAR_EN_TEXT: Record<KarSceneId, string> = {
-  hook: "", molecule: "", grow: "", temp: "", twins: "", white: "", loop: "",
+  hook: "Why does every snowflake have six sides? The answer is too small for your eyes to see.",
+  molecule:
+    "A water molecule looks like a tiny boomerang. As it freezes, these boomerangs hold on to each other and build hexagonal rings.",
+  grow: "The snowflake grows on top of that hexagon. Its six arms grow in the same air, at the same time, so they look alike.",
+  temp: "Its shape is chosen by temperature. At minus two degrees Celsius, a flat plate. At minus five, a needle. At minus fifteen, a star.",
+  twins:
+    "So can two snowflakes ever be identical? Simple ones, maybe. But finding a twin for a branching star is almost impossible.",
+  white:
+    "One last secret: snow isn't actually white. Ice is clear. The white comes from light scattering off thousands of tiny surfaces.",
+  loop: "Next time it snows, take a closer look. Every single one has six sides.",
 };
 export const KAR_STORY_EN: KarScene[] = EN.map(([id, title, tag]) => ({
   id,
@@ -102,7 +117,7 @@ export const KAR_STORY_EN: KarScene[] = EN.map(([id, title, tag]) => ({
   tag,
   text: KAR_EN_TEXT[id],
   vsec: KAR_EN_VSEC[id],
-  sec: Math.round((KAR_EN_VSEC[id] + 0.8) * 10) / 10,
+  sec: Math.round((KAR_EN_VSEC[id] + 0.65) * 10) / 10,
 }));
 
 export const KAR_FPS = 30;

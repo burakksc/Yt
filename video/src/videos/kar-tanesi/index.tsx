@@ -749,29 +749,27 @@ const ScenePage: React.FC<{ scene: KarScene }> = ({ scene }) => {
   );
 };
 
-export const KarTanesiShort: React.FC<{ lang?: Lang }> = ({
-  lang = "tr",
-}) => {
+export const KarTanesiShort: React.FC<{ lang?: Lang }> = ({ lang = "tr" }) => {
   const { fps } = useVideoConfig();
   const story = lang === "en" ? KAR_STORY_EN : KAR_STORY;
   return (
     <LangCtx.Provider value={lang}>
-    <AbsoluteFill style={{ fontFamily, backgroundColor: "#0a1424" }}>
-      <Sky />
-      <Snowfall />
-      <Series>
-        {story.map((scene) => (
-          <Series.Sequence
-            key={scene.id}
-            durationInFrames={Math.round(scene.sec * fps)}
-            premountFor={fps}
-          >
-            <ScenePage scene={scene} />
-          </Series.Sequence>
-        ))}
-      </Series>
-      <Audio src={staticFile("kar-tanesi/bed.m4a")} volume={0.35} />
-    </AbsoluteFill>
+      <AbsoluteFill style={{ fontFamily, backgroundColor: "#0a1424" }}>
+        <Sky />
+        <Snowfall />
+        <Series>
+          {story.map((scene) => (
+            <Series.Sequence
+              key={scene.id}
+              durationInFrames={Math.round(scene.sec * fps)}
+              premountFor={fps}
+            >
+              <ScenePage scene={scene} />
+            </Series.Sequence>
+          ))}
+        </Series>
+        <Audio src={staticFile("kar-tanesi/bed.m4a")} volume={0.35} />
+      </AbsoluteFill>
     </LangCtx.Provider>
   );
 };

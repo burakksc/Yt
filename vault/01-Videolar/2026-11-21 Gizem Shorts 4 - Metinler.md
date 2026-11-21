@@ -50,3 +50,29 @@ Narration: AI voice (Kokoro TTS).
 #interestingfacts #didyouknow #interestinglycozy
 ```
 **Hashtag/etiketler:** #shorts #baalbek #lebanon #ancientrome #megalith #archaeology #history — etiketler: baalbek, baalbek stones, stone of the pregnant woman, trilithon, temple of jupiter, roman engineering, megaliths, largest stone ever, ancient mysteries, interestingly cozy
+
+### antikythera — Images (by scene) [açıklamaya bunu koy]
+```
+Images (by scene):
+0:00 A 2,000-year-old computer — "The Antikythera Mechanism" by Tilemahos Efthimiadis, CC BY 2.0, https://www.flickr.com/photos/64379474@N00/3471171927
+0:08 The shipwreck — "The Antikythera Shipwreck. National Archaeological Museum, Athens, Greece" by Tilemahos Efthimiadis, CC BY 2.0, https://www.flickr.com/photos/64379474@N00/3209883801
+0:16 Hidden gears — "The Antikythera Mechanism" by Tilemahos Efthimiadis, CC BY 2.0, https://www.flickr.com/photos/64379474@N00/3471987204
+0:22 A pocket cosmos — "The Antikythera Mechanism" by Tilemahos Efthimiadis, CC BY 2.0, https://www.flickr.com/photos/64379474@N00/3471978200
+0:29 Predicting the sky — "The Antikythera Mechanism" by Tilemahos Efthimiadis, CC BY 2.0, https://www.flickr.com/photos/64379474@N00/3471161471
+0:35 X-ray secrets — "The Antikythera Mechanism" by Tilemahos Efthimiadis, CC BY 2.0, https://www.flickr.com/photos/64379474@N00/3471980864
+0:43 Rebuilding it — "The Antikythera Mechanism" by Tilemahos Efthimiadis, CC BY 2.0, https://www.flickr.com/photos/64379474@N00/3471976134
+0:51 Who built it? — "Antikythera Mechanism" by Weekend Wayfarers, CC BY 2.0, https://www.flickr.com/photos/135146612@N03/30672909980
+```
+
+### baalbek — Images (by scene) [açıklamaya bunu koy]
+```
+Images (by scene):
+0:00 The biggest stone of antiquity — "Megaliths in Baalbek quarry" by Lodo27, CC BY-SA 2.0, https://www.flickr.com/photos/36587131@N06/48215888722
+0:09 Baalbek, Lebanon — "Baalbek, Temple of Jupiter" by Arian Zwegers, CC BY 2.0, https://www.flickr.com/photos/67769030@N07/6842829519
+0:15 Giant columns — "Baalbek - temple of Jupiter" by Eusebius@Commons, CC BY 2.0, https://www.flickr.com/photos/35854555@N04/6231969188
+0:21 The trilithon — "West Wall of Temples Complex in Baalbek" by Lodo27, CC BY-SA 2.0, https://www.flickr.com/photos/36587131@N06/49875430466
+0:27 Stone of the Pregnant Woman — "The Stone of the Pregnant Woman, Baalbek" by Following Hadrian, CC BY-SA 2.0, https://www.flickr.com/photos/41523983@N08/49565699163
+0:35 An even bigger one — "Megaliths in Baalbek quarry" by Lodo27, CC BY-SA 2.0, https://www.flickr.com/photos/36587131@N06/48215840646
+0:44 How did they do it? — "West Wall of Temples Complex in Baalbek" by Lodo27, CC BY-SA 2.0, https://www.flickr.com/photos/36587131@N06/49874897728
+0:53 Still debated — "The Temple of Jupiter at Baalbek (VI)" by isawnyu, CC BY 2.0, https://www.flickr.com/photos/34561917@N04/5491789223
+```

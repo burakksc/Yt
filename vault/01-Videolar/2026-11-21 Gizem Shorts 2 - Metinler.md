@@ -113,3 +113,15 @@ Narration: AI voice (Kokoro TTS).
 #interestingfacts #didyouknow #interestinglycozy
 ```
 **Hashtag/etiketler:** #shorts #bermudatriangle #flight19 #history #aviation #mystery #ww2 — etiketler: bermuda triangle, flight 19, tbm avenger, pbm mariner, bermuda triangle mystery, navy planes vanished, 1945, aviation history, interestingly cozy
+
+### yamantau — Images (by scene) [açıklamaya bunu koy]
+```
+Images (by scene):
+0:00 Russia's secret mountain — "Hiking to Malinovaya" by Aleksandr Zykov, CC BY-SA 2.0, https://www.flickr.com/photos/84292292@N00/21034139520
+0:07 Mount Yamantau — "View from Iremel, Ural" by Pawel Maryanov, CC BY 2.0, https://www.flickr.com/photos/76510074@N06/28718100714
+0:16 A closed town — "River Inzer" by Borya, CC BY-SA 2.0, https://www.flickr.com/photos/48599100@N00/3674129491
+0:23 Inside the mountain — "DSC01338 - Blast Tunnel" by archer10 (Dennis), CC BY-SA 2.0, https://www.flickr.com/photos/22490717@N02/44662786202
+0:32 Changing answers — "Hiking to Malinovaya" by Aleksandr Zykov, CC BY-SA 2.0, https://www.flickr.com/photos/84292292@N00/21035843919
+0:42 Washington asks — "US Capitol Dome on an Overcast Evening" by John Brighenti, CC BY 2.0, https://www.flickr.com/photos/94359914@N06/46185915012
+0:51 Still a secret — "Hiking to Malinovaya" by Aleksandr Zykov, CC BY-SA 2.0, https://www.flickr.com/photos/84292292@N00/21196273156
+```
