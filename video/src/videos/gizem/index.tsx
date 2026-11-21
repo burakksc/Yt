@@ -75,7 +75,7 @@ const ScenePage: React.FC<{ slug: string; scene: MyScene; index: number; credit?
         </div>
       )}
       {credit && (
-        <div style={{ position: "absolute", left: 40, right: 40, top: 1680, fontSize: 22, fontWeight: 700, color: "rgba(255,255,255,0.7)", textShadow: "0 2px 6px #000" }}>{credit}</div>
+        <div style={{ position: "absolute", left: 40, right: 40, top: 1700, fontSize: 15, fontWeight: 600, color: "rgba(255,255,255,0.6)", textShadow: "0 2px 6px #000" }}>{credit}</div>
       )}
       <Sequence from={Math.round(GZ_LEAD * fps)} layout="none">
         <Audio src={staticFile(`gizem/${slug}/en/${scene.id}.wav`)} />
