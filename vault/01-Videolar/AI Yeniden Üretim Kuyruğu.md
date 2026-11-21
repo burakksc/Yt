@@ -12,7 +12,7 @@ Prompt/görsel: `projects/gizem/ai/prompts.json` → `projects/gizem/ai/imgs/` �
 ## Sıra 2 (Sıra 1 bittikten sonra)
 7. Svalbard · 8. Antikythera · 9. Baalbek · 10. Yonaguni · 11. Stardust · 12. Bermuda · 13. Kuzey Sentinel Adası · 14. Yılan Adası · 15. Metro-2 · 16. Derinkuyu · 17. Flannan Adaları · 18. Mary Celeste · 19. 1900'de bir gün · 20. Knocker-up · 21. Lector · 22. Human Computers
 
-## Listede olmayanlar (kullanıcı saymadı — sorulacak)
+## Listede olmayanlar — ŞİMDİLİK YAPILMAYACAK (kullanıcı, 2026-11-21)
 Yamantau, Pine Resin, Taos Hum, Dracula/Bran, Motor HP, Motor yağı, İstanbul, -100 °C TR, Kar tanesi TR, cozy videolar.
 
 ## Paralel
