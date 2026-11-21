@@ -1,0 +1,31 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "flannan__hook": {
+   "prompt": "a lonely white lighthouse on top of a tiny rocky island in a stormy grey atlantic sea, winter dusk"
+  },
+  "flannan__where": {
+   "prompt": "a small green cliff island with seabirds circling and a lighthouse, far out in the wide ocean"
+  },
+  "flannan__dark": {
+   "prompt": "an old steamship at night passing a dark island where the lighthouse is not shining, black sea, stars"
+  },
+  "flannan__relief": {
+   "prompt": "a small relief boat approaching steep island cliffs with an empty stone landing and steps, grey overcast"
+  },
+  "flannan__gone": {
+   "prompt": "one yellow oilskin coat hanging on a hook in an empty old lighthouse room, cold window light, quiet"
+  },
+  "flannan__myth": {
+   "prompt": "an old wooden table with a candle, an open logbook with blank pages and a tipped chair, eerie quiet room"
+  },
+  "flannan__wave": {
+   "prompt": "a giant storm wave crashing high over rocky island cliffs with broken iron railings, dramatic sea spray"
+  },
+  "flannan__end": {
+   "prompt": "the lighthouse on its rocky island at calm sunrise, gentle sea, seabirds, peaceful and still"
+  }
+ }
+}

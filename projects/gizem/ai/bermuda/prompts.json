@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "bermuda__hook": {
+   "prompt": "five 1940s propeller planes flying in formation over a bright blue ocean near a sunny Florida coast, no markings, no text"
+  },
+  "bermuda__flight": {
+   "prompt": "a single dark blue 1940s single-engine propeller bomber plane flying over calm sea, no markings, no text"
+  },
+  "bermuda__lost": {
+   "prompt": "an old aviation compass with a spinning needle on a plane dashboard, dark sea and orange sunset outside the window"
+  },
+  "bermuda__rescue": {
+   "prompt": "a big 1940s gull-winged flying boat seaplane flying low over a dark evening ocean, no markings, no text"
+  },
+  "bermuda__flame": {
+   "prompt": "a small distant orange glow in a dark night sky above a calm ocean, seen from the deck of an old ship, solemn"
+  },
+  "bermuda__legend": {
+   "prompt": "a vast empty atlantic ocean at twilight with a big triangle of soft light on the water, mysterious calm mood"
+  },
+  "bermuda__twist": {
+   "prompt": "many cargo ships and sailboats crossing a calm sunny blue sea, busy shipping lane, cheerful and ordinary"
+  }
+ }
+}

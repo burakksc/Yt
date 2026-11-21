@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "svalbard__hook": {
+   "prompt": "a lonely concrete wedge building entrance sticking out of a snowy arctic mountainside at blue dusk, soft glowing light strip on top, no text"
+  },
+  "svalbard__where": {
+   "prompt": "a snowy arctic island with steep white mountains and a cold dark fjord, tiny far north landscape, pale polar sky"
+  },
+  "svalbard__tunnel": {
+   "prompt": "a long straight rock tunnel with cold blue lights leading deep into a mountain, frosty walls, quiet and empty"
+  },
+  "svalbard__seeds": {
+   "prompt": "rows of tall metal shelves stacked with plain sealed boxes of seeds inside a frosty vault, cold blue light, no text"
+  },
+  "svalbard__frozen": {
+   "prompt": "a frozen arctic mountain slope covered in snow and permafrost, a small vault door in the rock, calm winter light"
+  },
+  "svalbard__syria": {
+   "prompt": "faceless farmers seen from behind planting seeds in a sunny green field, rows of young wheat sprouts, warm hope"
+  },
+  "svalbard__end": {
+   "prompt": "a tiny green seedling sprouting from snow in front of a mountain vault door, gentle golden arctic sunrise"
+  }
+ }
+}

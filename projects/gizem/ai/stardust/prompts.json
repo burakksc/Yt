@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "stardust__hook": {
+   "prompt": "snowy Andes mountain peaks above a sea of clouds at dusk, a tiny old four-engine propeller plane far away, calm and solemn"
+  },
+  "stardust__plane": {
+   "prompt": "a 1940s four-engine propeller airliner flying peacefully over brown mountains, silver body, no markings, no text"
+  },
+  "stardust__morse": {
+   "prompt": "an old brass telegraph morse key on a wooden desk with headphones and a glowing radio dial, cosy night lamp"
+  },
+  "stardust__search": {
+   "prompt": "empty snowy Andes mountains under heavy grey clouds, a small search plane searching far away, quiet and still"
+  },
+  "stardust__found": {
+   "prompt": "faceless mountaineers seen from behind climbing a huge glacier on a tall snowy volcano, bright cold sunlight"
+  },
+  "stardust__cause": {
+   "prompt": "strong wind streaks and long stretched clouds racing across the sky above snowy mountains, dramatic jet stream"
+  },
+  "stardust__end": {
+   "prompt": "close view of a blue glacier ice wall with cracks and layers, soft light, quiet and mysterious"
+  }
+ }
+}
