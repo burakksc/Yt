@@ -1,0 +1,21 @@
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/configuration_utils.py:281: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a model, please use <class 'diffusers.models.unets.unet_2d_condition.UNet2DConditionModel'>.load_config(...) followed by <class 'diffusers.models.unets.unet_2d_condition.UNet2DConditionModel'>.from_config(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+/root/.venvs/sd/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:  17%|█▋        | 88/517 [00:00<00:00, 841.50it/s][A
+Loading weights:  39%|███▊      | 200/517 [00:00<00:00, 990.99it/s][A
+Loading weights:  58%|█████▊    | 300/517 [00:00<00:00, 980.14it/s][A
+Loading weights:  79%|███████▉  | 408/517 [00:00<00:00, 1003.65it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 1051.88it/s]
+Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:01,  2.98it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:  95%|█████████▍| 186/196 [00:00<00:00, 1854.85it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1946.78it/s]
+Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:01,  3.93it/s]Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00,  4.74it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  6.79it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
