@@ -1,0 +1,14 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "knockerup__pole": {
+   "prompt": "a man in a flat cap seen from behind in a dark cobbled street before dawn, reaching up with a very long thin wooden pole to tap an upstairs window",
+   "seeds": [
+    2,
+    3
+   ]
+  }
+ }
+}
