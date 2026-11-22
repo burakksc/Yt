@@ -1294,7 +1294,7 @@
   "scenes": [
    {
     "id": "hook",
-    "img": "street",
+    "img": "day1900__hook",
     "title": "Then vs Now",
     "big": "1900",
     "bigSub": "one ordinary day · USA",
@@ -1302,7 +1302,7 @@
    },
    {
     "id": "morning",
-    "img": "ice",
+    "img": "day1900__morning",
     "title": "Dawn deliveries",
     "big": "",
     "bigSub": "",
@@ -1310,7 +1310,7 @@
    },
    {
     "id": "power",
-    "img": "lamp",
+    "img": "day1900__power",
     "title": "No electricity",
     "big": "< 5%",
     "bigSub": "of US homes had electricity",
@@ -1318,7 +1318,7 @@
    },
    {
     "id": "bath",
-    "img": "outhouse",
+    "img": "day1900__bath",
     "title": "The bathroom? Outside",
     "big": "",
     "bigSub": "",
@@ -1326,7 +1326,7 @@
    },
    {
     "id": "work",
-    "img": "mill",
+    "img": "day1900__work",
     "title": "Work",
     "big": "~60 h",
     "bigSub": "average work week · USA 1900",
@@ -1334,7 +1334,7 @@
    },
    {
     "id": "life",
-    "img": "people",
+    "img": "day1900__life",
     "title": "A shorter life",
     "big": "47",
     "bigSub": "US life expectancy at birth, 1900",
@@ -1342,7 +1342,7 @@
    },
    {
     "id": "dusk",
-    "img": "lamplighter",
+    "img": "day1900__dusk",
     "title": "Dusk",
     "big": "",
     "bigSub": "",
@@ -1350,7 +1350,7 @@
    },
    {
     "id": "end",
-    "img": "lamplighter2",
+    "img": "day1900__end",
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",

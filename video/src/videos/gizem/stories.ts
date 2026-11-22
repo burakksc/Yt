@@ -1571,29 +1571,27 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "street",
+    "img": "day1900__hook",
     "title": "Then vs Now",
     "big": "1900",
     "bigSub": "one ordinary day · USA",
     "text": "Then versus now. One ordinary day in America, in 1900.",
-    "fit": "contain",
     "vsec": 5.95,
     "sec": 6.7
    },
    {
     "id": "morning",
-    "img": "ice",
+    "img": "day1900__morning",
     "title": "Dawn deliveries",
     "big": "",
     "bigSub": "",
     "text": "At dawn, the milkman and the iceman arrive by horse and wagon. There's no fridge.",
-    "fit": "contain",
     "vsec": 6.35,
     "sec": 7.1
    },
    {
     "id": "power",
-    "img": "lamp",
+    "img": "day1900__power",
     "title": "No electricity",
     "big": "< 5%",
     "bigSub": "of US homes had electricity",
@@ -1603,40 +1601,37 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "bath",
-    "img": "outhouse",
+    "img": "day1900__bath",
     "title": "The bathroom? Outside",
     "big": "",
     "bigSub": "",
     "text": "The toilet? Usually an outhouse in the yard.",
-    "fit": "contain",
     "vsec": 3.9,
     "sec": 4.65
    },
    {
     "id": "work",
-    "img": "mill",
+    "img": "day1900__work",
     "title": "Work",
     "big": "~60 h",
     "bigSub": "average work week · USA 1900",
     "text": "The average worker puts in nearly sixty hours a week, often over six days.",
-    "fit": "contain",
     "vsec": 6.28,
     "sec": 7.03
    },
    {
     "id": "life",
-    "img": "people",
+    "img": "day1900__life",
     "title": "A shorter life",
     "big": "47",
     "bigSub": "US life expectancy at birth, 1900",
     "text": "A baby born in the US in 1900 could expect to live about forty seven years. Today, it's nearly eighty.",
-    "fit": "contain",
     "vsec": 9.05,
     "sec": 9.8
    },
    {
     "id": "dusk",
-    "img": "lamplighter",
+    "img": "day1900__dusk",
     "title": "Dusk",
     "big": "",
     "bigSub": "",
@@ -1646,7 +1641,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "lamplighter2",
+    "img": "day1900__end",
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
@@ -1656,14 +1651,14 @@ export const STORIES: Record<string, MyStory> = {
    }
   ],
   "credits": {
-   "street": "Photo: Detroit Publishing Co., c.1900 · Public domain (LoC)",
-   "ice": "Photo: Charles H. Currier, 1890 · Public domain (LoC)",
-   "lamp": "Photo: Navneetnivariya1993 · CC BY-SA 4.0 · Wikimedia Commons",
-   "outhouse": "Photo: Carol M. Highsmith · Public domain (LoC)",
-   "mill": "Photo: Lewis Hine, 1909 · Public domain (LoC)",
-   "people": "Photo: Detroit Photographic Co., c.1900 · Public domain (LoC)",
-   "lamplighter": "Photo: c.1903, via Jim Griffin · CC0",
-   "lamplighter2": "Photo: Boston Herald-Traveler, c.1926 · Public domain"
+   "day1900__hook": "AI-generated illustration",
+   "day1900__morning": "AI-generated illustration",
+   "day1900__power": "AI-generated illustration",
+   "day1900__bath": "AI-generated illustration",
+   "day1900__work": "AI-generated illustration",
+   "day1900__life": "AI-generated illustration",
+   "day1900__dusk": "AI-generated illustration",
+   "day1900__end": "AI-generated illustration"
   }
  },
  "knockerup": {
