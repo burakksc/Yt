@@ -125,3 +125,17 @@ Images (by scene):
 0:42 Washington asks — "US Capitol Dome on an Overcast Evening" by John Brighenti, CC BY 2.0, https://www.flickr.com/photos/94359914@N06/46185915012
 0:51 Still a secret — "Hiking to Malinovaya" by Aleksandr Zykov, CC BY-SA 2.0, https://www.flickr.com/photos/84292292@N00/21196273156
 ```
+
+## AI illüstrasyonla yeniden üretim (2026-11-21, akşam)
+Kullanıcı kararı ([[Güvenli Yayın Standardı]] KARAR): görseller AI illüstrasyon (yerel SDXL-Lightning, picture-book gouache stili). Gerçek fotoğraflı sürümler ve yukarıdaki görsel kredileri **geçersiz**, yayınlanmayacak.
+- Sırasıyla svalbard, stardust, bermuda, flannan. Yamantau bu listede yok.
+- Prompt'lar `projects/gizem/ai/<slug>/prompts.json` içinde; seçilen kareler `projects/gizem/ai/<slug>/sel/`. Sahne görsel adları artık `<slug>__<sahne>`.
+- Kötü çıkıp seed 2/3 ile yeniden üretilenler:
+  - svalbard seeds: kitaplık gibi görünüyordu.
+  - stardust hook ve plane: üzerinde yazı olan çift kanatlı uçak, ayrıca düşer gibi poz (saygısız).
+  - bermuda hook ve flight: belirgin rozet işaretleri.
+  - flannan dark: ışık yanıyordu. Yeni varyantlarda da hâlâ hafif yanıyor, kabul edildi.
+  - flannan gone: yüzü görünen bir kişi vardı.
+- SDXL "1940s plane" deyince çoğunlukla çift kanatlı uçak çiziyor. Uçaklar genel/stilize; açıklamada AI illüstrasyon olduğu yazıyor.
+- Teslim: `video/out/ready/<slug>.mp4` + `.txt` (TITLE / DESCRIPTION linksiz / HASHTAGS+TAGS / STUDIO: sentetik = Evet / RISK).
+- Ağır işler artık sadece `scripts/queue/heavy.sh <slug> ...` ile çalıştırılıyor. Doğrudan flock kullanılmıyor.
