@@ -21,4 +21,4 @@ There are modules in UNet2DConditionModel that should be kept in float32: []. Ca
 Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
 Loading weights:  53%|█████▎    | 104/196 [00:00<00:00, 976.55it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1110.31it/s]
 Loading pipeline components...:  86%|████████▌ | 6/7 [00:03<00:00,  2.34it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:03<00:00,  2.04it/s]
-  0%|          | 0/4 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:13<00:41, 13.84s/it] 50%|█████     | 2/4 [00:19<00:18,  9.30s/it] 75%|███████▌  | 3/4 [00:26<00:07,  7.97s/it]100%|██████████| 4/4 [00:32<00:00,  7.28s/it]100%|██████████| 4/4 [00:32<00:00,  8.14s/it]
