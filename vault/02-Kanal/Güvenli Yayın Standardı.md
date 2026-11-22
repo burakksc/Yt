@@ -58,3 +58,6 @@ Ayrı **hashtag satırı/bloğu VERME** (kullanıcı yazdıklarımı Studio'daki
 
 ## Logo (kullanıcı, 2026-11-21): KALDIRILDI
 Short'larda kanal logosu watermark'ı YOK ("logoyu kaldıralım"). `Watermark.tsx` no-op. Yukarıdaki "Short yerleşimi" bölümündeki logo satırı geçersiz; sadece sol alttaki küçük "AI-generated illustration" etiketi kalır.
+
+## Yabancı kelime okunuşu (kullanıcı, 2026-11-22)
+"Türkiye" Kokoro'da `[Türkiye](/tˈɜɹkiːjɛ/)` fonem işaretiyle okutulur (kullanıcı seçimi A). Ekran yazısı büyük harfte "TÜRKİYE" (WordCaptions + başlık düzeltmesi). Yeni yabancı yer adlarında önce okunuş örneklerini kullanıcıya dinlet.
