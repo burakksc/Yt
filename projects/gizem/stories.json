@@ -1493,7 +1493,7 @@
   "scenes": [
    {
     "id": "hook",
-    "img": "harvard",
+    "img": "humancomputers__hook",
     "title": "Then vs Now",
     "big": "Computer",
     "bigSub": "was once a job title",
@@ -1501,7 +1501,7 @@
    },
    {
     "id": "plates",
-    "img": "plates",
+    "img": "humancomputers__plates",
     "title": "The Harvard computers",
     "big": "",
     "bigSub": "",
@@ -1509,7 +1509,7 @@
    },
    {
     "id": "stars",
-    "img": "cannon",
+    "img": "humancomputers__stars",
     "title": "Annie Jump Cannon",
     "big": "350,000",
     "bigSub": "stars classified by hand",
@@ -1517,7 +1517,7 @@
    },
    {
     "id": "naca",
-    "img": "dryden",
+    "img": "humancomputers__naca",
     "title": "Computing flight",
     "big": "",
     "bigSub": "",
@@ -1525,7 +1525,7 @@
    },
    {
     "id": "kj",
-    "img": "johnson",
+    "img": "humancomputers__kj",
     "title": "Katherine Johnson",
     "big": "",
     "bigSub": "",
@@ -1533,7 +1533,7 @@
    },
    {
     "id": "glenn",
-    "img": "glenn",
+    "img": "humancomputers__glenn",
     "title": "Check the numbers",
     "big": "1962",
     "bigSub": "Friendship 7",
@@ -1541,7 +1541,7 @@
    },
    {
     "id": "launch",
-    "img": "launch",
+    "img": "humancomputers__launch",
     "title": "Three orbits",
     "big": "",
     "bigSub": "",
@@ -1549,7 +1549,7 @@
    },
    {
     "id": "end",
-    "img": "women1959",
+    "img": "humancomputers__end",
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",

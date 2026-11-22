@@ -19,4 +19,20 @@ There are modules in UNet2DConditionModel that should be kept in float32: []. Ca
 Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
 Loading weights:  53%|█████▎    | 104/196 [00:00<00:00, 919.78it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 950.10it/s]
 Loading pipeline components...:  57%|█████▋    | 4/7 [00:01<00:00,  3.17it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  5.72it/s]
-  0%|          | 0/4 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:08<00:26,  8.72s/it] 50%|█████     | 2/4 [00:15<00:15,  7.60s/it] 75%|███████▌  | 3/4 [00:21<00:06,  6.94s/it]100%|██████████| 4/4 [00:28<00:00,  6.75s/it]100%|██████████| 4/4 [00:28<00:00,  7.04s/it]
+saved projects/gizem/ai/humancomputers/imgs/humancomputers__hook_s1.png 46
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.99s/it] 50%|█████     | 2/4 [00:11<00:11,  5.99s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.93s/it]100%|██████████| 4/4 [00:24<00:00,  6.15s/it]100%|██████████| 4/4 [00:24<00:00,  6.08s/it]
+saved projects/gizem/ai/humancomputers/imgs/humancomputers__plates_s1.png 44
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:16,  5.58s/it] 50%|█████     | 2/4 [00:12<00:12,  6.11s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.40s/it]100%|██████████| 4/4 [00:27<00:00,  7.39s/it]100%|██████████| 4/4 [00:27<00:00,  6.93s/it]
+saved projects/gizem/ai/humancomputers/imgs/humancomputers__stars_s1.png 46
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.93s/it] 50%|█████     | 2/4 [00:12<00:12,  6.20s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.20s/it]100%|██████████| 4/4 [00:24<00:00,  6.10s/it]100%|██████████| 4/4 [00:24<00:00,  6.12s/it]
+saved projects/gizem/ai/humancomputers/imgs/humancomputers__naca_s1.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.22s/it] 50%|█████     | 2/4 [00:12<00:12,  6.21s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.35s/it]100%|██████████| 4/4 [00:25<00:00,  6.33s/it]100%|██████████| 4/4 [00:25<00:00,  6.31s/it]
+saved projects/gizem/ai/humancomputers/imgs/humancomputers__kj_s1.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.25s/it] 50%|█████     | 2/4 [00:12<00:12,  6.08s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.82s/it]100%|██████████| 4/4 [00:23<00:00,  5.95s/it]100%|██████████| 4/4 [00:23<00:00,  5.97s/it]
+saved projects/gizem/ai/humancomputers/imgs/humancomputers__glenn_s1.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:19,  6.33s/it] 50%|█████     | 2/4 [00:12<00:12,  6.18s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.18s/it]100%|██████████| 4/4 [00:24<00:00,  6.09s/it]100%|██████████| 4/4 [00:24<00:00,  6.13s/it]
+saved projects/gizem/ai/humancomputers/imgs/humancomputers__launch_s1.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.96s/it] 50%|█████     | 2/4 [00:12<00:12,  6.17s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.22s/it]100%|██████████| 4/4 [00:25<00:00,  6.43s/it]100%|██████████| 4/4 [00:25<00:00,  6.32s/it]
+saved projects/gizem/ai/humancomputers/imgs/humancomputers__end_s1.png 44
+ALLDONE

@@ -1,0 +1,27 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "humancomputers__hook": {
+   "prompt": "back view of three women in long Victorian dresses and hair buns sitting at wooden desks writing with pencils, seen from behind, heads turned away, bookshelves, warm lamp, no faces",
+   "seeds": [2, 3]
+  },
+  "humancomputers__plates": {
+   "prompt": "close-up of two hands holding a dark glass photographic plate with many tiny white star dots over a glowing light table, brass magnifying glass, no people, no face",
+   "seeds": [2, 3]
+  },
+  "humancomputers__stars": {
+   "prompt": "a night sky full of stars in colourful clusters above a round observatory building with a smooth plain dome and open telescope slit, simple rounded roof, nothing on top",
+   "seeds": [2, 3]
+  },
+  "humancomputers__naca": {
+   "prompt": "a 1950s office seen from the back of the room, rows of wooden desks with mechanical adding machines and paper sheets, women seen from behind with backs to viewer, small distant figures, no faces, no screens",
+   "seeds": [2, 3]
+  },
+  "humancomputers__kj": {
+   "prompt": "a woman seen fully from behind, back of head only, sitting at a 1960s desk covered in papers with orbit curve drawings and a slide rule, desk lamp, no face visible",
+   "seeds": [2, 3]
+  }
+ }
+}
