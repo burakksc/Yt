@@ -18,4 +18,8 @@ There are modules in UNet2DConditionModel that should be kept in float32: []. Ca
 Loading weights:  76%|███████▌  | 392/517 [00:00<00:00, 903.14it/s][A
 Loading weights:  95%|█████████▍| 490/517 [00:00<00:00, 925.28it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 917.72it/s]
 Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  4.42it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  4.99it/s]
-  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:07<00:23,  7.98s/it] 50%|█████     | 2/4 [00:13<00:13,  6.81s/it]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:07<00:23,  7.98s/it] 50%|█████     | 2/4 [00:13<00:13,  6.81s/it] 75%|███████▌  | 3/4 [00:20<00:06,  6.72s/it]100%|██████████| 4/4 [00:27<00:00,  6.65s/it]100%|██████████| 4/4 [00:27<00:00,  6.78s/it]
+saved projects/gizem/ai/lector/imgs_fixL/lector__paid_s2.png 45
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.82s/it] 50%|█████     | 2/4 [00:11<00:11,  5.80s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.77s/it]100%|██████████| 4/4 [00:23<00:00,  5.87s/it]100%|██████████| 4/4 [00:23<00:00,  5.84s/it]
+saved projects/gizem/ai/lector/imgs_fixL/lector__paid_s3.png 42
+ALLDONE
