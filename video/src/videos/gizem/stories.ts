@@ -1575,9 +1575,9 @@ export const STORIES: Record<string, MyStory> = {
     "title": "Then vs Now",
     "big": "1900",
     "bigSub": "one ordinary day · USA",
-    "text": "Then versus now. One ordinary day in America, in 1900.",
-    "vsec": 5.95,
-    "sec": 6.7
+    "text": "Step back to 1900, and see how an ordinary American day compares with yours.",
+    "vsec": 6.75,
+    "sec": 7.5
    },
    {
     "id": "morning",
@@ -1645,9 +1645,9 @@ export const STORIES: Record<string, MyStory> = {
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
-    "text": "Could you live one day in 1900?",
-    "vsec": 3.45,
-    "sec": 4.2
+    "text": "So, could you live just one day in 1900?",
+    "vsec": 3.98,
+    "sec": 4.72
    }
   ],
   "credits": {
@@ -1670,9 +1670,9 @@ export const STORIES: Record<string, MyStory> = {
     "title": "Then vs Now",
     "big": "5 a.m.",
     "bigSub": "a human alarm clock",
-    "text": "Then versus now. Before cheap alarm clocks, people paid someone to wake them up.",
-    "vsec": 6.2,
-    "sec": 6.95
+    "text": "Before alarm clocks were cheap, people paid someone to wake them up.",
+    "vsec": 5.03,
+    "sec": 5.78
    },
    {
     "id": "job",
@@ -1730,9 +1730,9 @@ export const STORIES: Record<string, MyStory> = {
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
-    "text": "Then, a tap on the glass. Now, your phone.",
-    "vsec": 3.85,
-    "sec": 4.6
+    "text": "Back then, a tap on the glass. Today, a buzz from your phone.",
+    "vsec": 4.97,
+    "sec": 5.72
    }
   ],
   "credits": {
@@ -1944,9 +1944,9 @@ export const STORIES: Record<string, MyStory> = {
     "title": "Then vs Now",
     "big": "1865",
     "bigSub": "Havana, Cuba",
-    "text": "Then versus now. Imagine rolling cigars all day while someone reads you novels.",
-    "vsec": 6.53,
-    "sec": 7.28
+    "text": "Imagine rolling cigars all day, while someone reads you novels.",
+    "vsec": 5.28,
+    "sec": 6.03
    },
    {
     "id": "who",
@@ -2014,9 +2014,9 @@ export const STORIES: Record<string, MyStory> = {
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
-    "text": "Cuba still has lectors today. Then, one voice for the room. Now, a podcast in every ear.",
-    "vsec": 7.28,
-    "sec": 8.03
+    "text": "Back then, one voice for the whole room. Today, a podcast in every ear.",
+    "vsec": 5.9,
+    "sec": 6.65
    }
   ],
   "credits": {
@@ -2039,9 +2039,9 @@ export const STORIES: Record<string, MyStory> = {
     "title": "Then vs Now",
     "big": "Computer",
     "bigSub": "was once a job title",
-    "text": "Then versus now. A computer used to be a person, often a woman with a pencil.",
-    "vsec": 6.38,
-    "sec": 7.12
+    "text": "Before computers were machines, computers were people, often women with pencils.",
+    "vsec": 6.53,
+    "sec": 7.28
    },
    {
     "id": "plates",
@@ -2109,9 +2109,9 @@ export const STORIES: Record<string, MyStory> = {
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
-    "text": "Then, rooms of pencils. Now, billions of sums a second, in your pocket.",
-    "vsec": 5.92,
-    "sec": 6.67
+    "text": "Back then, rooms full of pencils. Today, billions of sums a second, in your pocket.",
+    "vsec": 6.62,
+    "sec": 7.38
    }
   ],
   "credits": {

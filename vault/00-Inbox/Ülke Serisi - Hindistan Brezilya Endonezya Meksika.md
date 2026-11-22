@@ -15,3 +15,6 @@ Kullanıcı (2026-11-22): "Buralarda YouTube fazla izleniyormuş" → bu ülkele
 ## Notlar
 - Hassas: Tana Toraja ritüelleri, Kumbh izdihamları (kullanma), Bebekler Adası (korku/ölüm) → saygılı anlatım, korkutma yok.
 - Yerel dil: Kokoro İspanyolca/Portekizce(BR)/Hintçe destekler, Endonezyaca desteklemez.
+
+## Durum (2026-11-22)
+Senaryolar, görsel prompt'ları ve ses listesi hazır (`projects/gizem/country/scripts.json`, `projects/gizem/ai/<slug>/prompts.json`), **üretim DURDURULDU** (kullanıcı: "videoları üret" Then-vs-Now yeniden yapımını kastetmişti). Kullanıcı isteyince başlat.
