@@ -1,0 +1,26 @@
+[transformers] `CLIPImageProcessor` requires torchvision (not installed); falling back to `CLIPImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `CLIPImageProcessorPil` directly to silence this warning.
+[transformers] `SiglipImageProcessor` requires torchvision (not installed); falling back to `SiglipImageProcessorPil` for backward compatibility. Install torchvision to use the default backend, or import `SiglipImageProcessorPil` directly to silence this warning.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/configuration_utils.py:281: FutureWarning: It is deprecated to pass a pretrained model name or path to `from_config`.If you were trying to load a model, please use <class 'diffusers.models.unets.unet_2d_condition.UNet2DConditionModel'>.load_config(...) followed by <class 'diffusers.models.unets.unet_2d_condition.UNet2DConditionModel'>.from_config(...) instead. Otherwise, please make sure to pass a configuration dictionary instead. This functionality will be removed in v1.0.0.
+  deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
+/root/.venvs/sd/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:  97%|█████████▋| 191/196 [00:00<00:00, 1908.75it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1946.85it/s]
+Loading pipeline components...:  71%|███████▏  | 5/7 [00:00<00:00, 16.14it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:  17%|█▋        | 88/517 [00:00<00:00, 810.80it/s][A
+Loading weights:  36%|███▌      | 184/517 [00:00<00:00, 852.52it/s][A
+Loading weights:  52%|█████▏    | 270/517 [00:00<00:00, 846.26it/s][A
+Loading weights:  70%|███████   | 362/517 [00:00<00:00, 871.31it/s][A
+Loading weights:  88%|████████▊ | 456/517 [00:00<00:00, 881.21it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 891.91it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  5.13it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  6.01it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:27,  9.22s/it] 50%|█████     | 2/4 [00:15<00:14,  7.38s/it] 75%|███████▌  | 3/4 [00:21<00:06,  6.91s/it]100%|██████████| 4/4 [00:27<00:00,  6.59s/it]100%|██████████| 4/4 [00:27<00:00,  6.94s/it]
+saved projects/gizem/ai/maryceleste/imgs_fixB/maryceleste__aboard_s2.png 46
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.00s/it] 50%|█████     | 2/4 [00:12<00:12,  6.31s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.38s/it]100%|██████████| 4/4 [00:25<00:00,  6.30s/it]100%|██████████| 4/4 [00:25<00:00,  6.29s/it]
+saved projects/gizem/ai/maryceleste/imgs_fixB/maryceleste__aboard_s3.png 44
+ALLDONE
