@@ -4,7 +4,11 @@
  "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
  "items": {
   "knockerup__hook": {
-   "prompt": "a man in a flat cap seen from behind tapping an upstairs window with a long pole, brick terraced houses before dawn"
+   "prompt": "a man seen from behind holding a very long thin wooden pole up to tap an upstairs window, brick houses, dark blue dawn",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "knockerup__job": {
    "prompt": "a cobbled mill town street at dawn, tall factory chimneys with smoke, workers in shawls seen from behind"
@@ -13,10 +17,18 @@
    "prompt": "the tip of a long wooden pole tapping on an upstairs sash window glass, candle glow inside"
   },
   "knockerup__peas": {
-   "prompt": "an old woman in a shawl seen from the side blowing a long pea shooter up at a window, cobbled lane"
+   "prompt": "an old woman in a shawl in the street aiming a long thin pea shooter tube up at an upstairs window, dawn",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "knockerup__dutch": {
-   "prompt": "old Dutch gabled canal houses at dawn, a man seen from behind knocking a door with a stick"
+   "prompt": "Dutch canal with tall gabled houses at dawn, a man seen from behind holding a long stick at a doorway, boats",
+   "seeds": [
+    2,
+    3
+   ]
   },
   "knockerup__who": {
    "prompt": "a tired man seen from behind walking home at sunrise carrying a long pole, empty street"

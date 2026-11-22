@@ -1363,7 +1363,7 @@
   "scenes": [
    {
     "id": "hook",
-    "img": "slide",
+    "img": "knockerup__hook",
     "title": "Then vs Now",
     "big": "5 a.m.",
     "bigSub": "a human alarm clock",
@@ -1371,7 +1371,7 @@
    },
    {
     "id": "job",
-    "img": "blackburn",
+    "img": "knockerup__job",
     "title": "The knocker-up",
     "big": "",
     "bigSub": "",
@@ -1379,7 +1379,7 @@
    },
    {
     "id": "pole",
-    "img": "slide",
+    "img": "knockerup__pole",
     "title": "Tap, tap, tap",
     "big": "",
     "bigSub": "",
@@ -1387,7 +1387,7 @@
    },
    {
     "id": "peas",
-    "img": "peashooter",
+    "img": "knockerup__peas",
     "title": "Or a pea shooter",
     "big": "6d",
     "bigSub": "sixpence a week · London",
@@ -1395,7 +1395,7 @@
    },
    {
     "id": "dutch",
-    "img": "porder",
+    "img": "knockerup__dutch",
     "title": "Not just Britain",
     "big": "",
     "bigSub": "",
@@ -1403,7 +1403,7 @@
    },
    {
     "id": "who",
-    "img": "porder2",
+    "img": "knockerup__who",
     "title": "Who woke the knocker-up?",
     "big": "",
     "bigSub": "",
@@ -1411,7 +1411,7 @@
    },
    {
     "id": "end",
-    "img": "clock",
+    "img": "knockerup__end",
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",

@@ -1666,7 +1666,7 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "slide",
+    "img": "knockerup__hook",
     "title": "Then vs Now",
     "big": "5 a.m.",
     "bigSub": "a human alarm clock",
@@ -1676,18 +1676,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "job",
-    "img": "blackburn",
+    "img": "knockerup__job",
     "title": "The knocker-up",
     "big": "",
     "bigSub": "",
     "text": "In the mill towns of Britain and Ireland, they were called knocker-ups.",
-    "fit": "contain",
     "vsec": 5.25,
     "sec": 6.0
    },
    {
     "id": "pole",
-    "img": "slide",
+    "img": "knockerup__pole",
     "title": "Tap, tap, tap",
     "big": "",
     "bigSub": "",
@@ -1697,7 +1696,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "peas",
-    "img": "peashooter",
+    "img": "knockerup__peas",
     "title": "Or a pea shooter",
     "big": "6d",
     "bigSub": "sixpence a week · London",
@@ -1707,7 +1706,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "dutch",
-    "img": "porder",
+    "img": "knockerup__dutch",
     "title": "Not just Britain",
     "big": "",
     "bigSub": "",
@@ -1717,7 +1716,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "who",
-    "img": "porder2",
+    "img": "knockerup__who",
     "title": "Who woke the knocker-up?",
     "big": "",
     "bigSub": "",
@@ -1727,23 +1726,23 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "clock",
+    "img": "knockerup__end",
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
     "text": "Then, a tap on the glass. Now, your phone.",
-    "fit": "contain",
     "vsec": 3.85,
     "sec": 4.6
    }
   ],
   "credits": {
-   "slide": "Lantern slide, 1880-1900 · Public domain · Museums Victoria",
-   "blackburn": "Photo: Blackburn mill workers · Public domain (Cotton Town)",
-   "peashooter": "Painting: Eglon van der Neer, 1664 · Public domain",
-   "porder": "Photo: Nationaal Archief, 1947 · No known restrictions",
-   "porder2": "Photo: IISG, 1947 · CC BY-SA 2.0 · Wikimedia Commons",
-   "clock": "Photo: Lankyrider · CC BY-SA 4.0 · Wikimedia Commons"
+   "knockerup__hook": "AI-generated illustration",
+   "knockerup__job": "AI-generated illustration",
+   "knockerup__pole": "AI-generated illustration",
+   "knockerup__peas": "AI-generated illustration",
+   "knockerup__dutch": "AI-generated illustration",
+   "knockerup__who": "AI-generated illustration",
+   "knockerup__end": "AI-generated illustration"
   }
  },
  "flannan": {
