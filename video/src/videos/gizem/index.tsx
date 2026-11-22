@@ -67,7 +67,7 @@ const ScenePage: React.FC<{ slug: string; scene: MyScene; index: number; credit?
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,0.05) 55%, rgba(0,0,0,0.8) 100%)" }} />
       <Dust />
       <div style={{ position: "absolute", top: 260, left: 60, right: 60, textAlign: "center", opacity: t, transform: `translateY(${(1 - t) * -30}px)` }}>
-        <div style={{ fontSize: 76, fontWeight: 900, color: "white", lineHeight: 1.05, textShadow: "0 4px 24px rgba(0,0,0,0.85)" }}>{scene.title.toUpperCase()}</div>
+        <div style={{ fontSize: 76, fontWeight: 900, color: "white", lineHeight: 1.05, textShadow: "0 4px 24px rgba(0,0,0,0.85)" }}>{scene.title.toUpperCase().replace(/T[ÜU]RK[Iİ]YE/g, "TÜRKİYE")}</div>
       </div>
       {scene.big && (
         <div style={{ position: "absolute", top: 820, left: 40, right: 40, textAlign: "center", opacity: big, transform: `scale(${0.7 + 0.3 * big})` }}>

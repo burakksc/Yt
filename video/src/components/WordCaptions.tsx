@@ -96,7 +96,7 @@ export const WordCaptions: React.FC<{
               textShadow: "0 8px 18px rgba(0,0,0,0.45)",
             }}
           >
-            {w.text.toLocaleUpperCase(locale)}
+            {w.text.toLocaleUpperCase(locale).replace(/T[ÜU]RK[Iİ]YE/g, "TÜRKİYE")}
           </span>
         );
       })}
