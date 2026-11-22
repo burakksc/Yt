@@ -2035,29 +2035,27 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "harvard",
+    "img": "humancomputers__hook",
     "title": "Then vs Now",
     "big": "Computer",
     "bigSub": "was once a job title",
     "text": "Then versus now. A computer used to be a person, often a woman with a pencil.",
-    "fit": "contain",
     "vsec": 6.38,
     "sec": 7.12
    },
    {
     "id": "plates",
-    "img": "plates",
+    "img": "humancomputers__plates",
     "title": "The Harvard computers",
     "big": "",
     "bigSub": "",
     "text": "From the 1880s, Harvard Observatory hired women to study stars on glass plates.",
-    "fit": "contain",
     "vsec": 7.3,
     "sec": 8.05
    },
    {
     "id": "stars",
-    "img": "cannon",
+    "img": "humancomputers__stars",
     "title": "Annie Jump Cannon",
     "big": "350,000",
     "bigSub": "stars classified by hand",
@@ -2067,18 +2065,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "naca",
-    "img": "dryden",
+    "img": "humancomputers__naca",
     "title": "Computing flight",
     "big": "",
     "bigSub": "",
     "text": "NACA, later NASA, hired women computers too.",
-    "fit": "contain",
     "vsec": 4.75,
     "sec": 5.5
    },
    {
     "id": "kj",
-    "img": "johnson",
+    "img": "humancomputers__kj",
     "title": "Katherine Johnson",
     "big": "",
     "bigSub": "",
@@ -2088,18 +2085,17 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "glenn",
-    "img": "glenn",
+    "img": "humancomputers__glenn",
     "title": "Check the numbers",
     "big": "1962",
     "bigSub": "Friendship 7",
     "text": "In 1962, John Glenn wanted her to check the machine. Reportedly: if she says they're good, I'm ready to go.",
-    "fit": "contain",
     "vsec": 8.78,
     "sec": 9.53
    },
    {
     "id": "launch",
-    "img": "launch",
+    "img": "humancomputers__launch",
     "title": "Three orbits",
     "big": "",
     "bigSub": "",
@@ -2109,25 +2105,24 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "women1959",
+    "img": "humancomputers__end",
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
     "text": "Then, rooms of pencils. Now, billions of sums a second, in your pocket.",
-    "fit": "contain",
     "vsec": 5.92,
     "sec": 6.67
    }
   ],
   "credits": {
-   "harvard": "Photo: Harvard College Observatory, c.1891 · Public domain",
-   "plates": "Photo: Harvard University Archives, 1891 · Public domain",
-   "cannon": "Photo: Harvard, 1913 · Public domain",
-   "dryden": "Photo: NACA, 1949 · Public domain (NASA)",
-   "johnson": "Photo: NASA, 1966 · Public domain",
-   "glenn": "Photo: NASA, 1962 · Public domain",
-   "launch": "Photo: NASA, 1962 · Public domain",
-   "women1959": "Photo: NASA, 1959 · Public domain"
+   "humancomputers__hook": "AI-generated illustration",
+   "humancomputers__plates": "AI-generated illustration",
+   "humancomputers__stars": "AI-generated illustration",
+   "humancomputers__naca": "AI-generated illustration",
+   "humancomputers__kj": "AI-generated illustration",
+   "humancomputers__glenn": "AI-generated illustration",
+   "humancomputers__launch": "AI-generated illustration",
+   "humancomputers__end": "AI-generated illustration"
   }
  },
  "chocolate": {
