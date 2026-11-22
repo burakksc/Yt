@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "kawahijen__hook": {
+   "prompt": "a dark volcano crater at night with glowing electric blue flames and streams, dramatic, no people, no text, no letters"
+  },
+  "kawahijen__not": {
+   "prompt": "a yellow sulfur crust and small vents with blue flames flickering at night, close view, no people, no text, no letters"
+  },
+  "kawahijen__flow": {
+   "prompt": "blue glowing liquid streams running down a rocky slope in the dark, stylized, no text, no letters"
+  },
+  "kawahijen__lake": {
+   "prompt": "a bright turquoise crater lake with white steam drifting over it at dawn, wide view, no people, no text, no letters"
+  },
+  "kawahijen__miners": {
+   "prompt": "a silhouette of a worker with a basket seen from behind climbing steps in a smoky yellow crater at dawn, no face, no text, no letters"
+  },
+  "kawahijen__risk": {
+   "prompt": "thick white and yellow gas clouds filling a crater, a tiny figure from behind far away, solemn mood, no text, no letters"
+  },
+  "kawahijen__end": {
+   "prompt": "blue flames glowing at the bottom of a dark crater under a starry sky, peaceful and serious, no people, no text, no letters"
+  }
+ }
+}

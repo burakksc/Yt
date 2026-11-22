@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "axolotl__hook": {
+   "prompt": "a cute pink axolotl with feathery gills smiling in clear water, centered, simple shapes, no text, no letters"
+  },
+  "axolotl__where": {
+   "prompt": "colorful flat boats on green canals with floating gardens in Mexico City, a tiny axolotl in the water, no people, no text, no letters"
+  },
+  "axolotl__baby": {
+   "prompt": "an axolotl with big feathery gills next to a small land salamander for comparison, simple picture, no text, no letters"
+  },
+  "axolotl__regrow": {
+   "prompt": "an axolotl with a new small front leg growing back beside a drawn dotted outline of the old leg, no text, no letters"
+  },
+  "axolotl__science": {
+   "prompt": "a microscope and a glass tank with an axolotl on a lab table, warm light, no people, no text, no letters"
+  },
+  "axolotl__wild": {
+   "prompt": "a lonely axolotl in murky green canal water with a few empty lily pads, solemn, no text, no letters"
+  },
+  "axolotl__end": {
+   "prompt": "a clean clear canal with water plants and a small axolotl hiding among them, hopeful light, no people, no text, no letters"
+  }
+ }
+}

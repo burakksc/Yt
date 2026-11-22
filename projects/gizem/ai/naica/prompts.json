@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "naica__hook": {
+   "prompt": "a cave filled with huge white crystal beams criss-crossing, warm lamp glow, no people, no text, no letters"
+  },
+  "naica__size": {
+   "prompt": "a huge white crystal beam compared with a tiny human silhouette from behind, no face, no text, no letters"
+  },
+  "naica__what": {
+   "prompt": "white crystal beams growing under glowing hot blue water, cutaway cave, simple shapes, no text, no letters"
+  },
+  "naica__heat": {
+   "prompt": "hot orange steam in a crystal cave with a red thermometer symbol, no people, no text, no letters"
+  },
+  "naica__suit": {
+   "prompt": "a researcher in a bulky silver cooling suit seen from behind in a crystal cave, no face, no text, no letters"
+  },
+  "naica__flood": {
+   "prompt": "dark water slowly rising around white crystals in a cave, quiet mood, no people, no text, no letters"
+  },
+  "naica__end": {
+   "prompt": "a glowing white crystal beam half under dark still water, mysterious, no people, no text, no letters"
+  }
+ }
+}

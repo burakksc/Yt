@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "lencois__hook": {
+   "prompt": "endless white sand dunes under a dramatic sky with turquoise pools between them, wide view, no people, no text, no letters"
+  },
+  "lencois__dunes": {
+   "prompt": "tall smooth white sand dunes with sharp wind-carved ridges, soft golden light, no people, no text, no letters"
+  },
+  "lencois__lagoons": {
+   "prompt": "many turquoise lagoons scattered between white dunes seen from above, bright and clear, no text, no letters"
+  },
+  "lencois__why": {
+   "prompt": "a cutaway view of white dune sand over a dark flat waterproof layer holding a blue lagoon, simple diagram style, no text, no letters"
+  },
+  "lencois__fish": {
+   "prompt": "a small silvery fish in a clear lagoon next to a cracked dry mud patch, close view, no text, no letters"
+  },
+  "lencois__unesco": {
+   "prompt": "a calm lagoon at sunset reflecting orange sky between pale dunes, peaceful, no people, no text, no letters"
+  },
+  "lencois__end": {
+   "prompt": "a single wooden boat floating on a turquoise lagoon surrounded by dunes, from far away, no faces, no text, no letters"
+  }
+ }
+}

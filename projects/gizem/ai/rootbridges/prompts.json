@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "rootbridges__hook": {
+   "prompt": "a stone-colored river gorge in a green rainforest with a thick tangle of tree roots forming a bridge over a stream, misty morning, no people, no text, no letters"
+  },
+  "rootbridges__grow": {
+   "prompt": "young tree roots wrapped along a bamboo frame stretching over a jungle stream, close view, no people, no text, no letters"
+  },
+  "rootbridges__slow": {
+   "prompt": "a calendar-like row of the same root bridge shown growing thicker in several stages, soft jungle light, no people, no text, no letters"
+  },
+  "rootbridges__strong": {
+   "prompt": "a thick old tree root bridge covered with moss over a clear river, sturdy and ancient, no people, no text, no letters"
+  },
+  "rootbridges__long": {
+   "prompt": "a very long root bridge crossing a wide misty valley river, seen from far away, tiny silhouettes of walkers from behind, no text, no letters"
+  },
+  "rootbridges__unesco": {
+   "prompt": "a green village hillside in monsoon rain with a root bridge below, wide scenic view, no people, no text, no letters"
+  },
+  "rootbridges__end": {
+   "prompt": "two hands from behind guiding a young green root onto a bamboo frame in the jungle, warm light, no faces, no text, no letters"
+  }
+ }
+}

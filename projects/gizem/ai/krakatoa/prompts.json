@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "krakatoa__hook": {
+   "prompt": "a huge volcanic explosion over a tropical island with a giant ash column, dramatic orange sky, simple shapes, no text, no letters"
+  },
+  "krakatoa__sound": {
+   "prompt": "concentric sound waves spreading across a globe from a small island, stylized map picture, no text, no letters"
+  },
+  "krakatoa__waves": {
+   "prompt": "a giant dark wave rising over a small coastal village seen from far away, no people, no text, no letters"
+  },
+  "krakatoa__sky": {
+   "prompt": "a dramatic deep red and purple sunset sky over a quiet harbor with old ships, no people, no text, no letters"
+  },
+  "krakatoa__cool": {
+   "prompt": "a thermometer drawn over a snowy landscape beside a pale sun, simple shapes, no text, no letters"
+  },
+  "krakatoa__child": {
+   "prompt": "a small new volcanic cone rising from the sea at dawn with a thin smoke trail, calm mood, no text, no letters"
+  },
+  "krakatoa__end": {
+   "prompt": "a calm sea with a tiny volcano silhouette on the horizon under a starry sky, peaceful, no people, no text, no letters"
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "botodolphin__hook": {
+   "prompt": "a pink river dolphin breaking the surface of a brown Amazon river, simple shapes, calm morning, no text, no letters"
+  },
+  "botodolphin__born": {
+   "prompt": "a small grey baby river dolphin swimming beside a larger pinkish dolphin in brown water, no text, no letters"
+  },
+  "botodolphin__male": {
+   "prompt": "two pink river dolphins facing each other in murky water, bubbles, gentle mood, no text, no letters"
+  },
+  "botodolphin__neck": {
+   "prompt": "a pink river dolphin bending its long snout and neck sideways between underwater roots, no text, no letters"
+  },
+  "botodolphin__flood": {
+   "prompt": "a pink dolphin swimming among tall tree trunks in flooded green rainforest, light rays under water, no text, no letters"
+  },
+  "botodolphin__size": {
+   "prompt": "a large pink dolphin next to a small wooden canoe seen from above on a wide brown river, no people, no text, no letters"
+  },
+  "botodolphin__end": {
+   "prompt": "an empty fishing net floating in a river at sunset with a dolphin fin far away, solemn, no text, no letters"
+  }
+ }
+}

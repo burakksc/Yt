@@ -1670,5 +1670,493 @@
     "text": "Out here, life runs on seasons, not schedules. Would you live somewhere you can only reach when the river freezes?"
    }
   ]
+ },
+ "rootbridges": {
+  "title": "LIVING ROOT BRIDGES",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "rootbridges__hook",
+    "title": "Bridges that grow",
+    "big": "",
+    "bigSub": "",
+    "text": "In the rainy hills of Meghalaya, in India, there are bridges that are alive."
+   },
+   {
+    "id": "grow",
+    "img": "rootbridges__grow",
+    "title": "Guided roots",
+    "big": "",
+    "bigSub": "",
+    "text": "Villagers guide the roots of rubber fig trees across the river, using bamboo and hollow trunks to hold them."
+   },
+   {
+    "id": "slow",
+    "img": "rootbridges__slow",
+    "title": "Patience",
+    "big": "",
+    "bigSub": "",
+    "text": "It takes about fifteen years before a bridge is strong enough to walk on."
+   },
+   {
+    "id": "strong",
+    "img": "rootbridges__strong",
+    "title": "Stronger with age",
+    "big": "",
+    "bigSub": "",
+    "text": "And unlike steel, it gets stronger as the roots keep thickening, so some can last for hundreds of years."
+   },
+   {
+    "id": "long",
+    "img": "rootbridges__long",
+    "title": "One of the longest",
+    "big": "",
+    "bigSub": "",
+    "text": "One of the longest is about fifty three metres across."
+   },
+   {
+    "id": "unesco",
+    "img": "rootbridges__unesco",
+    "title": "World Heritage hopes",
+    "big": "",
+    "bigSub": "",
+    "text": "Their villages were added to India's tentative list for UNESCO World Heritage in twenty twenty two."
+   },
+   {
+    "id": "end",
+    "img": "rootbridges__end",
+    "title": "Grown, not built",
+    "big": "",
+    "bigSub": "",
+    "text": "You don't build this bridge once. You grow it, and the next generation inherits it."
+   }
+  ]
+ },
+ "roopkund": {
+  "title": "THE SKELETON LAKE",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "roopkund__hook",
+    "title": "A lake of bones",
+    "big": "",
+    "bigSub": "",
+    "text": "High in the Indian Himalayas, a frozen lake is surrounded by human skeletons."
+   },
+   {
+    "id": "where",
+    "img": "roopkund__where",
+    "title": "5,000 metres up",
+    "big": "",
+    "bigSub": "",
+    "text": "Roopkund Lake sits at about five thousand metres, and its bones were left in the ice and snow."
+   },
+   {
+    "id": "old",
+    "img": "roopkund__old",
+    "title": "One disaster?",
+    "big": "",
+    "bigSub": "",
+    "text": "For years, people assumed everyone died together in one disaster, around eight hundred A.D."
+   },
+   {
+    "id": "dna",
+    "img": "roopkund__dna",
+    "title": "DNA surprise",
+    "big": "",
+    "bigSub": "",
+    "text": "In twenty nineteen, scientists studied the DNA of thirty eight of the skeletons, and found they were not one group."
+   },
+   {
+    "id": "south",
+    "img": "roopkund__south",
+    "title": "Two eras",
+    "big": "",
+    "bigSub": "",
+    "text": "Most had South Asian ancestry, but they died at different times, in more than one event."
+   },
+   {
+    "id": "med",
+    "img": "roopkund__med",
+    "title": "From far away",
+    "big": "",
+    "bigSub": "",
+    "text": "Another fourteen had Mediterranean ancestry, and died about a thousand years later."
+   },
+   {
+    "id": "end",
+    "img": "roopkund__end",
+    "title": "Still unsolved",
+    "big": "",
+    "bigSub": "",
+    "text": "Why were Mediterranean travellers in the Himalayas? The study could not say."
+   }
+  ]
+ },
+ "botodolphin": {
+  "title": "THE PINK DOLPHIN",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "botodolphin__hook",
+    "title": "A pink dolphin",
+    "big": "",
+    "bigSub": "",
+    "text": "In the Amazon, there is a dolphin that turns pink."
+   },
+   {
+    "id": "born",
+    "img": "botodolphin__born",
+    "title": "Born grey",
+    "big": "",
+    "bigSub": "",
+    "text": "Amazon river dolphins are born grey, and slowly turn pink as they grow."
+   },
+   {
+    "id": "male",
+    "img": "botodolphin__male",
+    "title": "Pinker males",
+    "big": "",
+    "bigSub": "",
+    "text": "Males tend to be pinker than females, and scientists link this to scars from fights."
+   },
+   {
+    "id": "neck",
+    "img": "botodolphin__neck",
+    "title": "Flexible neck",
+    "big": "",
+    "bigSub": "",
+    "text": "Their neck bones are not fused like most dolphins, so they can bend and turn their heads easily."
+   },
+   {
+    "id": "flood",
+    "img": "botodolphin__flood",
+    "title": "Swimming in forest",
+    "big": "",
+    "bigSub": "",
+    "text": "When the rains flood the forest, they swim between the trees."
+   },
+   {
+    "id": "size",
+    "img": "botodolphin__size",
+    "title": "Biggest river dolphin",
+    "big": "",
+    "bigSub": "",
+    "text": "It is the largest river dolphin species in the world."
+   },
+   {
+    "id": "end",
+    "img": "botodolphin__end",
+    "title": "Under pressure",
+    "big": "",
+    "bigSub": "",
+    "text": "But fishing and pollution put them at risk, and scientists are still working out how many remain."
+   }
+  ]
+ },
+ "lencois": {
+  "title": "THE DESERT THAT FLOODS",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "lencois__hook",
+    "title": "Desert or not?",
+    "big": "",
+    "bigSub": "",
+    "text": "This looks like a desert in Brazil. But it gets far more rain than a real desert."
+   },
+   {
+    "id": "dunes",
+    "img": "lencois__dunes",
+    "title": "Giant dunes",
+    "big": "",
+    "bigSub": "",
+    "text": "Lençóis Maranhenses has endless white dunes, some about forty metres high."
+   },
+   {
+    "id": "lagoons",
+    "img": "lencois__lagoons",
+    "title": "Blue lagoons",
+    "big": "",
+    "bigSub": "",
+    "text": "Between January and June, rain fills the valleys between the dunes, and thousands of blue lagoons appear."
+   },
+   {
+    "id": "why",
+    "img": "lencois__why",
+    "title": "Why they stay",
+    "big": "",
+    "bigSub": "",
+    "text": "A layer of hard, waterproof sediment under the sand stops the water from draining away."
+   },
+   {
+    "id": "fish",
+    "img": "lencois__fish",
+    "title": "Life returns",
+    "big": "",
+    "bigSub": "",
+    "text": "Fish arrive with the water, and some survive the dry season by sleeping in the mud."
+   },
+   {
+    "id": "unesco",
+    "img": "lencois__unesco",
+    "title": "World Heritage",
+    "big": "",
+    "bigSub": "",
+    "text": "In twenty twenty four, the park became a UNESCO World Heritage site."
+   },
+   {
+    "id": "end",
+    "img": "lencois__end",
+    "title": "Would you swim?",
+    "big": "",
+    "bigSub": "",
+    "text": "A desert that floods. Would you swim in it?"
+   }
+  ]
+ },
+ "krakatoa": {
+  "title": "KRAKATOA 1883",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "krakatoa__hook",
+    "title": "The loudest sound",
+    "big": "",
+    "bigSub": "",
+    "text": "In eighteen eighty three, a volcano in Indonesia made the loudest sound in modern history."
+   },
+   {
+    "id": "sound",
+    "img": "krakatoa__sound",
+    "title": "Heard around the world",
+    "big": "",
+    "bigSub": "",
+    "text": "People heard it nearly five thousand kilometres away, and its pressure wave circled the Earth more than three times."
+   },
+   {
+    "id": "waves",
+    "img": "krakatoa__waves",
+    "title": "Giant waves",
+    "big": "",
+    "bigSub": "",
+    "text": "Huge tsunamis struck the nearby coasts, and over thirty thousand people died, mostly from the waves."
+   },
+   {
+    "id": "sky",
+    "img": "krakatoa__sky",
+    "title": "Red sunsets",
+    "big": "",
+    "bigSub": "",
+    "text": "Ash and gas in the upper air painted vivid red sunsets around the world for months."
+   },
+   {
+    "id": "cool",
+    "img": "krakatoa__cool",
+    "title": "A cooler world",
+    "big": "",
+    "bigSub": "",
+    "text": "Global temperatures dipped, and took about five years to return to normal."
+   },
+   {
+    "id": "child",
+    "img": "krakatoa__child",
+    "title": "Anak Krakatau",
+    "big": "",
+    "bigSub": "",
+    "text": "Today, a new volcano called Anak Krakatau, the Child of Krakatoa, rises where it once stood."
+   },
+   {
+    "id": "end",
+    "img": "krakatoa__end",
+    "title": "Still active",
+    "big": "",
+    "bigSub": "",
+    "text": "A reminder that the ground beneath the sea is still alive."
+   }
+  ]
+ },
+ "kawahijen": {
+  "title": "THE BLUE FIRE",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "kawahijen__hook",
+    "title": "Blue fire",
+    "big": "",
+    "bigSub": "",
+    "text": "Deep inside a volcano in Indonesia, a river of fire glows electric blue."
+   },
+   {
+    "id": "not",
+    "img": "kawahijen__not",
+    "title": "Not lava",
+    "big": "",
+    "bigSub": "",
+    "text": "It is not lava. It is sulfur gas, burning when it meets the air."
+   },
+   {
+    "id": "flow",
+    "img": "kawahijen__flow",
+    "title": "Burning rivers",
+    "big": "",
+    "bigSub": "",
+    "text": "Some of the sulfur condenses into liquid, which burns and flows like blue lava."
+   },
+   {
+    "id": "lake",
+    "img": "kawahijen__lake",
+    "title": "Acid lake",
+    "big": "",
+    "bigSub": "",
+    "text": "Next to it lies a turquoise crater lake, one of the most acidic in the world."
+   },
+   {
+    "id": "miners",
+    "img": "kawahijen__miners",
+    "title": "Sulfur miners",
+    "big": "",
+    "bigSub": "",
+    "text": "Miners climb down into the crater, often at night, to collect the yellow sulfur."
+   },
+   {
+    "id": "risk",
+    "img": "kawahijen__risk",
+    "title": "Harsh fumes",
+    "big": "",
+    "bigSub": "",
+    "text": "The fumes are hard on the lungs, and the work is dangerous."
+   },
+   {
+    "id": "end",
+    "img": "kawahijen__end",
+    "title": "Beauty and labour",
+    "big": "",
+    "bigSub": "",
+    "text": "Beauty and hard labour, side by side, inside one crater."
+   }
+  ]
+ },
+ "naica": {
+  "title": "THE CAVE OF CRYSTALS",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "naica__hook",
+    "title": "Giant crystals",
+    "big": "",
+    "bigSub": "",
+    "text": "Nearly three hundred metres under a Mexican desert, there is a cave of giant crystals."
+   },
+   {
+    "id": "size",
+    "img": "naica__size",
+    "title": "Over 11 metres",
+    "big": "",
+    "bigSub": "",
+    "text": "Some of the crystals are over eleven metres long, among the largest natural crystals ever found."
+   },
+   {
+    "id": "what",
+    "img": "naica__what",
+    "title": "Selenite",
+    "big": "",
+    "bigSub": "",
+    "text": "They are selenite, a form of gypsum, grown slowly in hot, mineral rich water."
+   },
+   {
+    "id": "heat",
+    "img": "naica__heat",
+    "title": "Deadly heat",
+    "big": "",
+    "bigSub": "",
+    "text": "But the air is about fifty eight degrees Celsius, and extremely humid."
+   },
+   {
+    "id": "suit",
+    "img": "naica__suit",
+    "title": "Cooling suits",
+    "big": "",
+    "bigSub": "",
+    "text": "Without special cooling gear, a person can survive there only a short time."
+   },
+   {
+    "id": "flood",
+    "img": "naica__flood",
+    "title": "Flooding again",
+    "big": "",
+    "bigSub": "",
+    "text": "The mine closed in twenty fifteen because of flooding, and the cave is hard to reach today."
+   },
+   {
+    "id": "end",
+    "img": "naica__end",
+    "title": "Sealed again",
+    "big": "",
+    "bigSub": "",
+    "text": "A hidden world, grown in the dark, and sealed away again."
+   }
+  ]
+ },
+ "axolotl": {
+  "title": "THE AXOLOTL",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "axolotl__hook",
+    "title": "Smiling regrower",
+    "big": "",
+    "bigSub": "",
+    "text": "This smiling animal can grow back its own limbs."
+   },
+   {
+    "id": "where",
+    "img": "axolotl__where",
+    "title": "Only in Xochimilco",
+    "big": "",
+    "bigSub": "",
+    "text": "It is the axolotl, and in the wild it lives only around Xochimilco, near Mexico City."
+   },
+   {
+    "id": "baby",
+    "img": "axolotl__baby",
+    "title": "Never grows up",
+    "big": "",
+    "bigSub": "",
+    "text": "Unlike most salamanders, it keeps its baby features, like feathery gills, for life."
+   },
+   {
+    "id": "regrow",
+    "img": "axolotl__regrow",
+    "title": "Regrowing",
+    "big": "",
+    "bigSub": "",
+    "text": "It can regrow limbs, organs, and even parts of its brain."
+   },
+   {
+    "id": "science",
+    "img": "axolotl__science",
+    "title": "Why scientists care",
+    "big": "",
+    "bigSub": "",
+    "text": "That is why scientists study them, hoping to learn more about healing."
+   },
+   {
+    "id": "wild",
+    "img": "axolotl__wild",
+    "title": "Critically endangered",
+    "big": "",
+    "bigSub": "",
+    "text": "In the wild, they are critically endangered, with fewer than a thousand estimated to remain."
+   },
+   {
+    "id": "end",
+    "img": "axolotl__end",
+    "title": "Help needed",
+    "big": "",
+    "bigSub": "",
+    "text": "Polluted canals and invasive fish hurt them. Thousands live in tanks, but wild ones need help."
+   }
+  ]
  }
 }

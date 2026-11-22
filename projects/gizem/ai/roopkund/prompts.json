@@ -1,0 +1,28 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "roopkund__hook": {
+   "prompt": "a small dark lake in a snowy high mountain bowl with scattered pale bones on the shore, cold blue light, no people, no text, no letters"
+  },
+  "roopkund__where": {
+   "prompt": "a vast snowy Himalayan basin with a tiny frozen lake far below tall white peaks, wide view, no people, no text, no letters"
+  },
+  "roopkund__old": {
+   "prompt": "a stormy dark sky over a snowy mountain pass with hail falling, dramatic, no people, no text, no letters"
+  },
+  "roopkund__dna": {
+   "prompt": "a glowing DNA double helix drawn over an old skull on a lab table, simple shapes, no faces, no text, no letters"
+  },
+  "roopkund__south": {
+   "prompt": "two rows of simple bone icons on a timeline stretching across a snowy landscape, no faces, no text, no letters"
+  },
+  "roopkund__med": {
+   "prompt": "an old sailing ship on a blue sea next to snowy mountains in the same picture, dreamlike, no people, no text, no letters"
+  },
+  "roopkund__end": {
+   "prompt": "a lonely trail of footprints in deep snow leading up toward a misty mountain lake, no people, no text, no letters"
+  }
+ }
+}
