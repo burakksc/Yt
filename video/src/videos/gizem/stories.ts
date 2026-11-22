@@ -1940,62 +1940,57 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "havana",
+    "img": "lector__hook",
     "title": "Then vs Now",
     "big": "1865",
     "bigSub": "Havana, Cuba",
     "text": "Then versus now. Imagine rolling cigars all day while someone reads you novels.",
-    "fit": "contain",
     "vsec": 6.53,
     "sec": 7.28
    },
    {
     "id": "who",
-    "img": "reader",
+    "img": "lector__who",
     "title": "El lector",
     "big": "",
     "bigSub": "",
     "text": "In Cuban cigar factories, this was a real job, starting in Havana in 1865.",
-    "fit": "contain",
     "vsec": 7.62,
     "sec": 8.38
    },
    {
     "id": "platform",
-    "img": "platform",
+    "img": "lector__platform",
     "title": "News, then novels",
     "big": "",
     "bigSub": "",
     "text": "From a platform, he read the news in the morning, and novels in the afternoon.",
-    "fit": "contain",
     "vsec": 6.0,
     "sec": 6.75
    },
    {
     "id": "paid",
-    "img": "workers",
+    "img": "lector__paid",
     "title": "Paid by the workers",
     "big": "",
     "bigSub": "",
     "text": "The workers paid him themselves, and voted on what he read.",
-    "fit": "contain",
     "vsec": 4.62,
     "sec": 5.38
    },
    {
     "id": "tampa",
-    "img": "tampa",
+    "img": "lector__tampa",
     "title": "Tampa, Florida",
     "big": "1931",
     "bigSub": "readers banned in Tampa",
     "text": "The tradition reached Tampa, Florida. After a strike in 1931, owners banned the readers.",
-    "fit": "contain",
     "vsec": 7.85,
     "sec": 8.6
    },
    {
     "id": "monte",
-    "img": "montecristo",
+    "img": "lector__monte",
     "title": "Named after a novel?",
     "big": "",
     "bigSub": "",
@@ -2005,7 +2000,7 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "romeo",
-    "img": "romeo",
+    "img": "lector__romeo",
     "title": "Romeo y Julieta",
     "big": "",
     "bigSub": "",
@@ -2015,25 +2010,24 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "stand",
+    "img": "lector__end",
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
     "text": "Cuba still has lectors today. Then, one voice for the room. Now, a podcast in every ear.",
-    "fit": "contain",
     "vsec": 7.28,
     "sec": 8.03
    }
   ],
   "credits": {
-   "havana": "Postcard: Harris Bros., Havana, c.1907 · Public domain",
-   "reader": "Photo: Lewis Hine, 1909 · Public domain (LoC)",
-   "platform": "Photo: Burgert Bros., Tampa 1929 · Public domain",
-   "workers": "Photo: Ybor City, 1920 · Public domain",
-   "tampa": "Postcard: Tichnor Bros. (BPL) · CC BY-SA 4.0 · Wikimedia Commons",
-   "montecristo": "Poster: Louis Français, 1846 · Public domain",
-   "romeo": "Painting: Frank Dicksee, 1884 · Public domain",
-   "stand": "Photo: Infrogmation · CC BY-SA 3.0 · Wikimedia Commons"
+   "lector__hook": "AI-generated illustration",
+   "lector__who": "AI-generated illustration",
+   "lector__platform": "AI-generated illustration",
+   "lector__paid": "AI-generated illustration",
+   "lector__tampa": "AI-generated illustration",
+   "lector__monte": "AI-generated illustration",
+   "lector__romeo": "AI-generated illustration",
+   "lector__end": "AI-generated illustration"
   }
  },
  "humancomputers": {
