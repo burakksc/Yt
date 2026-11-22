@@ -1851,73 +1851,67 @@ export const STORIES: Record<string, MyStory> = {
   "scenes": [
    {
     "id": "hook",
-    "img": "mc_amazon",
+    "img": "maryceleste__hook",
     "title": "The ghost ship",
     "big": "1872",
     "bigSub": "found adrift",
     "text": "In December 1872, a ship was found adrift in the Atlantic, with no one aboard.",
-    "fit": "contain",
     "vsec": 7.53,
     "sec": 8.28
    },
    {
     "id": "ship",
-    "img": "mc_ship",
+    "img": "maryceleste__ship",
     "title": "The Mary Celeste",
     "big": "1,701",
     "bigSub": "barrels of alcohol",
     "text": "She was the Mary Celeste, bound from New York to Genoa with barrels of alcohol.",
-    "fit": "contain",
     "vsec": 6.15,
     "sec": 6.9
    },
    {
     "id": "found",
-    "img": "mc_sea",
+    "img": "maryceleste__found",
     "title": "Found adrift",
     "big": "~400 mi",
     "bigSub": "east of the Azores",
     "text": "Another ship, the Dei Gratia, found her about four hundred miles east of the Azores.",
-    "fit": "contain",
     "vsec": 6.67,
     "sec": 7.42
    },
    {
     "id": "aboard",
-    "img": "mc_flag",
+    "img": "maryceleste__aboard",
     "title": "What was left",
     "big": "6 months",
     "bigSub": "of food and water",
     "text": "Six months of food and water were still aboard. But the lifeboat was gone.",
-    "fit": "contain",
     "vsec": 5.85,
     "sec": 6.6
    },
    {
     "id": "people",
-    "img": "mc_sea",
+    "img": "maryceleste__people",
     "title": "Ten people",
     "big": "10",
     "bigSub": "never seen again",
     "text": "Captain Briggs, his wife, their little daughter and seven crew were never seen again.",
-    "fit": "contain",
     "vsec": 6.25,
     "sec": 7.0
    },
    {
     "id": "court",
-    "img": "mc_gib",
+    "img": "maryceleste__court",
     "title": "The inquiry",
     "big": "",
     "bigSub": "Gibraltar, 1873",
     "text": "An inquiry in Gibraltar found no sign of violence.",
-    "fit": "contain",
     "vsec": 4.65,
     "sec": 5.4
    },
    {
     "id": "doyle",
-    "img": "mc_doyle",
+    "img": "maryceleste__doyle",
     "title": "Fiction becomes legend",
     "big": "1884",
     "bigSub": "Conan Doyle's story",
@@ -1927,23 +1921,24 @@ export const STORIES: Record<string, MyStory> = {
    },
    {
     "id": "end",
-    "img": "mc_amazon",
+    "img": "maryceleste__end",
     "title": "What happened?",
     "big": "",
     "bigSub": "",
     "text": "One theory: fearing the alcohol might explode, they fled in the lifeboat.",
-    "fit": "contain",
     "vsec": 5.65,
     "sec": 6.4
    }
   ],
   "credits": {
-   "mc_amazon": "Painting: anonymous, 1861 (public domain)",
-   "mc_ship": "Painting: anonymous, 1861 (public domain)",
-   "mc_flag": "Painting: anonymous, 1861 (public domain)",
-   "mc_doyle": "Photo: Arnold Genthe / Library of Congress (CC0)",
-   "mc_gib": "Photo: kanu101 · CC BY 2.0 · Flickr",
-   "mc_sea": "Photo: M McBey · CC BY 2.0 · Flickr"
+   "maryceleste__hook": "AI-generated illustration",
+   "maryceleste__ship": "AI-generated illustration",
+   "maryceleste__found": "AI-generated illustration",
+   "maryceleste__aboard": "AI-generated illustration",
+   "maryceleste__people": "AI-generated illustration",
+   "maryceleste__court": "AI-generated illustration",
+   "maryceleste__doyle": "AI-generated illustration",
+   "maryceleste__end": "AI-generated illustration"
   }
  },
  "lector": {
