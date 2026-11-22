@@ -1,0 +1,7 @@
+{"w":768,"h":1344,
+ "style":"flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items":{
+  "stardust__hook":{"prompt":"a small silver four-engine propeller airliner with a long round body and four propellers on straight wings, flying level far away above snowy mountain peaks and clouds at dusk, side view","seeds":[21,22,23,24]},
+  "stardust__plane":{"prompt":"a silver four-engine propeller airliner with a long slim round body, four propellers, straight low wings and a tail with two fins, flying above white clouds, side view, simple shapes","seeds":[21,22,23,24]},
+  "stardust__search":{"prompt":"a small silver four-engine propeller airplane with a long round body flying far away over snowy mountains under grey clouds, side view, quiet","seeds":[21,22,23,24]}
+ }}
