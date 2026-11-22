@@ -1,0 +1,14 @@
+{
+ "w": 768,
+ "h": 1344,
+ "style": "flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items": {
+  "lector__paid": {
+   "prompt": "workers' hands dropping copper coins into a plain wooden bowl on a cigar-rolling table with tobacco leaves, warm factory light",
+   "seeds": [
+    2,
+    3
+   ]
+  }
+ }
+}

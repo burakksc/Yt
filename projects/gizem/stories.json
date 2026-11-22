@@ -1424,7 +1424,7 @@
   "scenes": [
    {
     "id": "hook",
-    "img": "havana",
+    "img": "lector__hook",
     "title": "Then vs Now",
     "big": "1865",
     "bigSub": "Havana, Cuba",
@@ -1432,7 +1432,7 @@
    },
    {
     "id": "who",
-    "img": "reader",
+    "img": "lector__who",
     "title": "El lector",
     "big": "",
     "bigSub": "",
@@ -1440,7 +1440,7 @@
    },
    {
     "id": "platform",
-    "img": "platform",
+    "img": "lector__platform",
     "title": "News, then novels",
     "big": "",
     "bigSub": "",
@@ -1448,7 +1448,7 @@
    },
    {
     "id": "paid",
-    "img": "workers",
+    "img": "lector__paid",
     "title": "Paid by the workers",
     "big": "",
     "bigSub": "",
@@ -1456,7 +1456,7 @@
    },
    {
     "id": "tampa",
-    "img": "tampa",
+    "img": "lector__tampa",
     "title": "Tampa, Florida",
     "big": "1931",
     "bigSub": "readers banned in Tampa",
@@ -1464,7 +1464,7 @@
    },
    {
     "id": "monte",
-    "img": "montecristo",
+    "img": "lector__monte",
     "title": "Named after a novel?",
     "big": "",
     "bigSub": "",
@@ -1472,7 +1472,7 @@
    },
    {
     "id": "romeo",
-    "img": "romeo",
+    "img": "lector__romeo",
     "title": "Romeo y Julieta",
     "big": "",
     "bigSub": "",
@@ -1480,7 +1480,7 @@
    },
    {
     "id": "end",
-    "img": "stand",
+    "img": "lector__end",
     "title": "Then vs Now",
     "big": "",
     "bigSub": "",
