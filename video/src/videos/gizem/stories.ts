@@ -1481,8 +1481,8 @@ export const STORIES: Record<string, MyStory> = {
     "big": "1963",
     "bigSub": "a hidden passage",
     "text": "In 1963, a man in Türkiye knocked through a wall in his house, and found a passage.",
-    "vsec": 7.38,
-    "sec": 8.12
+    "vsec": 7.35,
+    "sec": 8.1
    },
    {
     "id": "where",
