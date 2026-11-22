@@ -6,3 +6,17 @@
   warnings.warn(
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:00, 11.22it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:  14%|█▍        | 72/517 [00:00<00:00, 630.94it/s][A
+Loading weights:  36%|███▌      | 184/517 [00:00<00:00, 872.19it/s][A
+Loading weights:  57%|█████▋    | 296/517 [00:00<00:00, 941.34it/s][A
+Loading weights:  76%|███████▌  | 392/517 [00:00<00:00, 945.59it/s][A
+Loading weights:  94%|█████████▍| 488/517 [00:00<00:00, 940.96it/s][ALoading weights: 100%|██████████| 517/517 [00:00<00:00, 940.07it/s]
+
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:  53%|█████▎    | 104/196 [00:00<00:00, 919.78it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 950.10it/s]
+Loading pipeline components...:  57%|█████▋    | 4/7 [00:01<00:00,  3.17it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  5.72it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
