@@ -1,0 +1,7 @@
+{"w":768,"h":1344,
+ "style":"flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items":{
+  "bermuda__hook":{"prompt":"five small dark blue single-wing WWII navy torpedo bomber planes flying in a V formation high above a calm blue sea, seen from far away, simple shapes, one pair of straight wings each, round propeller nose","seeds":[11,12,13,14]},
+  "bermuda__flight":{"prompt":"one stubby dark blue WWII navy torpedo bomber monoplane with a single pair of wings, fat round body, big round propeller nose and a bubble canopy, flying over the sea, side view","seeds":[11,12,13,14]},
+  "bermuda__rescue":{"prompt":"one large grey twin-engine seaplane flying boat with a high straight wing over the sea, side view, two propeller engines, simple shapes","seeds":[11,12,13,14]}
+ }}
