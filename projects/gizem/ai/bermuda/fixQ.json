@@ -1,0 +1,7 @@
+{"w":768,"h":1344,
+ "style":"flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items":{
+  "bermuda__hook":{"prompt":"five tiny dark silhouettes of propeller planes flying in a V formation far away in a vast golden sunset sky above a calm sea, seen from very far, only simple dark shapes, no details, no markings, no text","seeds":[31,32,33,34]},
+  "bermuda__flight":{"prompt":"a single tiny dark silhouette of a propeller plane far away against huge dramatic clouds over the ocean, very small in the frame, simple dark shape, no markings, no text","seeds":[31,32,33,34]},
+  "bermuda__rescue":{"prompt":"a lone small dark silhouette of a seaplane far away above a wide dark ocean at dusk, faint white wake on the water below, very small, simple shape, no markings, no text","seeds":[31,32,33,34]}
+ }}
