@@ -1,0 +1,7 @@
+{"w":768,"h":1344,
+ "style":"flat children's picture-book gouache painting, bold simple shapes, visible brush strokes, limited warm palette, illustration",
+ "items":{
+  "stardust__hook":{"prompt":"a tiny dark silhouette of a propeller airliner far away above snowy mountain peaks at dusk, pink and purple sky, very small in the frame, simple dark shape, no markings, no text","seeds":[41,42,43,44]},
+  "stardust__plane":{"prompt":"a small dark silhouette of a four-engine propeller airliner far away among huge white clouds, blue sky, very small, simple dark shape, no markings, no text","seeds":[41,42,43,44]},
+  "stardust__search":{"prompt":"snowy mountains under grey clouds, a tiny faint dark speck of a plane very far away in the sky, quiet empty landscape, no markings, no text","seeds":[41,42,43,44]}
+ }}
