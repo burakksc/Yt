@@ -5,3 +5,97 @@
 /root/.venvs/sd/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
   warnings.warn(
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:   0%|          | 2/517 [00:19<1:25:45,  9.99s/it][A
+Loading weights:   5%|▍         | 25/517 [00:20<04:44,  1.73it/s] [A
+Loading weights:   9%|▉         | 48/517 [00:20<02:02,  3.84it/s][A
+Loading weights:  19%|█▉        | 100/517 [00:21<00:40, 10.36it/s][A
+Loading weights:  22%|██▏       | 113/517 [00:21<00:36, 11.12it/s][A
+Loading weights:  23%|██▎       | 121/517 [00:23<00:41,  9.51it/s][A
+Loading weights:  26%|██▋       | 136/517 [00:24<00:39,  9.69it/s][A
+Loading weights:  28%|██▊       | 147/517 [00:25<00:30, 12.09it/s][A
+Loading weights:  30%|██▉       | 153/517 [00:28<00:57,  6.32it/s][A
+Loading weights:  32%|███▏      | 168/517 [00:30<00:52,  6.60it/s][A
+Loading weights:  33%|███▎      | 171/517 [00:30<00:50,  6.81it/s][A
+Loading weights:  36%|███▌      | 184/517 [00:32<00:43,  7.61it/s][A
+Loading weights:  36%|███▌      | 186/517 [00:33<00:47,  7.02it/s][A
+Loading weights:  36%|███▋      | 188/517 [00:33<00:50,  6.57it/s][A
+Loading weights:  39%|███▊      | 200/517 [00:34<00:39,  8.06it/s][A
+Loading weights:  39%|███▉      | 202/517 [00:35<00:46,  6.83it/s][A
+Loading weights:  42%|████▏     | 216/517 [00:38<00:58,  5.18it/s][A
+Loading weights:  42%|████▏     | 218/517 [00:38<00:57,  5.21it/s][A
+Loading weights:  45%|████▍     | 232/517 [00:40<00:42,  6.64it/s][A
+Loading weights:  45%|████▌     | 234/517 [00:40<00:44,  6.36it/s][A
+Loading weights:  45%|████▌     | 235/517 [00:41<00:51,  5.46it/s][A
+Loading weights:  48%|████▊     | 248/517 [00:42<00:32,  8.28it/s][A
+Loading weights:  48%|████▊     | 250/517 [00:42<00:37,  7.20it/s][A
+Loading weights:  51%|█████     | 264/517 [00:45<00:46,  5.49it/s][A
+Loading weights:  51%|█████▏    | 266/517 [00:46<00:44,  5.60it/s][A
+Loading weights:  53%|█████▎    | 275/517 [00:46<00:28,  8.38it/s][A
+Loading weights:  54%|█████▍    | 280/517 [00:47<00:34,  6.92it/s][A
+Loading weights:  56%|█████▋    | 292/517 [00:48<00:26,  8.53it/s][A
+Loading weights:  57%|█████▋    | 296/517 [00:49<00:30,  7.34it/s][A
+Loading weights:  58%|█████▊    | 298/517 [00:51<00:47,  4.60it/s][A
+Loading weights:  60%|██████    | 312/517 [00:52<00:34,  5.97it/s][A
+Loading weights:  61%|██████    | 314/517 [00:54<00:42,  4.82it/s][A
+Loading weights:  63%|██████▎   | 328/517 [00:54<00:23,  8.11it/s][A
+Loading weights:  66%|██████▌   | 341/517 [00:55<00:15, 11.70it/s][A
+Loading weights:  66%|██████▋   | 343/517 [00:55<00:18,  9.58it/s][A
+Loading weights:  67%|██████▋   | 345/517 [00:57<00:36,  4.73it/s][A
+Loading weights:  67%|██████▋   | 347/517 [00:58<00:41,  4.10it/s][A
+Loading weights:  70%|██████▉   | 360/517 [00:59<00:22,  7.08it/s][A
+Loading weights:  70%|███████   | 362/517 [01:00<00:27,  5.73it/s][A
+Loading weights:  72%|███████▏  | 370/517 [01:01<00:21,  6.80it/s][A
+Loading weights:  73%|███████▎  | 376/517 [01:03<00:27,  5.20it/s][A
+Loading weights:  76%|███████▌  | 392/517 [01:05<00:20,  6.10it/s][A
+Loading weights:  76%|███████▌  | 394/517 [01:06<00:23,  5.23it/s][A
+Loading weights:  79%|███████▉  | 408/517 [01:07<00:14,  7.64it/s][A
+Loading weights:  79%|███████▉  | 410/517 [01:07<00:15,  7.12it/s][A
+Loading weights:  79%|███████▉  | 411/517 [01:07<00:15,  6.75it/s][A
+Loading weights:  82%|████████▏ | 423/517 [01:08<00:10,  9.08it/s][A
+Loading weights:  82%|████████▏ | 424/517 [01:09<00:11,  8.06it/s][A
+Loading weights:  82%|████████▏ | 426/517 [01:10<00:20,  4.48it/s][A
+Loading weights:  85%|████████▌ | 440/517 [01:11<00:10,  7.64it/s][A
+Loading weights:  85%|████████▌ | 442/517 [01:12<00:12,  5.82it/s][A
+Loading weights:  88%|████████▊ | 456/517 [01:14<00:08,  6.99it/s][A
+Loading weights:  88%|████████▊ | 457/517 [01:14<00:09,  6.58it/s][A
+Loading weights:  91%|█████████▏| 472/517 [01:17<00:07,  5.67it/s][A
+Loading weights:  94%|█████████▍| 488/517 [01:18<00:03,  8.00it/s][A
+Loading weights:  95%|█████████▍| 490/517 [01:20<00:04,  5.52it/s][A
+Loading weights:  97%|█████████▋| 504/517 [01:20<00:01,  8.22it/s][ALoading weights: 100%|██████████| 517/517 [01:20<00:00,  6.38it/s]
+Loading pipeline components...:  14%|█▍        | 1/7 [01:21<08:11, 81.97s/it]Loading pipeline components...:  43%|████▎     | 3/7 [01:22<01:25, 21.35s/it]Loading pipeline components...:  57%|█████▋    | 4/7 [01:34<00:54, 18.13s/it]Loading pipeline components...:  71%|███████▏  | 5/7 [01:35<00:25, 12.53s/it]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:   1%|          | 2/196 [00:07<12:17,  3.80s/it][A
+Loading weights:  60%|█████▉    | 117/196 [00:07<00:03, 21.21it/s][A
+Loading weights:  81%|████████  | 158/196 [00:09<00:01, 20.59it/s][A
+Loading weights:  93%|█████████▎| 182/196 [00:11<00:00, 18.31it/s][ALoading weights: 100%|██████████| 196/196 [00:11<00:00, 16.53it/s]
+Loading pipeline components...: 100%|██████████| 7/7 [01:48<00:00,  9.49s/it]Loading pipeline components...: 100%|██████████| 7/7 [01:48<00:00, 15.43s/it]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:27,  9.27s/it] 50%|█████     | 2/4 [00:15<00:15,  7.63s/it] 75%|███████▌  | 3/4 [00:21<00:06,  6.78s/it]100%|██████████| 4/4 [00:27<00:00,  6.61s/it]100%|██████████| 4/4 [00:27<00:00,  6.97s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__hook_s31.png 48
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.68s/it] 50%|█████     | 2/4 [00:11<00:11,  5.65s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.77s/it]100%|██████████| 4/4 [00:24<00:00,  6.18s/it]100%|██████████| 4/4 [00:24<00:00,  6.01s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__hook_s32.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:20,  6.68s/it] 50%|█████     | 2/4 [00:13<00:13,  6.58s/it] 75%|███████▌  | 3/4 [00:19<00:06,  6.39s/it]100%|██████████| 4/4 [00:25<00:00,  6.43s/it]100%|██████████| 4/4 [00:25<00:00,  6.46s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__hook_s33.png 44
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.22s/it] 50%|█████     | 2/4 [00:12<00:12,  6.02s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.02s/it]100%|██████████| 4/4 [00:23<00:00,  5.71s/it]100%|██████████| 4/4 [00:23<00:00,  5.84s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__hook_s34.png 42
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.16s/it] 50%|█████     | 2/4 [00:11<00:11,  5.97s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.84s/it]100%|██████████| 4/4 [00:23<00:00,  5.94s/it]100%|██████████| 4/4 [00:23<00:00,  5.94s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__flight_s31.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.31s/it] 50%|█████     | 2/4 [00:12<00:12,  6.32s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.19s/it]100%|██████████| 4/4 [00:25<00:00,  6.34s/it]100%|██████████| 4/4 [00:25<00:00,  6.31s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__flight_s32.png 44
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:16,  5.47s/it] 50%|█████     | 2/4 [00:10<00:10,  5.33s/it] 75%|███████▌  | 3/4 [00:16<00:05,  5.51s/it]100%|██████████| 4/4 [00:22<00:00,  5.58s/it]100%|██████████| 4/4 [00:22<00:00,  5.53s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__flight_s33.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:19,  6.50s/it] 50%|█████     | 2/4 [00:12<00:12,  6.12s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.85s/it]100%|██████████| 4/4 [00:23<00:00,  5.76s/it]100%|██████████| 4/4 [00:23<00:00,  5.87s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__flight_s34.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:20,  6.84s/it] 50%|█████     | 2/4 [00:13<00:13,  6.67s/it] 75%|███████▌  | 3/4 [00:19<00:06,  6.35s/it]100%|██████████| 4/4 [00:25<00:00,  6.08s/it]100%|██████████| 4/4 [00:25<00:00,  6.26s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__rescue_s31.png 44
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.16s/it] 50%|█████     | 2/4 [00:11<00:11,  5.81s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.84s/it]100%|██████████| 4/4 [00:23<00:00,  6.00s/it]100%|██████████| 4/4 [00:23<00:00,  5.96s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__rescue_s32.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:05<00:17,  5.98s/it] 50%|█████     | 2/4 [00:12<00:12,  6.41s/it] 75%|███████▌  | 3/4 [00:19<00:06,  6.48s/it]100%|██████████| 4/4 [00:25<00:00,  6.44s/it]100%|██████████| 4/4 [00:25<00:00,  6.41s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__rescue_s33.png 46
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:19,  6.58s/it] 50%|█████     | 2/4 [00:13<00:13,  6.65s/it] 75%|███████▌  | 3/4 [00:19<00:06,  6.66s/it]100%|██████████| 4/4 [00:26<00:00,  6.64s/it]100%|██████████| 4/4 [00:26<00:00,  6.64s/it]
+saved projects/gizem/ai/bermuda/imgs_fixQ/bermuda__rescue_s34.png 44
+ALLDONE
