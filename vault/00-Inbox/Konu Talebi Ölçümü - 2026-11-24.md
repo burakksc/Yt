@@ -25,3 +25,18 @@ Yöntem: `yt-dlp --flat-playlist "ytsearch20:<sorgu>" --print "%(view_count)s"` 
 
 Referans kanal @HowTheyDidIt-YT: 135 Shorts, ortanca 23K, en iyi 410K ("How Ancient Romans Saw Underwater"), hepsi "How Ancient Romans …" kalıbı; ilk 3'ün ikisi su altı. Birçok başlık tarihsel olarak şüpheli ("underwater acoustic fleet detectors").
 Uyarı: arama sonucu izlenmesi talebin göstergesi, garanti değil.
+
+## Osmanlı (kullanıcı isteği)
+| Konu | max | med10 | >1M |
+|---|---|---|---|
+| İstanbul'un fethi (genel) | 10,2M | 1,80M | 8 |
+| Lokum nasıl yapılır | 10,3M | 1,45M | 6 |
+| "How Ottomans" genel | 10,2M | 1,14M | 6 |
+| Osmanlı kompozit yayı | 7,5M | 399K | 2 |
+| Ebru | 666K | 194K | 0 |
+| Osmanlı kılıcı | 2,2M | 187K | 1 |
+| Yeniçeri eğitimi | 1,2M | 98K | 1 |
+| Hamam ısıtma | 3,9M | 86K | 1 |
+| Şahi topu | 446K | 36K | 0 |
+| Gemiler karadan (özel sorgu) | 1,2M | 225 | 1 ← yüksek talepli konunun az işlenmiş açısı |
+| Su terazisi / Hezarfen / Lagari / Sinan / tulumbacı / kar taşıma | düşük | <10K | — |
