@@ -9,6 +9,8 @@ import {
 import { Eksi100Hikaye } from "./videos/eksi-100-hikaye";
 import { CozyAlley, LOOP_FPS, LOOP_FRAMES } from "./videos/cozy-alley";
 import { SlingVideo } from "./videos/sling";
+import { KilerVideo } from "./videos/kiler";
+import { KILER_FPS, KILER_FRAMES } from "./videos/kiler/story";
 import { BebekSling } from "./videos/bebek-sling";
 import { EsnekSargi } from "./videos/esnek-sargi";
 import { Test3D } from "./videos/test-3d";
@@ -208,6 +210,14 @@ export const RemotionRoot: React.FC = () => {
         component={CozyAlley}
         durationInFrames={LOOP_FRAMES}
         fps={LOOP_FPS}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Kilerler"
+        component={KilerVideo}
+        durationInFrames={KILER_FRAMES}
+        fps={KILER_FPS}
         width={1920}
         height={1080}
       />
