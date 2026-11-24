@@ -43,3 +43,7 @@ Bkz: [[Kanal Kimliği]], [[Marka Rehberi]]
 Kullanılan **her görsel ve her alıntı** için kaynak ver: videoda kare altı kredi (yazar · lisans · site), açıklamada "Images:" listesi (yazar, başlık, lisans, link) + "Sources:" (bilgi/alıntı kaynakları), kullanıcıya sunarken de aynı referanslar.
 
 **Ek (2026-11-21):** Açıklamada her görsel için **hangi sahnede/karede kullanıldığı + kimden olduğu** yazılır: `<sahne/zaman> — <görsel adı>, by <yazar>, <lisans>, <URL>`.
+
+## AI video (2026-11-24)
+- **FLUX.1-schnell** (Apache-2.0) + **Wan 2.2** (Apache-2.0) → çıktılar ticari kullanıma uygun; model sahipleri çıktı üzerinde hak iddia etmiyor. Ücretsiz HF Space (ZeroGPU) üzerinden, kullanıcının ücretsiz HF token'ıyla.
+- Kurallar: (1) "değiştirilmiş veya sentetik içerik" kutusu işaretlenir; (2) prompt'ta gerçek kişi, marka, film/oyun karakteri, yaşayan sanatçı stili yok; (3) referans kanalların video/başlık/sahnelerini birebir kopyalama — konu serbest, anlatım bizim; (4) her video özgün araştırma + kurgu (YouTube "özgün olmayan içerik" politikası = asıl para kazanma riski); (5) saf AI çıktı çoğu ülkede telif koruması almaz → başkası kliplerimizi kullanabilir, ama kurgulu videonun bütünü bizim.
