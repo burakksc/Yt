@@ -14,6 +14,7 @@ import { KILER_FPS, KILER_FRAMES } from "./videos/kiler/story";
 import { BebekSling } from "./videos/bebek-sling";
 import { EsnekSargi } from "./videos/esnek-sargi";
 import { Test3D } from "./videos/test-3d";
+import { TestDiver } from "./videos/test-diver";
 import { Avatar } from "./videos/brand/Avatar";
 import { IstanbulAlti, IstanbulAltiTR } from "./videos/istanbul-alti";
 import { KarTanesiShort } from "./videos/kar-tanesi";
@@ -242,6 +243,14 @@ export const RemotionRoot: React.FC = () => {
         component={EsnekSargi}
         durationInFrames={SARGI_FRAMES}
         fps={SARGI_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TestDiver"
+        component={TestDiver}
+        durationInFrames={150}
+        fps={30}
         width={1080}
         height={1920}
       />

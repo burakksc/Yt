@@ -8,3 +8,7 @@ Kullanıcı bu tarz videolar istiyor: https://youtube.com/shorts/rm58VUp5QD8
 - Önerilen yollar: (A) kullanıcı Flow'da bizim hazır prompt'larımızla klip üretir, gerisi bizde; (B) tamamen bizde: Commons tabloları/fotoğrafları + 2.5D parallax + Remotion (AI yok).
 - Riskler: AI sahnede tarihî yanlış (kapaktaki cam dalış çanı Roma için uydurma) → araştırma şart; YouTube "sentetik içerik" kutusu; seri üretilmiş AI içerik politikası → her bölümde özgün araştırma + kurgu.
 - Karar: kullanıcıda (bekliyor).
+
+## Test (2026-11-24)
+- **3D (ücretsiz):** `TestDiver` (1080×1920, 5 sn) → `video/src/videos/test-diver/`. Su altı: kostik doku (canvas'ta üretilip bulanıklaştırılmış), ışık huzmeleri (additive koni), sis, balık sürüsü, kabarcık, deniz çayırı, iple tekneye bağlı dalgıç. Render ~1 dk / 5 sn. Zayıf nokta: insan figürü "tahta manken" gibi.
+- **Wan 2.2 (ücretsiz HF Space):** ağ izni eklendi (`zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space`, `black-forest-labs-flux-1-schnell.hf.space`). Anonim ZeroGPU kotası bu bulut IP'sinde dolu → **ücretsiz HF hesabı token'ı** gerekiyor. Betik: FLUX.1-schnell (ilk kare) → Wan 2.2 I2V (5 sn).
