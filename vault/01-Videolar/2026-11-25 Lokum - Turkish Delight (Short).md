@@ -9,3 +9,8 @@
 
 ## Kural
 Mucit iddiası "reportedly"; Pers benzerleri not edilir. Görsel: AI gerçekçi sahne (yüzsüz figür, yazı/logo yok).
+
+## Durum (2026-11-25)
+- Video yapıldı ve gönderildi (still görseller + zoom). Kullanıcı "hareketli değil" dedi.
+- HF ZeroGPU günlük kotası doldu (FLUX + Wan 2.2). Seçenekler: yarın Wan 2.2 ile gerçek klip / yerel derinlik paralaksı / HF PRO. Kullanıcı şimdilik yeni fikre geçti; hareketli sürüm bekliyor.
+- Etiket önerisi: köşe etiketi "AI-generated image" olmalı (görseller artık foto-gerçekçi).
