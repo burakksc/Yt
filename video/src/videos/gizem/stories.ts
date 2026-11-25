@@ -2280,6 +2280,90 @@ export const STORIES: Record<string, MyStory> = {
    "delivery": "AI-generated illustration",
    "end": "AI-generated illustration"
   }
+ },
+ "lokum": {
+  "title": "TURKISH DELIGHT",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "lokum__hook",
+    "title": "Turkish delight",
+    "big": "",
+    "bigSub": "",
+    "text": "One sweet from Istanbul made a whole continent crave it. How did Turkish delight conquer Europe?",
+    "vsec": 7.38,
+    "sec": 8.12
+   },
+   {
+    "id": "name",
+    "img": "lokum__name",
+    "title": "Lokum",
+    "big": "",
+    "bigSub": "",
+    "text": "Its Turkish name, lokum, likely comes from an Arabic phrase meaning comfort of the throat.",
+    "vsec": 6.8,
+    "sec": 7.55
+   },
+   {
+    "id": "shop",
+    "img": "lokum__shop",
+    "title": "Hacı Bekir",
+    "big": "1777",
+    "bigSub": "Istanbul shop",
+    "text": "Confectioner Hacı Bekir reportedly opened his shop in Istanbul in 1777, selling soft sweets of starch and sugar.",
+    "vsec": 10.5,
+    "sec": 11.25
+   },
+   {
+    "id": "persia",
+    "img": "lokum__persia",
+    "title": "Who invented it?",
+    "big": "",
+    "bigSub": "",
+    "text": "But similar sweets existed in Persia earlier, so the true inventor is unknown.",
+    "vsec": 6.55,
+    "sec": 7.3
+   },
+   {
+    "id": "trip",
+    "img": "lokum__trip",
+    "title": "The traveler",
+    "big": "1830s",
+    "bigSub": "the name is born",
+    "text": "In the 1830s, an English traveler reportedly took a box home and called it Turkish delight.",
+    "vsec": 7.88,
+    "sec": 8.62
+   },
+   {
+    "id": "europe",
+    "img": "lokum__europe",
+    "title": "Conquering Europe",
+    "big": "",
+    "bigSub": "",
+    "text": "Soon it filled shop windows across Europe, and later a boy in Narnia betrayed his siblings for it.",
+    "vsec": 7.45,
+    "sec": 8.2
+   },
+   {
+    "id": "end",
+    "img": "lokum__end",
+    "title": "Still made by hand",
+    "big": "1777",
+    "bigSub": "and still loved",
+    "text": "Today it is still cut by hand in Istanbul. Which flavor would you try first?",
+    "vsec": 6.05,
+    "sec": 6.8
+   }
+  ],
+  "credits": {
+   "lokum__hook": "AI-generated illustration",
+   "lokum__name": "AI-generated illustration",
+   "lokum__shop": "AI-generated illustration",
+   "lokum__persia": "AI-generated illustration",
+   "lokum__trip": "AI-generated illustration",
+   "lokum__europe": "AI-generated illustration",
+   "lokum__end": "AI-generated illustration"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
