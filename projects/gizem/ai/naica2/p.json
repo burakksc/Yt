@@ -1,0 +1,11 @@
+{"w":768,"h":1344,
+ "style":"photorealistic photograph, natural light, 35mm lens, high detail, no text, no letters",
+ "items":{
+  "naica__hook":{"prompt":"a vast underground cave filled with enormous white selenite crystal beams criss-crossing, warm lamp glow, no people","seeds":[1,2]},
+  "naica__size":{"prompt":"a gigantic white selenite crystal beam towering over a tiny explorer in a silver suit seen from behind, no face, dark cave","seeds":[1,2]},
+  "naica__what":{"prompt":"close-up of translucent white selenite crystal beams with glowing warm light inside a mineral cave, wet surfaces","seeds":[1,2]},
+  "naica__heat":{"prompt":"hot humid steam drifting through a crystal cave, orange warm light on white crystals, droplets, no people","seeds":[1,2]},
+  "naica__suit":{"prompt":"a researcher in a bulky silver cooling suit with a helmet seen from behind among giant crystals in a cave, no face","seeds":[1,2]},
+  "naica__flood":{"prompt":"dark still water rising around giant white crystals in an underground cave, quiet mood, no people","seeds":[1,2]},
+  "naica__end":{"prompt":"a glowing white crystal beam half under dark still water in a cave, mysterious, no people","seeds":[1,2]}
+ }}

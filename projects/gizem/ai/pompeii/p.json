@@ -1,0 +1,11 @@
+{"w":768,"h":1344,
+ "style":"photorealistic photograph, natural light, 35mm lens, high detail, no text, no letters, no signs",
+ "items":{
+  "pompeii__hook":{"prompt":"an ancient Roman street in Pompeii at golden hour, a stone snack counter with steaming food and bread, a customer seen from behind, warm light","seeds":[1,2]},
+  "pompeii__name":{"prompt":"ruins of a Roman thermopolium counter in Pompeii with a row of round openings, sunlit stone street, no people","seeds":[1,2]},
+  "pompeii__jars":{"prompt":"close-up of large terracotta jars (dolia) set into a stone counter in an ancient Roman snack bar, warm light, steam rising","seeds":[1,2]},
+  "pompeii__paint":{"prompt":"ancient Roman wall fresco of a mallard duck and a rooster painted on a plaster wall of a shop, faded colors, sunlight","seeds":[1,2]},
+  "pompeii__food":{"prompt":"terracotta pot of stew with duck, goat and snails on a rustic Roman wooden table, steam, warm candle light","seeds":[1,2]},
+  "pompeii__wine":{"prompt":"a Roman clay wine jug and cup beside dried beans on a stone counter, warm light, ancient tavern interior","seeds":[1,2]},
+  "pompeii__end":{"prompt":"Mount Vesuvius erupting behind the ruins of Pompeii, ash cloud over the sunset sky, dramatic light, no people","seeds":[1,2]}
+ }}

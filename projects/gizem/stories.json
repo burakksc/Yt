@@ -2044,16 +2044,16 @@
     "id": "hook",
     "img": "naica__hook",
     "title": "Giant crystals",
-    "big": "",
-    "bigSub": "",
+    "big": "300 m",
+    "bigSub": "below a Mexican desert",
     "text": "Nearly three hundred metres under a Mexican desert, there is a cave of giant crystals."
    },
    {
     "id": "size",
     "img": "naica__size",
     "title": "Over 11 metres",
-    "big": "",
-    "bigSub": "",
+    "big": "11 m",
+    "bigSub": "longest crystals",
     "text": "Some of the crystals are over eleven metres long, among the largest natural crystals ever found."
    },
    {
@@ -2068,8 +2068,8 @@
     "id": "heat",
     "img": "naica__heat",
     "title": "Deadly heat",
-    "big": "",
-    "bigSub": "",
+    "big": "58 °C",
+    "bigSub": "and very humid",
     "text": "But the air is about fifty eight degrees Celsius, and extremely humid."
    },
    {
@@ -2078,15 +2078,15 @@
     "title": "Cooling suits",
     "big": "",
     "bigSub": "",
-    "text": "Without special cooling gear, a person can survive there only a short time."
+    "text": "Without special cooling gear, a person can survive there only a few minutes."
    },
    {
     "id": "flood",
     "img": "naica__flood",
     "title": "Flooding again",
-    "big": "",
-    "bigSub": "",
-    "text": "The mine closed in twenty fifteen because of flooding, and the cave is hard to reach today."
+    "big": "2015",
+    "bigSub": "pumps switched off",
+    "text": "In 2015 the mine's pumps were reportedly switched off, and the cave has been slowly flooding again."
    },
    {
     "id": "end",
@@ -2217,6 +2217,67 @@
     "big": "1777",
     "bigSub": "and still loved",
     "text": "Today it is still cut by hand in Istanbul. Which flavor would you try first?"
+   }
+  ]
+ },
+ "pompeii": {
+  "title": "POMPEII FAST FOOD",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "pompeii__hook",
+    "title": "Roman fast food",
+    "big": "79 AD",
+    "bigSub": "Pompeii",
+    "text": "Two thousand years ago, Romans in Pompeii grabbed hot street food. Fast food is not a modern invention."
+   },
+   {
+    "id": "name",
+    "img": "pompeii__name",
+    "title": "Thermopolia",
+    "big": "80+",
+    "bigSub": "found in Pompeii",
+    "text": "These counter shops were called thermopolia, and archaeologists have found more than eighty in Pompeii alone."
+   },
+   {
+    "id": "jars",
+    "img": "pompeii__jars",
+    "title": "Built-in jars",
+    "big": "",
+    "bigSub": "",
+    "text": "Large clay jars were set into the counter, holding hot food and drinks for passing customers."
+   },
+   {
+    "id": "paint",
+    "img": "pompeii__paint",
+    "title": "Painted menu",
+    "big": "2020",
+    "bigSub": "newly uncovered",
+    "text": "In 2020, a newly uncovered shop showed painted ducks and a rooster on its wall, possibly advertising the menu."
+   },
+   {
+    "id": "food",
+    "img": "pompeii__food",
+    "title": "What was inside",
+    "big": "",
+    "bigSub": "",
+    "text": "Inside the jars were traces of duck, pig, goat, fish and snails, possibly cooked together in stews."
+   },
+   {
+    "id": "wine",
+    "img": "pompeii__wine",
+    "title": "Wine and beans",
+    "big": "",
+    "bigSub": "",
+    "text": "Even the wine may have been treated with crushed beans."
+   },
+   {
+    "id": "end",
+    "img": "pompeii__end",
+    "title": "Frozen in time",
+    "big": "79 AD",
+    "bigSub": "Vesuvius erupts",
+    "text": "Then Vesuvius erupted in 79 AD, and froze the menu. Would you have eaten here?"
    }
   ]
  }
