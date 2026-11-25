@@ -6,3 +6,55 @@ scripts/queue/heavy.sh: line 8: printf: 31
   deprecate("config-passed-as-path", "1.0.0", deprecation_message, standard_warn=False)
 /root/.venvs/sd/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py:205: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
   warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+There are modules in UNet2DConditionModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+/root/.venvs/sd/lib/python3.13/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/517 [00:00<?, ?it/s][A
+Loading weights:   0%|          | 2/517 [00:00<00:56,  9.11it/s][A
+Loading weights:  23%|██▎       | 120/517 [00:00<00:01, 291.07it/s][A
+Loading weights:  32%|███▏      | 168/517 [00:00<00:01, 322.31it/s][A
+Loading weights:  39%|███▉      | 202/517 [00:00<00:00, 316.99it/s][A
+Loading weights:  48%|████▊     | 248/517 [00:00<00:00, 343.26it/s][A
+Loading weights:  57%|█████▋    | 296/517 [00:00<00:00, 368.47it/s][A
+Loading weights:  65%|██████▍   | 334/517 [00:01<00:00, 336.96it/s][A
+Loading weights:  71%|███████▏  | 369/517 [00:01<00:00, 328.80it/s][A
+Loading weights:  78%|███████▊  | 403/517 [00:01<00:00, 297.90it/s][A
+Loading weights:  84%|████████▍ | 434/517 [00:01<00:00, 298.71it/s][A
+Loading weights:  90%|████████▉ | 465/517 [00:01<00:00, 265.78it/s][A
+Loading weights:  97%|█████████▋| 504/517 [00:01<00:00, 282.04it/s][ALoading weights: 100%|██████████| 517/517 [00:01<00:00, 301.92it/s]
+Loading pipeline components...:  29%|██▊       | 2/7 [00:02<00:05,  1.06s/it]Loading pipeline components...:  43%|████▎     | 3/7 [00:02<00:02,  1.49it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:   1%|          | 2/196 [00:00<00:09, 19.48it/s][A
+Loading weights:  79%|███████▊  | 154/196 [00:00<00:00, 845.89it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 828.89it/s]
+Loading pipeline components...:  71%|███████▏  | 5/7 [00:02<00:00,  2.41it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:03<00:00,  1.84it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:03<00:00,  1.99it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:44<02:12, 44.02s/it] 50%|█████     | 2/4 [01:23<01:23, 41.53s/it] 75%|███████▌  | 3/4 [02:04<00:41, 41.12s/it]100%|██████████| 4/4 [02:30<00:00, 35.26s/it]100%|██████████| 4/4 [02:30<00:00, 37.68s/it]
+saved projects/gizem/ai/naica2/imgs/naica__hook_s1.png 171
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:20,  6.74s/it] 50%|█████     | 2/4 [00:13<00:13,  6.52s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.09s/it]100%|██████████| 4/4 [00:25<00:00,  6.29s/it]100%|██████████| 4/4 [00:25<00:00,  6.32s/it]
+saved projects/gizem/ai/naica2/imgs/naica__hook_s2.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:07<00:23,  7.80s/it] 50%|█████     | 2/4 [00:15<00:14,  7.49s/it] 75%|███████▌  | 3/4 [00:22<00:07,  7.37s/it]100%|██████████| 4/4 [00:29<00:00,  7.17s/it]100%|██████████| 4/4 [00:29<00:00,  7.29s/it]
+saved projects/gizem/ai/naica2/imgs/naica__size_s1.png 46
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:20,  6.76s/it] 50%|█████     | 2/4 [00:13<00:13,  6.59s/it] 75%|███████▌  | 3/4 [00:19<00:06,  6.51s/it]100%|██████████| 4/4 [00:26<00:00,  6.52s/it]100%|██████████| 4/4 [00:26<00:00,  6.55s/it]
+saved projects/gizem/ai/naica2/imgs/naica__size_s2.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:18,  6.09s/it] 50%|█████     | 2/4 [00:11<00:11,  5.85s/it] 75%|███████▌  | 3/4 [00:17<00:05,  5.78s/it]100%|██████████| 4/4 [00:23<00:00,  5.77s/it]100%|██████████| 4/4 [00:23<00:00,  5.80s/it]
+saved projects/gizem/ai/naica2/imgs/naica__what_s1.png 38
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:19,  6.56s/it] 50%|█████     | 2/4 [00:12<00:12,  6.39s/it] 75%|███████▌  | 3/4 [00:18<00:06,  6.19s/it]100%|██████████| 4/4 [00:24<00:00,  6.10s/it]100%|██████████| 4/4 [00:24<00:00,  6.19s/it]
+saved projects/gizem/ai/naica2/imgs/naica__what_s2.png 39
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:20,  6.83s/it] 50%|█████     | 2/4 [00:13<00:13,  6.62s/it] 75%|███████▌  | 3/4 [00:20<00:06,  6.96s/it]100%|██████████| 4/4 [00:27<00:00,  6.83s/it]100%|██████████| 4/4 [00:27<00:00,  6.83s/it]
+saved projects/gizem/ai/naica2/imgs/naica__heat_s1.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:20,  6.75s/it] 50%|█████     | 2/4 [00:14<00:14,  7.11s/it] 75%|███████▌  | 3/4 [00:21<00:07,  7.12s/it]100%|██████████| 4/4 [00:28<00:00,  7.33s/it]100%|██████████| 4/4 [00:28<00:00,  7.22s/it]
+saved projects/gizem/ai/naica2/imgs/naica__heat_s2.png 46
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:07<00:22,  7.65s/it] 50%|█████     | 2/4 [00:13<00:13,  6.82s/it] 75%|███████▌  | 3/4 [00:19<00:06,  6.43s/it]100%|██████████| 4/4 [00:26<00:00,  6.51s/it]100%|██████████| 4/4 [00:26<00:00,  6.62s/it]
+saved projects/gizem/ai/naica2/imgs/naica__suit_s1.png 41
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:06<00:20,  6.81s/it] 50%|█████     | 2/4 [00:14<00:14,  7.23s/it] 75%|███████▌  | 3/4 [00:20<00:06,  6.83s/it]100%|██████████| 4/4 [00:27<00:00,  6.68s/it]100%|██████████| 4/4 [00:27<00:00,  6.78s/it]
+saved projects/gizem/ai/naica2/imgs/naica__suit_s2.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:08<00:24,  8.05s/it] 50%|█████     | 2/4 [00:14<00:14,  7.38s/it] 75%|███████▌  | 3/4 [00:21<00:06,  6.90s/it]100%|██████████| 4/4 [00:28<00:00,  6.84s/it]100%|██████████| 4/4 [00:28<00:00,  7.01s/it]
+saved projects/gizem/ai/naica2/imgs/naica__flood_s1.png 43
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:07<00:21,  7.04s/it] 50%|█████     | 2/4 [00:13<00:13,  6.67s/it] 75%|███████▌  | 3/4 [00:21<00:07,  7.28s/it]100%|██████████| 4/4 [00:29<00:00,  7.44s/it]100%|██████████| 4/4 [00:29<00:00,  7.29s/it]
+saved projects/gizem/ai/naica2/imgs/naica__flood_s2.png 47
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:08<00:24,  8.11s/it] 50%|█████     | 2/4 [00:15<00:15,  7.67s/it] 75%|███████▌  | 3/4 [00:23<00:07,  7.93s/it]100%|██████████| 4/4 [00:31<00:00,  7.91s/it]100%|██████████| 4/4 [00:31<00:00,  7.90s/it]
+saved projects/gizem/ai/naica2/imgs/naica__end_s1.png 51
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:07<00:23,  7.96s/it] 50%|█████     | 2/4 [00:14<00:14,  7.27s/it] 75%|███████▌  | 3/4 [00:22<00:07,  7.54s/it]100%|██████████| 4/4 [00:30<00:00,  7.62s/it]100%|██████████| 4/4 [00:30<00:00,  7.59s/it]
+saved projects/gizem/ai/naica2/imgs/naica__end_s2.png 48
+ALLDONE

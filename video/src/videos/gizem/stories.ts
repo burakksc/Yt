@@ -2364,6 +2364,174 @@ export const STORIES: Record<string, MyStory> = {
    "lokum__europe": "AI-generated illustration",
    "lokum__end": "AI-generated illustration"
   }
+ },
+ "naica": {
+  "title": "THE CAVE OF CRYSTALS",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "naica__hook",
+    "title": "Giant crystals",
+    "big": "300 m",
+    "bigSub": "below a Mexican desert",
+    "text": "Nearly three hundred metres under a Mexican desert, there is a cave of giant crystals.",
+    "vsec": 6.72,
+    "sec": 7.47
+   },
+   {
+    "id": "size",
+    "img": "naica__size",
+    "title": "Over 11 metres",
+    "big": "11 m",
+    "bigSub": "longest crystals",
+    "text": "Some of the crystals are over eleven metres long, among the largest natural crystals ever found.",
+    "vsec": 7.45,
+    "sec": 8.2
+   },
+   {
+    "id": "what",
+    "img": "naica__what",
+    "title": "Selenite",
+    "big": "",
+    "bigSub": "",
+    "text": "They are selenite, a form of gypsum, grown slowly in hot, mineral rich water.",
+    "vsec": 6.42,
+    "sec": 7.17
+   },
+   {
+    "id": "heat",
+    "img": "naica__heat",
+    "title": "Deadly heat",
+    "big": "58 °C",
+    "bigSub": "and very humid",
+    "text": "But the air is about fifty eight degrees Celsius, and extremely humid.",
+    "vsec": 5.6,
+    "sec": 6.35
+   },
+   {
+    "id": "suit",
+    "img": "naica__suit",
+    "title": "Cooling suits",
+    "big": "",
+    "bigSub": "",
+    "text": "Without special cooling gear, a person can survive there only a few minutes.",
+    "vsec": 5.75,
+    "sec": 6.5
+   },
+   {
+    "id": "flood",
+    "img": "naica__flood",
+    "title": "Flooding again",
+    "big": "2015",
+    "bigSub": "pumps switched off",
+    "text": "In 2015 the mine's pumps were reportedly switched off, and the cave has been slowly flooding again.",
+    "vsec": 8.03,
+    "sec": 8.78
+   },
+   {
+    "id": "end",
+    "img": "naica__end",
+    "title": "Sealed again",
+    "big": "",
+    "bigSub": "",
+    "text": "A hidden world, grown in the dark, and sealed away again.",
+    "vsec": 4.25,
+    "sec": 5.0
+   }
+  ],
+  "credits": {
+   "naica__hook": "AI-generated image",
+   "naica__size": "AI-generated image",
+   "naica__what": "AI-generated image",
+   "naica__heat": "AI-generated image",
+   "naica__suit": "AI-generated image",
+   "naica__flood": "AI-generated image",
+   "naica__end": "AI-generated image"
+  }
+ },
+ "pompeii": {
+  "title": "POMPEII FAST FOOD",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "pompeii__hook",
+    "title": "Roman fast food",
+    "big": "79 AD",
+    "bigSub": "Pompeii",
+    "text": "Two thousand years ago, Romans in Pompeii grabbed hot street food. Fast food is not a modern invention.",
+    "vsec": 8.57,
+    "sec": 9.32
+   },
+   {
+    "id": "name",
+    "img": "pompeii__name",
+    "title": "Thermopolia",
+    "big": "80+",
+    "bigSub": "found in Pompeii",
+    "text": "These counter shops were called thermopolia, and archaeologists have found more than eighty in Pompeii alone.",
+    "vsec": 8.0,
+    "sec": 8.75
+   },
+   {
+    "id": "jars",
+    "img": "pompeii__jars",
+    "title": "Built-in jars",
+    "big": "",
+    "bigSub": "",
+    "text": "Large clay jars were set into the counter, holding hot food and drinks for passing customers.",
+    "vsec": 7.17,
+    "sec": 7.92
+   },
+   {
+    "id": "paint",
+    "img": "pompeii__paint",
+    "title": "Painted menu",
+    "big": "2020",
+    "bigSub": "newly uncovered",
+    "text": "In 2020, a newly uncovered shop showed painted ducks and a rooster on its wall, possibly advertising the menu.",
+    "vsec": 9.5,
+    "sec": 10.25
+   },
+   {
+    "id": "food",
+    "img": "pompeii__food",
+    "title": "What was inside",
+    "big": "",
+    "bigSub": "",
+    "text": "Inside the jars were traces of duck, pig, goat, fish and snails, possibly cooked together in stews.",
+    "vsec": 8.22,
+    "sec": 8.97
+   },
+   {
+    "id": "wine",
+    "img": "pompeii__wine",
+    "title": "Wine and beans",
+    "big": "",
+    "bigSub": "",
+    "text": "Even the wine may have been treated with crushed beans.",
+    "vsec": 3.95,
+    "sec": 4.7
+   },
+   {
+    "id": "end",
+    "img": "pompeii__end",
+    "title": "Frozen in time",
+    "big": "79 AD",
+    "bigSub": "Vesuvius erupts",
+    "text": "Then Vesuvius erupted in 79 AD, and froze the menu. Would you have eaten here?",
+    "vsec": 7.08,
+    "sec": 7.83
+   }
+  ],
+  "credits": {
+   "pompeii__hook": "AI-generated image",
+   "pompeii__name": "AI-generated image",
+   "pompeii__jars": "AI-generated image",
+   "pompeii__paint": "AI-generated image",
+   "pompeii__food": "AI-generated image",
+   "pompeii__wine": "AI-generated image",
+   "pompeii__end": "AI-generated image"
+  }
  }
 };
 export const gzFrames = (slug: string, fps = 30) => STORIES[slug].scenes.reduce((a, s) => a + Math.round(s.sec * fps), 0);
