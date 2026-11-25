@@ -2158,5 +2158,66 @@
     "text": "Polluted canals and invasive fish hurt them. Thousands live in tanks, but wild ones need help."
    }
   ]
+ },
+ "lokum": {
+  "title": "TURKISH DELIGHT",
+  "scenes": [
+   {
+    "id": "hook",
+    "img": "lokum__hook",
+    "title": "Turkish delight",
+    "big": "",
+    "bigSub": "",
+    "text": "One sweet from Istanbul made a whole continent crave it. How did Turkish delight conquer Europe?"
+   },
+   {
+    "id": "name",
+    "img": "lokum__name",
+    "title": "Lokum",
+    "big": "",
+    "bigSub": "",
+    "text": "Its Turkish name, lokum, likely comes from an Arabic phrase meaning comfort of the throat."
+   },
+   {
+    "id": "shop",
+    "img": "lokum__shop",
+    "title": "Hacı Bekir",
+    "big": "1777",
+    "bigSub": "Istanbul shop",
+    "text": "Confectioner Hacı Bekir reportedly opened his shop in Istanbul in 1777, selling soft sweets of starch and sugar."
+   },
+   {
+    "id": "persia",
+    "img": "lokum__persia",
+    "title": "Who invented it?",
+    "big": "",
+    "bigSub": "",
+    "text": "But similar sweets existed in Persia earlier, so the true inventor is unknown."
+   },
+   {
+    "id": "trip",
+    "img": "lokum__trip",
+    "title": "The traveler",
+    "big": "1830s",
+    "bigSub": "the name is born",
+    "text": "In the 1830s, an English traveler reportedly took a box home and called it Turkish delight."
+   },
+   {
+    "id": "europe",
+    "img": "lokum__europe",
+    "title": "Conquering Europe",
+    "big": "",
+    "bigSub": "",
+    "text": "Soon it filled shop windows across Europe, and later a boy in Narnia betrayed his siblings for it."
+   },
+   {
+    "id": "end",
+    "img": "lokum__end",
+    "title": "Still made by hand",
+    "big": "1777",
+    "bigSub": "and still loved",
+    "text": "Today it is still cut by hand in Istanbul. Which flavor would you try first?"
+   }
+  ]
  }
 }

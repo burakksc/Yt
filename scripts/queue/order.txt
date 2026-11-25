@@ -30,3 +30,4 @@ krakatoa
 kawahijen
 naica
 axolotl
+lokum

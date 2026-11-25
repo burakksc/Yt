@@ -1,0 +1,7 @@
+{"w":768,"h":1344,
+ "style":"photorealistic photograph, natural light, 35mm lens, shallow depth of field, high detail, no text",
+ "items":{
+  "lokum__europe":{"prompt":"a charming 19th century European sweet shop window filled with boxes of Turkish delight, snowy cobblestone street outside at dusk, warm glow, no signs","seeds":[1,2]},
+  "lokum__end":{"prompt":"early morning in Istanbul, a hand cutting a slab of Turkish delight on a marble table beside tea in a tulip glass, Bosphorus and mosque silhouettes softly blurred behind","seeds":[1,2]},
+  "lokum__persia":{"prompt":"an old Persian bazaar stall with trays of sugar, saffron and sweets, ornate blue tiles, warm golden light, empty of people, no labels","seeds":[1,2]}
+ }}
