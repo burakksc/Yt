@@ -1,0 +1,37 @@
+[
+  {
+    "id": "s1-camp",
+    "image": "Cinematic photograph, vertical. A First World War civilian internment camp on a windswept island in 1916: long rows of wooden huts, barbed wire fences, muddy paths, grey sky, men in long wool coats and flat caps walking. Misty, moody, desaturated, 35mm film grain, documentary realism, no text.",
+    "motion": "Slow cinematic drone push-in over the camp, mist drifting, men walking slowly along the muddy path, flags and smoke moving in the wind."
+  },
+  {
+    "id": "s2-boy",
+    "image": "Cinematic photograph, vertical. 1890s Germany: a thin, pale sickly boy of about 9 in a wool shirt and suspenders sits on the steps of a brick house, wrapped in a blanket, breathing with difficulty, looking at older boys playing in a cobblestone street. Soft overcast light, sepia-warm tones, period accurate, 35mm film, no text.",
+    "motion": "The boy breathes heavily and pulls the blanket closer, then looks up with determination; children run in the background; gentle slow push-in."
+  },
+  {
+    "id": "s3-train",
+    "image": "Cinematic photograph, vertical. Around 1905, an old-fashioned gymnasium with wooden floor and tall windows: a fit young German man with short hair in a white sleeveless athletic shirt and dark training trousers does a slow controlled exercise on gymnastic rings, muscles defined. Dust in sunbeams, period accurate, 35mm film, no text.",
+    "motion": "The young man slowly lifts his body on the rings with perfect control, dust floating in the sunbeams, camera slowly orbits around him."
+  },
+  {
+    "id": "s4-exercise",
+    "image": "Cinematic photograph, vertical. 1916 internment camp yard on a cold morning: dozens of men in plain shirts stand in neat rows on the muddy ground doing the same slow stretching exercise, arms raised, led by an instructor in front with his back to the camera. Wooden huts and barbed wire behind. Misty, desaturated, 35mm film, documentary, no text.",
+    "motion": "All the men slowly raise their arms and bend sideways in unison following the instructor, breath visible in the cold air, camera slowly cranes up."
+  },
+  {
+    "id": "s5-springs",
+    "image": "Cinematic photograph, vertical. A dim 1918 wartime infirmary hut: a simple iron hospital bed with metal coil springs attached to the bed frame by leather straps; a weak bedridden man lies on it pulling the springs with his arms. Warm lamp light, wooden walls, period accurate, 35mm film, close and intimate, no text.",
+    "motion": "The man slowly pulls the springs toward his chest and releases them, the coil springs stretch and contract, lamp light flickers softly, slow push-in."
+  },
+  {
+    "id": "s6-newyork",
+    "image": "Cinematic photograph, vertical. A 1930s New York fitness studio with large windows and city buildings outside: a graceful ballet dancer in a simple black leotard exercises on a wooden sliding carriage machine with springs and straps (early Pilates reformer). Warm afternoon light, vintage, 35mm film, elegant, no text.",
+    "motion": "The dancer pushes the wooden carriage out and back smoothly with her legs, springs stretching, curtains moving gently, camera glides slowly sideways."
+  },
+  {
+    "id": "s7-today",
+    "image": "Cinematic photograph, vertical. A bright modern Pilates studio at sunset: rows of reformer machines with people in sportswear exercising in sync, large windows with golden light, plants, calm atmosphere, shallow depth of field, high detail, no text, no logos.",
+    "motion": "People glide on the reformers in sync, golden light flares through the windows, camera slowly pulls back to reveal the whole studio."
+  }
+]
