@@ -1,0 +1,37 @@
+[
+  {
+    "id": "e1-hook",
+    "image": "Cinematic macro photograph, vertical, top-down: a shallow wooden tray of thickened water with floating swirls of deep red, indigo, ochre and turquoise paint forming marbled patterns; an artisan's hand draws a thin metal stylus through the colors. Soft window light, rich detail, no text.",
+    "motion": "The stylus glides slowly through the floating paint, the colors stretch and swirl into flowing waves, gentle slow push-in."
+  },
+  {
+    "id": "e2-workshop",
+    "image": "Cinematic photograph, vertical. A 16th-century Ottoman workshop in Istanbul: an elderly master craftsman with a white beard, in a simple kaftan and turban, sits beside a long wooden trough of water, shelves of pigment jars and paper behind him, warm light through a latticed window, dust in the air, period accurate, 35mm film, no text.",
+    "motion": "The master leans over the trough and gently taps the water surface, light beams shift through the lattice window, camera slowly dollies in."
+  },
+  {
+    "id": "e3-pigment",
+    "image": "Cinematic close-up photograph, vertical: weathered hands grind bright red natural pigment on a white marble slab with a stone muller; small bowls of earth pigments, a clay bowl of pale gum tragacanth, and a tiny glass vial of ox gall beside them on a wooden table. Warm light, period accurate, no text.",
+    "motion": "The hands grind the pigment in slow circles, then add a single drop from the glass vial; pigment dust rises softly in the light."
+  },
+  {
+    "id": "e4-brush",
+    "image": "Cinematic close-up photograph, vertical: a traditional brush made of horsehair tied to a thin rose branch is tapped above a tray of thickened water; drops of blue and gold paint fall and spread into floating circles on the surface. Shallow depth of field, warm light, no text.",
+    "motion": "The brush taps rhythmically, paint drops fall and blossom into expanding circles that float and push each other on the water."
+  },
+  {
+    "id": "e5-tulip",
+    "image": "Cinematic top-down macro photograph, vertical: on a tray of floating marbling paint, a thin needle-like stylus shapes a red tulip flower with a green stem among blue swirling patterns. Ultra detailed, soft light, no text.",
+    "motion": "The stylus slowly pulls the red paint upward, forming tulip petals step by step, the surrounding colors ripple gently."
+  },
+  {
+    "id": "e6-paper",
+    "image": "Cinematic photograph, vertical: two hands slowly lift a sheet of cream paper from a wooden marbling tray, revealing a vivid marbled pattern of red, blue and gold transferred onto the paper, water dripping from the edge. Warm workshop light, period accurate, no text.",
+    "motion": "The hands peel the wet paper up from the water in one slow smooth motion, revealing the marbled pattern, drops falling back into the tray."
+  },
+  {
+    "id": "e7-scribe",
+    "image": "Cinematic photograph, vertical. An Ottoman scribe in a kaftan writes elegant Arabic-script calligraphy with a reed pen on an official document whose margins are decorated with marbled ebru paper; an inkwell, a wax seal and rolled documents on a low wooden desk, candlelight, period accurate, 35mm film.",
+    "motion": "The reed pen moves gracefully across the paper, the candle flame flickers, camera slowly pushes in toward the marbled margin."
+  }
+]

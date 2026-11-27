@@ -11,6 +11,7 @@ import { CozyAlley, LOOP_FPS, LOOP_FRAMES } from "./videos/cozy-alley";
 import { SlingVideo } from "./videos/sling";
 import { KilerVideo } from "./videos/kiler";
 import { PilatesShort, PILATES_FPS, PILATES_FRAMES } from "./videos/pilates";
+import { EbruShort, EBRU_FPS, EBRU_FRAMES } from "./videos/ebru";
 import { KILER_FPS, KILER_FRAMES } from "./videos/kiler/story";
 import { BebekSling } from "./videos/bebek-sling";
 import { EsnekSargi } from "./videos/esnek-sargi";
@@ -214,6 +215,14 @@ export const RemotionRoot: React.FC = () => {
         fps={LOOP_FPS}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="EbruShort"
+        component={EbruShort}
+        durationInFrames={EBRU_FRAMES}
+        fps={EBRU_FPS}
+        width={1080}
+        height={1920}
       />
       <Composition
         id="PilatesShort"
